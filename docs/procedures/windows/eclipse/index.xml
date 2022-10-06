@@ -5,6 +5,10 @@
     <link>https://cartesjava.github.io/procedures/windows/eclipse/</link>
     <description>Recent content in Procédure: installer Eclipse on Cartes Java</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>fr-ca</language><atom:link href="https://cartesjava.github.io/procedures/windows/eclipse/index.xml" rel="self" type="application/rss+xml" />
+    <language>fr-ca</language>
+    
+	<atom:link href="https://cartesjava.github.io/procedures/windows/eclipse/index.xml" rel="self" type="application/rss+xml" />
+    
+    
   </channel>
 </rss>

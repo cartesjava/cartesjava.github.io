@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Présentation de l&rsquo;approche #   Utiliser des cartes à jouer pour enseigner la programmation Développer un outil de validation pour   visualiser comment les données sont structurées dans un programme Java
+<meta name="description" content="Présentation de l&rsquo;approche  Utiliser des cartes à jouer pour enseigner la programmation Développer un outil de validation pour   visualiser comment les données sont structurées dans un programme Java
   p.ex. le code suivant
 Carte[] tableauUn = new Carte[6]; Carte[] tableauDeux = new Carte[6]; int indiceCarteCourante = 1;   peut se visualiser de la façon suivante:
     où:
@@ -24,13 +24,13 @@ Carte[] tableauUn = new Carte[6]; Carte[] tableauDeux = new Carte[6]; int indice
 </title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
-<link rel="stylesheet" href="/book.min.62522f734605549ffb41c7c071c68ae6cea09d216f30ede20c344054d503fc2f.css" integrity="sha256-YlIvc0YFVJ/7QcfAccaK5s6gnSFvMO3iDDRAVNUD/C8=" crossorigin="anonymous">
+<link rel="stylesheet" href="/book.min.393750c588c31dbc7a21f29dfc11b099dce42bbd1c8244d0bcd848e963429884.css" integrity="sha256-OTdQxYjDHbx6IfKd/BGwmdzkK70cgkTQvNhI6WNCmIQ=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/fr.search.min.e6065138eef3abd1f2074515d92bb8089429126ab68655e681196fcdb4ca3646.js" integrity="sha256-5gZROO7zq9HyB0UV2Su4CJQpEmq2hlXmgRlvzbTKNkY=" crossorigin="anonymous"></script>
+  <script defer src="/fr.search.min.b115459e677278eabf2edc649359fedb38c58c1d76532f9aefb6b69d05593dd9.js" integrity="sha256-sRVFnmdyeOq/Ltxkk1n&#43;2zjFjB12Uy&#43;a77a2nQVZPdk=" crossorigin="anonymous"></script>
 
-  <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" integrity="sha256-b2&#43;Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC&#43;NdcPIvZhzk=" crossorigin="anonymous"></script>
+  <script defer src="/sw.min.74a8bb07f0bee86d6bb9a2750f073f14d93c7e4512f28860370cfd879e9719b4.js" integrity="sha256-dKi7B/C&#43;6G1ruaJ1Dwc/FNk8fkUS8ohgNwz9h56XGbQ=" crossorigin="anonymous"></script>
 
-<script defer src="/reload_videos.min.4a5aa164333a19381a7fd1dde8e03eadc175bdda3a31e8f4fc8e0951775577ca.js" integrity="sha256-SlqhZDM6GTgaf9Hd6OA&#43;rcF1vdo6Mej0/I4JUXdVd8o=" crossorigin="anonymous"></script><link rel="alternate" type="application/rss+xml" href="https://cartesjava.github.io/approche/index.xml" title="Cartes Java" />
+<script defer src="/reload_videos.min.e548f6921f0ad1043b58ebf2f0a8daba7072dff046fb554ef3e655b40c342cec.js" integrity="sha256-5Uj2kh8K0QQ7WOvy8KjaunBy3/BG&#43;1VO8&#43;ZVtAw0LOw=" crossorigin="anonymous"></script><link rel="alternate" type="application/rss+xml" href="https://cartesjava.github.io/approche/index.xml" title="Cartes Java" />
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -741,7 +741,7 @@ https://github.com/alex-shpak/hugo-book
 
 
 
-  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+  <script>(function(){var menu=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(event){localStorage.setItem("menu.scrollTop",menu.scrollTop);});menu.scrollTop=localStorage.getItem("menu.scrollTop");})();</script>
 
 
  
@@ -790,10 +790,7 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown"><h1 id="présentation-de-lapproche">
-  Présentation de l&rsquo;approche
-  <a class="anchor" href="#pr%c3%a9sentation-de-lapproche">#</a>
-</h1>
+  <article class="markdown"><h1 id="présentation-de-lapproche">Présentation de l&rsquo;approche</h1>
 <ul>
 <li>Utiliser des cartes à jouer pour enseigner la programmation</li>
 <li>Développer un outil de validation pour
@@ -803,10 +800,10 @@ https://github.com/alex-shpak/hugo-book
 <ul>
 <li>
 <p>p.ex. le code suivant</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>Carte<span style="color:#f92672">[]</span> tableauUn   <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Carte<span style="color:#f92672">[</span>6<span style="color:#f92672">];</span>
-</span></span><span style="display:flex;"><span>Carte<span style="color:#f92672">[]</span> tableauDeux <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Carte<span style="color:#f92672">[</span>6<span style="color:#f92672">];</span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">int</span> indiceCarteCourante <span style="color:#f92672">=</span> 1<span style="color:#f92672">;</span>
-</span></span></code></pre></div></li>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">Carte<span style="color:#f92672">[]</span> tableauUn   <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Carte<span style="color:#f92672">[</span>6<span style="color:#f92672">];</span>
+Carte<span style="color:#f92672">[]</span> tableauDeux <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Carte<span style="color:#f92672">[</span>6<span style="color:#f92672">];</span>
+<span style="color:#66d9ef">int</span> indiceCarteCourante <span style="color:#f92672">=</span> 1<span style="color:#f92672">;</span>
+</code></pre></div></li>
 <li>
 <p>peut se visualiser de la façon suivante:</p>
 <center>
@@ -856,10 +853,7 @@ https://github.com/alex-shpak/hugo-book
 </ul>
 </li>
 </ul>
-<h2 id="exemple-de-tri">
-  Exemple de tri
-  <a class="anchor" href="#exemple-de-tri">#</a>
-</h2>
+<h2 id="exemple-de-tri">Exemple de tri</h2>
 <ul>
 <li>
 <p>Voici comment trier des cartes dans ce cours</p>
@@ -915,15 +909,12 @@ https://github.com/alex-shpak/hugo-book
 <p>Et ainsi de suite, en respectant l&rsquo;ordre ♡ ♢ ♧ ♤</p>
 </li>
 </ul>
-<h2 id="en-classe">
-  En classe
-  <a class="anchor" href="#en-classe">#</a>
-</h2>
+<h2 id="en-classe">En classe</h2>
 <p>En classe, on peut expliquer les concepts de ce manuel avec des cartes géantes (et des aimants pour les maintenir au tableau).</p>
-<img class="small-figure" src="/approche/trier/trier_par_sorte.jpg" />
+<p><img class="small-figure" src="/approche/trier/trier_par_sorte.jpg" />
 <img class="small-figure" src="/approche/trier/trier_par_numero01.jpg" />
 <img class="small-figure" src="/approche/trier/trier_par_numero03.jpg" />
-<img class="small-figure" src="/approche/trier/trier_par_numero02.jpg" />
+<img class="small-figure" src="/approche/trier/trier_par_numero02.jpg" /></p>
 <p>crédit photo: Mikael Tardif</p>
 </article>
  
@@ -964,13 +955,16 @@ https://github.com/alex-shpak/hugo-book
         <a ref="" href="https://creativecommons.org/licenses/by-sa/4.0/deed.fr" style="font-size:2em;">
         <img alt="Creative Commons ShareAlike" style="border-width:0" src="/sa.svg" /></a>
     </div>
+    <br>
+    ©&nbsp;Mathieu&nbsp;Bergeron
 </div>
 
 
 
 
 
-  <script>(function(){function e(n){const e=window.getSelection(),t=document.createRange();t.selectNodeContents(n),e.removeAllRanges(),e.addRange(t)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+  <script>(function(){function select(element){const selection=window.getSelection();const range=document.createRange();range.selectNodeContents(element);selection.removeAllRanges();selection.addRange(range);}
+document.querySelectorAll("pre code").forEach(code=>{code.addEventListener("click",function(event){select(code.parentElement);if(navigator.clipboard){navigator.clipboard.writeText(code.parentElement.textContent);}});});})();</script>
 
 
  
