@@ -10,3 +10,5 @@ bookCollapseSection: true
 ---
 
 # Apprendre à programmer efficacement avec des cartes à jouer
+
+Bonjour!
