@@ -1,0 +1,15 @@
+{
+  "name": "Cartes Java",
+  "short_name": "Cartes Java",
+  "start_url": "/cartesjava.github.io/",
+  "scope": "/cartesjava.github.io/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#000000",
+  "icons": [
+    {
+      "src": "/cartesjava.github.io/favicon.svg",
+      "sizes": "512x512"
+    }
+  ]
+}

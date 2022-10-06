@@ -1,0 +1,1 @@
+navigator.serviceWorker&&navigator.serviceWorker.register("/cartesjava.github.io/html/sw.js",{scope:"/cartesjava.github.io/html/"})
