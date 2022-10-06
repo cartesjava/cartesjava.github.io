@@ -17,8 +17,7 @@
 
 root_dir=$(dirname "$scripts_dir")
 
-publishDir="result"
-dataDir="nodes"
+publishDir="docs"
 
 save_dir(){
 
