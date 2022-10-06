@@ -3,7 +3,7 @@ title: Cartes Java
 
 contentDir: pages
 dataDir: nodes
-publishDir: result
+publishDir: docs
 
 ignoreFiles: 
    - \.git/.*
