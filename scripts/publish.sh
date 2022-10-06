@@ -25,17 +25,19 @@ save_dir
 
 cd "$root_dir"
 
-# refresh publishDir
-rm -rf "$publishDir"
 hugo
-
-# remove .git 
-rm -fr "$publishDir"/.git
 
 # remove .mkv
 find "$publishDir" -name "*.mkv" | while read i; do rm -v "$i"; done
 
-# rsync to server
-rsync -c -v -r --delete "$publishDir"/* codelescartes.ca:~/codelescartes.ca/
+# remove .mp4
+find "$publishDir" -name "*.mp4" | while read i; do rm -v "$i"; done
+
+
+git add .
+
+git commit -m"publish"
+
+git push
 
 restore_dir
