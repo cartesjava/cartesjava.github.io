@@ -3,14 +3,13 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Liste chaînée double #  ">
+<meta name="description" content="Liste chaînée double #  Liste chaînée double #   Dans une liste chaînée double, chaque élément pointe:  vers l&rsquo;élément suivant: → vers l&rsquo;élément précédent: ⇢        On peut donc accéder à la fin de la liste en reculant de 1 à partir de la tête
+ ci-haut, si on recule de 1 à partir de a, on arrive à f    Inconvénients:">
 <meta name="theme-color" content="#FFFFFF">
 <meta name="color-scheme" content="light dark"><meta property="og:title" content="Liste chaînée double" />
-<meta property="og:description" content="Liste chaînée double #  " />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://cartesjava.github.io/listes/chainee_double/" /><meta property="article:section" content="listes" />
-
-<meta property="article:modified_time" content="2022-10-06T14:17:03-04:00" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://cartesjava.github.io/listes/chainee_double/" />
 
 <title>
 
@@ -24,11 +23,12 @@
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.62522f734605549ffb41c7c071c68ae6cea09d216f30ede20c344054d503fc2f.css" integrity="sha256-YlIvc0YFVJ/7QcfAccaK5s6gnSFvMO3iDDRAVNUD/C8=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/fr.search.min.299fc505be71557c8aa1a1d721a04c4d147fc8409651573dd2ba327c2ab2d9cc.js" integrity="sha256-KZ/FBb5xVXyKoaHXIaBMTRR/yECWUVc90royfCqy2cw=" crossorigin="anonymous"></script>
+  <script defer src="/fr.search.min.68eae2a48302497ce91574237c694f25eedeec10e55ed8aecda792511181a9b0.js" integrity="sha256-aOripIMCSXzpFXQjfGlPJe7e7BDlXtiuzaeSURGBqbA=" crossorigin="anonymous"></script>
 
   <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" integrity="sha256-b2&#43;Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC&#43;NdcPIvZhzk=" crossorigin="anonymous"></script>
 
-<script defer src="/reload_videos.min.4a5aa164333a19381a7fd1dde8e03eadc175bdda3a31e8f4fc8e0951775577ca.js" integrity="sha256-SlqhZDM6GTgaf9Hd6OA&#43;rcF1vdo6Mej0/I4JUXdVd8o=" crossorigin="anonymous"></script><!--
+<script defer src="/reload_videos.min.4a5aa164333a19381a7fd1dde8e03eadc175bdda3a31e8f4fc8e0951775577ca.js" integrity="sha256-SlqhZDM6GTgaf9Hd6OA&#43;rcF1vdo6Mej0/I4JUXdVd8o=" crossorigin="anonymous"></script><link rel="alternate" type="application/rss+xml" href="https://cartesjava.github.io/listes/chainee_double/index.xml" title="Cartes Java" />
+<!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
 -->
@@ -538,6 +538,11 @@ https://github.com/alex-shpak/hugo-book
     <a href="/listes/tableau/" class="">Liste par tableau</a>
   
 
+          
+  <ul>
+    
+  </ul>
+
         </li>
       
     
@@ -551,6 +556,11 @@ https://github.com/alex-shpak/hugo-book
     <a href="/listes/chainee_simple/" class="">Liste chaînée simple</a>
   
 
+          
+  <ul>
+    
+  </ul>
+
         </li>
       
     
@@ -563,6 +573,11 @@ https://github.com/alex-shpak/hugo-book
   
     <a href="/listes/chainee_double/" class=" active">Liste chaînée double</a>
   
+
+          
+  <ul>
+    
+  </ul>
 
         </li>
       
@@ -642,8 +657,13 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/mappage/hachage/" class="">Mappage par fonction de hachage</a>
+    <a href="/mappage/hachage/" class="">Mappage par hachage</a>
   
+
+          
+  <ul>
+    
+  </ul>
 
         </li>
       
@@ -767,7 +787,14 @@ https://github.com/alex-shpak/hugo-book
   
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#liste-chaînée-double">Liste chaînée double</a></li>
+    <li><a href="#liste-chaînée-double">Liste chaînée double</a>
+      <ul>
+        <li><a href="#liste-chaînée-double-1">Liste chaînée double</a></li>
+        <li><a href="#exemple-ajouts-dans-liste-chaînée-double">Exemple: ajouts dans liste chaînée double</a></li>
+        <li><a href="#liste-chaînée-double-en-java">Liste chaînée double en Java</a></li>
+        <li><a href="#efficacité-simple-vs-double">Efficacité simple Vs double</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
 
@@ -784,6 +811,187 @@ https://github.com/alex-shpak/hugo-book
   Liste chaînée double
   <a class="anchor" href="#liste-cha%c3%aen%c3%a9e-double">#</a>
 </h1>
+<h2 id="liste-chaînée-double-1">
+  Liste chaînée double
+  <a class="anchor" href="#liste-cha%c3%aen%c3%a9e-double-1">#</a>
+</h2>
+<ul>
+<li>Dans une liste chaînée double, chaque élément pointe:
+<ul>
+<li>vers l&rsquo;élément suivant: <span style="font-size:300%"><code>→</code></span></li>
+<li>vers l&rsquo;élément précédent: <span style="font-size:300%"><code>⇢</code></span></li>
+</ul>
+</li>
+</ul>
+<center>
+    <img src="liste02.svg" width="98%"/>
+</center>
+<ul>
+<li>
+<p>On peut donc accéder à la fin de la liste en reculant de 1 à partir de la tête</p>
+<ul>
+<li>ci-haut, si on recule de 1 à partir de <code>a</code>, on arrive à <code>f</code></li>
+</ul>
+</li>
+<li>
+<p>Inconvénients:</p>
+<ul>
+<li>plus difficile à implanter qu&rsquo;une liste chaînée simple</li>
+<li>il faut quand même faire une boucle pour obtenir un élément de la liste</li>
+</ul>
+</li>
+<li>
+<p>Avantages:</p>
+<ul>
+<li>on peut chercher un élément <em>vers l&rsquo;avant</em> ou <em>vers l&rsquo;arrière</em></li>
+<li>l&rsquo;insertion/retrait au début <strong>et à la fin</strong> est efficace</li>
+<li>on ne consome pas d&rsquo;espace mémoire en trop</li>
+</ul>
+</li>
+</ul>
+<h2 id="exemple-ajouts-dans-liste-chaînée-double">
+  Exemple: ajouts dans liste chaînée double
+  <a class="anchor" href="#exemple-ajouts-dans-liste-cha%c3%aen%c3%a9e-double">#</a>
+</h2>
+<table>
+<tr>
+<td>
+<code>liste<br>// []</code>
+</td>
+<td>
+<img src="double_add01.svg"/>
+</td>
+</tr>
+<tr>
+<td>
+<code>liste.add('a')<br>// [a]</code>
+</td>
+<td>
+<img src="double_add02.svg"/>
+</td>
+</tr>
+<tr>
+<td>
+<code>liste.add('b')<br>// [a,b]</code>
+</td>
+<td>
+<img src="double_add03.svg"/>
+</td>
+</tr>
+<tr>
+<td>
+<code>liste.add('c')<br>// [a,b,c]</code>
+</td>
+<td>
+<img src="double_add04.svg"/>
+</td>
+</tr>
+<tr>
+<td>
+<code>liste.add('d')<br>// [a,b,c,d]</code>
+</td>
+<td>
+<img src="double_add05.svg"/>
+</td>
+</tr>
+</table>
+<h2 id="liste-chaînée-double-en-java">
+  Liste chaînée double en Java
+  <a class="anchor" href="#liste-cha%c3%aen%c3%a9e-double-en-java">#</a>
+</h2>
+<ul>
+<li>Notre classe pour l&rsquo;élément contient cette fois-ci:
+<ul>
+<li>la valeur</li>
+<li>un pointeur vers l&rsquo;élément suivant</li>
+<li>un pointeur vers l&rsquo;élément précédent</li>
+</ul>
+</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">ElementChaineDouble</span><span style="color:#f92672">&lt;</span>E<span style="color:#f92672">&gt;</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">private</span> E valeur<span style="color:#f92672">;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">private</span> ElementChaineDouble<span style="color:#f92672">&lt;</span>E<span style="color:#f92672">&gt;</span> suivant <span style="color:#f92672">=</span> <span style="color:#66d9ef">this</span><span style="color:#f92672">;</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">private</span> ElementChaineDouble<span style="color:#f92672">&lt;</span>E<span style="color:#f92672">&gt;</span> precedent <span style="color:#f92672">=</span> <span style="color:#66d9ef">this</span><span style="color:#f92672">;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#75715e">// [...]
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#f92672">}</span>
+</span></span></code></pre></div><ul>
+<li>La classe pour la liste est similaire:</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">ListeJavaChaineeDouble</span><span style="color:#f92672">&lt;</span>E <span style="color:#66d9ef">extends</span> Object<span style="color:#f92672">&gt;</span> <span style="color:#66d9ef">extends</span> ListeJava<span style="color:#f92672">&lt;</span>E<span style="color:#f92672">&gt;</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">private</span> <span style="color:#66d9ef">int</span> taille <span style="color:#f92672">=</span> 0<span style="color:#f92672">;</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">private</span> ElementChaineDouble<span style="color:#f92672">&lt;</span>E<span style="color:#f92672">&gt;</span> tete <span style="color:#f92672">=</span> <span style="color:#66d9ef">null</span><span style="color:#f92672">;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#75715e">// [...]
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span></code></pre></div><ul>
+<li>
+<p>Pour modifier un élément, on fait une boucle:</p>
+<ul>
+<li>soit en cherchant vers l&rsquo;avant
+<ul>
+<li>(lorsque la position est proche du début)</li>
+</ul>
+</li>
+<li>soit en cherchant vers l&rsquo;arrière
+<ul>
+<li>(lorsque la position est proche de la fin)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Pour insérer, on peut soit:</p>
+<ul>
+<li>insérer après un élément</li>
+<li>insérer avant un élément</li>
+</ul>
+</li>
+<li>
+<p>P.ex. insérer à la fin de la liste équivaut à:</p>
+<ul>
+<li>insérer avant la tête!</li>
+</ul>
+</li>
+</ul>
+<h2 id="efficacité-simple-vs-double">
+  Efficacité simple Vs double
+  <a class="anchor" href="#efficacit%c3%a9-simple-vs-double">#</a>
+</h2>
+<ul>
+<li>Pour ajouter à la fin:</li>
+</ul>
+<center>
+    <img src="add.png" width="90%"/>
+</center>
+<ul>
+<li>Pour retirer à la fin:</li>
+</ul>
+<center>
+    <img src="remove_fin.png" width="90%"/>
+</center>
+<ul>
+<li>Pour insérer au début:</li>
+</ul>
+<center>
+    <img src="insert_debut.png" width="90%"/>
+</center>
+<ul>
+<li>Pour retirer au début:</li>
+</ul>
+<center>
+    <img src="remove_debut.png" width="90%"/>
+</center>
+<ul>
+<li>Pour modifier au milieu:</li>
+</ul>
+<center>
+    <img src="set_alea.png" width="90%"/>
+</center>
 </article>
  
       
@@ -793,16 +1001,10 @@ https://github.com/alex-shpak/hugo-book
   <div class="flex flex-wrap justify-between">
 
 
-  <div><a class="flex align-center" href="https://github.com/cartesjava/cartesjava.github.io/commit/128d9cfb04e8a7054cbb76ff7719f45f683810c1" title='Dernière modification par Mathieu Bergeron | 2022-10-06' target="_blank" rel="noopener">
-      <img src="/svg/calendar.svg" class="book-icon" alt="Calendar" />
-      <span>2022-10-06</span>
-    </a>
-  </div>
-
 
 
   <div>
-    <a class="flex align-center" href="https://github.com/cartesjava/cartesjava.github.io/edit/main//content/listes/chainee_double/index.md" target="_blank" rel="noopener">
+    <a class="flex align-center" href="https://github.com/cartesjava/cartesjava.github.io/edit/main//content/listes/chainee_double/_index.md" target="_blank" rel="noopener">
       <img src="/svg/edit.svg" class="book-icon" alt="Edit" />
       <span>Suggérer une modification</span>
     </a>
@@ -854,7 +1056,14 @@ https://github.com/alex-shpak/hugo-book
   
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#liste-chaînée-double">Liste chaînée double</a></li>
+    <li><a href="#liste-chaînée-double">Liste chaînée double</a>
+      <ul>
+        <li><a href="#liste-chaînée-double-1">Liste chaînée double</a></li>
+        <li><a href="#exemple-ajouts-dans-liste-chaînée-double">Exemple: ajouts dans liste chaînée double</a></li>
+        <li><a href="#liste-chaînée-double-en-java">Liste chaînée double en Java</a></li>
+        <li><a href="#efficacité-simple-vs-double">Efficacité simple Vs double</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
 

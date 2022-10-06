@@ -115,33 +115,6 @@ Si on visualise du code typique avec les cartes, on va visualiser les référenc
     </item>
     
     <item>
-      <title>Liste par tableau</title>
-      <link>https://cartesjava.github.io/listes/tableau/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://cartesjava.github.io/listes/tableau/</guid>
-      <description>Liste par tableau #  </description>
-    </item>
-    
-    <item>
-      <title>Liste chaînée simple</title>
-      <link>https://cartesjava.github.io/listes/chainee_simple/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://cartesjava.github.io/listes/chainee_simple/</guid>
-      <description>Liste chaînée simple #  </description>
-    </item>
-    
-    <item>
-      <title>Liste chaînée double</title>
-      <link>https://cartesjava.github.io/listes/chainee_double/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://cartesjava.github.io/listes/chainee_double/</guid>
-      <description>Liste chaînée double #  </description>
-    </item>
-    
-    <item>
       <title>Arbre générique</title>
       <link>https://cartesjava.github.io/arbres/generique/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -157,15 +130,6 @@ Si on visualise du code typique avec les cartes, on va visualiser les référenc
       
       <guid>https://cartesjava.github.io/arbres/binaire/</guid>
       <description>Arbre binaire #  </description>
-    </item>
-    
-    <item>
-      <title>Mappage par fonction de hachage</title>
-      <link>https://cartesjava.github.io/mappage/hachage/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://cartesjava.github.io/mappage/hachage/</guid>
-      <description>Mappage par fonction de hachage #  </description>
     </item>
     
     <item>

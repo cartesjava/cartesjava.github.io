@@ -1,0 +1,8 @@
+digraph liste {
+    rankdir="LR";
+    node [fontname="Courrier"];
+    tete [label="tête" shape=plaintext]
+    null [label="null" shape=plaintext]
+
+    tete -> null;
+}

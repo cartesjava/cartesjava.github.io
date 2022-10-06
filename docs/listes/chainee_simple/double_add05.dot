@@ -1,0 +1,22 @@
+digraph liste {
+    rankdir="LR";
+    node [fontname="Courrier"];
+    tete [label="tête" shape=plaintext]
+    0 [label="a"];
+    1 [label="b"];
+    2 [label="c"];
+    3 [label="d"];
+
+    tete -> 0;
+
+    0 -> 1;
+    1 -> 2;
+    2 -> 3;
+    3 -> 0;
+
+    1 -> 0 [style="dotted"];
+    2 -> 1 [style="dotted"];
+    3 -> 2 [style="dotted"];
+
+    0 -> 3 [style="dotted"];
+}

@@ -3,14 +3,19 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://cartesjava.github.io/efficacite/temps/partie02/ChercheurNaif/</loc>
+    <lastmod>2022-10-06T15:31:54-04:00</lastmod>
   </url><url>
     <loc>https://cartesjava.github.io/efficacite/temps/partie02/TrieurNaif/</loc>
+    <lastmod>2022-10-06T15:31:54-04:00</lastmod>
   </url><url>
     <loc>https://cartesjava.github.io/efficacite/temps/partie02/TrieurNaif_valeurMinimale/</loc>
+    <lastmod>2022-10-06T15:31:54-04:00</lastmod>
   </url><url>
     <loc>https://cartesjava.github.io/efficacite/temps/partie02/TriFusion/</loc>
+    <lastmod>2022-10-06T15:31:54-04:00</lastmod>
   </url><url>
     <loc>https://cartesjava.github.io/efficacite/temps/partie02/TriFusion_fusionner/</loc>
+    <lastmod>2022-10-06T15:31:54-04:00</lastmod>
   </url><url>
     <loc>https://cartesjava.github.io/encadres/</loc>
     <lastmod>2022-10-06T14:17:03-04:00</lastmod>
@@ -37,12 +42,15 @@
     <lastmod>2022-10-06T15:19:55-04:00</lastmod>
   </url><url>
     <loc>https://cartesjava.github.io/efficacite/temps/partie01/</loc>
+    <lastmod>2022-10-06T15:31:54-04:00</lastmod>
   </url><url>
     <loc>https://cartesjava.github.io/modelisation/recursivite/fibonacci/</loc>
     <lastmod>2022-10-06T15:19:55-04:00</lastmod>
   </url><url>
     <loc>https://cartesjava.github.io/modelisation/json/format_json/</loc>
     <lastmod>2022-10-06T15:19:55-04:00</lastmod>
+  </url><url>
+    <loc>https://cartesjava.github.io/listes/tableau/</loc>
   </url><url>
     <loc>https://cartesjava.github.io/modelisation/json/modele/</loc>
     <lastmod>2022-10-06T15:19:55-04:00</lastmod>
@@ -75,6 +83,7 @@
     <lastmod>2022-10-06T14:17:03-04:00</lastmod>
   </url><url>
     <loc>https://cartesjava.github.io/efficacite/temps/partie02/</loc>
+    <lastmod>2022-10-06T15:31:54-04:00</lastmod>
   </url><url>
     <loc>https://cartesjava.github.io/intro/</loc>
     <lastmod>2022-10-06T14:17:03-04:00</lastmod>
@@ -82,11 +91,17 @@
     <loc>https://cartesjava.github.io/approche/ntro/</loc>
     <lastmod>2022-10-06T15:19:55-04:00</lastmod>
   </url><url>
+    <loc>https://cartesjava.github.io/mappage/hachage/</loc>
+  </url><url>
+    <loc>https://cartesjava.github.io/listes/chainee_simple/</loc>
+  </url><url>
     <loc>https://cartesjava.github.io/approche/</loc>
     <lastmod>2022-10-06T14:32:01-04:00</lastmod>
   </url><url>
     <loc>https://cartesjava.github.io/approche/cartes_a_jouer/</loc>
     <lastmod>2022-10-06T15:19:55-04:00</lastmod>
+  </url><url>
+    <loc>https://cartesjava.github.io/listes/chainee_double/</loc>
   </url><url>
     <loc>https://cartesjava.github.io/modelisation/</loc>
     <lastmod>2022-10-06T15:19:55-04:00</lastmod>
@@ -101,20 +116,12 @@
     <lastmod>2022-10-06T14:17:03-04:00</lastmod>
   </url><url>
     <loc>https://cartesjava.github.io/efficacite/temps/</loc>
+    <lastmod>2022-10-06T15:31:54-04:00</lastmod>
   </url><url>
     <loc>https://cartesjava.github.io/efficacite/espace/</loc>
     <lastmod>2022-10-06T14:17:03-04:00</lastmod>
   </url><url>
     <loc>https://cartesjava.github.io/listes/</loc>
-    <lastmod>2022-10-06T14:17:03-04:00</lastmod>
-  </url><url>
-    <loc>https://cartesjava.github.io/listes/tableau/</loc>
-    <lastmod>2022-10-06T14:17:03-04:00</lastmod>
-  </url><url>
-    <loc>https://cartesjava.github.io/listes/chainee_simple/</loc>
-    <lastmod>2022-10-06T14:17:03-04:00</lastmod>
-  </url><url>
-    <loc>https://cartesjava.github.io/listes/chainee_double/</loc>
     <lastmod>2022-10-06T14:17:03-04:00</lastmod>
   </url><url>
     <loc>https://cartesjava.github.io/arbres/</loc>
@@ -132,9 +139,6 @@
     <loc>https://cartesjava.github.io/mappage/</loc>
     <lastmod>2022-10-06T14:17:03-04:00</lastmod>
   </url><url>
-    <loc>https://cartesjava.github.io/mappage/hachage/</loc>
-    <lastmod>2022-10-06T14:17:03-04:00</lastmod>
-  </url><url>
     <loc>https://cartesjava.github.io/mappage/arbre/</loc>
     <lastmod>2022-10-06T14:17:03-04:00</lastmod>
   </url><url>
@@ -142,6 +146,7 @@
     <lastmod>2022-10-06T14:17:03-04:00</lastmod>
   </url><url>
     <loc>https://cartesjava.github.io/grand-o/</loc>
+    <lastmod>2022-10-06T15:31:54-04:00</lastmod>
   </url><url>
     <loc>https://cartesjava.github.io/modifier/</loc>
     <lastmod>2022-10-06T14:35:19-04:00</lastmod>
