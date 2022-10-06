@@ -8,50 +8,50 @@
     <language>fr-ca</language><atom:link href="https://cartesjava.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
-      <link>https://cartesjava.github.io/efficacite/temps/partie02/ChercheurNaif/</link>
+      <link>https://cartesjava.github.io/efficacite/temps02/ChercheurNaif/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cartesjava.github.io/efficacite/temps/partie02/ChercheurNaif/</guid>
+      <guid>https://cartesjava.github.io/efficacite/temps02/ChercheurNaif/</guid>
       <description>int trouverIndicePourValeur(tableau, valeur):
  POUR TOUS les éléments el du tableau:  SI el est égal à la valeur cherchée:  mémoriser l&amp;rsquo;indice i de l&amp;rsquo;élément el     retourner le dernier indice i mémorisé  </description>
     </item>
     
     <item>
       <title></title>
-      <link>https://cartesjava.github.io/efficacite/temps/partie02/TrieurNaif/</link>
+      <link>https://cartesjava.github.io/efficacite/temps02/TrieurNaif/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cartesjava.github.io/efficacite/temps/partie02/TrieurNaif/</guid>
+      <guid>https://cartesjava.github.io/efficacite/temps02/TrieurNaif/</guid>
       <description>Tableau&amp;lt;C&amp;gt; trier(Tableau&amp;lt;C&amp;gt; entree):
  CRÉER un tableau resultat vide TANT QUE le tableau entree n&amp;rsquo;est pas vide  appeler valeurMinimale et mémoriser la valeur de retour retirer cette valeur du tableau entree ajouter cette valeur à la fin du tableau resultat   retourner le tableau resultat  </description>
     </item>
     
     <item>
       <title></title>
-      <link>https://cartesjava.github.io/efficacite/temps/partie02/TrieurNaif_valeurMinimale/</link>
+      <link>https://cartesjava.github.io/efficacite/temps02/TrieurNaif_valeurMinimale/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cartesjava.github.io/efficacite/temps/partie02/TrieurNaif_valeurMinimale/</guid>
+      <guid>https://cartesjava.github.io/efficacite/temps02/TrieurNaif_valeurMinimale/</guid>
       <description>Valeur obtenirValeurMinimale(tableau):
  considérer que le premier élément du tableau est la valeur minimale POUR TOUS les éléments el du tableau:  SI el est plus petit que la valeur minimale courante:  mémoriser el comme la nouvelle valeur minimale courante     retourner la valeur minimale  </description>
     </item>
     
     <item>
       <title></title>
-      <link>https://cartesjava.github.io/efficacite/temps/partie02/TriFusion/</link>
+      <link>https://cartesjava.github.io/efficacite/temps02/TriFusion/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cartesjava.github.io/efficacite/temps/partie02/TriFusion/</guid>
+      <guid>https://cartesjava.github.io/efficacite/temps02/TriFusion/</guid>
       <description>Tableau trier(Tableau entree):
  CRÉER un tableau resultat vide SI entree contient un seul élément ou moins:  copier entree dans resultat   SINON:  diviser le tableau entree en deux sous-tableaux égaux appeler trier() pour trier chaque sous-tableau appeler fusionner() pour fusionner les deux sous-tableaux copier le tableau fusionné dans resultat   retourner le tableau resultat  </description>
     </item>
     
     <item>
       <title></title>
-      <link>https://cartesjava.github.io/efficacite/temps/partie02/TriFusion_fusionner/</link>
+      <link>https://cartesjava.github.io/efficacite/temps02/TriFusion_fusionner/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cartesjava.github.io/efficacite/temps/partie02/TriFusion_fusionner/</guid>
+      <guid>https://cartesjava.github.io/efficacite/temps02/TriFusion_fusionner/</guid>
       <description>Tableau fusionner(Tableau gauche, Tableau droite):
  CRÉER un tableau resultat vide TANT QUE gauche n&amp;rsquo;est pas vide ET QUE droite n&amp;rsquo;est pas vide:  SI le premier élément de gauche est plus petit que le premier élément de droite:  obtenir le premier élément de gauche retirer cet élément à gauche ajouter cet élément à la fin de resultat   SINON  obtenir le premier élément de droite retirer cet élément à droite ajouter cet élément à la fin de resultat     SI gauche n&amp;rsquo;est pas vide:  retirer chaque élément de gauche et les ajouter dans l&amp;rsquo;ordre à la fin de resultat   SINON:  retirer chaque élément de droite et les ajouter dans l&amp;rsquo;ordre à la fin de resultat   retourner le tableau resultat  </description>
     </item>

@@ -2,20 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://cartesjava.github.io/efficacite/temps/partie02/ChercheurNaif/</loc>
-    <lastmod>2022-10-06T15:31:54-04:00</lastmod>
+    <loc>https://cartesjava.github.io/efficacite/temps02/ChercheurNaif/</loc>
   </url><url>
-    <loc>https://cartesjava.github.io/efficacite/temps/partie02/TrieurNaif/</loc>
-    <lastmod>2022-10-06T15:31:54-04:00</lastmod>
+    <loc>https://cartesjava.github.io/efficacite/temps02/TrieurNaif/</loc>
   </url><url>
-    <loc>https://cartesjava.github.io/efficacite/temps/partie02/TrieurNaif_valeurMinimale/</loc>
-    <lastmod>2022-10-06T15:31:54-04:00</lastmod>
+    <loc>https://cartesjava.github.io/efficacite/temps02/TrieurNaif_valeurMinimale/</loc>
   </url><url>
-    <loc>https://cartesjava.github.io/efficacite/temps/partie02/TriFusion/</loc>
-    <lastmod>2022-10-06T15:31:54-04:00</lastmod>
+    <loc>https://cartesjava.github.io/efficacite/temps02/TriFusion/</loc>
   </url><url>
-    <loc>https://cartesjava.github.io/efficacite/temps/partie02/TriFusion_fusionner/</loc>
-    <lastmod>2022-10-06T15:31:54-04:00</lastmod>
+    <loc>https://cartesjava.github.io/efficacite/temps02/TriFusion_fusionner/</loc>
   </url><url>
     <loc>https://cartesjava.github.io/encadres/</loc>
     <lastmod>2022-10-06T14:17:03-04:00</lastmod>
@@ -40,9 +35,6 @@
   </url><url>
     <loc>https://cartesjava.github.io/modelisation/java/dessiner_tableau/</loc>
     <lastmod>2022-10-06T15:19:55-04:00</lastmod>
-  </url><url>
-    <loc>https://cartesjava.github.io/efficacite/temps/partie01/</loc>
-    <lastmod>2022-10-06T15:31:54-04:00</lastmod>
   </url><url>
     <loc>https://cartesjava.github.io/modelisation/recursivite/fibonacci/</loc>
     <lastmod>2022-10-06T15:19:55-04:00</lastmod>
@@ -83,8 +75,7 @@
     <loc>https://cartesjava.github.io/procedures/gitlab/inscription/</loc>
     <lastmod>2022-10-06T14:17:03-04:00</lastmod>
   </url><url>
-    <loc>https://cartesjava.github.io/efficacite/temps/partie02/</loc>
-    <lastmod>2022-10-06T15:31:54-04:00</lastmod>
+    <loc>https://cartesjava.github.io/efficacite/temps01/</loc>
   </url><url>
     <loc>https://cartesjava.github.io/intro/</loc>
     <lastmod>2022-10-06T14:17:03-04:00</lastmod>
@@ -94,6 +85,8 @@
   </url><url>
     <loc>https://cartesjava.github.io/mappage/hachage/</loc>
     <lastmod>2022-10-06T15:53:06-04:00</lastmod>
+  </url><url>
+    <loc>https://cartesjava.github.io/efficacite/temps02/</loc>
   </url><url>
     <loc>https://cartesjava.github.io/listes/chainee_simple/</loc>
     <lastmod>2022-10-06T15:53:06-04:00</lastmod>
@@ -116,13 +109,10 @@
     <loc>https://cartesjava.github.io/modelisation/java/</loc>
     <lastmod>2022-10-06T15:19:55-04:00</lastmod>
   </url><url>
-    <loc>https://cartesjava.github.io/efficacite/</loc>
+    <loc>https://cartesjava.github.io/efficacite/espace/</loc>
     <lastmod>2022-10-06T14:17:03-04:00</lastmod>
   </url><url>
-    <loc>https://cartesjava.github.io/efficacite/temps/</loc>
-    <lastmod>2022-10-06T15:31:54-04:00</lastmod>
-  </url><url>
-    <loc>https://cartesjava.github.io/efficacite/espace/</loc>
+    <loc>https://cartesjava.github.io/efficacite/</loc>
     <lastmod>2022-10-06T14:17:03-04:00</lastmod>
   </url><url>
     <loc>https://cartesjava.github.io/listes/</loc>
