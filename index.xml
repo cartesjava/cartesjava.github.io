@@ -2,25 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Code les cartes! on Cartes Java</title>
-    <link>cartesjava.github.io/</link>
+    <link>https://cartesjava.github.io/</link>
     <description>Recent content in Code les cartes! on Cartes Java</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>fr-ca</language><atom:link href="cartesjava.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <language>fr-ca</language><atom:link href="https://cartesjava.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
-      <link>cartesjava.github.io/encadres/</link>
+      <link>https://cartesjava.github.io/encadres/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>cartesjava.github.io/encadres/</guid>
+      <guid>https://cartesjava.github.io/encadres/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Bilan juin 2022</title>
-      <link>cartesjava.github.io/preface/bilan_juin_2022/</link>
+      <link>https://cartesjava.github.io/preface/bilan_juin_2022/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>cartesjava.github.io/preface/bilan_juin_2022/</guid>
+      <guid>https://cartesjava.github.io/preface/bilan_juin_2022/</guid>
       <description>Bilan juin 2022 #  Projets étudiants #    De gauche à droite:
  Zein-El-Abdin Hazimeh Mathieu Bergeron Marlond Augustin Adrien Joséphine-Olivier       Crédit photo: Marlond Augustin Les participants ont signé un formulaire de consentement concernant la reproduction des trois photos ci-haut.  Fonctionalités implantées #  Interface de base #    NOTES:
  Des améliorations à l&amp;rsquo;interface sont à venir (projet de Zein Hazimeh)  Validation interactive du code #  Comparaison du code étudiant (erreur à l&amp;rsquo;étape 22):</description>
@@ -28,145 +28,145 @@
     
     <item>
       <title>Introduction</title>
-      <link>cartesjava.github.io/intro/</link>
+      <link>https://cartesjava.github.io/intro/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>cartesjava.github.io/intro/</guid>
+      <guid>https://cartesjava.github.io/intro/</guid>
       <description>Introduction #  </description>
     </item>
     
     <item>
       <title>Utilisation des jeux de cartes</title>
-      <link>cartesjava.github.io/approche/jeux_de_cartes/</link>
+      <link>https://cartesjava.github.io/approche/jeux_de_cartes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>cartesjava.github.io/approche/jeux_de_cartes/</guid>
+      <guid>https://cartesjava.github.io/approche/jeux_de_cartes/</guid>
       <description>Utilisation des jeux de cartes #  Limites de la visualisation avec un jeu de carte #  </description>
     </item>
     
     <item>
       <title>Cadriciel Ntro</title>
-      <link>cartesjava.github.io/approche/ntro/</link>
+      <link>https://cartesjava.github.io/approche/ntro/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>cartesjava.github.io/approche/ntro/</guid>
+      <guid>https://cartesjava.github.io/approche/ntro/</guid>
       <description>Cadriciel Ntro #  </description>
     </item>
     
     <item>
       <title>Modéliser en JSON</title>
-      <link>cartesjava.github.io/modelisation/json/</link>
+      <link>https://cartesjava.github.io/modelisation/json/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>cartesjava.github.io/modelisation/json/</guid>
+      <guid>https://cartesjava.github.io/modelisation/json/</guid>
       <description>Modéliser en JSON #  </description>
     </item>
     
     <item>
       <title>Modéliser en Java</title>
-      <link>cartesjava.github.io/modelisation/java/</link>
+      <link>https://cartesjava.github.io/modelisation/java/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>cartesjava.github.io/modelisation/java/</guid>
+      <guid>https://cartesjava.github.io/modelisation/java/</guid>
       <description>Modéliser en Java #  </description>
     </item>
     
     <item>
       <title>Efficacité en temps</title>
-      <link>cartesjava.github.io/efficacite/temps/</link>
+      <link>https://cartesjava.github.io/efficacite/temps/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>cartesjava.github.io/efficacite/temps/</guid>
+      <guid>https://cartesjava.github.io/efficacite/temps/</guid>
       <description>{{ page src=&amp;ldquo;theorie.example&amp;rdquo; skip-videos=&amp;ldquo;true&amp;rdquo; summary-only=&amp;ldquo;false&amp;rdquo; title-level=&amp;ldquo;1&amp;rdquo; }}</description>
     </item>
     
     <item>
       <title>Efficacité en espace</title>
-      <link>cartesjava.github.io/efficacite/espace/</link>
+      <link>https://cartesjava.github.io/efficacite/espace/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>cartesjava.github.io/efficacite/espace/</guid>
+      <guid>https://cartesjava.github.io/efficacite/espace/</guid>
       <description>Efficacité en espace #  </description>
     </item>
     
     <item>
       <title>Liste par tableau</title>
-      <link>cartesjava.github.io/listes/tableau/</link>
+      <link>https://cartesjava.github.io/listes/tableau/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>cartesjava.github.io/listes/tableau/</guid>
+      <guid>https://cartesjava.github.io/listes/tableau/</guid>
       <description>Liste par tableau #  </description>
     </item>
     
     <item>
       <title>Liste chaînée simple</title>
-      <link>cartesjava.github.io/listes/chainee_simple/</link>
+      <link>https://cartesjava.github.io/listes/chainee_simple/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>cartesjava.github.io/listes/chainee_simple/</guid>
+      <guid>https://cartesjava.github.io/listes/chainee_simple/</guid>
       <description>Liste chaînée simple #  </description>
     </item>
     
     <item>
       <title>Liste chaînée double</title>
-      <link>cartesjava.github.io/listes/chainee_double/</link>
+      <link>https://cartesjava.github.io/listes/chainee_double/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>cartesjava.github.io/listes/chainee_double/</guid>
+      <guid>https://cartesjava.github.io/listes/chainee_double/</guid>
       <description>Liste chaînée double #  </description>
     </item>
     
     <item>
       <title>Arbre générique</title>
-      <link>cartesjava.github.io/arbres/generique/</link>
+      <link>https://cartesjava.github.io/arbres/generique/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>cartesjava.github.io/arbres/generique/</guid>
+      <guid>https://cartesjava.github.io/arbres/generique/</guid>
       <description>Arbre générique #  </description>
     </item>
     
     <item>
       <title>Arbre binaire</title>
-      <link>cartesjava.github.io/arbres/binaire/</link>
+      <link>https://cartesjava.github.io/arbres/binaire/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>cartesjava.github.io/arbres/binaire/</guid>
+      <guid>https://cartesjava.github.io/arbres/binaire/</guid>
       <description>Arbre binaire #  </description>
     </item>
     
     <item>
       <title>Mappage par fonction de hachage</title>
-      <link>cartesjava.github.io/mappage/hachage/</link>
+      <link>https://cartesjava.github.io/mappage/hachage/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>cartesjava.github.io/mappage/hachage/</guid>
+      <guid>https://cartesjava.github.io/mappage/hachage/</guid>
       <description>Mappage par fonction de hachage #  </description>
     </item>
     
     <item>
       <title>Mappage par arbre</title>
-      <link>cartesjava.github.io/mappage/arbre/</link>
+      <link>https://cartesjava.github.io/mappage/arbre/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>cartesjava.github.io/mappage/arbre/</guid>
+      <guid>https://cartesjava.github.io/mappage/arbre/</guid>
       <description>Mappage par arbre #  </description>
     </item>
     
     <item>
       <title>Conclusion</title>
-      <link>cartesjava.github.io/conclusion/</link>
+      <link>https://cartesjava.github.io/conclusion/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>cartesjava.github.io/conclusion/</guid>
+      <guid>https://cartesjava.github.io/conclusion/</guid>
       <description>Conclusion #  </description>
     </item>
     
     <item>
       <title>Annexe 1: la notation grand O</title>
-      <link>cartesjava.github.io/grand-o/</link>
+      <link>https://cartesjava.github.io/grand-o/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>cartesjava.github.io/grand-o/</guid>
+      <guid>https://cartesjava.github.io/grand-o/</guid>
       <description>La notation grand O #  </description>
     </item>
     

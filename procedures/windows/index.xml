@@ -2,9 +2,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Cartes Java</title>
-    <link>cartesjava.github.io/procedures/windows/</link>
+    <link>https://cartesjava.github.io/procedures/windows/</link>
     <description>Recent content on Cartes Java</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>fr-ca</language><atom:link href="cartesjava.github.io/procedures/windows/index.xml" rel="self" type="application/rss+xml" />
+    <language>fr-ca</language><atom:link href="https://cartesjava.github.io/procedures/windows/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

@@ -2,25 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Modéliser des jeux de cartes on Cartes Java</title>
-    <link>cartesjava.github.io/modelisation/</link>
+    <link>https://cartesjava.github.io/modelisation/</link>
     <description>Recent content in Modéliser des jeux de cartes on Cartes Java</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>fr-ca</language><atom:link href="cartesjava.github.io/modelisation/index.xml" rel="self" type="application/rss+xml" />
+    <language>fr-ca</language><atom:link href="https://cartesjava.github.io/modelisation/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Modéliser en JSON</title>
-      <link>cartesjava.github.io/modelisation/json/</link>
+      <link>https://cartesjava.github.io/modelisation/json/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>cartesjava.github.io/modelisation/json/</guid>
+      <guid>https://cartesjava.github.io/modelisation/json/</guid>
       <description>Modéliser en JSON #  </description>
     </item>
     
     <item>
       <title>Modéliser en Java</title>
-      <link>cartesjava.github.io/modelisation/java/</link>
+      <link>https://cartesjava.github.io/modelisation/java/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>cartesjava.github.io/modelisation/java/</guid>
+      <guid>https://cartesjava.github.io/modelisation/java/</guid>
       <description>Modéliser en Java #  </description>
     </item>
     

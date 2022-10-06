@@ -2,9 +2,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Procédure: s&#39;inscrire à GitLab on Cartes Java</title>
-    <link>cartesjava.github.io/procedures/gitlab/inscription/</link>
+    <link>https://cartesjava.github.io/procedures/gitlab/inscription/</link>
     <description>Recent content in Procédure: s&#39;inscrire à GitLab on Cartes Java</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>fr-ca</language><atom:link href="cartesjava.github.io/procedures/gitlab/inscription/index.xml" rel="self" type="application/rss+xml" />
+    <language>fr-ca</language><atom:link href="https://cartesjava.github.io/procedures/gitlab/inscription/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
