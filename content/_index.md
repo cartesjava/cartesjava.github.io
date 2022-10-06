@@ -1,5 +1,5 @@
 ---
-title: "Code les cartes!"
+title: "Cartes Java"
 weight: 1
 # bookFlatSection: false
 # bookToc: true
