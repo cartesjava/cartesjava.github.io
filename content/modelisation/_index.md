@@ -1,7 +1,7 @@
 ---
-title: "Modéliser des jeux de cartes"
+title: "Modéliser des données"
 weight: 30
 bookCollapseSection: true
 ---
 
-# Modéliser des jeux de cartes
+# Modéliser des données
