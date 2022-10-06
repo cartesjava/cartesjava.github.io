@@ -6,23 +6,5 @@
     <description>Recent content in Présentation de l&#39;approche on Cartes Java</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr-ca</language><atom:link href="https://cartesjava.github.io/approche/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Utilisation des jeux de cartes</title>
-      <link>https://cartesjava.github.io/approche/jeux_de_cartes/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://cartesjava.github.io/approche/jeux_de_cartes/</guid>
-      <description>Utilisation des jeux de cartes #  Limites de la visualisation avec un jeu de carte #  </description>
-    </item>
-    
-    <item>
-      <title>Cadriciel Ntro</title>
-      <link>https://cartesjava.github.io/approche/ntro/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://cartesjava.github.io/approche/ntro/</guid>
-      <description>Cadriciel Ntro #  </description>
-    </item>
-    
   </channel>
 </rss>

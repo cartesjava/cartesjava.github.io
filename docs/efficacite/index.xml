@@ -7,15 +7,6 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>fr-ca</language><atom:link href="https://cartesjava.github.io/efficacite/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Efficacité en temps</title>
-      <link>https://cartesjava.github.io/efficacite/temps/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://cartesjava.github.io/efficacite/temps/</guid>
-      <description>{{ page src=&amp;ldquo;theorie.example&amp;rdquo; skip-videos=&amp;ldquo;true&amp;rdquo; summary-only=&amp;ldquo;false&amp;rdquo; title-level=&amp;ldquo;1&amp;rdquo; }}</description>
-    </item>
-    
-    <item>
       <title>Efficacité en espace</title>
       <link>https://cartesjava.github.io/efficacite/espace/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

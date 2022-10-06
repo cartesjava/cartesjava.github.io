@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Modéliser en Java on Cartes Java</title>
+    <link>https://cartesjava.github.io/modelisation/java/</link>
+    <description>Recent content in Modéliser en Java on Cartes Java</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr-ca</language><atom:link href="https://cartesjava.github.io/modelisation/java/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Dessiner un tableau d&#39;objets</title>
+      <link>https://cartesjava.github.io/modelisation/java/dessiner_tableau/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cartesjava.github.io/modelisation/java/dessiner_tableau/</guid>
+      <description>Dessiner un tableau d&amp;rsquo;objets #  Visualiser les objets #  Exemple 1 #  Exemple 2 #  Comprendre l&amp;rsquo;effet d&amp;rsquo;instructions typiques #  Accéder à une valeur #  Example 1 #    Objets au départ Instructions Résultat      memoireA.getNumero(); memoireA.getSorte();   5 &amp;#34;TREFLE&amp;#34;    Example 2 #    Objets au départ Instructions Résultat      cartes[2].</description>
+    </item>
+    
+    <item>
+      <title>Visualiser les références multiples</title>
+      <link>https://cartesjava.github.io/modelisation/java/references_multiples/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cartesjava.github.io/modelisation/java/references_multiples/</guid>
+      <description>Visualiser les références multiples #  Typiquement, on va copier une référence à un objet, plutôt que déplacer l&amp;rsquo;objet.
+   Typique   Plus rare     memoireA = cartes[0];   memoireA = cartes[0]; cartes[0] = null;    Le résultat est qu&amp;rsquo;on a des références multiples: plusieurs références vers le même objet.
+Si on visualise du code typique avec les cartes, on va visualiser les références multiples en affichant plusieurs copies d&amp;rsquo;une carte.</description>
+    </item>
+    
+  </channel>
+</rss>

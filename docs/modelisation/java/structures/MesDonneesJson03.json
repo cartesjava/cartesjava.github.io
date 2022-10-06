@@ -1,0 +1,23 @@
+{
+  "_C": "MesDonneesJson",
+  "racine": {
+    "vehicules": [
+      {
+        "nombreDeRoues": 2,
+        "type": "mobilette",
+        "etat": {
+          "besoinChangementHuile": false,
+          "kilometrage": 14.45
+        }
+      },
+      {
+        "nombreDeRoues": 4,
+        "type": "camion",
+        "etat": {
+          "besoinChangementHuile": true,
+          "kilometrage": 13344.5
+        }
+      }
+    ]
+  }
+}

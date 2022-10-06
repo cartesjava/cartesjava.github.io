@@ -1,0 +1,14 @@
+digraph "MonTableau" {
+graph ["rankdir"="LR","compound"="true","ranksep"="1.0","nodesep"="1.0"]
+"/" ["label"="<_C>MonTableau|{i|0}|{cartes|{{0|<cartes__V_0_0>}|{1|<cartes__V_1_1>}|{2|<cartes__V_2_2>}|{3|<cartes__V_3_3>}}}|{aDeplacer|3}|{memoireA|<memoireA_memoireA>}|{memoireB|<memoireB_memoireB>}","style"="filled","fillcolor"="white","shape"="record"]
+"/cartes/0" ["label"="<_C>Carte|{numero|2}|{sorte|\"COEUR\"}","style"="filled","fillcolor"="white","shape"="record"]
+"/cartes/1" ["label"="<_C>Carte|{numero|5}|{sorte|\"TREFLE\"}","style"="filled","fillcolor"="white","shape"="record"]
+"/cartes/2" ["label"="<_C>Carte|{numero|3}|{sorte|\"CARREAU\"}","style"="filled","fillcolor"="white","shape"="record"]
+"/memoireA" ["label"="<_C>Carte|{numero|2}|{sorte|\"TREFLE\"}","style"="filled","fillcolor"="white","shape"="record"]
+"/":"cartes__V_3_3":c -> "/cartes/0":"_C" ["tailclip"="false","arrowtail"="dot","dir"="both","label"=""]
+"/":"cartes__V_2_2":c -> "/cartes/2":"_C" ["tailclip"="false","arrowtail"="dot","dir"="both","label"=""]
+"/":"cartes__V_1_1":c -> "/cartes/1":"_C" ["tailclip"="false","arrowtail"="dot","dir"="both","label"=""]
+"/":"cartes__V_0_0":c -> "/cartes/0":"_C" ["tailclip"="false","arrowtail"="dot","dir"="both","label"=""]
+"/":"memoireB_memoireB":c -> "/memoireA":"_C" ["tailclip"="false","arrowtail"="dot","dir"="both","label"=""]
+"/":"memoireA_memoireA":c -> "/memoireA":"_C" ["tailclip"="false","arrowtail"="dot","dir"="both","label"=""]
+}
