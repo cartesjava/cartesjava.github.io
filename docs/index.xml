@@ -133,21 +133,25 @@ Si on visualise du code typique avec les cartes, on va visualiser les référenc
     </item>
     
     <item>
-      <title>Mappage par arbre</title>
-      <link>https://cartesjava.github.io/mappage/arbre/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://cartesjava.github.io/mappage/arbre/</guid>
-      <description>Mappage par arbre #  </description>
-    </item>
-    
-    <item>
       <title>Conclusion</title>
       <link>https://cartesjava.github.io/conclusion/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://cartesjava.github.io/conclusion/</guid>
       <description>Conclusion #  </description>
+    </item>
+    
+    <item>
+      <title>Mappage avec arbre</title>
+      <link>https://cartesjava.github.io/mappage/arbre/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cartesjava.github.io/mappage/arbre/</guid>
+      <description>Mappage avec arbre #    On peut implanter un map avec un arbre binaire de recherche
+  Il faut que chaque noeud soit une paire
+  Considérer le map {0:&#39;w&#39;, 1:&#39;h&#39;, 2:&#39;t&#39;, 3:&#39;d&#39;, 4:&#39;a&#39;, 5:&#39;z&#39;, 6:&#39;h&#39;}
+  Voici l&amp;rsquo;arbre avec uniquement les clés:
+   RAPPEL:  chaque noeud a au plus deux enfants à gauche il y a toujours des valeurs plus petites à droite il y a toujours des valeurs plus grandes      Pour faire un map, il faut mémoriser des paires clé/valeur</description>
     </item>
     
   </channel>

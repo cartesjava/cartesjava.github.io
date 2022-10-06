@@ -3,19 +3,27 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Mappage par arbre #  ">
+<meta name="description" content="Mappage avec arbre #    On peut implanter un map avec un arbre binaire de recherche
+  Il faut que chaque noeud soit une paire
+  Considérer le map {0:&#39;w&#39;, 1:&#39;h&#39;, 2:&#39;t&#39;, 3:&#39;d&#39;, 4:&#39;a&#39;, 5:&#39;z&#39;, 6:&#39;h&#39;}
+  Voici l&rsquo;arbre avec uniquement les clés:
+   RAPPEL:  chaque noeud a au plus deux enfants à gauche il y a toujours des valeurs plus petites à droite il y a toujours des valeurs plus grandes      Pour faire un map, il faut mémoriser des paires clé/valeur">
 <meta name="theme-color" content="#FFFFFF">
-<meta name="color-scheme" content="light dark"><meta property="og:title" content="Mappage par arbre" />
-<meta property="og:description" content="Mappage par arbre #  " />
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="Mappage avec arbre" />
+<meta property="og:description" content="Mappage avec arbre #    On peut implanter un map avec un arbre binaire de recherche
+  Il faut que chaque noeud soit une paire
+  Considérer le map {0:&#39;w&#39;, 1:&#39;h&#39;, 2:&#39;t&#39;, 3:&#39;d&#39;, 4:&#39;a&#39;, 5:&#39;z&#39;, 6:&#39;h&#39;}
+  Voici l&rsquo;arbre avec uniquement les clés:
+   RAPPEL:  chaque noeud a au plus deux enfants à gauche il y a toujours des valeurs plus petites à droite il y a toujours des valeurs plus grandes      Pour faire un map, il faut mémoriser des paires clé/valeur" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://cartesjava.github.io/mappage/arbre/" /><meta property="article:section" content="mappage" />
 
-<meta property="article:modified_time" content="2022-10-06T14:17:03-04:00" />
+<meta property="article:modified_time" content="2022-10-06T15:55:10-04:00" />
 
 <title>
 
 
-    Mappage par arbre 
+    Mappage avec arbre 
 
 
 
@@ -24,7 +32,7 @@
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.62522f734605549ffb41c7c071c68ae6cea09d216f30ede20c344054d503fc2f.css" integrity="sha256-YlIvc0YFVJ/7QcfAccaK5s6gnSFvMO3iDDRAVNUD/C8=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/fr.search.min.68eae2a48302497ce91574237c694f25eedeec10e55ed8aecda792511181a9b0.js" integrity="sha256-aOripIMCSXzpFXQjfGlPJe7e7BDlXtiuzaeSURGBqbA=" crossorigin="anonymous"></script>
+  <script defer src="/fr.search.min.f62603a0ec949d3c85a644344e6613660c250f466f26963e5390745093b2e473.js" integrity="sha256-9iYDoOyUnTyFpkQ0TmYTZgwlD0ZvJpY&#43;U5B0UJOy5HM=" crossorigin="anonymous"></script>
 
   <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" integrity="sha256-b2&#43;Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC&#43;NdcPIvZhzk=" crossorigin="anonymous"></script>
 
@@ -675,7 +683,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/mappage/arbre/" class=" active">Mappage par arbre</a>
+    <a href="/mappage/arbre/" class=" active">Mappage avec arbre</a>
   
 
         </li>
@@ -771,7 +779,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>Mappage par arbre</strong>
+  <strong>Mappage avec arbre</strong>
 
   <label for="toc-control">
     
@@ -787,7 +795,13 @@ https://github.com/alex-shpak/hugo-book
   
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#mappage-par-arbre">Mappage par arbre</a></li>
+    <li><a href="#mappage-avec-arbre">Mappage avec arbre</a>
+      <ul>
+        <li><a href="#problème-defficacité">Problème d&rsquo;efficacité</a></li>
+        <li><a href="#sassurer-davoir-des-arbres-équilibrés">S&rsquo;assurer d&rsquo;avoir des arbres équilibrés</a></li>
+        <li><a href="#performance-en-pratique">Performance en pratique</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
 
@@ -800,10 +814,290 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown"><h1 id="mappage-par-arbre">
-  Mappage par arbre
-  <a class="anchor" href="#mappage-par-arbre">#</a>
+  <article class="markdown"><h1 id="mappage-avec-arbre">
+  Mappage avec arbre
+  <a class="anchor" href="#mappage-avec-arbre">#</a>
 </h1>
+<ul>
+<li>
+<p>On peut implanter un map avec un arbre binaire de recherche</p>
+</li>
+<li>
+<p>Il faut que chaque noeud soit une paire</p>
+</li>
+<li>
+<p>Considérer le map <code>{0:'w', 1:'h', 2:'t', 3:'d', 4:'a', 5:'z', 6:'h'}</code></p>
+</li>
+<li>
+<p>Voici l&rsquo;arbre avec uniquement les clés:</p>
+  <center>
+      <img src="arbre_cles.svg" width="80%"/>
+  </center>
+<ul>
+<li>RAPPEL:
+<ul>
+<li>chaque noeud a au plus deux enfants</li>
+<li>à gauche il y a toujours des valeurs plus petites</li>
+<li>à droite il y a toujours des valeurs plus grandes</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Pour faire un map, il faut mémoriser des paires clé/valeur</p>
+<ul>
+<li>mais quand même chercher avec la clé</li>
+</ul>
+</li>
+</ul>
+<center>
+    <img src="arbre_paires.svg" width="80%"/>
+</center>
+<ul>
+<li>Donc, on va:
+<ul>
+<li>trouver un noeud en cherchant la clé</li>
+<li>une fois le noeud trouvé, on va obtenir ou modifier la valeur</li>
+</ul>
+</li>
+</ul>
+<h2 id="problème-defficacité">
+  Problème d&rsquo;efficacité
+  <a class="anchor" href="#probl%c3%a8me-defficacit%c3%a9">#</a>
+</h2>
+<ul>
+<li>
+<p>Pour que la recherche soit efficace, il faut que l&rsquo;arbre soit équilibré</p>
+<ul>
+<li>c-à-d l&rsquo;abre doit être aussi gros à gauche qu&rsquo;à droite</li>
+<li>comme ça on peut utiliser l&rsquo;approche «diviser pour régner»
+<ul>
+<li>c-à-d diviser la recherche en deux à chaque étape</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Par exemple, l&rsquo;arbre suivant est valide, mais ne permet pas de recherche efficace:</p>
+</li>
+</ul>
+<center>
+    <img src="arbre_desequilibre07.svg" width="80%"/>
+</center>
+<ul>
+<li>Dans le cas ci-haut, la recherche n&rsquo;est pas plus effiace que pour une liste chaînée</li>
+</ul>
+<h2 id="sassurer-davoir-des-arbres-équilibrés">
+  S&rsquo;assurer d&rsquo;avoir des arbres équilibrés
+  <a class="anchor" href="#sassurer-davoir-des-arbres-%c3%a9quilibr%c3%a9s">#</a>
+</h2>
+<ul>
+<li>
+<p>Selon l&rsquo;ordre d&rsquo;insertion, l&rsquo;arbre sera équilibré ou non.</p>
+</li>
+<li>
+<p>Si on insère <code>3,1,5,0,2,4,6</code>, l&rsquo;arbre est équilibré:</p>
+</li>
+</ul>
+<table>
+<tr>
+<td>
+<code>arbre.inserer(3)</code>
+</td>
+<td>
+<img src="arbre_insertion_equilibre01.svg">
+</td>
+</tr>
+<tr>
+<td>
+<code>arbre.inserer(1)</code>
+</td>
+<td>
+<img src="arbre_insertion_equilibre02.svg">
+</td>
+</tr>
+<tr>
+<td>
+<code>arbre.inserer(5)</code>
+</td>
+<td>
+<img src="arbre_insertion_equilibre03.svg">
+</td>
+</tr>
+<tr>
+<td>
+<code>arbre.inserer(0)</code>
+</td>
+<td>
+<img src="arbre_insertion_equilibre04.svg">
+</td>
+</tr>
+<tr>
+<td>
+<code>arbre.inserer(2)</code>
+</td>
+<td>
+<img src="arbre_insertion_equilibre05.svg">
+</td>
+</tr>
+<tr>
+<td>
+<code>arbre.inserer(4)</code>
+</td>
+<td>
+<img src="arbre_insertion_equilibre06.svg">
+</td>
+</tr>
+<tr>
+<td>
+<code>arbre.inserer(6)</code>
+</td>
+<td>
+<img src="arbre_insertion_equilibre07.svg">
+</td>
+</tr>
+</table>
+<ul>
+<li>Mais si on insère <code>6,5,4,3,2,1,0</code>, l&rsquo;arbre est complétement déséquilibré</li>
+</ul>
+<table>
+<tr>
+<td>
+<code>arbre.inserer(6)</code>
+</td>
+<td>
+<img src="arbre_desequilibre01.svg">
+</td>
+</tr>
+<tr>
+<td>
+<code>arbre.inserer(5)</code>
+</td>
+<td>
+<img src="arbre_desequilibre02.svg">
+</td>
+</tr>
+<tr>
+<td>
+<code>arbre.inserer(4)</code>
+</td>
+<td>
+<img src="arbre_desequilibre03.svg">
+</td>
+</tr>
+<tr>
+<td>
+<code>arbre.inserer(3)</code>
+</td>
+<td>
+<img src="arbre_desequilibre04.svg">
+</td>
+</tr>
+<tr>
+<td>
+<code>arbre.inserer(2)</code>
+</td>
+<td>
+<img src="arbre_desequilibre05.svg">
+</td>
+</tr>
+<tr>
+<td>
+<code>arbre.inserer(1)</code>
+</td>
+<td>
+<img src="arbre_desequilibre06.svg">
+</td>
+</tr>
+<tr>
+<td>
+<code>arbre.inserer(0)</code>
+</td>
+<td>
+<img src="arbre_desequilibre07.svg">
+</td>
+</tr>
+</table>
+<ul>
+<li>
+<p>Évidement, on a pas de contrôle sur l&rsquo;ordre d&rsquo;insertion des éléments</p>
+</li>
+<li>
+<p>La solution est de ré-équilibrer l&rsquo;arbre après chaque insertion</p>
+</li>
+</ul>
+<table>
+<tr>
+<td>
+<code>arbre.inserer(3)</code>
+</td>
+<td>
+<img src="arbre_insertion_desequilibre01.svg">
+</td>
+</tr>
+<tr>
+<td>
+<code>arbre.inserer(1)</code>
+</td>
+<td>
+<img src="arbre_insertion_desequilibre02.svg">
+</td>
+</tr>
+<tr>
+<td>
+<code>arbre.inserer(0)</code>
+</td>
+<td>
+<img src="arbre_insertion_desequilibre03.svg">
+</td>
+</tr>
+<tr>
+<td>
+<code>arbre.equilibrer()</code>
+</td>
+<td>
+<img src="arbre_rotation.svg">
+</td>
+</tr>
+</table>
+<ul>
+<li>
+<p>L&rsquo;opération pour équilibrer l&rsquo;arbre est appelée une rotation</p>
+<ul>
+<li>p.ex. pour l&rsquo;arbre ci-haut:
+<ul>
+<li>le <code>3</code> tourne vers la droite et descend</li>
+<li>le <code>1</code> tourne vers la droite et monte</li>
+<li>le <code>0</code> tourne vers la droite et suit le <code>1</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Si on équilibre à chaque insertion, ce n&rsquo;est pas coûteux en temps</p>
+<ul>
+<li>c&rsquo;est par contre délicat à coder</li>
+</ul>
+</li>
+</ul>
+<h2 id="performance-en-pratique">
+  Performance en pratique
+  <a class="anchor" href="#performance-en-pratique">#</a>
+</h2>
+<ul>
+<li>
+<p>En général, un peu moins bon qu&rsquo;une table de hachage</p>
+</li>
+<li>
+<p>Mais prend moins d&rsquo;espace mémoire</p>
+</li>
+</ul>
+<center>
+    <img src="performance.png" width="100%"/>
+</center>
+<ul>
+<li>RAPPEL: l&rsquo;efficacité de la table de hachage peut varier selon la taille de la table et la fonction de hachage</li>
+</ul>
 </article>
  
       
@@ -813,7 +1107,7 @@ https://github.com/alex-shpak/hugo-book
   <div class="flex flex-wrap justify-between">
 
 
-  <div><a class="flex align-center" href="https://github.com/cartesjava/cartesjava.github.io/commit/128d9cfb04e8a7054cbb76ff7719f45f683810c1" title='Dernière modification par Mathieu Bergeron | 2022-10-06' target="_blank" rel="noopener">
+  <div><a class="flex align-center" href="https://github.com/cartesjava/cartesjava.github.io/commit/9d8462ab0f43d065764404a696680cdd6a265939" title='Dernière modification par Mathieu Bergeron | 2022-10-06' target="_blank" rel="noopener">
       <img src="/svg/calendar.svg" class="book-icon" alt="Calendar" />
       <span>2022-10-06</span>
     </a>
@@ -874,7 +1168,13 @@ https://github.com/alex-shpak/hugo-book
   
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#mappage-par-arbre">Mappage par arbre</a></li>
+    <li><a href="#mappage-avec-arbre">Mappage avec arbre</a>
+      <ul>
+        <li><a href="#problème-defficacité">Problème d&rsquo;efficacité</a></li>
+        <li><a href="#sassurer-davoir-des-arbres-équilibrés">S&rsquo;assurer d&rsquo;avoir des arbres équilibrés</a></li>
+        <li><a href="#performance-en-pratique">Performance en pratique</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
 

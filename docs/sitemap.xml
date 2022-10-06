@@ -51,6 +51,7 @@
     <lastmod>2022-10-06T15:19:55-04:00</lastmod>
   </url><url>
     <loc>https://cartesjava.github.io/listes/tableau/</loc>
+    <lastmod>2022-10-06T15:53:06-04:00</lastmod>
   </url><url>
     <loc>https://cartesjava.github.io/modelisation/json/modele/</loc>
     <lastmod>2022-10-06T15:19:55-04:00</lastmod>
@@ -92,8 +93,10 @@
     <lastmod>2022-10-06T15:19:55-04:00</lastmod>
   </url><url>
     <loc>https://cartesjava.github.io/mappage/hachage/</loc>
+    <lastmod>2022-10-06T15:53:06-04:00</lastmod>
   </url><url>
     <loc>https://cartesjava.github.io/listes/chainee_simple/</loc>
+    <lastmod>2022-10-06T15:53:06-04:00</lastmod>
   </url><url>
     <loc>https://cartesjava.github.io/approche/</loc>
     <lastmod>2022-10-06T14:32:01-04:00</lastmod>
@@ -102,6 +105,7 @@
     <lastmod>2022-10-06T15:19:55-04:00</lastmod>
   </url><url>
     <loc>https://cartesjava.github.io/listes/chainee_double/</loc>
+    <lastmod>2022-10-06T15:53:06-04:00</lastmod>
   </url><url>
     <loc>https://cartesjava.github.io/modelisation/</loc>
     <lastmod>2022-10-06T15:19:55-04:00</lastmod>
@@ -139,9 +143,6 @@
     <loc>https://cartesjava.github.io/mappage/</loc>
     <lastmod>2022-10-06T14:17:03-04:00</lastmod>
   </url><url>
-    <loc>https://cartesjava.github.io/mappage/arbre/</loc>
-    <lastmod>2022-10-06T14:17:03-04:00</lastmod>
-  </url><url>
     <loc>https://cartesjava.github.io/conclusion/</loc>
     <lastmod>2022-10-06T14:17:03-04:00</lastmod>
   </url><url>
@@ -152,6 +153,9 @@
     <lastmod>2022-10-06T14:35:19-04:00</lastmod>
   </url><url>
     <loc>https://cartesjava.github.io/categories/</loc>
+  </url><url>
+    <loc>https://cartesjava.github.io/mappage/arbre/</loc>
+    <lastmod>2022-10-06T15:55:10-04:00</lastmod>
   </url><url>
     <loc>https://cartesjava.github.io/tags/</loc>
   </url><url>
