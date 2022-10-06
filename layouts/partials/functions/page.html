@@ -1,0 +1,1 @@
+{{- define "page" -}}{{ $params := . }}{{ $src := .Get "src" }}{{ $data := .Get "data" }}{{ $keys := split $src "." }}{{ range $key := $keys }}{{ warnf $key }}{{ $data = index $data $key }}{{ end }}{{ printf "# %s\n" $data.title | safeHTML }}{{- end -}}

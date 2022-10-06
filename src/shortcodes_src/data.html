@@ -1,0 +1,10 @@
+{{ $params := newScratch }}
+
+{{ $src := .Get 0 }}
+{{ if not $src }}
+    {{ $src = .Get "src" }}
+{{ end }}
+{{ $params.Set "src" $src }}
+
+{{ .Site.Data.theorie.efficacite.temps.intro.test }}
+

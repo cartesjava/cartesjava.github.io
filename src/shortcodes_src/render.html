@@ -1,0 +1,6 @@
+{{ $data := printf "<root>%s</root>" .Inner }}
+
+{{ $data = $data | transform.Unmarshal }}
+
+{{ warnf "%s" $data }}
+

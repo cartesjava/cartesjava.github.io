@@ -1,0 +1,20 @@
+{{- define "render_text" -}}
+
+    {{ $params := . }}
+    {{ $text := $params.Get "text" }}
+
+    {{ $currentShortcode := "" }}
+
+    {{ $params.Set "currentShortcode" "" }}
+
+    {{ $lines:= split $text "\n" }}
+
+    {{ range $line := $lines }}
+
+        {{ $params.Set "line" $line }}
+
+        {{ template "render_line" $params }}
+
+    {{ end }}
+
+{{- end -}}

@@ -1,0 +1,16 @@
+{{- define "apply_shortcodes" -}}
+    {{ $params := . }}
+    {{ $shortcodes := $params.Get "shortcodes" }}
+    {{ $line := $params.Get "line" }}
+    {{ $line = replaceRE "{{%([^%]|[^%][^}]|[^%][^}][^}])*%}}" "¤" $line }}
+    {{ $text_nodes := split $line "¤" }}
+    {{ range $index, $shortcode := $shortcodes }}
+        {{ $text_node := index $text_nodes $index }}
+        {{ $text_node | safeHTML }}
+        {{ $params.Set "shortcode" $shortcode }}
+        {{ template "apply_shortcode" $params }}
+    {{ end }}
+    {{ $text_node := index $text_nodes (len $shortcodes) }}
+       {{ $text_node | safeHTML }}
+       {{ print "\n" | safeHTML }}
+{{- end -}}

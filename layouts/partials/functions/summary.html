@@ -1,0 +1,1 @@
+{{- define "summary" -}}{{ $text := .Get "text" }}<div>{{ $text | markdownify }}</div>{{ "\n" | safeHTML }}{{- end -}}

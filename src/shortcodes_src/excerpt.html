@@ -1,0 +1,7 @@
+<center>
+    <div class='excerpt {{ .Get "class" | safeHTMLAttr }}' style='{{ .Get "style" | safeHTML }}'>
+    <div style="text-align:left">
+    {{ .Inner | markdownify }}
+    </div>
+</div>
+</center>

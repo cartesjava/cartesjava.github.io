@@ -1,0 +1,12 @@
+nodes:
+  - src: .presentation
+
+  - src: .exemple_tri
+    title: "Exemple: trier des cartes"
+    title-level: 2
+
+  - src: .en_classe
+    title: "En classe: expliquer avec des cartes"
+    title-level: 2
+    
+

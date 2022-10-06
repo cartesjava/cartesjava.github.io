@@ -1,0 +1,1 @@
+{{- define "apply_animation_shortcode" -}}{{ $params := newScratch }}{{ $args := .Get "args" }}{{ $src := "" }}{{ if reflect.IsSlice $args }}{{ $src = index $args 0 }}{{ else }}{{ $src = $args.Get "src" }}{{ if not $src }}{{ $src = $args.Get 0}}{{ end }}{{ end }}{{ $params.Set "src" $src }}{{ $context := .Get "context" }}{{ template "animation" $params }}{{- end -}}

@@ -1,0 +1,34 @@
+{{- define "apply_video_shortcode" -}}
+
+    {{ $params := newScratch }}
+
+    {{ $args := .Get "args" }}
+
+    {{ $src := "" }}
+
+    {{ if reflect.IsSlice $args }}
+
+        {{ $src = index $args 0 }}
+
+    {{ else }}
+
+        {{ $src = $args.Get "src" }}
+        {{ if not $src }}
+            {{ $src = $args.Get 0 }}
+        {{ end }}
+
+    {{ end }}
+
+    {{ $params.Set "src" $src }}
+
+    {{ $context := .Get "context" }}
+
+    {{ $params.Set "context" $context }}
+
+    {{ $displayVideos := $context.Get "display-videos" }}
+
+    {{ $params.Set "display-videos" $displayVideos }}
+
+    {{ template "video" $params }}
+
+{{- end -}}

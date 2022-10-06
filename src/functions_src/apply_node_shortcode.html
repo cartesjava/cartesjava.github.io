@@ -1,0 +1,36 @@
+{{- define "apply_node_shortcode" -}}
+
+    {{ $params := newScratch }}
+
+    {{ $name := .Get "name" }}
+    {{ $args := .Get "args" }}
+    {{ $context := .Get "context" }}
+
+
+    {{ $titleLevel := $args.Get "title-level" }}
+    {{ if not $titleLevel }}
+        {{ $titleLevel := $context.Get "title-level" }}
+    {{ end }}
+    {{ if eq $name "rootNode" }}
+        {{ $titleLevel = 1 }}
+    {{ end }}
+
+    {{ $params.Set "title-level" $titleLevel }}
+
+    {{ $src := $args.Get 0 }}
+    {{ if not $src }}
+        {{ $src = $args.Get "src" }}
+    {{ end }}
+    {{ $params.Set "src" $src }}
+
+    {{ $params.Set "data" $context.Site.Data }}
+
+    {{ if eq $name "rootNode" }}
+        {{ $params.Set "title" $context.Page.Title }}
+    {{ end }}
+
+    {{ $params.Set "context" $context }}
+
+    {{ template "load_and_render_node" $params }}
+
+{{- end -}}

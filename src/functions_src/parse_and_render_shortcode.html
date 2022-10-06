@@ -1,0 +1,63 @@
+{{- define "parse_and_render_shortcode" -}}
+    {{ $params := . }}
+    {{ $shortcode := $params.Get "shortcode" }}
+
+
+    {{ $beforeOpenning := findRE "^([^{]|[^{][^{]|[^{][^{][^%])*{{%" $shortcode }}
+
+    {{ if $beforeOpenning }}
+
+        {{ $beforeOpenning = index $beforeOpenning 0 }}
+
+        {{ $beforeOpenning = replace $beforeOpenning "{{%" "" }}
+
+        {{ $shortcode = replace $shortcode $beforeOpenning "" }}
+
+        {{ $beforeOpenning | safeHTML }}
+
+    {{ end }}
+
+    {{ $shortcode_name := findRE "{{%[ ]+[^ ]+[ ]" $shortcode }}
+    {{ $shortcode_name = index $shortcode_name 0 }}
+    {{ $shortcode_name = replace $shortcode_name "{{%" "" }}
+    {{ $shortcode_name = trim $shortcode_name " " }}
+
+    {{ $args := newScratch }}
+
+    {{ $keyArgs := findRE "[^\" ]+[ ]*[=][ ]*\"[^\"]+\"" $shortcode }}
+
+    {{ if $keyArgs }}
+
+        {{ range $keyArg := $keyArgs }}
+
+            {{ $keyValue := split $keyArg "=" }}
+            {{ $key := index $keyValue 0 }}
+            {{ $value := index $keyValue 1 }}
+            {{ $value := trim $value "\"" }}
+
+            {{ $args.Set $key $value }}
+
+        {{ end }}
+
+    {{ else }}
+
+        {{ $args = slice }}
+
+        {{ $posArgs := findRE "\"([^\"]+)\"" $shortcode }}
+
+        {{ range $posArg := $posArgs }}
+
+            {{ $arg := trim $posArg "\"" }}
+
+            {{ $args = $args | append $arg }}
+
+        {{ end }}
+
+    {{ end }}
+
+    {{ $params.Set "name" $shortcode_name }}
+    {{ $params.Set "args" $args }}
+
+    {{ template "apply_shortcode" $params }}
+
+{{- end -}}

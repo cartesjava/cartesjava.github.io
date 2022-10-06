@@ -1,0 +1,1 @@
+{{- define "apply_key_shortcode" -}}{{ $params := newScratch }}{{ $name := .Get "name" }}{{ $args := .Get "args" }}{{ $context := .Get "context" }}{{ $key := $args.Get 0 }}{{ if not $key }}{{ $key = $args.Get "key" }}{{ end }}{{ $params.Set "key" $key }}{{ template "key" $params }}{{- end -}}

@@ -1,0 +1,35 @@
+{{- define "apply_shortcode" -}}
+    {{ $name := .Get "name" }}
+
+    {{ if eq $name "embed" }}
+
+    {{ else if eq $name "video" }}
+
+        {{ template "apply_video_shortcode" . }}
+
+    {{ else if eq $name "key" }}
+
+        {{ template "apply_key_shortcode" . }}
+
+    {{ else if eq $name "animation" }}
+
+        {{ template "apply_animation_shortcode" . }}
+
+    {{ else if or (eq $name "node") (eq $name "rootNode") }}
+
+        {{ template "apply_node_shortcode" . }}
+
+    {{ else if or (eq $name "link") (eq $name "download") }}
+
+        {{ template "apply_link_shortcode" . }}
+
+    {{ else if eq $name "pageTitle" }}
+
+        {{ template "apply_page_title_shortcode" . }}
+
+    {{ else if eq $name "summary" }}
+
+
+    {{ end }}
+
+{{- end -}}

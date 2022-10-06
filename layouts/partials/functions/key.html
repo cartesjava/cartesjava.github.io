@@ -1,0 +1,1 @@
+{{- define "key" -}}{{ $rawKey := .Get "key" }}{{ $keys := split $rawKey "+" }}{{ range $index, $key := $keys }}{{ if gt $index 0 }}{{ printf "+" | safeHTML }}{{ end }}<kbd>{{ $key | safeHTML }}</kbd>{{ end }}{{- end -}}

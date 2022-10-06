@@ -1,0 +1,63 @@
+{{- define "load_and_render_node" -}}
+    {{ $params := . }}
+
+    {{ $src := $params.Get "src" }}
+    {{ $parentSrc := $params.Get "parentSrc" }}
+    {{ $data := $params.Get "data" }}
+    {{ $fullSrc := "" }}
+
+    {{ $node := $data }}
+
+    {{ if and $src (not (eq $src "")) }}
+
+        {{ $keys := slice }}
+
+        {{ if hasPrefix $src "." }}
+
+            {{ $src = replace $src "." "" 1 }}
+
+            {{ $parentKeys := split $parentSrc "." }}
+
+            {{ if $parentKeys }}
+
+                {{ $prefixLen := len $parentKeys }}
+                {{ $prefixLen := sub $prefixLen 1 }}
+
+                {{ range $parentKey := first $prefixLen $parentKeys }}
+                    {{ $keys = $keys | append $parentKey }}
+                {{ end }}
+
+            {{ end }}
+
+        {{ end }}
+
+
+        {{ $srcKeys := split $src "." }}
+
+        {{ $keys := union $keys $srcKeys }}
+
+        {{ $fullSrc = delimit $keys "." }}
+
+        {{ if $keys }}
+            {{ range $key := $keys }}
+                {{ if $node }}
+                    {{ $node = index $node $key }}
+                {{ end }}
+            {{ end }}
+        {{ end }}
+    {{ end }}
+
+    {{ if $node }}
+
+        {{ $params.Set "src" $fullSrc }}
+        {{ $params.Set "node" $node }}
+
+        {{ template "render_node" $params }} 
+
+    {{ else }}
+
+        {{ printf "<strong>[NODE NOT FOUND: %s]</strong>" $fullSrc | safeHTML }}
+
+    {{ end }}
+
+{{- end -}}

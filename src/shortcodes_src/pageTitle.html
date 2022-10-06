@@ -1,0 +1,7 @@
+{{ $params := newScratch }}
+
+{{ $params.Set "name" "pageTitle" }}
+{{ $params.Set "args" . }}
+{{ $params.Set "context" . }}
+
+{{ template "apply_shortcode" $params }}

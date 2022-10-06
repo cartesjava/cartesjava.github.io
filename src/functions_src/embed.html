@@ -1,0 +1,57 @@
+{{- define "embed" -}}
+    {{ $params := . }}
+    {{ $src := .Get "src" }}
+    {{ $indent := 0 }}
+    {{ if not (eq (.Get "indent") "") }}
+        {{ $indent = int (.Get "indent") }}
+    {{ end }}
+    {{ $first_line := 0 }}
+    {{ if not (eq (.Get "first_line") "") }}
+        {{ $first_line = int (.Get "first_line") }}
+    {{ end }}
+    {{ $last_line := 0 }}
+    {{ if not (eq (.Get "last_line") "") }}
+        {{ $last_line = int (.Get "last_line") }}
+    {{ end }}
+    {{ if not (hasPrefix $src "/") }}
+        {{ $base_path := .Get "base_path" }}
+        {{ $src = (path.Join $base_path $src) }}
+    {{ end }}
+    {{ $file_content := $src | readFile }}
+    {{ $lines := split $file_content "\n" }}
+    {{ $ignore_line := false }}
+    {{ $start_stop_ignoring_header := false }}
+    {{ $line_number := 0 }}
+    {{ $first_printed_line := true }}
+    {{ range $index, $line := $lines }}
+        {{ $start_stop_ignoring_header = false }}
+        {{ if hasPrefix $line "---" }}
+            {{ $start_stop_ignoring_header = true }}
+        {{ end }}
+        {{ if and (not $ignore_line) (not $start_stop_ignoring_header) }}
+            {{ $line_number = add $line_number 1 }}
+            {{ if and (or (eq $first_line 0) (ge $line_number $first_line)) (or (eq $last_line 0) (le $line_number $last_line)) }}
+                {{ if not ($first_printed_line) }}
+                    {{ range $num := (seq $indent) }}
+                        {{ "    " }}
+                    {{ end }}
+                {{ else }}
+                    {{ $first_printed_line = false }}
+                {{ end }}
+                {{ $shortcodes := findRE "{{%([^%]|[^%][^}]|[^%][^}][^}])*%}}" $line }}
+                {{ if gt (len $shortcodes) 0 }}
+                    {{ $params.Set "base_path" (path.Dir $src) }}
+                    {{ $params.Set "line" $line }}
+                    {{ $params.Set "shortcodes" $shortcodes }}
+                    {{ template "apply_shortcodes" $params }}
+                {{ else }}
+                    {{ $line | safeHTML }}
+                    {{ "\n" | safeHTML }}
+                {{ end }}
+            {{ end }}
+        {{ end }}
+        {{ if $start_stop_ignoring_header }}
+            {{ $ignore_line = not $ignore_line }}
+        {{ end }}
+    {{ end }}
+{{- end -}}

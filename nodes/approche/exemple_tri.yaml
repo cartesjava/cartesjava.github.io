@@ -1,0 +1,47 @@
+text:
+  |
+    {{% video 
+        src="/approche/exemple_tri.webm" 
+        width="50%"
+        formats="m4v webm" 
+    %}}
+
+    * Voici comment trier des cartes dans ce cours
+
+    * Il faut placer les cartes dans l'ordre ♡ ♢ ♧ ♤, puis de la plus petite à la plus grande pour chaque sorte
+      * non-trié:
+
+          <img class="figure" src="/approche/non_trie01.png"/>
+
+      * trié par sorte:
+
+          <img class="figure" src="/approche/trie_par_sorte01.png"/>
+
+      * trié par sorte et numéro:
+
+          <img class="figure" src="/approche/trie01.png"/>
+
+    * Si on a uniquement des cartes de ♡, on peut trier selon le numéro 
+      * non-trié:
+
+          <img class="figure" src="/approche/non_trie02.png"/>
+
+      * trié par sorte et numéro:
+
+          <img class="figure" src="/approche/trie02.png"/>
+
+    * Si on a des cartes de ♡ et de ♧, on va trier par sorte, puis numéro
+
+      * non-trié:
+
+          <img class="figure" src="/approche/non_trie03.png"/>
+
+      * trié par sorte:
+
+          <img class="figure" src="/approche/trie_par_sorte03.png"/>
+
+      * trié par sorte et numéro:
+
+          <img class="figure" src="/approche/trie03.png"/>
+
+    * Et ainsi de suite, en respectant l'ordre ♡ ♢ ♧ ♤

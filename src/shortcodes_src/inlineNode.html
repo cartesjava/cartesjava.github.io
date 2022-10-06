@@ -1,0 +1,10 @@
+{{ warnf ".Inner: %s" .Inner }}
+
+
+{{ $data := .Inner | transform.Unmarshal }}
+
+{{ $titleLevel := .Get "title-level" }}
+
+{{ $data.text | safeHTML }}
+
+{{ $titleLevel | safeHTML }}

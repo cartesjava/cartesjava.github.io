@@ -1,0 +1,15 @@
+{{ $params := newScratch }}
+
+{{ $src := .Get 0 }}
+{{ if not $src }}
+    {{ $src = .Get "src" }}
+{{ end }}
+{{ $params.Set "src" $src }}
+
+{{ $data := .Site.Data }}
+
+{{ $params.Set "data" $data }}
+
+{{ $params.Set "titleLevel" 1 }}
+
+{{ template "load_and_render_node" $params }}

@@ -1,0 +1,88 @@
+{{- define "render_node" -}}
+    {{ $params := . }}
+    {{ $src := $params.Get "src" }}
+    {{ $node := $params.Get "node" }}
+    {{ $line := "" }}
+    {{ $titleLevel := $params.Get "title-level" }}
+    {{ if not $titleLevel }}
+        {{ $titleLevel = 1 }}
+    {{ end }}
+
+    {{ $title := "" }}
+
+    {{ if $node.title }}
+        {{ $title = $node.title }}
+    {{ end }}
+
+    {{ if not (eq ($params.Get "title") "") }}
+        {{ $title = $params.Get "title" }}
+        {{ $params.Set "title" "" }}
+    {{ end }}
+
+    {{ if and ($title) (not (eq $title "" )) }}
+        {{ range $i := (seq $titleLevel) }}
+            {{ $line = printf "#%s" $line }}
+        {{ end }}
+        {{ $line = printf "%s %s" $line $title }}
+        {{ $params.Set "currentShortcode" "" }}
+        {{ $params.Set "line" $line }}
+        {{ template "render_line" $params }} 
+    {{ end }}
+
+    {{ if $node.summary }}
+        {{ $line = printf "{{%s summary \"%s\" %s}}" "%" $node.summary "%" }}
+        {{ $params.Set "line" $line }}
+        {{ template "render_line" $params }} 
+    {{ end }}
+
+    {{ if $node.text }}
+        {{ $text := $node.text }}
+        {{ $params.Set "text" $text }}
+        {{ template "render_text" $params }}
+    {{ end }}
+
+    {{ if $node.nodes }}
+
+        {{ range $subnode := $node.nodes }}
+
+            {{ $params.Set "titleLevel" (add $titleLevel 1) }}
+
+            {{ if reflect.IsMap $subnode }}
+
+                {{ if $subnode.src }}
+
+                    {{ if not (eq (index $subnode "title-level") nil) }}
+                        {{ $params.Set "title-level" (index $subnode "title-level") }}
+                    {{ end }}
+
+                    {{ if $subnode.title }}
+                        {{ $params.Set "title" $subnode.title }}
+                    {{ end }}
+                        
+
+                    {{ $params.Set "parentSrc" $src }}
+                    {{ $params.Set "src" $subnode.src }}
+                    {{ template "load_and_render_node" $params }}
+                    {{ "\n" | safeHTML }}
+
+                {{ else }}
+
+                    {{ $params.Set "node" $subnode }}
+                    {{ template "render_node" $params }}
+                    {{ "\n" | safeHTML }}
+
+                {{ end }}
+
+            {{ else }}
+
+                {{ $text := printf "%s" $subnode }}
+
+                {{ $params.Set "text" $text }}
+
+                {{ template "render_text" $params }}
+
+            {{ end }}
+        {{ end }}
+    {{ end }}
+
+{{- end -}}

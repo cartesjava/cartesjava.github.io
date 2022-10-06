@@ -1,0 +1,5 @@
+{{- define "extra_src" -}}
+{{ $src := .Get "src" }}
+{{ warnf "$src: %s" }}
+{{ warnf "$extras..: %s" }}
+{{- end -}}
