@@ -1,5 +1,5 @@
 ---
-title: "Efficacité en temps (1)"
+title: "Performance Vs efficacité"
 weight: 10
 bookHidden: false
 ---

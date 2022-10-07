@@ -1,5 +1,5 @@
 ---
-title: "Efficacité en temps (2)"
+title: "Efficacité en temps"
 weight: 20
 bookHidden: false
 ---
