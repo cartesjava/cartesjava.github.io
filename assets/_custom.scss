@@ -110,7 +110,8 @@ kbd {
     list-style-type:square;
 }
 
-/* Auto Numbering */
+
+/*
 body {counter-reset: h2}
 h2 {counter-reset: h3}
 h3 {counter-reset: h4}
@@ -160,5 +161,6 @@ article h4:before {
     content: counters(item, ".") ". "; counter-increment: item;
 
 }
+*/
 
 
