@@ -9,7 +9,6 @@
 
 {{ define "book-section-children" }}{{/* (dict "Section" .Section "CurrentPage" .CurrentPage "PageIndex" $index) */}}
   <ul>
-    {{ $rootPage := .RootPage }}
     {{ range $index, $page := where .Section.Pages "Params.bookhidden" "ne" true }}
       {{ if $page.IsSection }}
         <li {{- if $page.Params.BookFlatSection }} class="book-section-flat" {{ end -}}>
@@ -33,13 +32,13 @@
     <input type="checkbox" id="section-{{ md5 .Page }}" class="toggle" {{ if or $current $ancestor }}checked{{ end }} />
     <label for="section-{{ md5 .Page }}" class="flex justify-between">
       <a {{ if .Page.Content }}href="{{ .Page.RelPermalink }}"{{ else }}role="button"{{ end }} class="{{ if $current }}active{{ end }}">
-        {{- template "numbering" (dict "Page" .Page "NumberOnly" true) -}}
+        {{- partial "numbering" (dict "Page" .Page "NumberOnly" true) -}}
         {{- partial "docs/title" .Page -}}
       </a>
     </label>
   {{ else if .Page.Content }}
     <a href="{{ .Page.RelPermalink }}" class="{{ if $current }} active{{ end }}">
-      {{- template "numbering" (dict "Page" .Page "NumberOnly" true) -}}
+      {{- partial "numbering" (dict "Page" .Page "NumberOnly" true) -}}
       {{- partial "docs/title" .Page -}}
     </a>
   {{ else }}

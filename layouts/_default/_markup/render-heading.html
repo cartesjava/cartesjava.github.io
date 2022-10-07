@@ -1,6 +1,6 @@
 <h{{ .Level }} id="{{ .Anchor | safeURL }}">
 
-{{ if eq .Level 1 }}{{ template "numbering" (dict "Page" .Page "NumberOnly" false) }}{{ end }}{{ .Text | safeHTML }}
+{{ if eq .Level 1 }}{{- partial "numbering" (dict "Page" .Page.Page "NumberOnly" false) -}}{{ end }}{{ .Text | safeHTML }}
 
 <a class="anchor" href="#{{ .Anchor | safeURL }}">#</a>
 
