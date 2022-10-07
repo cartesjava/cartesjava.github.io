@@ -32,10 +32,18 @@ Le dépôt source est ici: https://github.com/cartesjava/cartesjava.github.io
 
     <img class="figure" src="commit01.png"/>
 
-1. Créer un «pull request» pour communiquer votre suggestion aux gestionnaires du dépôt d'origine
+1. Créer un «pull request» pour communiquer votre suggestion au propriétaire du dépôt d'origine
 
-    <img class="figure" src="pull_request01.png"/>
+    * Étape 1
 
-    <img class="figure" src="pull_request02.png"/>
+        <img class="figure" src="pull_request01.png"/>
+
+    * Étape 2
+
+        <img class="figure" src="pull_request02.png"/>
+
+1. Attendre que le propriétaire du dépôt d'origine évalue votre suggestion
+
+
 
     
