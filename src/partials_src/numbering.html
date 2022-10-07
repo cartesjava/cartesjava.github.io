@@ -1,0 +1,11 @@
+{{ range $index, $page := where .RootPage.Pages "Params.bookhidden" "ne" true }}
+    {{ $index | safeHTML }}
+
+    {{ if eq $page .Page }}
+
+        {{ $index | safeHTML }}
+
+
+    {{ end }}
+
+{{ end }}

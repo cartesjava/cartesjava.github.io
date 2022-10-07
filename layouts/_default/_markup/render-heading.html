@@ -1,4 +1,7 @@
 <h{{ .Level }} id="{{ .Anchor | safeURL }}">
-  {{ .Text | safeHTML }}
-  <a class="anchor" href="#{{ .Anchor | safeURL }}">#</a>
+
+{{ if eq .Level 1 }}{{ template "numbering" (dict "Page" .Page "NumberOnly" false) }}{{ end }}{{ .Text | safeHTML }}
+
+<a class="anchor" href="#{{ .Anchor | safeURL }}">#</a>
+
 </h{{ .Level }}>
