@@ -6,6 +6,7 @@ bookHidden: false
 
 {{% pageTitle %}}
 
+# Test!
 
 * Performance: le *temps* que le programme prend pour s'exécuter
     * se mesure en secondes
