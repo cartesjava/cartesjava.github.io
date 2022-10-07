@@ -1,8 +1,0 @@
-digraph "MonCalculateur" {
-graph ["rankdir"="LR","compound"="true","ranksep"="1.0","nodesep"="1.0"]
-"/" ["label"="<_C>MonCalculateur|{siRecursif|false}|{n|1}|{tete|<tete_tete>}","style"="filled","fillcolor"="white","shape"="record"]
-"/tete" ["label"="<_C>MonFibonacci|{n|1}|{moinsUn|<moinsUn_moinsUn>}|{reponse|1}|{nombreOr|0.0}|{moinsDeux|null}","style"="filled","fillcolor"="white","shape"="record"]
-"/tete/moinsUn" ["label"="<_C>MonFibonacci|{n|0}|{moinsUn|null}|{reponse|0}|{nombreOr|0.0}|{moinsDeux|null}","style"="filled","fillcolor"="white","shape"="record"]
-"/":"tete_tete":c -> "/tete":"_C" ["tailclip"="false","arrowtail"="dot","dir"="both","label"=""]
-"/tete":"moinsUn_moinsUn":c -> "/tete/moinsUn":"_C" ["tailclip"="false","arrowtail"="dot","dir"="both","label"=""]
-}

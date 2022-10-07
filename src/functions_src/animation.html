@@ -24,7 +24,7 @@
     {{ if and (not (eq $width "")) (not (eq $width nil)) }}
         {{ $attrs.Set "width" $width }}
     {{ else }}
-        {{ $attrs.Set "width" "100%" }}
+        {{ $attrs.Set "width" "50%" }}
     {{ end }}
 
     {{ $filepath := $src }}
