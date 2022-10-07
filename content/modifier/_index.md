@@ -36,4 +36,6 @@ Le dépôt source est ici: https://github.com/cartesjava/cartesjava.github.io
 
     <img class="figure" src="pull_request01.png"/>
 
+    <img class="figure" src="pull_request02.png"/>
+
     
