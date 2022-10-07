@@ -5,10 +5,6 @@
     <link>https://cartesjava.github.io/procedures/gitlab/</link>
     <description>Recent content on Cartes Java</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>fr-ca</language>
-    
-	<atom:link href="https://cartesjava.github.io/procedures/gitlab/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>fr-ca</language><atom:link href="https://cartesjava.github.io/procedures/gitlab/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

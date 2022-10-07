@@ -5,10 +5,6 @@
     <link>https://cartesjava.github.io/efficacite/temps01/</link>
     <description>Recent content in Efficacité en temps (1) on Cartes Java</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>fr-ca</language>
-    
-	<atom:link href="https://cartesjava.github.io/efficacite/temps01/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>fr-ca</language><atom:link href="https://cartesjava.github.io/efficacite/temps01/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

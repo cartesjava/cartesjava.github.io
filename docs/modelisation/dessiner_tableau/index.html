@@ -1,0 +1,1108 @@
+<!DOCTYPE html>
+<html lang="fr-ca" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Dessiner un tableau d&rsquo;objets #  Visualiser les objets #  Exemple 1 #  Exemple 2 #  Comprendre l&rsquo;effet d&rsquo;instructions typiques #  Accéder à une valeur #  Example 1 #    Objets au départ Instructions Résultat      memoireA.getNumero(); memoireA.getSorte();   5 &#34;TREFLE&#34;    Example 2 #    Objets au départ Instructions Résultat      cartes[2].">
+<meta name="theme-color" content="#FFFFFF">
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="Dessiner un tableau d&#39;objets" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://cartesjava.github.io/modelisation/dessiner_tableau/" />
+
+<title>
+
+
+    Dessiner un tableau d&#39;objets 
+
+
+
+</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/book.min.62522f734605549ffb41c7c071c68ae6cea09d216f30ede20c344054d503fc2f.css" integrity="sha256-YlIvc0YFVJ/7QcfAccaK5s6gnSFvMO3iDDRAVNUD/C8=" crossorigin="anonymous">
+  <script defer src="/flexsearch.min.js"></script>
+  <script defer src="/fr.search.min.5ac8546285a74ffa6098f9517c5dfeb68a328f275d352a1ffc5dced8eaa7fb15.js" integrity="sha256-WshUYoWnT/pgmPlRfF3&#43;tooyjyddNSof/F3O2Oqn&#43;xU=" crossorigin="anonymous"></script>
+
+  <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" integrity="sha256-b2&#43;Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC&#43;NdcPIvZhzk=" crossorigin="anonymous"></script>
+
+<script defer src="/reload_videos.min.4a5aa164333a19381a7fd1dde8e03eadc175bdda3a31e8f4fc8e0951775577ca.js" integrity="sha256-SlqhZDM6GTgaf9Hd6OA&#43;rcF1vdo6Mej0/I4JUXdVd8o=" crossorigin="anonymous"></script><link rel="alternate" type="application/rss+xml" href="https://cartesjava.github.io/modelisation/dessiner_tableau/index.xml" title="Cartes Java" />
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><span>Cartes Java</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Rechercher" aria-label="Rechercher" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-7480a34dac08ecd5c3d7a70eb628cf1a" class="toggle"  />
+    <label for="section-7480a34dac08ecd5c3d7a70eb628cf1a" class="flex justify-between">
+      <a href="/preface/" class="">Préface</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/preface/bilan_juin_2022/" class="">Bilan juin 2022</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/preface/bilan_octobre_2022/" class="">Bilan octobre 2022</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/intro/" class="">Introduction</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-b1f25d69250e7772af5811e7ef44e922" class="toggle"  />
+    <label for="section-b1f25d69250e7772af5811e7ef44e922" class="flex justify-between">
+      <a href="/approche/" class="">Présentation de l&#39;approche</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/approche/ntro/" class="">Librairie Ntro</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/approche/cartes_a_jouer/" class="">Utilisation de cartes à jouer</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-20d2db300e0f4ab0130280f200c4f2fc" class="toggle" checked />
+    <label for="section-20d2db300e0f4ab0130280f200c4f2fc" class="flex justify-between">
+      <a role="button" class="">Modéliser des données</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/modelisation/format_json/" class="">Format JSON</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/modelisation/modele/" class="">Notion de modèle</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/modelisation/dessiner_tableau/" class=" active">Dessiner un tableau d&#39;objets</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/modelisation/graphe/" class="">Dessiner un graphe d&#39;objets</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/modelisation/references_multiples/" class="">Visualiser les références multiples</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/modelisation/structures/" class="">Structures en Java</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/modelisation/types_recursifs/" class="">Types récursifs</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/modelisation/pile_appel/" class="">Pile d&#39;appel</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/modelisation/fibonacci/" class="">Exemple: Fibonacci</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-89a3727667e5590a4150c67be9175eaa" class="toggle"  />
+    <label for="section-89a3727667e5590a4150c67be9175eaa" class="flex justify-between">
+      <a href="/efficacite/" class="">Qu&#39;est-ce que l&#39;efficacité?</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/efficacite/temps01/" class="">Efficacité en temps (1)</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/efficacite/temps02/" class="">Efficacité en temps (2)</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/efficacite/espace/" class="">Efficacité en espace</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-b12c28f0f1b1687a56347184fa5203f8" class="toggle"  />
+    <label for="section-b12c28f0f1b1687a56347184fa5203f8" class="flex justify-between">
+      <a href="/listes/" class="">Comprendre les listes</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/listes/tableau/" class="">Liste par tableau</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/listes/chainee_simple/" class="">Liste chaînée simple</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/listes/chainee_double/" class="">Liste chaînée double</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-4d776affa1be45887905ae21b1d04b2a" class="toggle"  />
+    <label for="section-4d776affa1be45887905ae21b1d04b2a" class="flex justify-between">
+      <a href="/arbres/" class="">Comprendre les arbres</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/arbres/generique/" class="">Arbre générique</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/arbres/binaire/" class="">Arbre binaire</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-10c66eed6dc4c3d72fd2b94c05e4e477" class="toggle"  />
+    <label for="section-10c66eed6dc4c3d72fd2b94c05e4e477" class="flex justify-between">
+      <a href="/mappage/" class="">Comprendre les mappages</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/mappage/hachage/" class="">Mappage par hachage</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/mappage/arbre/" class="">Mappage avec arbre</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/conclusion/" class="">Conclusion</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/grand-o/" class="">Annexe 1: sémantique de la notation grand O</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/modifier/" class="">Annexe 2: comment copier et modifier ce manuel</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Dessiner un tableau d&#39;objets</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#dessiner-un-tableau-dobjets">Dessiner un tableau d&rsquo;objets</a>
+      <ul>
+        <li><a href="#visualiser-les-objets">Visualiser les objets</a>
+          <ul>
+            <li><a href="#exemple-1">Exemple 1</a></li>
+            <li><a href="#exemple-2">Exemple 2</a></li>
+          </ul>
+        </li>
+        <li><a href="#comprendre-leffet-dinstructions-typiques">Comprendre l&rsquo;effet d&rsquo;instructions typiques</a>
+          <ul>
+            <li><a href="#accéder-à-une-valeur">Accéder à une valeur</a></li>
+            <li><a href="#déplacer-un-objet-déplacer-une-carte">Déplacer un objet (déplacer une carte)</a></li>
+            <li><a href="#copier-la-référence-à-un-objet">Copier la référence à un objet</a></li>
+            <li><a href="#créer-un-nouvel-objet-créer-une-nouvelle-carte">Créer un nouvel objet (créer une nouvelle carte)</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h1 id="dessiner-un-tableau-dobjets">
+  Dessiner un tableau d&rsquo;objets
+  <a class="anchor" href="#dessiner-un-tableau-dobjets">#</a>
+</h1>
+<h2 id="visualiser-les-objets">
+  Visualiser les objets
+  <a class="anchor" href="#visualiser-les-objets">#</a>
+</h2>
+<h3 id="exemple-1">
+  Exemple 1
+  <a class="anchor" href="#exemple-1">#</a>
+</h3>
+<img class="figure" src="cartesA.png"/>
+<img class="figure" src="tableauA.png"/>
+<h3 id="exemple-2">
+  Exemple 2
+  <a class="anchor" href="#exemple-2">#</a>
+</h3>
+<img class="figure" src="cartesB.png"/>
+<img class="figure" src="tableauB.png"/>
+<h2 id="comprendre-leffet-dinstructions-typiques">
+  Comprendre l&rsquo;effet d&rsquo;instructions typiques
+  <a class="anchor" href="#comprendre-leffet-dinstructions-typiques">#</a>
+</h2>
+<h3 id="accéder-à-une-valeur">
+  Accéder à une valeur
+  <a class="anchor" href="#acc%c3%a9der-%c3%a0-une-valeur">#</a>
+</h3>
+<h4 id="example-1">
+  Example 1
+  <a class="anchor" href="#example-1">#</a>
+</h4>
+<table>
+<tr>
+<th>Objets au départ</th>
+<th>Instructions</th>
+<th>Résultat</th>
+</tr>
+<tr>
+<td>
+<img class="figure" src="tableauB.png"/>
+</td>
+<td>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>memoireA<span style="color:#f92672">.</span><span style="color:#a6e22e">getNumero</span><span style="color:#f92672">();</span>
+</span></span><span style="display:flex;"><span>memoireA<span style="color:#f92672">.</span><span style="color:#a6e22e">getSorte</span><span style="color:#f92672">();</span>
+</span></span></code></pre></div></td>
+<td>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>5
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;TREFLE&#34;</span>
+</span></span></code></pre></div></td>
+</tr>
+</table>
+<h4 id="example-2">
+  Example 2
+  <a class="anchor" href="#example-2">#</a>
+</h4>
+<table>
+<tr>
+<th>Objets au départ</th>
+<th>Instructions</th>
+<th>Résultat</th>
+</tr>
+<tr>
+<td>
+<img class="figure" src="tableauA.png"/>
+</td>
+<td>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>cartes<span style="color:#f92672">[</span>2<span style="color:#f92672">].</span><span style="color:#a6e22e">getNumero</span><span style="color:#f92672">();</span>
+</span></span><span style="display:flex;"><span>cartes<span style="color:#f92672">[</span>2<span style="color:#f92672">].</span><span style="color:#a6e22e">getSorte</span><span style="color:#f92672">();</span>
+</span></span></code></pre></div></td>
+<td>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>3
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;CARREAU&#34;</span>
+</span></span></code></pre></div></td>
+</tr>
+</table>
+<h4 id="example-3">
+  Example 3
+  <a class="anchor" href="#example-3">#</a>
+</h4>
+<table>
+<tr>
+<th>Objets au départ</th>
+<th>Instructions</th>
+<th>Résultat</th>
+</tr>
+<tr>
+<td>
+<img class="figure" src="tableauB.png"/>
+</td>
+<td>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>cartes<span style="color:#f92672">[</span>2<span style="color:#f92672">].</span><span style="color:#a6e22e">getNumero</span><span style="color:#f92672">();</span>
+</span></span><span style="display:flex;"><span>memoireB<span style="color:#f92672">.</span><span style="color:#a6e22e">getNumero</span><span style="color:#f92672">();</span>
+</span></span></code></pre></div></td>
+<td>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>java<span style="color:#f92672">.</span><span style="color:#a6e22e">lang</span><span style="color:#f92672">.</span><span style="color:#a6e22e">NullPointerException</span>
+</span></span><span style="display:flex;"><span>java<span style="color:#f92672">.</span><span style="color:#a6e22e">lang</span><span style="color:#f92672">.</span><span style="color:#a6e22e">NullPointerException</span>
+</span></span></code></pre></div></td>
+</tr>
+</table>
+<h3 id="déplacer-un-objet-déplacer-une-carte">
+  Déplacer un objet (déplacer une carte)
+  <a class="anchor" href="#d%c3%a9placer-un-objet-d%c3%a9placer-une-carte">#</a>
+</h3>
+<h4 id="exemple-1-1">
+  Exemple 1
+  <a class="anchor" href="#exemple-1-1">#</a>
+</h4>
+<table>
+<tr>
+<th>Objets au départ</th>
+<th>Instruction</th>
+<th>Résultat</th>
+</tr>
+<tr>
+<td>
+<img class="figure" src="tableauA.png"/>
+</td>
+<td>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>memoireA <span style="color:#f92672">=</span> cartes<span style="color:#f92672">[</span>0<span style="color:#f92672">];</span>
+</span></span><span style="display:flex;"><span>cartes<span style="color:#f92672">[</span>0<span style="color:#f92672">]</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">null</span><span style="color:#f92672">;</span>
+</span></span></code></pre></div></td>
+<td>
+<img class="figure" src="tableauA_apres1.png"/>
+</td>
+</tr>
+</table>
+<h4 id="exemple-2-1">
+  Exemple 2
+  <a class="anchor" href="#exemple-2-1">#</a>
+</h4>
+<table>
+<tr>
+<th>Objets au départ</th>
+<th>Instruction</th>
+<th>Résultat</th>
+</tr>
+<tr>
+<td>
+<img class="figure" src="tableauB.png"/>
+</td>
+<td>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>cartes<span style="color:#f92672">[</span>2<span style="color:#f92672">]</span> <span style="color:#f92672">=</span> cartes<span style="color:#f92672">[</span>0<span style="color:#f92672">];</span>
+</span></span><span style="display:flex;"><span>cartes<span style="color:#f92672">[</span>0<span style="color:#f92672">]</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">null</span><span style="color:#f92672">;</span>
+</span></span></code></pre></div></td>
+<td>
+<img class="figure" src="tableauB_apres1.png"/>
+</td>
+</tr>
+</table>
+<h3 id="copier-la-référence-à-un-objet">
+  Copier la référence à un objet
+  <a class="anchor" href="#copier-la-r%c3%a9f%c3%a9rence-%c3%a0-un-objet">#</a>
+</h3>
+<h4 id="exemple-1-2">
+  Exemple 1
+  <a class="anchor" href="#exemple-1-2">#</a>
+</h4>
+<table>
+<tr>
+<th>Objets au départ</th>
+<th>Instruction</th>
+<th>Résultat</th>
+</tr>
+<tr>
+<td>
+<img class="figure" src="tableauA.png"/>
+</td>
+<td>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>memoireA <span style="color:#f92672">=</span> cartes<span style="color:#f92672">[</span>0<span style="color:#f92672">];</span>
+</span></span></code></pre></div></td>
+<td>
+<img class="figure" src="tableauA_apres2.png"/>
+</td>
+</tr>
+</table>
+<h4 id="exemple-2-2">
+  Exemple 2
+  <a class="anchor" href="#exemple-2-2">#</a>
+</h4>
+<table>
+<tr>
+<th>Objets au départ</th>
+<th>Instruction</th>
+<th>Résultat</th>
+</tr>
+<tr>
+<td>
+<img class="figure" src="tableauB.png"/>
+</td>
+<td>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>cartes<span style="color:#f92672">[</span>2<span style="color:#f92672">]</span> <span style="color:#f92672">=</span> cartes<span style="color:#f92672">[</span>0<span style="color:#f92672">];</span>
+</span></span></code></pre></div></td>
+<td>
+<img class="figure" src="tableauB_apres2.png"/>
+</td>
+</tr>
+</table>
+<h3 id="créer-un-nouvel-objet-créer-une-nouvelle-carte">
+  Créer un nouvel objet (créer une nouvelle carte)
+  <a class="anchor" href="#cr%c3%a9er-un-nouvel-objet-cr%c3%a9er-une-nouvelle-carte">#</a>
+</h3>
+<h4 id="exemple-1-3">
+  Exemple 1
+  <a class="anchor" href="#exemple-1-3">#</a>
+</h4>
+<table>
+<tr>
+<th>Objets au départ</th>
+<th>Instruction</th>
+<th>Résultat</th>
+</tr>
+<tr>
+<td>
+<img class="figure" src="tableauA.png"/>
+</td>
+<td>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>memoireA <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Carte<span style="color:#f92672">(</span>2<span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;TREFLE&#34;</span><span style="color:#f92672">);</span>
+</span></span></code></pre></div></td>
+<td>
+<img class="figure" src="tableauA_apres3.png"/>
+</td>
+</tr>
+</table>
+<h4 id="exemple-2-3">
+  Exemple 2
+  <a class="anchor" href="#exemple-2-3">#</a>
+</h4>
+<table>
+<tr>
+<th>Objets au départ</th>
+<th>Instruction</th>
+<th>Résultat</th>
+</tr>
+<tr>
+<td>
+<img class="figure" src="tableauB.png"/>
+</td>
+<td>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>memoireB <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Carte<span style="color:#f92672">(</span>5<span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;TREFLE&#34;</span><span style="color:#f92672">);</span>
+</span></span></code></pre></div></td>
+<td>
+<img class="figure" src="tableauB_apres3.png"/>
+</td>
+</tr>
+</table>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+  <div><a class="flex align-center" href="https://github.com/cartesjava/cartesjava.github.io/commit/1466868b204dec7e423cea7810e1e5cfec3c0352" title='Dernière modification par Mathieu Bergeron | 2022-10-07' target="_blank" rel="noopener">
+      <img src="/svg/calendar.svg" class="book-icon" alt="Calendar" />
+      <span>2022-10-07</span>
+    </a>
+      <div style="padding-top:12px;">©&nbsp;Mathieu&nbsp;Bergeron</div>
+  </div>
+
+
+
+  <div>
+    <a class="flex align-center" href="https://github.com/cartesjava/cartesjava.github.io/edit/main//content/modelisation/dessiner_tableau/_index.md" target="_blank" rel="noopener">
+      <img src="/svg/edit.svg" class="book-icon" alt="Edit" />
+      <span>Suggérer une modification</span>
+    </a>
+  </div>
+
+</div>
+<div style="float:right;position:relative;top:-12px;">
+    <div style="float:right;">
+        <a ref="" href="https://creativecommons.org/licenses/by-sa/4.0/deed.fr" style="font-size:2em;">
+        <img alt="Creative Commons License" style="border-width:0" src="/cc.svg" /></a>
+        <a ref="" href="https://creativecommons.org/licenses/by-sa/4.0/deed.fr" style="font-size:2em;">
+        <img alt="Creative Commons Attribution" style="border-width:0" src="/by.svg" /></a>
+        <a ref="" href="https://creativecommons.org/licenses/by-sa/4.0/deed.fr" style="font-size:2em;">
+        <img alt="Creative Commons ShareAlike" style="border-width:0" src="/sa.svg" /></a>
+    </div>
+</div>
+
+
+
+
+
+  <script>(function(){function e(n){const e=window.getSelection(),t=document.createRange();t.selectNodeContents(n),e.removeAllRanges(),e.addRange(t)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#dessiner-un-tableau-dobjets">Dessiner un tableau d&rsquo;objets</a>
+      <ul>
+        <li><a href="#visualiser-les-objets">Visualiser les objets</a>
+          <ul>
+            <li><a href="#exemple-1">Exemple 1</a></li>
+            <li><a href="#exemple-2">Exemple 2</a></li>
+          </ul>
+        </li>
+        <li><a href="#comprendre-leffet-dinstructions-typiques">Comprendre l&rsquo;effet d&rsquo;instructions typiques</a>
+          <ul>
+            <li><a href="#accéder-à-une-valeur">Accéder à une valeur</a></li>
+            <li><a href="#déplacer-un-objet-déplacer-une-carte">Déplacer un objet (déplacer une carte)</a></li>
+            <li><a href="#copier-la-référence-à-un-objet">Copier la référence à un objet</a></li>
+            <li><a href="#créer-un-nouvel-objet-créer-une-nouvelle-carte">Créer un nouvel objet (créer une nouvelle carte)</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

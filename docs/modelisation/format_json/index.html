@@ -1,0 +1,1039 @@
+<!DOCTYPE html>
+<html lang="fr-ca" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Format JSON #    Le format JSON est très populaire pour représenter des données
+  JSON veut dire Javascript Object Notation
+  C&rsquo;est le format prévilégié pour les applications Web
+  Les bases de données NoSQL utilisent souvent un format similaire à JSON
+  Voici les valeurs en JSON:
+ la valeur nulle: null un booléen: true ou false un nombre comme: 1, 4.5, -10.">
+<meta name="theme-color" content="#FFFFFF">
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="Format JSON" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://cartesjava.github.io/modelisation/format_json/" />
+
+<title>
+
+
+    Format JSON 
+
+
+
+</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/book.min.62522f734605549ffb41c7c071c68ae6cea09d216f30ede20c344054d503fc2f.css" integrity="sha256-YlIvc0YFVJ/7QcfAccaK5s6gnSFvMO3iDDRAVNUD/C8=" crossorigin="anonymous">
+  <script defer src="/flexsearch.min.js"></script>
+  <script defer src="/fr.search.min.5ac8546285a74ffa6098f9517c5dfeb68a328f275d352a1ffc5dced8eaa7fb15.js" integrity="sha256-WshUYoWnT/pgmPlRfF3&#43;tooyjyddNSof/F3O2Oqn&#43;xU=" crossorigin="anonymous"></script>
+
+  <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" integrity="sha256-b2&#43;Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC&#43;NdcPIvZhzk=" crossorigin="anonymous"></script>
+
+<script defer src="/reload_videos.min.4a5aa164333a19381a7fd1dde8e03eadc175bdda3a31e8f4fc8e0951775577ca.js" integrity="sha256-SlqhZDM6GTgaf9Hd6OA&#43;rcF1vdo6Mej0/I4JUXdVd8o=" crossorigin="anonymous"></script><link rel="alternate" type="application/rss+xml" href="https://cartesjava.github.io/modelisation/format_json/index.xml" title="Cartes Java" />
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><span>Cartes Java</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Rechercher" aria-label="Rechercher" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-7480a34dac08ecd5c3d7a70eb628cf1a" class="toggle"  />
+    <label for="section-7480a34dac08ecd5c3d7a70eb628cf1a" class="flex justify-between">
+      <a href="/preface/" class="">Préface</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/preface/bilan_juin_2022/" class="">Bilan juin 2022</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/preface/bilan_octobre_2022/" class="">Bilan octobre 2022</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/intro/" class="">Introduction</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-b1f25d69250e7772af5811e7ef44e922" class="toggle"  />
+    <label for="section-b1f25d69250e7772af5811e7ef44e922" class="flex justify-between">
+      <a href="/approche/" class="">Présentation de l&#39;approche</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/approche/ntro/" class="">Librairie Ntro</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/approche/cartes_a_jouer/" class="">Utilisation de cartes à jouer</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-20d2db300e0f4ab0130280f200c4f2fc" class="toggle" checked />
+    <label for="section-20d2db300e0f4ab0130280f200c4f2fc" class="flex justify-between">
+      <a role="button" class="">Modéliser des données</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/modelisation/format_json/" class=" active">Format JSON</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/modelisation/modele/" class="">Notion de modèle</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/modelisation/dessiner_tableau/" class="">Dessiner un tableau d&#39;objets</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/modelisation/graphe/" class="">Dessiner un graphe d&#39;objets</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/modelisation/references_multiples/" class="">Visualiser les références multiples</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/modelisation/structures/" class="">Structures en Java</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/modelisation/types_recursifs/" class="">Types récursifs</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/modelisation/pile_appel/" class="">Pile d&#39;appel</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/modelisation/fibonacci/" class="">Exemple: Fibonacci</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-89a3727667e5590a4150c67be9175eaa" class="toggle"  />
+    <label for="section-89a3727667e5590a4150c67be9175eaa" class="flex justify-between">
+      <a href="/efficacite/" class="">Qu&#39;est-ce que l&#39;efficacité?</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/efficacite/temps01/" class="">Efficacité en temps (1)</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/efficacite/temps02/" class="">Efficacité en temps (2)</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/efficacite/espace/" class="">Efficacité en espace</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-b12c28f0f1b1687a56347184fa5203f8" class="toggle"  />
+    <label for="section-b12c28f0f1b1687a56347184fa5203f8" class="flex justify-between">
+      <a href="/listes/" class="">Comprendre les listes</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/listes/tableau/" class="">Liste par tableau</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/listes/chainee_simple/" class="">Liste chaînée simple</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/listes/chainee_double/" class="">Liste chaînée double</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-4d776affa1be45887905ae21b1d04b2a" class="toggle"  />
+    <label for="section-4d776affa1be45887905ae21b1d04b2a" class="flex justify-between">
+      <a href="/arbres/" class="">Comprendre les arbres</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/arbres/generique/" class="">Arbre générique</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/arbres/binaire/" class="">Arbre binaire</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-10c66eed6dc4c3d72fd2b94c05e4e477" class="toggle"  />
+    <label for="section-10c66eed6dc4c3d72fd2b94c05e4e477" class="flex justify-between">
+      <a href="/mappage/" class="">Comprendre les mappages</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/mappage/hachage/" class="">Mappage par hachage</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/mappage/arbre/" class="">Mappage avec arbre</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/conclusion/" class="">Conclusion</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/grand-o/" class="">Annexe 1: sémantique de la notation grand O</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/modifier/" class="">Annexe 2: comment copier et modifier ce manuel</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Format JSON</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#format-json">Format JSON</a>
+      <ul>
+        <li><a href="#les-listes-en-json">Les listes en JSON</a></li>
+        <li><a href="#les-objets-json">Les objets JSON</a></li>
+        <li><a href="#json-est-un-format-récursif">JSON est un format récursif</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h1 id="format-json">
+  Format JSON
+  <a class="anchor" href="#format-json">#</a>
+</h1>
+<ul>
+<li>
+<p>Le format JSON est très populaire pour représenter des données</p>
+</li>
+<li>
+<p>JSON veut dire <em>Javascript Object Notation</em></p>
+</li>
+<li>
+<p>C&rsquo;est le format prévilégié pour les applications Web</p>
+</li>
+<li>
+<p>Les bases de données NoSQL utilisent souvent un format similaire à JSON</p>
+</li>
+<li>
+<p>Voici les <em>valeurs</em> en JSON:</p>
+<ul>
+<li>la valeur nulle: <code>null</code></li>
+<li>un booléen: <code>true</code>  ou <code>false</code></li>
+<li>un nombre comme: <code>1</code>, <code>4.5</code>, <code>-10.1</code></li>
+<li>une chaîne comme: <code>&quot;asdf&quot;</code>, <code>&quot;&quot;</code>, <code>&quot;Bonjour!&quot;</code></li>
+</ul>
+</li>
+<li>
+<p>Voici les <em>structures</em> en JSON:</p>
+<ul>
+<li>une liste comme:
+<ul>
+<li><code>[1, 3, -1]</code></li>
+<li><code>[]</code></li>
+<li><code>[&quot;asfd&quot;, &quot;Bonjour!&quot;, &quot;&quot;]</code></li>
+</ul>
+</li>
+<li>une objet comme:
+<ul>
+<li><code>{&quot;cle01&quot;:true}</code></li>
+<li><code>{}</code></li>
+<li><code>{&quot;cle01&quot;:true, &quot;cle02&quot;:-12}</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="les-listes-en-json">
+  Les listes en JSON
+  <a class="anchor" href="#les-listes-en-json">#</a>
+</h2>
+<ul>
+<li>Une liste est un tableau qui peut grandir et rapetisser</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">interface</span> <span style="color:#a6e22e">ListeJava</span><span style="color:#f92672">&lt;</span>V <span style="color:#66d9ef">extends</span> Object<span style="color:#f92672">&gt;</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">boolean</span> <span style="color:#a6e22e">siVide</span><span style="color:#f92672">();</span>
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">int</span> <span style="color:#a6e22e">longueur</span><span style="color:#f92672">();</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	V <span style="color:#a6e22e">obtenirValeur</span><span style="color:#f92672">(</span><span style="color:#66d9ef">int</span> indice<span style="color:#f92672">);</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">void</span> <span style="color:#a6e22e">modifierValeur</span><span style="color:#f92672">(</span><span style="color:#66d9ef">int</span> indice<span style="color:#f92672">,</span> V nouvelleValeur<span style="color:#f92672">);</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">void</span> <span style="color:#a6e22e">ajouter</span><span style="color:#f92672">(</span>V nouvelleValeur<span style="color:#f92672">);</span> <span style="color:#75715e">// la liste grandit
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">void</span> <span style="color:#a6e22e">retirer</span><span style="color:#f92672">(</span><span style="color:#66d9ef">int</span> indice<span style="color:#f92672">);</span> <span style="color:#75715e">// la liste rapetisse
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">void</span> <span style="color:#a6e22e">retirer</span><span style="color:#f92672">(</span>V valeur<span style="color:#f92672">);</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span></code></pre></div><ul>
+<li>Une des particularité des la liste JSON est de mélanger les types de valeurs:
+<ul>
+<li><code>[1,true,&quot;Bonjour!&quot;]</code></li>
+<li><code>[null, &quot;&quot;, 1, false]</code></li>
+</ul>
+</li>
+</ul>
+<h2 id="les-objets-json">
+  Les objets JSON
+  <a class="anchor" href="#les-objets-json">#</a>
+</h2>
+<ul>
+<li>
+<p>Un objet JSON permet d&rsquo;accéder à des valeurs avec des clés</p>
+<ul>
+<li>une clé est toujours une chaîne</li>
+<li>la valeur peut être n&rsquo;importe quelle valeur JSON</li>
+</ul>
+</li>
+<li>
+<p>L&rsquo;objet JSON est un exemple de <code>Dictionnaire</code>:</p>
+</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">interface</span> <span style="color:#a6e22e">Dictionnaire</span><span style="color:#f92672">&lt;</span>V <span style="color:#66d9ef">extends</span> Object<span style="color:#f92672">&gt;</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">void</span> <span style="color:#a6e22e">entreposerValeur</span><span style="color:#f92672">(</span>String cle<span style="color:#f92672">,</span> V valeur<span style="color:#f92672">);</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	V <span style="color:#a6e22e">recuprerValeur</span><span style="color:#f92672">(</span>String cle<span style="color:#f92672">);</span>
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span>	String <span style="color:#a6e22e">trouverCle</span><span style="color:#f92672">(</span>V valeur<span style="color:#f92672">);</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span></code></pre></div><ul>
+<li>Quand on entrepose une valeur, le dictionnaire:
+<ul>
+<li>grandit si la clé n&rsquo;existait pas</li>
+<li>modifie la valeur si la clé existait</li>
+</ul>
+</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>Dictionnaire<span style="color:#f92672">&lt;</span>Integer<span style="color:#f92672">&gt;</span> dico <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> MonDictionnaire<span style="color:#f92672">&lt;&gt;();</span> 
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                                     <span style="color:#75715e">// {}
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>dico<span style="color:#f92672">.</span><span style="color:#a6e22e">entreposerValeur</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;cle01&#34;</span><span style="color:#f92672">,</span> 12<span style="color:#f92672">);</span>  <span style="color:#75715e">// {&#34;cle01&#34;:12}
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>dico<span style="color:#f92672">.</span><span style="color:#a6e22e">entreposerValeur</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;cle01&#34;</span><span style="color:#f92672">,</span> 42<span style="color:#f92672">);</span>  <span style="color:#75715e">// {&#34;cle01&#34;:42}
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>dico<span style="color:#f92672">.</span><span style="color:#a6e22e">entreposerValeur</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;cle02&#34;</span><span style="color:#f92672">,</span> 14<span style="color:#f92672">);</span>  <span style="color:#75715e">// {&#34;cle01&#34;:42, &#34;cle02&#34;:14}
+</span></span></span></code></pre></div><h2 id="json-est-un-format-récursif">
+  JSON est un format récursif
+  <a class="anchor" href="#json-est-un-format-r%c3%a9cursif">#</a>
+</h2>
+<ul>
+<li>
+<p>La présentation de JSON à date est incomplète</p>
+</li>
+<li>
+<p>En fait, JSON est un format récursif:</p>
+<ul>
+<li>on peut avoir <code>[1,2,[2,4]]</code> (une liste à l&rsquo;intérieur d&rsquo;une liste)</li>
+<li>on peut avoir <code>[1,2,[2,[5,423]]]</code></li>
+<li>on peut avoir <code>[1,2,[2,[[44,2],423]]]</code></li>
+<li>etc.</li>
+</ul>
+</li>
+<li>
+<p>Les structures récursives sont très populaires en informatique</p>
+</li>
+<li>
+<p>Avant de continuer avec JSON, on va regarder la notion d&rsquo;arbre</p>
+</li>
+<li>
+<p>L&rsquo;arbre est une structure récursive assez simple</p>
+</li>
+<li>
+<p>On peut penser à une liste récursive comme à un arbre:</p>
+<ul>
+<li>p.ex: <code>[1,2,[2,[[44,2],423]]]</code></li>
+</ul>
+  <center>
+      <img src="arbre03.svg" width="50%">
+  </center>
+<ul>
+<li>une liste contenant
+<ul>
+<li><code>1</code></li>
+<li><code>2</code></li>
+<li>une liste contenant
+<ul>
+<li><code>2</code></li>
+<li>une liste contenant
+<ul>
+<li>une liste contenant
+<ul>
+<li><code>44</code></li>
+<li><code>2</code></li>
+</ul>
+</li>
+<li><code>423</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>On voit qu&rsquo;une liste peut être insérée à la place d&rsquo;une valeur</p>
+</li>
+<li>
+<p>C&rsquo;est la même chose pour les objets JSON</p>
+</li>
+<li>
+<p>Partout où on s&rsquo;attend à avoir une valeur, on peut avoir une liste ou un objet</p>
+</li>
+<li>
+<p>Par exemple, voici des données JSON valides:</p>
+<ul>
+<li><code>{&quot;cle01&quot;:[1,4,true,null,[1,&quot;asdf&quot;],{&quot;test&quot;:false}]}</code></li>
+<li><code>[4.0,-2,{&quot;un&quot;:1,&quot;deux&quot;:2,&quot;trois&quot;:{&quot;nom&quot;:&quot;Trois&quot;}}]</code></li>
+<li>&hellip;</li>
+</ul>
+</li>
+</ul>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+  <div><a class="flex align-center" href="https://github.com/cartesjava/cartesjava.github.io/commit/1466868b204dec7e423cea7810e1e5cfec3c0352" title='Dernière modification par Mathieu Bergeron | 2022-10-07' target="_blank" rel="noopener">
+      <img src="/svg/calendar.svg" class="book-icon" alt="Calendar" />
+      <span>2022-10-07</span>
+    </a>
+      <div style="padding-top:12px;">©&nbsp;Mathieu&nbsp;Bergeron</div>
+  </div>
+
+
+
+  <div>
+    <a class="flex align-center" href="https://github.com/cartesjava/cartesjava.github.io/edit/main//content/modelisation/format_json/_index.md" target="_blank" rel="noopener">
+      <img src="/svg/edit.svg" class="book-icon" alt="Edit" />
+      <span>Suggérer une modification</span>
+    </a>
+  </div>
+
+</div>
+<div style="float:right;position:relative;top:-12px;">
+    <div style="float:right;">
+        <a ref="" href="https://creativecommons.org/licenses/by-sa/4.0/deed.fr" style="font-size:2em;">
+        <img alt="Creative Commons License" style="border-width:0" src="/cc.svg" /></a>
+        <a ref="" href="https://creativecommons.org/licenses/by-sa/4.0/deed.fr" style="font-size:2em;">
+        <img alt="Creative Commons Attribution" style="border-width:0" src="/by.svg" /></a>
+        <a ref="" href="https://creativecommons.org/licenses/by-sa/4.0/deed.fr" style="font-size:2em;">
+        <img alt="Creative Commons ShareAlike" style="border-width:0" src="/sa.svg" /></a>
+    </div>
+</div>
+
+
+
+
+
+  <script>(function(){function e(n){const e=window.getSelection(),t=document.createRange();t.selectNodeContents(n),e.removeAllRanges(),e.addRange(t)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#format-json">Format JSON</a>
+      <ul>
+        <li><a href="#les-listes-en-json">Les listes en JSON</a></li>
+        <li><a href="#les-objets-json">Les objets JSON</a></li>
+        <li><a href="#json-est-un-format-récursif">JSON est un format récursif</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

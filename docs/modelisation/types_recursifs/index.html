@@ -1,0 +1,949 @@
+<!DOCTYPE html>
+<html lang="fr-ca" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Types récursifs #  Arbre #    Un arbre est une structure avec une racine et des branches:
+   NOTE: l&rsquo;arbre est typiquement dessiné avec la racine en haut    Chaque cercle ci-haut est appelé un noeud
+  Chaque noeud peut avoir des enfants (indiqués par les flèches)
+  Chaque noeud a exactement un parent (sauf la racine qui n&rsquo;a aucun parent)">
+<meta name="theme-color" content="#FFFFFF">
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="Types récursifs" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://cartesjava.github.io/modelisation/types_recursifs/" />
+
+<title>
+
+
+    Types récursifs 
+
+
+
+</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/book.min.62522f734605549ffb41c7c071c68ae6cea09d216f30ede20c344054d503fc2f.css" integrity="sha256-YlIvc0YFVJ/7QcfAccaK5s6gnSFvMO3iDDRAVNUD/C8=" crossorigin="anonymous">
+  <script defer src="/flexsearch.min.js"></script>
+  <script defer src="/fr.search.min.5ac8546285a74ffa6098f9517c5dfeb68a328f275d352a1ffc5dced8eaa7fb15.js" integrity="sha256-WshUYoWnT/pgmPlRfF3&#43;tooyjyddNSof/F3O2Oqn&#43;xU=" crossorigin="anonymous"></script>
+
+  <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" integrity="sha256-b2&#43;Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC&#43;NdcPIvZhzk=" crossorigin="anonymous"></script>
+
+<script defer src="/reload_videos.min.4a5aa164333a19381a7fd1dde8e03eadc175bdda3a31e8f4fc8e0951775577ca.js" integrity="sha256-SlqhZDM6GTgaf9Hd6OA&#43;rcF1vdo6Mej0/I4JUXdVd8o=" crossorigin="anonymous"></script><link rel="alternate" type="application/rss+xml" href="https://cartesjava.github.io/modelisation/types_recursifs/index.xml" title="Cartes Java" />
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><span>Cartes Java</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Rechercher" aria-label="Rechercher" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-7480a34dac08ecd5c3d7a70eb628cf1a" class="toggle"  />
+    <label for="section-7480a34dac08ecd5c3d7a70eb628cf1a" class="flex justify-between">
+      <a href="/preface/" class="">Préface</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/preface/bilan_juin_2022/" class="">Bilan juin 2022</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/preface/bilan_octobre_2022/" class="">Bilan octobre 2022</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/intro/" class="">Introduction</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-b1f25d69250e7772af5811e7ef44e922" class="toggle"  />
+    <label for="section-b1f25d69250e7772af5811e7ef44e922" class="flex justify-between">
+      <a href="/approche/" class="">Présentation de l&#39;approche</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/approche/ntro/" class="">Librairie Ntro</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/approche/cartes_a_jouer/" class="">Utilisation de cartes à jouer</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-20d2db300e0f4ab0130280f200c4f2fc" class="toggle" checked />
+    <label for="section-20d2db300e0f4ab0130280f200c4f2fc" class="flex justify-between">
+      <a role="button" class="">Modéliser des données</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/modelisation/format_json/" class="">Format JSON</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/modelisation/modele/" class="">Notion de modèle</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/modelisation/dessiner_tableau/" class="">Dessiner un tableau d&#39;objets</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/modelisation/graphe/" class="">Dessiner un graphe d&#39;objets</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/modelisation/references_multiples/" class="">Visualiser les références multiples</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/modelisation/structures/" class="">Structures en Java</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/modelisation/types_recursifs/" class=" active">Types récursifs</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/modelisation/pile_appel/" class="">Pile d&#39;appel</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/modelisation/fibonacci/" class="">Exemple: Fibonacci</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-89a3727667e5590a4150c67be9175eaa" class="toggle"  />
+    <label for="section-89a3727667e5590a4150c67be9175eaa" class="flex justify-between">
+      <a href="/efficacite/" class="">Qu&#39;est-ce que l&#39;efficacité?</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/efficacite/temps01/" class="">Efficacité en temps (1)</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/efficacite/temps02/" class="">Efficacité en temps (2)</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/efficacite/espace/" class="">Efficacité en espace</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-b12c28f0f1b1687a56347184fa5203f8" class="toggle"  />
+    <label for="section-b12c28f0f1b1687a56347184fa5203f8" class="flex justify-between">
+      <a href="/listes/" class="">Comprendre les listes</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/listes/tableau/" class="">Liste par tableau</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/listes/chainee_simple/" class="">Liste chaînée simple</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/listes/chainee_double/" class="">Liste chaînée double</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-4d776affa1be45887905ae21b1d04b2a" class="toggle"  />
+    <label for="section-4d776affa1be45887905ae21b1d04b2a" class="flex justify-between">
+      <a href="/arbres/" class="">Comprendre les arbres</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/arbres/generique/" class="">Arbre générique</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/arbres/binaire/" class="">Arbre binaire</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-10c66eed6dc4c3d72fd2b94c05e4e477" class="toggle"  />
+    <label for="section-10c66eed6dc4c3d72fd2b94c05e4e477" class="flex justify-between">
+      <a href="/mappage/" class="">Comprendre les mappages</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/mappage/hachage/" class="">Mappage par hachage</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/mappage/arbre/" class="">Mappage avec arbre</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/conclusion/" class="">Conclusion</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/grand-o/" class="">Annexe 1: sémantique de la notation grand O</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/modifier/" class="">Annexe 2: comment copier et modifier ce manuel</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Types récursifs</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#types-récursifs">Types récursifs</a>
+      <ul>
+        <li><a href="#arbre">Arbre</a></li>
+        <li><a href="#arbre-binaire-de-recherche">Arbre binaire de recherche</a></li>
+        <li><a href="#arbre-binaire-en-java">Arbre binaire en Java</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h1 id="types-récursifs">
+  Types récursifs
+  <a class="anchor" href="#types-r%c3%a9cursifs">#</a>
+</h1>
+<h2 id="arbre">
+  Arbre
+  <a class="anchor" href="#arbre">#</a>
+</h2>
+<ul>
+<li>
+<p>Un arbre est une structure avec une racine et des branches:</p>
+  <center>
+      <img src="arbre01.svg" width="50%">
+  </center>
+<ul>
+<li>NOTE: l&rsquo;arbre est typiquement dessiné avec la racine en haut</li>
+</ul>
+</li>
+<li>
+<p>Chaque cercle ci-haut est appelé un noeud</p>
+</li>
+<li>
+<p>Chaque noeud peut avoir des enfants (indiqués par les flèches)</p>
+</li>
+<li>
+<p>Chaque noeud a exactement un parent (sauf la racine qui n&rsquo;a aucun parent)</p>
+</li>
+</ul>
+<h2 id="arbre-binaire-de-recherche">
+  Arbre binaire de recherche
+  <a class="anchor" href="#arbre-binaire-de-recherche">#</a>
+</h2>
+<ul>
+<li>
+<p>C&rsquo;est un type d&rsquo;arbre très utilisé en informatique:</p>
+  <center>
+      <img src="arbre02.svg" width="50%">
+  </center>
+</li>
+<li>
+<p>Chaque noeud contient un <code>Comparable</code> (p.ex. un <code>int</code>)</p>
+</li>
+<li>
+<p>Chaque noeud a au plus deux enfants</p>
+</li>
+<li>
+<p>L&rsquo;enfant à gauche est toujours plus petit que le parent (et grand-parent, etc.)</p>
+<ul>
+<li>p.ex.: <code>0 &lt; 1</code> et <code>4&lt;5</code></li>
+</ul>
+</li>
+<li>
+<p>L&rsquo;enfant à droite est toujours plus grand que le parent (et grand-parent, etc.)</p>
+<ul>
+<li>p.ex.: <code>5&gt;3</code> et <code>2&gt;1</code></li>
+</ul>
+</li>
+</ul>
+<h2 id="arbre-binaire-en-java">
+  Arbre binaire en Java
+  <a class="anchor" href="#arbre-binaire-en-java">#</a>
+</h2>
+<ul>
+<li>
+<p>Il suffit de représenter un <code>Noeud</code></p>
+  <center>
+      <img src="arbre.svg" width="50%">
+  </center>
+</li>
+<li>
+<p>La définition de <code>Noeud</code> est récursive:</p>
+<ul>
+<li>Qu&rsquo;est-ce qu&rsquo;un <code>Noeud</code>?
+<ul>
+<li>quelque chose qui contient deux noeuds!
+<ul>
+<li><code>enfantGauche()</code> et <code>enfantDroit()</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Par exemple, pour représenter l&rsquo;arbre ci-haut:</p>
+</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>Noeud racine <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> MonNoeud<span style="color:#f92672">(</span>3<span style="color:#f92672">);</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Noeud gauche <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> MonNoeud<span style="color:#f92672">(</span>1<span style="color:#f92672">);</span>
+</span></span><span style="display:flex;"><span>Noeud droite <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> MonNoeud<span style="color:#f92672">(</span>5<span style="color:#f92672">);</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Noeud gaucheGauche <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> MonNoeud<span style="color:#f92672">(</span>0<span style="color:#f92672">);</span>
+</span></span><span style="display:flex;"><span>Noeud gaucheDroite<span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> MonNoeud<span style="color:#f92672">(</span>2<span style="color:#f92672">);</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Noeud droiteGauche <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> MonNoeud<span style="color:#f92672">(</span>4<span style="color:#f92672">);</span>
+</span></span><span style="display:flex;"><span>Noeud droiteDroite<span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> MonNoeud<span style="color:#f92672">(</span>6<span style="color:#f92672">);</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>racine<span style="color:#f92672">.</span><span style="color:#a6e22e">setEnfantGauche</span><span style="color:#f92672">(</span>gauche<span style="color:#f92672">);</span>
+</span></span><span style="display:flex;"><span>racine<span style="color:#f92672">.</span><span style="color:#a6e22e">setEnfantDroit</span><span style="color:#f92672">(</span>droite<span style="color:#f92672">);</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>gauche<span style="color:#f92672">.</span><span style="color:#a6e22e">setEnfantGauche</span><span style="color:#f92672">(</span>gaucheGauche<span style="color:#f92672">);</span>
+</span></span><span style="display:flex;"><span>gauche<span style="color:#f92672">.</span><span style="color:#a6e22e">setEnfantDroit</span><span style="color:#f92672">(</span>gaucheDroite<span style="color:#f92672">);</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>droite<span style="color:#f92672">.</span><span style="color:#a6e22e">setEnfantGauche</span><span style="color:#f92672">(</span>droiteGauche<span style="color:#f92672">);</span>
+</span></span><span style="display:flex;"><span>droite<span style="color:#f92672">.</span><span style="color:#a6e22e">setEnfantDroit</span><span style="color:#f92672">(</span>droiteDroite<span style="color:#f92672">);</span>
+</span></span></code></pre></div></article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+  <div><a class="flex align-center" href="https://github.com/cartesjava/cartesjava.github.io/commit/1466868b204dec7e423cea7810e1e5cfec3c0352" title='Dernière modification par Mathieu Bergeron | 2022-10-07' target="_blank" rel="noopener">
+      <img src="/svg/calendar.svg" class="book-icon" alt="Calendar" />
+      <span>2022-10-07</span>
+    </a>
+      <div style="padding-top:12px;">©&nbsp;Mathieu&nbsp;Bergeron</div>
+  </div>
+
+
+
+  <div>
+    <a class="flex align-center" href="https://github.com/cartesjava/cartesjava.github.io/edit/main//content/modelisation/types_recursifs/_index.md" target="_blank" rel="noopener">
+      <img src="/svg/edit.svg" class="book-icon" alt="Edit" />
+      <span>Suggérer une modification</span>
+    </a>
+  </div>
+
+</div>
+<div style="float:right;position:relative;top:-12px;">
+    <div style="float:right;">
+        <a ref="" href="https://creativecommons.org/licenses/by-sa/4.0/deed.fr" style="font-size:2em;">
+        <img alt="Creative Commons License" style="border-width:0" src="/cc.svg" /></a>
+        <a ref="" href="https://creativecommons.org/licenses/by-sa/4.0/deed.fr" style="font-size:2em;">
+        <img alt="Creative Commons Attribution" style="border-width:0" src="/by.svg" /></a>
+        <a ref="" href="https://creativecommons.org/licenses/by-sa/4.0/deed.fr" style="font-size:2em;">
+        <img alt="Creative Commons ShareAlike" style="border-width:0" src="/sa.svg" /></a>
+    </div>
+</div>
+
+
+
+
+
+  <script>(function(){function e(n){const e=window.getSelection(),t=document.createRange();t.selectNodeContents(n),e.removeAllRanges(),e.addRange(t)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#types-récursifs">Types récursifs</a>
+      <ul>
+        <li><a href="#arbre">Arbre</a></li>
+        <li><a href="#arbre-binaire-de-recherche">Arbre binaire de recherche</a></li>
+        <li><a href="#arbre-binaire-en-java">Arbre binaire en Java</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

@@ -3,11 +3,10 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Mappage par hachage   Un map permet d&rsquo;associer une clé à une valeur
+<meta name="description" content="Mappage par hachage #    Un map permet d&rsquo;associer une clé à une valeur
  chaque clé est unique    Par exemple, le map ci-bas associe la clé &quot;xdf&quot; à la valeur 12:
  {&quot;sdx&quot;:5,&quot;xdf&quot;:12,&quot;lkm&quot;:54}    Un map est aussi appelé: dictionnaire, liste associative, objet JSON
-  On peut voir un map comme un tableau où les indices ne sont pas des entiers:
-  // Java valide Character[] tableauChar = new String[3]; tableauChar[0] = &#39;a&#39;; // l&#39;indice est un entier tableauChar[1] = &#39;b&#39;; tableauChar[2] = &#39;c&#39;; // 0 1 2 // [&#39;a&#39;,&#39;b&#39;,&#39;c&#39;]  // Ce qu&#39;on aimerais avoir (pas du Java valide) &lt;String, Character&gt;[] mapChar; mapChar = new &lt;String, Character&gt;[3]; mapChar[&#34;premier&#34;] = &#39;a&#39;; // l&#39;indice est une chaîne!">
+  On peut voir un map comme un tableau où les indices ne sont pas des entiers:">
 <meta name="theme-color" content="#FFFFFF">
 <meta name="color-scheme" content="light dark"><meta property="og:title" content="Mappage par hachage" />
 <meta property="og:description" content="" />
@@ -24,13 +23,13 @@
 </title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
-<link rel="stylesheet" href="/book.min.393750c588c31dbc7a21f29dfc11b099dce42bbd1c8244d0bcd848e963429884.css" integrity="sha256-OTdQxYjDHbx6IfKd/BGwmdzkK70cgkTQvNhI6WNCmIQ=" crossorigin="anonymous">
+<link rel="stylesheet" href="/book.min.62522f734605549ffb41c7c071c68ae6cea09d216f30ede20c344054d503fc2f.css" integrity="sha256-YlIvc0YFVJ/7QcfAccaK5s6gnSFvMO3iDDRAVNUD/C8=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/fr.search.min.b115459e677278eabf2edc649359fedb38c58c1d76532f9aefb6b69d05593dd9.js" integrity="sha256-sRVFnmdyeOq/Ltxkk1n&#43;2zjFjB12Uy&#43;a77a2nQVZPdk=" crossorigin="anonymous"></script>
+  <script defer src="/fr.search.min.5ac8546285a74ffa6098f9517c5dfeb68a328f275d352a1ffc5dced8eaa7fb15.js" integrity="sha256-WshUYoWnT/pgmPlRfF3&#43;tooyjyddNSof/F3O2Oqn&#43;xU=" crossorigin="anonymous"></script>
 
-  <script defer src="/sw.min.74a8bb07f0bee86d6bb9a2750f073f14d93c7e4512f28860370cfd879e9719b4.js" integrity="sha256-dKi7B/C&#43;6G1ruaJ1Dwc/FNk8fkUS8ohgNwz9h56XGbQ=" crossorigin="anonymous"></script>
+  <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" integrity="sha256-b2&#43;Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC&#43;NdcPIvZhzk=" crossorigin="anonymous"></script>
 
-<script defer src="/reload_videos.min.e548f6921f0ad1043b58ebf2f0a8daba7072dff046fb554ef3e655b40c342cec.js" integrity="sha256-5Uj2kh8K0QQ7WOvy8KjaunBy3/BG&#43;1VO8&#43;ZVtAw0LOw=" crossorigin="anonymous"></script><link rel="alternate" type="application/rss+xml" href="https://cartesjava.github.io/mappage/hachage/index.xml" title="Cartes Java" />
+<script defer src="/reload_videos.min.4a5aa164333a19381a7fd1dde8e03eadc175bdda3a31e8f4fc8e0951775577ca.js" integrity="sha256-SlqhZDM6GTgaf9Hd6OA&#43;rcF1vdo6Mej0/I4JUXdVd8o=" crossorigin="anonymous"></script><link rel="alternate" type="application/rss+xml" href="https://cartesjava.github.io/mappage/hachage/index.xml" title="Cartes Java" />
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -206,7 +205,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-20d2db300e0f4ab0130280f200c4f2fc" class="toggle"  />
     <label for="section-20d2db300e0f4ab0130280f200c4f2fc" class="flex justify-between">
-      <a href="/modelisation/" class="">Modéliser des données</a>
+      <a role="button" class="">Modéliser des données</a>
     </label>
   
 
@@ -220,20 +219,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/modelisation/json/" class="">Modéliser en JSON</a>
-  
-
-          
-  <ul>
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/modelisation/json/format_json/" class="">Format JSON</a>
+    <a href="/modelisation/format_json/" class="">Format JSON</a>
   
 
           
@@ -251,43 +237,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/modelisation/json/modele/" class="">Notion de modèle</a>
-  
-
-          
-  <ul>
-    
-  </ul>
-
-        </li>
-      
-    
-  </ul>
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/modelisation/java/" class="">Modéliser en Java</a>
-  
-
-          
-  <ul>
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/modelisation/java/graphe/" class="">Dessiner un graphe d&#39;objets</a>
+    <a href="/modelisation/modele/" class="">Notion de modèle</a>
   
 
           
@@ -305,20 +255,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/modelisation/java/dessiner_tableau/" class="">Dessiner un tableau d&#39;objets</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/modelisation/java/structures/" class="">Structures en Java</a>
+    <a href="/modelisation/dessiner_tableau/" class="">Dessiner un tableau d&#39;objets</a>
   
 
           
@@ -336,41 +273,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/modelisation/java/references_multiples/" class="">Visualiser les références multiples</a>
-  
-
-        </li>
-      
-    
-  </ul>
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <input type="checkbox" id="section-f71c2367c47583d57d83874e55c33ddb" class="toggle"  />
-    <label for="section-f71c2367c47583d57d83874e55c33ddb" class="flex justify-between">
-      <a role="button" class="">Récursivité</a>
-    </label>
-  
-
-          
-  <ul>
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/modelisation/recursivite/fibonacci/" class="">Fibonacci</a>
+    <a href="/modelisation/graphe/" class="">Dessiner un graphe d&#39;objets</a>
   
 
           
@@ -388,7 +291,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/modelisation/recursivite/pile_appel/" class="">Pile d&#39;appel</a>
+    <a href="/modelisation/references_multiples/" class="">Visualiser les références multiples</a>
   
 
           
@@ -406,7 +309,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/modelisation/recursivite/donnees/" class="">Types récursifs</a>
+    <a href="/modelisation/structures/" class="">Structures en Java</a>
   
 
           
@@ -416,6 +319,55 @@ https://github.com/alex-shpak/hugo-book
 
         </li>
       
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/modelisation/types_recursifs/" class="">Types récursifs</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/modelisation/pile_appel/" class="">Pile d&#39;appel</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/modelisation/fibonacci/" class="">Exemple: Fibonacci</a>
+  
+
+          
+  <ul>
     
   </ul>
 
@@ -741,7 +693,7 @@ https://github.com/alex-shpak/hugo-book
 
 
 
-  <script>(function(){var menu=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(event){localStorage.setItem("menu.scrollTop",menu.scrollTop);});menu.scrollTop=localStorage.getItem("menu.scrollTop");})();</script>
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
 
 
  
@@ -795,7 +747,10 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown"><h1 id="mappage-par-hachage">Mappage par hachage</h1>
+  <article class="markdown"><h1 id="mappage-par-hachage">
+  Mappage par hachage
+  <a class="anchor" href="#mappage-par-hachage">#</a>
+</h1>
 <ul>
 <li>
 <p>Un map permet d&rsquo;associer une clé à une valeur</p>
@@ -816,47 +771,48 @@ https://github.com/alex-shpak/hugo-book
 <p>On peut voir un map comme un tableau où les indices ne sont <strong>pas</strong> des entiers:</p>
 </li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#75715e">// Java valide
-</span><span style="color:#75715e"></span>Character<span style="color:#f92672">[]</span> tableauChar <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> String<span style="color:#f92672">[</span>3<span style="color:#f92672">];</span>
-
-tableauChar<span style="color:#f92672">[</span>0<span style="color:#f92672">]</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;a&#39;</span><span style="color:#f92672">;</span>        <span style="color:#75715e">// l&#39;indice est un entier
-</span><span style="color:#75715e"></span>tableauChar<span style="color:#f92672">[</span>1<span style="color:#f92672">]</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;b&#39;</span><span style="color:#f92672">;</span>
-tableauChar<span style="color:#f92672">[</span>2<span style="color:#f92672">]</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;c&#39;</span><span style="color:#f92672">;</span>
-
-<span style="color:#75715e">//  0   1   2
-</span><span style="color:#75715e">// [&#39;a&#39;,&#39;b&#39;,&#39;c&#39;]         
-</span><span style="color:#75715e"></span>
-
-<span style="color:#75715e">// Ce qu&#39;on aimerais avoir (pas du Java valide)
-</span><span style="color:#75715e"></span><span style="color:#f92672">&lt;</span>String<span style="color:#f92672">,</span> Character<span style="color:#f92672">&gt;[]</span> mapChar<span style="color:#f92672">;</span> 
-mapChar <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#f92672">&lt;</span>String<span style="color:#f92672">,</span> Character<span style="color:#f92672">&gt;[</span>3<span style="color:#f92672">];</span> 
-
-mapChar<span style="color:#f92672">[</span><span style="color:#e6db74">&#34;premier&#34;</span><span style="color:#f92672">]</span>   <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;a&#39;</span><span style="color:#f92672">;</span>  <span style="color:#75715e">// l&#39;indice est une chaîne!
-</span><span style="color:#75715e"></span>mapChar<span style="color:#f92672">[</span><span style="color:#e6db74">&#34;deuxième&#34;</span><span style="color:#f92672">]</span>  <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;b&#39;</span><span style="color:#f92672">;</span>
-mapChar<span style="color:#f92672">[</span><span style="color:#e6db74">&#34;troisième&#34;</span><span style="color:#f92672">]</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;c&#39;</span><span style="color:#f92672">;</span>
-
-<span style="color:#75715e">//   &#34;premier&#34; &#34;deuxième&#34; &#34;troisième&#34;
-</span><span style="color:#75715e">// [ &#39;a&#39;,      &#39;b&#39;,       &#39;c&#39;]         
-</span><span style="color:#75715e"></span>
-
-
-</code></pre></div><h2 id="interface-dun-map">Interface d&rsquo;un map</h2>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">interface</span> <span style="color:#a6e22e">MapJava</span><span style="color:#f92672">&lt;</span>C <span style="color:#66d9ef">extends</span> Cle<span style="color:#f92672">&lt;?&gt;,</span> V <span style="color:#66d9ef">extends</span> Object<span style="color:#f92672">&gt;</span> <span style="color:#f92672">{</span>
-	
-	<span style="color:#66d9ef">void</span>       <span style="color:#a6e22e">put</span><span style="color:#f92672">(</span>C c<span style="color:#f92672">,</span> V v<span style="color:#f92672">);</span>      <span style="color:#75715e">// associe la valeur v à la clé c
-</span><span style="color:#75715e"></span>	V          <span style="color:#a6e22e">get</span><span style="color:#f92672">(</span>C c<span style="color:#f92672">);</span>           <span style="color:#75715e">// obtenir la valeur associée à la clé c
-</span><span style="color:#75715e"></span>	<span style="color:#66d9ef">void</span>       <span style="color:#a6e22e">clear</span><span style="color:#f92672">();</span>            <span style="color:#75715e">// vide le map
-</span><span style="color:#75715e"></span>	<span style="color:#66d9ef">int</span>        <span style="color:#a6e22e">size</span><span style="color:#f92672">();</span>             <span style="color:#75715e">// taille du map
-</span><span style="color:#75715e"></span>	<span style="color:#66d9ef">boolean</span>    <span style="color:#a6e22e">isEmpty</span><span style="color:#f92672">();</span>          <span style="color:#75715e">// si vide
-</span><span style="color:#75715e"></span>	<span style="color:#66d9ef">boolean</span>    <span style="color:#a6e22e">containsKey</span><span style="color:#f92672">(</span>C c<span style="color:#f92672">);</span>   <span style="color:#75715e">// si le map contient la clé c
-</span><span style="color:#75715e"></span>	<span style="color:#66d9ef">boolean</span>    <span style="color:#a6e22e">containsValue</span><span style="color:#f92672">(</span>V v<span style="color:#f92672">);</span> <span style="color:#75715e">// si le map contient la valeur v
-</span><span style="color:#75715e"></span>	<span style="color:#66d9ef">void</span>       <span style="color:#a6e22e">remove</span><span style="color:#f92672">(</span>C c<span style="color:#f92672">);</span>        <span style="color:#75715e">// effacer la clé c (et la valeur associée)
-</span><span style="color:#75715e"></span>	List<span style="color:#f92672">&lt;</span>C<span style="color:#f92672">&gt;</span>    <span style="color:#a6e22e">keys</span><span style="color:#f92672">();</span>             <span style="color:#75715e">// retourner une liste de clés
-</span><span style="color:#75715e"></span>
-<span style="color:#f92672">}</span>
-
-
-</code></pre></div><h2 id="implantation-naïve-dun-map">Implantation naïve d&rsquo;un map</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#75715e">// Java valide
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>Character<span style="color:#f92672">[]</span> tableauChar <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> String<span style="color:#f92672">[</span>3<span style="color:#f92672">];</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>tableauChar<span style="color:#f92672">[</span>0<span style="color:#f92672">]</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;a&#39;</span><span style="color:#f92672">;</span>        <span style="color:#75715e">// l&#39;indice est un entier
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>tableauChar<span style="color:#f92672">[</span>1<span style="color:#f92672">]</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;b&#39;</span><span style="color:#f92672">;</span>
+</span></span><span style="display:flex;"><span>tableauChar<span style="color:#f92672">[</span>2<span style="color:#f92672">]</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;c&#39;</span><span style="color:#f92672">;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">//  0   1   2
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// [&#39;a&#39;,&#39;b&#39;,&#39;c&#39;]         
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Ce qu&#39;on aimerais avoir (pas du Java valide)
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#f92672">&lt;</span>String<span style="color:#f92672">,</span> Character<span style="color:#f92672">&gt;[]</span> mapChar<span style="color:#f92672">;</span> 
+</span></span><span style="display:flex;"><span>mapChar <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#f92672">&lt;</span>String<span style="color:#f92672">,</span> Character<span style="color:#f92672">&gt;[</span>3<span style="color:#f92672">];</span> 
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>mapChar<span style="color:#f92672">[</span><span style="color:#e6db74">&#34;premier&#34;</span><span style="color:#f92672">]</span>   <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;a&#39;</span><span style="color:#f92672">;</span>  <span style="color:#75715e">// l&#39;indice est une chaîne!
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>mapChar<span style="color:#f92672">[</span><span style="color:#e6db74">&#34;deuxième&#34;</span><span style="color:#f92672">]</span>  <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;b&#39;</span><span style="color:#f92672">;</span>
+</span></span><span style="display:flex;"><span>mapChar<span style="color:#f92672">[</span><span style="color:#e6db74">&#34;troisième&#34;</span><span style="color:#f92672">]</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;c&#39;</span><span style="color:#f92672">;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">//   &#34;premier&#34; &#34;deuxième&#34; &#34;troisième&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// [ &#39;a&#39;,      &#39;b&#39;,       &#39;c&#39;]         
+</span></span></span></code></pre></div><h2 id="interface-dun-map">
+  Interface d&rsquo;un map
+  <a class="anchor" href="#interface-dun-map">#</a>
+</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">interface</span> <span style="color:#a6e22e">MapJava</span><span style="color:#f92672">&lt;</span>C <span style="color:#66d9ef">extends</span> Cle<span style="color:#f92672">&lt;?&gt;,</span> V <span style="color:#66d9ef">extends</span> Object<span style="color:#f92672">&gt;</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">void</span>       <span style="color:#a6e22e">put</span><span style="color:#f92672">(</span>C c<span style="color:#f92672">,</span> V v<span style="color:#f92672">);</span>      <span style="color:#75715e">// associe la valeur v à la clé c
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	V          <span style="color:#a6e22e">get</span><span style="color:#f92672">(</span>C c<span style="color:#f92672">);</span>           <span style="color:#75715e">// obtenir la valeur associée à la clé c
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	<span style="color:#66d9ef">void</span>       <span style="color:#a6e22e">clear</span><span style="color:#f92672">();</span>            <span style="color:#75715e">// vide le map
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	<span style="color:#66d9ef">int</span>        <span style="color:#a6e22e">size</span><span style="color:#f92672">();</span>             <span style="color:#75715e">// taille du map
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	<span style="color:#66d9ef">boolean</span>    <span style="color:#a6e22e">isEmpty</span><span style="color:#f92672">();</span>          <span style="color:#75715e">// si vide
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	<span style="color:#66d9ef">boolean</span>    <span style="color:#a6e22e">containsKey</span><span style="color:#f92672">(</span>C c<span style="color:#f92672">);</span>   <span style="color:#75715e">// si le map contient la clé c
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	<span style="color:#66d9ef">boolean</span>    <span style="color:#a6e22e">containsValue</span><span style="color:#f92672">(</span>V v<span style="color:#f92672">);</span> <span style="color:#75715e">// si le map contient la valeur v
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	<span style="color:#66d9ef">void</span>       <span style="color:#a6e22e">remove</span><span style="color:#f92672">(</span>C c<span style="color:#f92672">);</span>        <span style="color:#75715e">// effacer la clé c (et la valeur associée)
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	List<span style="color:#f92672">&lt;</span>C<span style="color:#f92672">&gt;</span>    <span style="color:#a6e22e">keys</span><span style="color:#f92672">();</span>             <span style="color:#75715e">// retourner une liste de clés
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span></code></pre></div><h2 id="implantation-naïve-dun-map">
+  Implantation naïve d&rsquo;un map
+  <a class="anchor" href="#implantation-na%c3%afve-dun-map">#</a>
+</h2>
 <ul>
 <li>
 <p>On utilise deux listes:</p>
@@ -876,69 +832,65 @@ mapChar<span style="color:#f92672">[</span><span style="color:#e6db74">&#34;troi
 </ul>
 </li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#75715e">// Le map
-</span><span style="color:#75715e"></span><span style="color:#f92672">{</span><span style="color:#e6db74">&#34;sdx&#34;</span><span style="color:#f92672">:</span>5<span style="color:#f92672">,</span><span style="color:#e6db74">&#34;xdf&#34;</span><span style="color:#f92672">:</span>12<span style="color:#f92672">,</span><span style="color:#e6db74">&#34;lkm&#34;</span><span style="color:#f92672">:</span>54<span style="color:#f92672">}</span>
-
-<span style="color:#75715e">// Les clés
-</span><span style="color:#75715e">//         0     1     2
-</span><span style="color:#75715e"></span>cles <span style="color:#f92672">=</span>    <span style="color:#f92672">[</span><span style="color:#e6db74">&#34;sdx&#34;</span><span style="color:#f92672">,</span><span style="color:#e6db74">&#34;xdf&#34;</span><span style="color:#f92672">,</span><span style="color:#e6db74">&#34;lkm&#34;</span><span style="color:#f92672">]</span>
-
-<span style="color:#75715e">// Les valeurs
-</span><span style="color:#75715e">//         0     1     2
-</span><span style="color:#75715e"></span>valeurs <span style="color:#f92672">=</span> <span style="color:#f92672">[</span>5<span style="color:#f92672">,</span>    12<span style="color:#f92672">,</span>   54<span style="color:#f92672">]</span>
-
-
-</code></pre></div><ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#75715e">// Le map
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#f92672">{</span><span style="color:#e6db74">&#34;sdx&#34;</span><span style="color:#f92672">:</span>5<span style="color:#f92672">,</span><span style="color:#e6db74">&#34;xdf&#34;</span><span style="color:#f92672">:</span>12<span style="color:#f92672">,</span><span style="color:#e6db74">&#34;lkm&#34;</span><span style="color:#f92672">:</span>54<span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Les clés
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">//         0     1     2
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>cles <span style="color:#f92672">=</span>    <span style="color:#f92672">[</span><span style="color:#e6db74">&#34;sdx&#34;</span><span style="color:#f92672">,</span><span style="color:#e6db74">&#34;xdf&#34;</span><span style="color:#f92672">,</span><span style="color:#e6db74">&#34;lkm&#34;</span><span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Les valeurs
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">//         0     1     2
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>valeurs <span style="color:#f92672">=</span> <span style="color:#f92672">[</span>5<span style="color:#f92672">,</span>    12<span style="color:#f92672">,</span>   54<span style="color:#f92672">]</span>
+</span></span></code></pre></div><ul>
 <li>En général:</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">MapJavaNaif</span> <span style="color:#f92672">&lt;</span>C <span style="color:#66d9ef">extends</span> Cle<span style="color:#f92672">&lt;?&gt;,</span> V <span style="color:#66d9ef">extends</span> Object<span style="color:#f92672">&gt;</span> <span style="color:#66d9ef">extends</span> MapJava<span style="color:#f92672">&lt;</span>C<span style="color:#f92672">,</span>V<span style="color:#f92672">&gt;</span> <span style="color:#f92672">{</span>
-	
-	<span style="color:#66d9ef">private</span> List<span style="color:#f92672">&lt;</span>C<span style="color:#f92672">&gt;</span> cles <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> ArrayList<span style="color:#f92672">&lt;&gt;();</span>
-	<span style="color:#66d9ef">private</span> List<span style="color:#f92672">&lt;</span>V<span style="color:#f92672">&gt;</span> valeurs <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> ArrayList<span style="color:#f92672">&lt;&gt;();</span>
-
-	<span style="color:#a6e22e">@Override</span>
-	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">put</span><span style="color:#f92672">(</span>C c<span style="color:#f92672">,</span> V v<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-		<span style="color:#66d9ef">int</span> indiceCle <span style="color:#f92672">=</span> cles<span style="color:#f92672">.</span><span style="color:#a6e22e">indexOf</span><span style="color:#f92672">(</span>c<span style="color:#f92672">);</span>
-		
-		<span style="color:#66d9ef">if</span><span style="color:#f92672">(</span>indiceCle <span style="color:#f92672">!=</span> <span style="color:#f92672">-</span>1<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-			valeurs<span style="color:#f92672">.</span><span style="color:#a6e22e">set</span><span style="color:#f92672">(</span>indiceCle<span style="color:#f92672">,</span> v<span style="color:#f92672">);</span>
-		<span style="color:#f92672">}</span><span style="color:#66d9ef">else</span> <span style="color:#f92672">{</span>
-			cles<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span>c<span style="color:#f92672">);</span>
-			valeurs<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span>v<span style="color:#f92672">);</span>
-		<span style="color:#f92672">}</span>
-	<span style="color:#f92672">}</span>
-
-	<span style="color:#a6e22e">@Override</span>
-	<span style="color:#66d9ef">public</span> V <span style="color:#a6e22e">get</span><span style="color:#f92672">(</span>C c<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-		V valeur <span style="color:#f92672">=</span> <span style="color:#66d9ef">null</span><span style="color:#f92672">;</span>
-		
-		<span style="color:#66d9ef">int</span> indiceCle <span style="color:#f92672">=</span> cles<span style="color:#f92672">.</span><span style="color:#a6e22e">indexOf</span><span style="color:#f92672">(</span>c<span style="color:#f92672">);</span>
-		
-		<span style="color:#66d9ef">if</span><span style="color:#f92672">(</span>indiceCle <span style="color:#f92672">!=</span> <span style="color:#f92672">-</span>1<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-			valeur <span style="color:#f92672">=</span> valeurs<span style="color:#f92672">.</span><span style="color:#a6e22e">get</span><span style="color:#f92672">(</span>indiceCle<span style="color:#f92672">);</span>
-		<span style="color:#f92672">}</span>
-
-		<span style="color:#66d9ef">return</span> valeur<span style="color:#f92672">;</span>
-	<span style="color:#f92672">}</span>
-
-	<span style="color:#a6e22e">@Override</span>
-	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">remove</span><span style="color:#f92672">(</span>C c<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-		<span style="color:#66d9ef">int</span> indiceCle <span style="color:#f92672">=</span> cles<span style="color:#f92672">.</span><span style="color:#a6e22e">indexOf</span><span style="color:#f92672">(</span>c<span style="color:#f92672">);</span>
-		
-		<span style="color:#66d9ef">if</span><span style="color:#f92672">(</span>indiceCle <span style="color:#f92672">!=</span> <span style="color:#f92672">-</span>1<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-			cles<span style="color:#f92672">.</span><span style="color:#a6e22e">remove</span><span style="color:#f92672">(</span>indiceCle<span style="color:#f92672">);</span>
-			valeurs<span style="color:#f92672">.</span><span style="color:#a6e22e">remove</span><span style="color:#f92672">(</span>indiceCle<span style="color:#f92672">);</span>
-		<span style="color:#f92672">}</span>
-	<span style="color:#f92672">}</span>
-
-	<span style="color:#a6e22e">@Override</span>
-	<span style="color:#66d9ef">public</span> List<span style="color:#f92672">&lt;</span>C<span style="color:#f92672">&gt;</span> <span style="color:#a6e22e">keys</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
-		<span style="color:#66d9ef">return</span> cles<span style="color:#f92672">;</span>
-	<span style="color:#f92672">}</span>
-<span style="color:#f92672">}</span>
-
-
-</code></pre></div><ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">MapJavaNaif</span> <span style="color:#f92672">&lt;</span>C <span style="color:#66d9ef">extends</span> Cle<span style="color:#f92672">&lt;?&gt;,</span> V <span style="color:#66d9ef">extends</span> Object<span style="color:#f92672">&gt;</span> <span style="color:#66d9ef">extends</span> MapJava<span style="color:#f92672">&lt;</span>C<span style="color:#f92672">,</span>V<span style="color:#f92672">&gt;</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">private</span> List<span style="color:#f92672">&lt;</span>C<span style="color:#f92672">&gt;</span> cles <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> ArrayList<span style="color:#f92672">&lt;&gt;();</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">private</span> List<span style="color:#f92672">&lt;</span>V<span style="color:#f92672">&gt;</span> valeurs <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> ArrayList<span style="color:#f92672">&lt;&gt;();</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">@Override</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">put</span><span style="color:#f92672">(</span>C c<span style="color:#f92672">,</span> V v<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">int</span> indiceCle <span style="color:#f92672">=</span> cles<span style="color:#f92672">.</span><span style="color:#a6e22e">indexOf</span><span style="color:#f92672">(</span>c<span style="color:#f92672">);</span>
+</span></span><span style="display:flex;"><span>		
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">if</span><span style="color:#f92672">(</span>indiceCle <span style="color:#f92672">!=</span> <span style="color:#f92672">-</span>1<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>			valeurs<span style="color:#f92672">.</span><span style="color:#a6e22e">set</span><span style="color:#f92672">(</span>indiceCle<span style="color:#f92672">,</span> v<span style="color:#f92672">);</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#f92672">}</span><span style="color:#66d9ef">else</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>			cles<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span>c<span style="color:#f92672">);</span>
+</span></span><span style="display:flex;"><span>			valeurs<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span>v<span style="color:#f92672">);</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">@Override</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">public</span> V <span style="color:#a6e22e">get</span><span style="color:#f92672">(</span>C c<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>		V valeur <span style="color:#f92672">=</span> <span style="color:#66d9ef">null</span><span style="color:#f92672">;</span>
+</span></span><span style="display:flex;"><span>		
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">int</span> indiceCle <span style="color:#f92672">=</span> cles<span style="color:#f92672">.</span><span style="color:#a6e22e">indexOf</span><span style="color:#f92672">(</span>c<span style="color:#f92672">);</span>
+</span></span><span style="display:flex;"><span>		
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">if</span><span style="color:#f92672">(</span>indiceCle <span style="color:#f92672">!=</span> <span style="color:#f92672">-</span>1<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>			valeur <span style="color:#f92672">=</span> valeurs<span style="color:#f92672">.</span><span style="color:#a6e22e">get</span><span style="color:#f92672">(</span>indiceCle<span style="color:#f92672">);</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">return</span> valeur<span style="color:#f92672">;</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">@Override</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">remove</span><span style="color:#f92672">(</span>C c<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">int</span> indiceCle <span style="color:#f92672">=</span> cles<span style="color:#f92672">.</span><span style="color:#a6e22e">indexOf</span><span style="color:#f92672">(</span>c<span style="color:#f92672">);</span>
+</span></span><span style="display:flex;"><span>		
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">if</span><span style="color:#f92672">(</span>indiceCle <span style="color:#f92672">!=</span> <span style="color:#f92672">-</span>1<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>			cles<span style="color:#f92672">.</span><span style="color:#a6e22e">remove</span><span style="color:#f92672">(</span>indiceCle<span style="color:#f92672">);</span>
+</span></span><span style="display:flex;"><span>			valeurs<span style="color:#f92672">.</span><span style="color:#a6e22e">remove</span><span style="color:#f92672">(</span>indiceCle<span style="color:#f92672">);</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">@Override</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">public</span> List<span style="color:#f92672">&lt;</span>C<span style="color:#f92672">&gt;</span> <span style="color:#a6e22e">keys</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">return</span> cles<span style="color:#f92672">;</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span></code></pre></div><ul>
 <li>
 <p>Chaque clé doit héritée de la classe <code>Cle</code>:</p>
 <ul>
@@ -946,21 +898,22 @@ mapChar<span style="color:#f92672">[</span><span style="color:#e6db74">&#34;troi
 </ul>
 </li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Cle</span><span style="color:#f92672">&lt;</span>T <span style="color:#66d9ef">extends</span> Object<span style="color:#f92672">&gt;</span> <span style="color:#f92672">{</span>
-	
-	<span style="color:#66d9ef">private</span> T valeurJava<span style="color:#f92672">;</span>
-	
-	<span style="color:#66d9ef">public</span> <span style="color:#a6e22e">Cle</span><span style="color:#f92672">(</span>T valeurJava<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-		<span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">valeurJava</span> <span style="color:#f92672">=</span> valeurJava<span style="color:#f92672">;</span>
-	<span style="color:#f92672">}</span>
-	
-	<span style="color:#66d9ef">public</span> T <span style="color:#a6e22e">valeurJava</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
-		<span style="color:#66d9ef">return</span> valeurJava<span style="color:#f92672">;</span>
-	<span style="color:#f92672">}</span>
-<span style="color:#f92672">}</span>
-
-
-</code></pre></div><h2 id="problème-defficacité">Problème d&rsquo;efficacité</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Cle</span><span style="color:#f92672">&lt;</span>T <span style="color:#66d9ef">extends</span> Object<span style="color:#f92672">&gt;</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">private</span> T valeurJava<span style="color:#f92672">;</span>
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">public</span> <span style="color:#a6e22e">Cle</span><span style="color:#f92672">(</span>T valeurJava<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">valeurJava</span> <span style="color:#f92672">=</span> valeurJava<span style="color:#f92672">;</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">public</span> T <span style="color:#a6e22e">valeurJava</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">return</span> valeurJava<span style="color:#f92672">;</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span></code></pre></div><h2 id="problème-defficacité">
+  Problème d&rsquo;efficacité
+  <a class="anchor" href="#probl%c3%a8me-defficacit%c3%a9">#</a>
+</h2>
 <ul>
 <li>Modifier une valeur dans notre map naïf n&rsquo;est pas efficace:</li>
 </ul>
@@ -978,7 +931,10 @@ mapChar<span style="color:#f92672">[</span><span style="color:#e6db74">&#34;troi
 </ul>
 </li>
 </ul>
-<h2 id="fonction-et-table-de-hachage">Fonction et table de hachage</h2>
+<h2 id="fonction-et-table-de-hachage">
+  Fonction et table de hachage
+  <a class="anchor" href="#fonction-et-table-de-hachage">#</a>
+</h2>
 <ul>
 <li>
 <p>On veut éviter de chercher l&rsquo;indice de la clé avec un <code>indexOf</code></p>
@@ -994,17 +950,15 @@ mapChar<span style="color:#f92672">[</span><span style="color:#e6db74">&#34;troi
 <p>Une clé hachable doit implanter la méthode <code>indice</code> qui retourne l&rsquo;indice de la clé</p>
 </li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">abstract</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">CleHachable</span> <span style="color:#f92672">&lt;</span>T <span style="color:#66d9ef">extends</span> Object<span style="color:#f92672">&gt;</span> <span style="color:#66d9ef">extends</span> Cle<span style="color:#f92672">&lt;</span>T<span style="color:#f92672">&gt;</span> <span style="color:#f92672">{</span>
-	
-	<span style="color:#66d9ef">public</span> <span style="color:#a6e22e">CleHachable</span><span style="color:#f92672">(</span>T valeurJava<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-		<span style="color:#66d9ef">super</span><span style="color:#f92672">(</span>valeurJava<span style="color:#f92672">);</span>
-	<span style="color:#f92672">}</span>
-
-	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">abstract</span> <span style="color:#66d9ef">int</span> <span style="color:#a6e22e">indice</span><span style="color:#f92672">();</span>
-<span style="color:#f92672">}</span>
-
-
-</code></pre></div><ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">abstract</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">CleHachable</span> <span style="color:#f92672">&lt;</span>T <span style="color:#66d9ef">extends</span> Object<span style="color:#f92672">&gt;</span> <span style="color:#66d9ef">extends</span> Cle<span style="color:#f92672">&lt;</span>T<span style="color:#f92672">&gt;</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">public</span> <span style="color:#a6e22e">CleHachable</span><span style="color:#f92672">(</span>T valeurJava<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">super</span><span style="color:#f92672">(</span>valeurJava<span style="color:#f92672">);</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">abstract</span> <span style="color:#66d9ef">int</span> <span style="color:#a6e22e">indice</span><span style="color:#f92672">();</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span></code></pre></div><ul>
 <li>
 <p>Voici par exemple une clé hachable quand la clé est une chaîne:</p>
 <ul>
@@ -1012,80 +966,77 @@ mapChar<span style="color:#f92672">[</span><span style="color:#e6db74">&#34;troi
 </ul>
 </li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">ChaineHashb</span> <span style="color:#66d9ef">extends</span> CleHachable<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">&gt;</span> <span style="color:#f92672">{</span>
-
-	<span style="color:#66d9ef">public</span> <span style="color:#a6e22e">ChaineHashb</span><span style="color:#f92672">(</span>String valeurJava<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-		<span style="color:#66d9ef">super</span><span style="color:#f92672">(</span>valeurJava<span style="color:#f92672">);</span>
-	<span style="color:#f92672">}</span>
-
-	<span style="color:#a6e22e">@Override</span>
-	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">int</span> <span style="color:#a6e22e">indice</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
-		<span style="color:#66d9ef">return</span> valeurJava<span style="color:#f92672">().</span><span style="color:#a6e22e">length</span><span style="color:#f92672">();</span>
-	<span style="color:#f92672">}</span>
-
-<span style="color:#f92672">}</span>
-
-
-</code></pre></div><ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">ChaineHashb</span> <span style="color:#66d9ef">extends</span> CleHachable<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">&gt;</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">public</span> <span style="color:#a6e22e">ChaineHashb</span><span style="color:#f92672">(</span>String valeurJava<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">super</span><span style="color:#f92672">(</span>valeurJava<span style="color:#f92672">);</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">@Override</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">int</span> <span style="color:#a6e22e">indice</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">return</span> valeurJava<span style="color:#f92672">().</span><span style="color:#a6e22e">length</span><span style="color:#f92672">();</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span></code></pre></div><ul>
 <li>Une fois qu&rsquo;on a un indice, on peut mémoriser la valeur dans un tableau</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">List<span style="color:#f92672">&lt;</span>Character<span style="color:#f92672">&gt;</span> valeurs <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> ArrayList<span style="color:#f92672">&lt;&gt;();</span>
-
-cle01 <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> ChaineHashb<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;v&#34;</span><span style="color:#f92672">);</span>
-cle02 <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> ChaineHashb<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;yf&#34;</span><span style="color:#f92672">);</span>
-cle03 <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> ChaineHashb<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;asf&#34;</span><span style="color:#f92672">);</span>
-
-map<span style="color:#f92672">.</span><span style="color:#a6e22e">put</span><span style="color:#f92672">(</span>cle01<span style="color:#f92672">,</span> <span style="color:#e6db74">&#39;a&#39;</span><span style="color:#f92672">):</span>
-
-    <span style="color:#75715e">// la clé est &#34;v&#34;,   l&#39;indice est 1 (la longueur)
-</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">int</span> indice01 <span style="color:#f92672">=</span> cle01<span style="color:#f92672">.</span><span style="color:#a6e22e">indice</span><span style="color:#f92672">();</span>
-    valeurs<span style="color:#f92672">.</span><span style="color:#a6e22e">set</span><span style="color:#f92672">(</span>indice01<span style="color:#f92672">,</span> <span style="color:#e6db74">&#39;a&#39;</span><span style="color:#f92672">);</span>
-
-map<span style="color:#f92672">.</span><span style="color:#a6e22e">put</span><span style="color:#f92672">(</span>cle02<span style="color:#f92672">,</span> <span style="color:#e6db74">&#39;b&#39;</span><span style="color:#f92672">):</span>
-
-    <span style="color:#75715e">// la clé est &#34;yf&#34;,  l&#39;indice est 2 (la longueur)
-</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">int</span> indice02 <span style="color:#f92672">=</span> cle02<span style="color:#f92672">.</span><span style="color:#a6e22e">indice</span><span style="color:#f92672">();</span>
-    valeurs<span style="color:#f92672">.</span><span style="color:#a6e22e">set</span><span style="color:#f92672">(</span>indice02<span style="color:#f92672">,</span> <span style="color:#e6db74">&#39;b&#39;</span><span style="color:#f92672">);</span>
-
-map<span style="color:#f92672">.</span><span style="color:#a6e22e">put</span><span style="color:#f92672">(</span>cle03<span style="color:#f92672">,</span> <span style="color:#e6db74">&#39;c&#39;</span><span style="color:#f92672">):</span>
-
-    <span style="color:#75715e">// la clé est &#34;asf&#34;, l&#39;indice est 3 (la longueur)
-</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">int</span> indice03 <span style="color:#f92672">=</span> cle03<span style="color:#f92672">.</span><span style="color:#a6e22e">indice</span><span style="color:#f92672">();</span>
-    valeurs<span style="color:#f92672">.</span><span style="color:#a6e22e">set</span><span style="color:#f92672">(</span>indice03<span style="color:#f92672">,</span> <span style="color:#e6db74">&#39;c&#39;</span><span style="color:#f92672">);</span>
-
-
-</code></pre></div><ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>List<span style="color:#f92672">&lt;</span>Character<span style="color:#f92672">&gt;</span> valeurs <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> ArrayList<span style="color:#f92672">&lt;&gt;();</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>cle01 <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> ChaineHashb<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;v&#34;</span><span style="color:#f92672">);</span>
+</span></span><span style="display:flex;"><span>cle02 <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> ChaineHashb<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;yf&#34;</span><span style="color:#f92672">);</span>
+</span></span><span style="display:flex;"><span>cle03 <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> ChaineHashb<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;asf&#34;</span><span style="color:#f92672">);</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>map<span style="color:#f92672">.</span><span style="color:#a6e22e">put</span><span style="color:#f92672">(</span>cle01<span style="color:#f92672">,</span> <span style="color:#e6db74">&#39;a&#39;</span><span style="color:#f92672">):</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// la clé est &#34;v&#34;,   l&#39;indice est 1 (la longueur)
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">int</span> indice01 <span style="color:#f92672">=</span> cle01<span style="color:#f92672">.</span><span style="color:#a6e22e">indice</span><span style="color:#f92672">();</span>
+</span></span><span style="display:flex;"><span>    valeurs<span style="color:#f92672">.</span><span style="color:#a6e22e">set</span><span style="color:#f92672">(</span>indice01<span style="color:#f92672">,</span> <span style="color:#e6db74">&#39;a&#39;</span><span style="color:#f92672">);</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>map<span style="color:#f92672">.</span><span style="color:#a6e22e">put</span><span style="color:#f92672">(</span>cle02<span style="color:#f92672">,</span> <span style="color:#e6db74">&#39;b&#39;</span><span style="color:#f92672">):</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// la clé est &#34;yf&#34;,  l&#39;indice est 2 (la longueur)
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">int</span> indice02 <span style="color:#f92672">=</span> cle02<span style="color:#f92672">.</span><span style="color:#a6e22e">indice</span><span style="color:#f92672">();</span>
+</span></span><span style="display:flex;"><span>    valeurs<span style="color:#f92672">.</span><span style="color:#a6e22e">set</span><span style="color:#f92672">(</span>indice02<span style="color:#f92672">,</span> <span style="color:#e6db74">&#39;b&#39;</span><span style="color:#f92672">);</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>map<span style="color:#f92672">.</span><span style="color:#a6e22e">put</span><span style="color:#f92672">(</span>cle03<span style="color:#f92672">,</span> <span style="color:#e6db74">&#39;c&#39;</span><span style="color:#f92672">):</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// la clé est &#34;asf&#34;, l&#39;indice est 3 (la longueur)
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">int</span> indice03 <span style="color:#f92672">=</span> cle03<span style="color:#f92672">.</span><span style="color:#a6e22e">indice</span><span style="color:#f92672">();</span>
+</span></span><span style="display:flex;"><span>    valeurs<span style="color:#f92672">.</span><span style="color:#a6e22e">set</span><span style="color:#f92672">(</span>indice03<span style="color:#f92672">,</span> <span style="color:#e6db74">&#39;c&#39;</span><span style="color:#f92672">);</span>
+</span></span></code></pre></div><ul>
 <li>IMPORTANT: la fonction de hachage ne doit <strong>pas</strong> être aléatoire
 <ul>
 <li>sinon on ne peut plus retrouver une valeur mémorisée par indice!</li>
 </ul>
 </li>
 </ul>
-<h2 id="quoi-faire-en-cas-de-collision">Quoi faire en cas de collision?</h2>
+<h2 id="quoi-faire-en-cas-de-collision">
+  Quoi faire en cas de collision?
+  <a class="anchor" href="#quoi-faire-en-cas-de-collision">#</a>
+</h2>
 <ul>
 <li>Quoi faire s&rsquo;il y a une collision, c-à-d si deux clés ont le même indice?</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">List<span style="color:#f92672">&lt;</span>Character<span style="color:#f92672">&gt;</span> valeurs <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> ArrayList<span style="color:#f92672">&lt;&gt;();</span>
-
-cle01 <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> ChaineHashb<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;x&#34;</span><span style="color:#f92672">);</span>
-cle02 <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> ChaineHashb<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;y&#34;</span><span style="color:#f92672">);</span>
-
-map<span style="color:#f92672">.</span><span style="color:#a6e22e">put</span><span style="color:#f92672">(</span>cle01<span style="color:#f92672">,</span> <span style="color:#e6db74">&#39;a&#39;</span><span style="color:#f92672">):</span>
-
-    <span style="color:#75715e">// la clé est &#34;x&#34;, l&#39;indice est 1 (la longueur)
-</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">int</span> indice01 <span style="color:#f92672">=</span> cle01<span style="color:#f92672">.</span><span style="color:#a6e22e">indice</span><span style="color:#f92672">();</span>
-    valeurs<span style="color:#f92672">.</span><span style="color:#a6e22e">set</span><span style="color:#f92672">(</span>indice01<span style="color:#f92672">,</span> <span style="color:#e6db74">&#39;a&#39;</span><span style="color:#f92672">);</span>
-
-map<span style="color:#f92672">.</span><span style="color:#a6e22e">put</span><span style="color:#f92672">(</span>cle02<span style="color:#f92672">,</span> <span style="color:#e6db74">&#39;b&#39;</span><span style="color:#f92672">):</span>
-
-    <span style="color:#75715e">// la clé est &#34;y&#34;, l&#39;indice est encore 1!
-</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">int</span> indice02 <span style="color:#f92672">=</span> cle02<span style="color:#f92672">.</span><span style="color:#a6e22e">indice</span><span style="color:#f92672">();</span>
-    valeurs<span style="color:#f92672">.</span><span style="color:#a6e22e">set</span><span style="color:#f92672">(</span>indice02<span style="color:#f92672">,</span> <span style="color:#e6db74">&#39;b&#39;</span><span style="color:#f92672">);</span>      
-
-    <span style="color:#75715e">// oups! On vient d&#39;écraser la paire &#34;x&#34;:&#39;a&#39;
-</span><span style="color:#75715e"></span>
-
-</code></pre></div><ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>List<span style="color:#f92672">&lt;</span>Character<span style="color:#f92672">&gt;</span> valeurs <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> ArrayList<span style="color:#f92672">&lt;&gt;();</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>cle01 <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> ChaineHashb<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;x&#34;</span><span style="color:#f92672">);</span>
+</span></span><span style="display:flex;"><span>cle02 <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> ChaineHashb<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;y&#34;</span><span style="color:#f92672">);</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>map<span style="color:#f92672">.</span><span style="color:#a6e22e">put</span><span style="color:#f92672">(</span>cle01<span style="color:#f92672">,</span> <span style="color:#e6db74">&#39;a&#39;</span><span style="color:#f92672">):</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// la clé est &#34;x&#34;, l&#39;indice est 1 (la longueur)
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">int</span> indice01 <span style="color:#f92672">=</span> cle01<span style="color:#f92672">.</span><span style="color:#a6e22e">indice</span><span style="color:#f92672">();</span>
+</span></span><span style="display:flex;"><span>    valeurs<span style="color:#f92672">.</span><span style="color:#a6e22e">set</span><span style="color:#f92672">(</span>indice01<span style="color:#f92672">,</span> <span style="color:#e6db74">&#39;a&#39;</span><span style="color:#f92672">);</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>map<span style="color:#f92672">.</span><span style="color:#a6e22e">put</span><span style="color:#f92672">(</span>cle02<span style="color:#f92672">,</span> <span style="color:#e6db74">&#39;b&#39;</span><span style="color:#f92672">):</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// la clé est &#34;y&#34;, l&#39;indice est encore 1!
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">int</span> indice02 <span style="color:#f92672">=</span> cle02<span style="color:#f92672">.</span><span style="color:#a6e22e">indice</span><span style="color:#f92672">();</span>
+</span></span><span style="display:flex;"><span>    valeurs<span style="color:#f92672">.</span><span style="color:#a6e22e">set</span><span style="color:#f92672">(</span>indice02<span style="color:#f92672">,</span> <span style="color:#e6db74">&#39;b&#39;</span><span style="color:#f92672">);</span>      
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// oups! On vient d&#39;écraser la paire &#34;x&#34;:&#39;a&#39;
+</span></span></span></code></pre></div><ul>
 <li>
 <p>En fait, on ne peut pas associer un indice directement à une valeur</p>
 </li>
@@ -1093,36 +1044,34 @@ map<span style="color:#f92672">.</span><span style="color:#a6e22e">put</span><sp
 <p>Il faut plutôt associer l&rsquo;indice à un map naïf:</p>
 </li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">MapJava<span style="color:#f92672">&lt;</span>Cle<span style="color:#f92672">,</span>Character<span style="color:#f92672">&gt;[]</span> valeurs <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> MapJava<span style="color:#f92672">&lt;</span>Cle<span style="color:#f92672">,</span>Character<span style="color:#f92672">&gt;[</span>1000<span style="color:#f92672">];</span>
-
-cle01 <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> ChaineHashb<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;x&#34;</span><span style="color:#f92672">);</span>
-cle02 <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> ChaineHashb<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;y&#34;</span><span style="color:#f92672">);</span>
-cle03 <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> ChaineHashb<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;z&#34;</span><span style="color:#f92672">);</span>
-
-map<span style="color:#f92672">.</span><span style="color:#a6e22e">put</span><span style="color:#f92672">(</span>cle01<span style="color:#f92672">,</span> <span style="color:#e6db74">&#39;a&#39;</span><span style="color:#f92672">):</span>
-
-    <span style="color:#75715e">// la clé est &#34;x&#34;, l&#39;indice est 1 (la longueur)
-</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">int</span> indice01 <span style="color:#f92672">=</span> cle01<span style="color:#f92672">.</span><span style="color:#a6e22e">indice</span><span style="color:#f92672">();</span>
-
-    <span style="color:#75715e">// insérer d&#39;abord un map à l&#39;indice
-</span><span style="color:#75715e"></span>    valeurs<span style="color:#f92672">[</span>indice01<span style="color:#f92672">]</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> MapJavaNaif<span style="color:#f92672">&lt;&gt;();</span>
-
-    valeurs<span style="color:#f92672">[</span>indice01<span style="color:#f92672">].</span><span style="color:#a6e22e">put</span><span style="color:#f92672">(</span>cle01<span style="color:#f92672">,</span> <span style="color:#e6db74">&#39;a&#39;</span><span style="color:#f92672">);</span>
-
-map<span style="color:#f92672">.</span><span style="color:#a6e22e">put</span><span style="color:#f92672">(</span>cle02<span style="color:#f92672">,</span> <span style="color:#e6db74">&#39;b&#39;</span><span style="color:#f92672">):</span>
-
-    <span style="color:#75715e">// la clé est &#34;y&#34;,  l&#39;indice est encore 1
-</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">int</span> indice02 <span style="color:#f92672">=</span> cle02<span style="color:#f92672">.</span><span style="color:#a6e22e">indice</span><span style="color:#f92672">();</span>
-    valeurs<span style="color:#f92672">[</span>indice02<span style="color:#f92672">].</span><span style="color:#a6e22e">put</span><span style="color:#f92672">(</span>cle02<span style="color:#f92672">,</span> <span style="color:#e6db74">&#39;b&#39;</span><span style="color:#f92672">);</span>
-
-map<span style="color:#f92672">.</span><span style="color:#a6e22e">put</span><span style="color:#f92672">(</span>cle03<span style="color:#f92672">,</span> <span style="color:#e6db74">&#39;c&#39;</span><span style="color:#f92672">):</span>
-
-    <span style="color:#75715e">// la clé est &#34;z&#34;, l&#39;indice est encore 1
-</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">int</span> indice03 <span style="color:#f92672">=</span> cle03<span style="color:#f92672">.</span><span style="color:#a6e22e">indice</span><span style="color:#f92672">();</span>
-    valeurs<span style="color:#f92672">[</span>indice03<span style="color:#f92672">].</span><span style="color:#a6e22e">put</span><span style="color:#f92672">(</span>cle03<span style="color:#f92672">,</span> <span style="color:#e6db74">&#39;c&#39;</span><span style="color:#f92672">);</span>
-
-
-</code></pre></div><ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>MapJava<span style="color:#f92672">&lt;</span>Cle<span style="color:#f92672">,</span>Character<span style="color:#f92672">&gt;[]</span> valeurs <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> MapJava<span style="color:#f92672">&lt;</span>Cle<span style="color:#f92672">,</span>Character<span style="color:#f92672">&gt;[</span>1000<span style="color:#f92672">];</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>cle01 <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> ChaineHashb<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;x&#34;</span><span style="color:#f92672">);</span>
+</span></span><span style="display:flex;"><span>cle02 <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> ChaineHashb<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;y&#34;</span><span style="color:#f92672">);</span>
+</span></span><span style="display:flex;"><span>cle03 <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> ChaineHashb<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;z&#34;</span><span style="color:#f92672">);</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>map<span style="color:#f92672">.</span><span style="color:#a6e22e">put</span><span style="color:#f92672">(</span>cle01<span style="color:#f92672">,</span> <span style="color:#e6db74">&#39;a&#39;</span><span style="color:#f92672">):</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// la clé est &#34;x&#34;, l&#39;indice est 1 (la longueur)
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">int</span> indice01 <span style="color:#f92672">=</span> cle01<span style="color:#f92672">.</span><span style="color:#a6e22e">indice</span><span style="color:#f92672">();</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// insérer d&#39;abord un map à l&#39;indice
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    valeurs<span style="color:#f92672">[</span>indice01<span style="color:#f92672">]</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> MapJavaNaif<span style="color:#f92672">&lt;&gt;();</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    valeurs<span style="color:#f92672">[</span>indice01<span style="color:#f92672">].</span><span style="color:#a6e22e">put</span><span style="color:#f92672">(</span>cle01<span style="color:#f92672">,</span> <span style="color:#e6db74">&#39;a&#39;</span><span style="color:#f92672">);</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>map<span style="color:#f92672">.</span><span style="color:#a6e22e">put</span><span style="color:#f92672">(</span>cle02<span style="color:#f92672">,</span> <span style="color:#e6db74">&#39;b&#39;</span><span style="color:#f92672">):</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// la clé est &#34;y&#34;,  l&#39;indice est encore 1
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">int</span> indice02 <span style="color:#f92672">=</span> cle02<span style="color:#f92672">.</span><span style="color:#a6e22e">indice</span><span style="color:#f92672">();</span>
+</span></span><span style="display:flex;"><span>    valeurs<span style="color:#f92672">[</span>indice02<span style="color:#f92672">].</span><span style="color:#a6e22e">put</span><span style="color:#f92672">(</span>cle02<span style="color:#f92672">,</span> <span style="color:#e6db74">&#39;b&#39;</span><span style="color:#f92672">);</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>map<span style="color:#f92672">.</span><span style="color:#a6e22e">put</span><span style="color:#f92672">(</span>cle03<span style="color:#f92672">,</span> <span style="color:#e6db74">&#39;c&#39;</span><span style="color:#f92672">):</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// la clé est &#34;z&#34;, l&#39;indice est encore 1
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">int</span> indice03 <span style="color:#f92672">=</span> cle03<span style="color:#f92672">.</span><span style="color:#a6e22e">indice</span><span style="color:#f92672">();</span>
+</span></span><span style="display:flex;"><span>    valeurs<span style="color:#f92672">[</span>indice03<span style="color:#f92672">].</span><span style="color:#a6e22e">put</span><span style="color:#f92672">(</span>cle03<span style="color:#f92672">,</span> <span style="color:#e6db74">&#39;c&#39;</span><span style="color:#f92672">);</span>
+</span></span></code></pre></div><ul>
 <li>
 <p>S&rsquo;il n&rsquo;y a pas souvent de collision:</p>
 <ul>
@@ -1148,21 +1097,22 @@ map<span style="color:#f92672">.</span><span style="color:#a6e22e">put</span><sp
 </ul>
 </li>
 </ul>
-<h2 id="implantation-dun-map-avec-hachage">Implantation d&rsquo;un map avec hachage</h2>
+<h2 id="implantation-dun-map-avec-hachage">
+  Implantation d&rsquo;un map avec hachage
+  <a class="anchor" href="#implantation-dun-map-avec-hachage">#</a>
+</h2>
 <ul>
 <li>Voici le début de l&rsquo;implantation</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span>   <span style="color:#a6e22e">MapJavaHash</span> <span style="color:#f92672">&lt;</span>C <span style="color:#66d9ef">extends</span> CleHachable<span style="color:#f92672">&lt;?&gt;,</span> V <span style="color:#66d9ef">extends</span> Object<span style="color:#f92672">&gt;</span> 
-       <span style="color:#66d9ef">extends</span> MapJava<span style="color:#f92672">&lt;</span>C<span style="color:#f92672">,</span>V<span style="color:#f92672">&gt;</span> <span style="color:#f92672">{</span>
-	
-	<span style="color:#66d9ef">private</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">final</span> <span style="color:#66d9ef">int</span> TAILLE_TABLE_HACHAGE <span style="color:#f92672">=</span> 1000<span style="color:#f92672">;</span>
-	
-	<span style="color:#a6e22e">@SuppressWarnings</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;unchecked&#34;</span><span style="color:#f92672">)</span>
-	<span style="color:#66d9ef">private</span> MapJavaNaif<span style="color:#f92672">&lt;</span>C<span style="color:#f92672">,</span>V<span style="color:#f92672">&gt;[]</span> table <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> MapJavaNaif<span style="color:#f92672">[</span>TAILLE_TABLE_HACHAGE<span style="color:#f92672">];</span>
-	<span style="color:#66d9ef">private</span> <span style="color:#66d9ef">int</span> taille <span style="color:#f92672">=</span> 0<span style="color:#f92672">;</span>
-
-
-</code></pre></div><ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span>   <span style="color:#a6e22e">MapJavaHash</span> <span style="color:#f92672">&lt;</span>C <span style="color:#66d9ef">extends</span> CleHachable<span style="color:#f92672">&lt;?&gt;,</span> V <span style="color:#66d9ef">extends</span> Object<span style="color:#f92672">&gt;</span> 
+</span></span><span style="display:flex;"><span>       <span style="color:#66d9ef">extends</span> MapJava<span style="color:#f92672">&lt;</span>C<span style="color:#f92672">,</span>V<span style="color:#f92672">&gt;</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">private</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">final</span> <span style="color:#66d9ef">int</span> TAILLE_TABLE_HACHAGE <span style="color:#f92672">=</span> 1000<span style="color:#f92672">;</span>
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">@SuppressWarnings</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;unchecked&#34;</span><span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">private</span> MapJavaNaif<span style="color:#f92672">&lt;</span>C<span style="color:#f92672">,</span>V<span style="color:#f92672">&gt;[]</span> table <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> MapJavaNaif<span style="color:#f92672">[</span>TAILLE_TABLE_HACHAGE<span style="color:#f92672">];</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">private</span> <span style="color:#66d9ef">int</span> taille <span style="color:#f92672">=</span> 0<span style="color:#f92672">;</span>
+</span></span></code></pre></div><ul>
 <li>IMPORTANT:
 <ul>
 <li>la méthode <code>CleHachable.indice</code> peut retourner un indice <code>&gt;= table.length</code></li>
@@ -1171,7 +1121,10 @@ map<span style="color:#f92672">.</span><span style="color:#a6e22e">put</span><sp
 </ul>
 </li>
 </ul>
-<h2 id="efficacité">Efficacité</h2>
+<h2 id="efficacité">
+  Efficacité
+  <a class="anchor" href="#efficacit%c3%a9">#</a>
+</h2>
 <ul>
 <li>
 <p>L&rsquo;efficacité dépend du nombre de collisions, ce qui dépend en fait de:</p>
@@ -1242,8 +1195,7 @@ map<span style="color:#f92672">.</span><span style="color:#a6e22e">put</span><sp
 
 
 
-  <script>(function(){function select(element){const selection=window.getSelection();const range=document.createRange();range.selectNodeContents(element);selection.removeAllRanges();selection.addRange(range);}
-document.querySelectorAll("pre code").forEach(code=>{code.addEventListener("click",function(event){select(code.parentElement);if(navigator.clipboard){navigator.clipboard.writeText(code.parentElement.textContent);}});});})();</script>
+  <script>(function(){function e(n){const e=window.getSelection(),t=document.createRange();t.selectNodeContents(n),e.removeAllRanges(),e.addRange(t)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
 
 
  
