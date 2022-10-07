@@ -1,0 +1,16 @@
+digraph "MesDonneesJava" {
+graph ["rankdir"="LR","compound"="true","ranksep"="1.0","nodesep"="1.0"]
+"/" ["label"="<_C>MesDonneesJava|{racine|<racine_racine>}","style"="filled","fillcolor"="white","shape"="record"]
+"/racine" ["label"="<_C>Map|{vehicules|<vehicules_vehicules>}","style"="filled","fillcolor"="white","shape"="record"]
+"/racine/vehicules" ["label"="<_C>List|{0|<0_0>}|{1|<1_1>}","style"="filled","fillcolor"="white","shape"="record"]
+"/racine/vehicules/0" ["label"="<_C>Map|{nombreDeRoues|2}|{type|\"mobilette\"}|{etat|<etat_etat>}","style"="filled","fillcolor"="white","shape"="record"]
+"/racine/vehicules/0/etat" ["label"="<_C>Map|{besoinChangementHuile|false}|{kilometrage|14.45}","style"="filled","fillcolor"="white","shape"="record"]
+"/racine/vehicules/1" ["label"="<_C>Map|{nombreDeRoues|4}|{type|\"camion\"}|{etat|<etat_etat>}","style"="filled","fillcolor"="white","shape"="record"]
+"/racine/vehicules/1/etat" ["label"="<_C>Map|{besoinChangementHuile|true}|{kilometrage|13344.5}","style"="filled","fillcolor"="white","shape"="record"]
+"/":"racine_racine":c -> "/racine":"_C" ["tailclip"="false","arrowtail"="dot","dir"="both","label"=""]
+"/racine":"vehicules_vehicules":c -> "/racine/vehicules":"_C" ["tailclip"="false","arrowtail"="dot","dir"="both","label"=""]
+"/racine/vehicules":"1_1":c -> "/racine/vehicules/1":"_C" ["tailclip"="false","arrowtail"="dot","dir"="both","label"=""]
+"/racine/vehicules":"0_0":c -> "/racine/vehicules/0":"_C" ["tailclip"="false","arrowtail"="dot","dir"="both","label"=""]
+"/racine/vehicules/0":"etat_etat":c -> "/racine/vehicules/0/etat":"_C" ["tailclip"="false","arrowtail"="dot","dir"="both","label"=""]
+"/racine/vehicules/1":"etat_etat":c -> "/racine/vehicules/1/etat":"_C" ["tailclip"="false","arrowtail"="dot","dir"="both","label"=""]
+}
