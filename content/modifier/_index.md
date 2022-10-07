@@ -1,6 +1,7 @@
 ---
 title: "Annexe 2: suggérer une modification à ce manuel"
 bookCollapseSection: false
+bookNumbered: false
 weight: 100
 ---
 

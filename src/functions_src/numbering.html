@@ -11,9 +11,11 @@
 
 {{ $rootPage := $site.GetPage $bookSection }}
 
-{{ range $index, $page := $rootPage.Pages }}
+{{ range $index, $page := where (where $rootPage.Pages "Params.BookHidden" "ne" true) "Params.BookNumbered" "ne" false }}
 
     {{ if eq $page $currentPage }}
+
+        {{ $index = add $index 1 }}
 
         {{ if $numberOnly }}
 

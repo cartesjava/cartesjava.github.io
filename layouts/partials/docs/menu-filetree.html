@@ -39,6 +39,7 @@
     </label>
   {{ else if .Page.Content }}
     <a href="{{ .Page.RelPermalink }}" class="{{ if $current }} active{{ end }}">
+      {{- template "numbering" (dict "Page" .Page "NumberOnly" true) -}}
       {{- partial "docs/title" .Page -}}
     </a>
   {{ else }}
