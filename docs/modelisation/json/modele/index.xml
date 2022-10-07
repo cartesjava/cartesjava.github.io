@@ -5,6 +5,10 @@
     <link>https://cartesjava.github.io/modelisation/json/modele/</link>
     <description>Recent content in Notion de modèle on Cartes Java</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>fr-ca</language><atom:link href="https://cartesjava.github.io/modelisation/json/modele/index.xml" rel="self" type="application/rss+xml" />
+    <language>fr-ca</language>
+    
+	<atom:link href="https://cartesjava.github.io/modelisation/json/modele/index.xml" rel="self" type="application/rss+xml" />
+    
+    
   </channel>
 </rss>

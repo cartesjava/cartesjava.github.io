@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Format JSON #    Le format JSON est très populaire pour représenter des données
+<meta name="description" content="Format JSON   Le format JSON est très populaire pour représenter des données
   JSON veut dire Javascript Object Notation
   C&rsquo;est le format prévilégié pour les applications Web
   Les bases de données NoSQL utilisent souvent un format similaire à JSON
   Voici les valeurs en JSON:
- la valeur nulle: null un booléen: true ou false un nombre comme: 1, 4.5, -10.">
+ la valeur nulle: null un booléen: true ou false un nombre comme: 1, 4.5, -10.1 une chaîne comme: &quot;asdf&quot;, &quot;&quot;, &quot;Bonjour!">
 <meta name="theme-color" content="#FFFFFF">
 <meta name="color-scheme" content="light dark"><meta property="og:title" content="Format JSON" />
 <meta property="og:description" content="" />
@@ -25,13 +25,13 @@
 </title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
-<link rel="stylesheet" href="/book.min.62522f734605549ffb41c7c071c68ae6cea09d216f30ede20c344054d503fc2f.css" integrity="sha256-YlIvc0YFVJ/7QcfAccaK5s6gnSFvMO3iDDRAVNUD/C8=" crossorigin="anonymous">
+<link rel="stylesheet" href="/book.min.393750c588c31dbc7a21f29dfc11b099dce42bbd1c8244d0bcd848e963429884.css" integrity="sha256-OTdQxYjDHbx6IfKd/BGwmdzkK70cgkTQvNhI6WNCmIQ=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/fr.search.min.e6065138eef3abd1f2074515d92bb8089429126ab68655e681196fcdb4ca3646.js" integrity="sha256-5gZROO7zq9HyB0UV2Su4CJQpEmq2hlXmgRlvzbTKNkY=" crossorigin="anonymous"></script>
+  <script defer src="/fr.search.min.b115459e677278eabf2edc649359fedb38c58c1d76532f9aefb6b69d05593dd9.js" integrity="sha256-sRVFnmdyeOq/Ltxkk1n&#43;2zjFjB12Uy&#43;a77a2nQVZPdk=" crossorigin="anonymous"></script>
 
-  <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" integrity="sha256-b2&#43;Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC&#43;NdcPIvZhzk=" crossorigin="anonymous"></script>
+  <script defer src="/sw.min.74a8bb07f0bee86d6bb9a2750f073f14d93c7e4512f28860370cfd879e9719b4.js" integrity="sha256-dKi7B/C&#43;6G1ruaJ1Dwc/FNk8fkUS8ohgNwz9h56XGbQ=" crossorigin="anonymous"></script>
 
-<script defer src="/reload_videos.min.4a5aa164333a19381a7fd1dde8e03eadc175bdda3a31e8f4fc8e0951775577ca.js" integrity="sha256-SlqhZDM6GTgaf9Hd6OA&#43;rcF1vdo6Mej0/I4JUXdVd8o=" crossorigin="anonymous"></script><link rel="alternate" type="application/rss+xml" href="https://cartesjava.github.io/modelisation/json/format_json/index.xml" title="Cartes Java" />
+<script defer src="/reload_videos.min.e548f6921f0ad1043b58ebf2f0a8daba7072dff046fb554ef3e655b40c342cec.js" integrity="sha256-5Uj2kh8K0QQ7WOvy8KjaunBy3/BG&#43;1VO8&#43;ZVtAw0LOw=" crossorigin="anonymous"></script><link rel="alternate" type="application/rss+xml" href="https://cartesjava.github.io/modelisation/json/format_json/index.xml" title="Cartes Java" />
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -742,7 +742,7 @@ https://github.com/alex-shpak/hugo-book
 
 
 
-  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+  <script>(function(){var menu=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(event){localStorage.setItem("menu.scrollTop",menu.scrollTop);});menu.scrollTop=localStorage.getItem("menu.scrollTop");})();</script>
 
 
  
@@ -792,10 +792,7 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown"><h1 id="format-json">
-  Format JSON
-  <a class="anchor" href="#format-json">#</a>
-</h1>
+  <article class="markdown"><h1 id="format-json">Format JSON</h1>
 <ul>
 <li>
 <p>Le format JSON est très populaire pour représenter des données</p>
@@ -838,31 +835,30 @@ https://github.com/alex-shpak/hugo-book
 </ul>
 </li>
 </ul>
-<h2 id="les-listes-en-json">
-  Les listes en JSON
-  <a class="anchor" href="#les-listes-en-json">#</a>
-</h2>
+<h2 id="les-listes-en-json">Les listes en JSON</h2>
 <ul>
 <li>Une liste est un tableau qui peut grandir et rapetisser</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">interface</span> <span style="color:#a6e22e">ListeJava</span><span style="color:#f92672">&lt;</span>V <span style="color:#66d9ef">extends</span> Object<span style="color:#f92672">&gt;</span> <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">boolean</span> <span style="color:#a6e22e">siVide</span><span style="color:#f92672">();</span>
-</span></span><span style="display:flex;"><span>	
-</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">int</span> <span style="color:#a6e22e">longueur</span><span style="color:#f92672">();</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>	V <span style="color:#a6e22e">obtenirValeur</span><span style="color:#f92672">(</span><span style="color:#66d9ef">int</span> indice<span style="color:#f92672">);</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">void</span> <span style="color:#a6e22e">modifierValeur</span><span style="color:#f92672">(</span><span style="color:#66d9ef">int</span> indice<span style="color:#f92672">,</span> V nouvelleValeur<span style="color:#f92672">);</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">void</span> <span style="color:#a6e22e">ajouter</span><span style="color:#f92672">(</span>V nouvelleValeur<span style="color:#f92672">);</span> <span style="color:#75715e">// la liste grandit
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
-</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">void</span> <span style="color:#a6e22e">retirer</span><span style="color:#f92672">(</span><span style="color:#66d9ef">int</span> indice<span style="color:#f92672">);</span> <span style="color:#75715e">// la liste rapetisse
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
-</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">void</span> <span style="color:#a6e22e">retirer</span><span style="color:#f92672">(</span>V valeur<span style="color:#f92672">);</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
-</span></span></code></pre></div><ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">interface</span> <span style="color:#a6e22e">ListeJava</span><span style="color:#f92672">&lt;</span>V <span style="color:#66d9ef">extends</span> Object<span style="color:#f92672">&gt;</span> <span style="color:#f92672">{</span>
+
+	<span style="color:#66d9ef">boolean</span> <span style="color:#a6e22e">siVide</span><span style="color:#f92672">();</span>
+	
+	<span style="color:#66d9ef">int</span> <span style="color:#a6e22e">longueur</span><span style="color:#f92672">();</span>
+
+	V <span style="color:#a6e22e">obtenirValeur</span><span style="color:#f92672">(</span><span style="color:#66d9ef">int</span> indice<span style="color:#f92672">);</span>
+
+	<span style="color:#66d9ef">void</span> <span style="color:#a6e22e">modifierValeur</span><span style="color:#f92672">(</span><span style="color:#66d9ef">int</span> indice<span style="color:#f92672">,</span> V nouvelleValeur<span style="color:#f92672">);</span>
+
+	<span style="color:#66d9ef">void</span> <span style="color:#a6e22e">ajouter</span><span style="color:#f92672">(</span>V nouvelleValeur<span style="color:#f92672">);</span> <span style="color:#75715e">// la liste grandit
+</span><span style="color:#75715e"></span>
+	<span style="color:#66d9ef">void</span> <span style="color:#a6e22e">retirer</span><span style="color:#f92672">(</span><span style="color:#66d9ef">int</span> indice<span style="color:#f92672">);</span> <span style="color:#75715e">// la liste rapetisse
+</span><span style="color:#75715e"></span>
+	<span style="color:#66d9ef">void</span> <span style="color:#a6e22e">retirer</span><span style="color:#f92672">(</span>V valeur<span style="color:#f92672">);</span>
+
+<span style="color:#f92672">}</span>
+
+
+</code></pre></div><ul>
 <li>Une des particularité des la liste JSON est de mélanger les types de valeurs:
 <ul>
 <li><code>[1,true,&quot;Bonjour!&quot;]</code></li>
@@ -870,10 +866,7 @@ https://github.com/alex-shpak/hugo-book
 </ul>
 </li>
 </ul>
-<h2 id="les-objets-json">
-  Les objets JSON
-  <a class="anchor" href="#les-objets-json">#</a>
-</h2>
+<h2 id="les-objets-json">Les objets JSON</h2>
 <ul>
 <li>
 <p>Un objet JSON permet d&rsquo;accéder à des valeurs avec des clés</p>
@@ -886,16 +879,18 @@ https://github.com/alex-shpak/hugo-book
 <p>L&rsquo;objet JSON est un exemple de <code>Dictionnaire</code>:</p>
 </li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">interface</span> <span style="color:#a6e22e">Dictionnaire</span><span style="color:#f92672">&lt;</span>V <span style="color:#66d9ef">extends</span> Object<span style="color:#f92672">&gt;</span> <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>	
-</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">void</span> <span style="color:#a6e22e">entreposerValeur</span><span style="color:#f92672">(</span>String cle<span style="color:#f92672">,</span> V valeur<span style="color:#f92672">);</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>	V <span style="color:#a6e22e">recuprerValeur</span><span style="color:#f92672">(</span>String cle<span style="color:#f92672">);</span>
-</span></span><span style="display:flex;"><span>	
-</span></span><span style="display:flex;"><span>	String <span style="color:#a6e22e">trouverCle</span><span style="color:#f92672">(</span>V valeur<span style="color:#f92672">);</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
-</span></span></code></pre></div><ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">interface</span> <span style="color:#a6e22e">Dictionnaire</span><span style="color:#f92672">&lt;</span>V <span style="color:#66d9ef">extends</span> Object<span style="color:#f92672">&gt;</span> <span style="color:#f92672">{</span>
+	
+	<span style="color:#66d9ef">void</span> <span style="color:#a6e22e">entreposerValeur</span><span style="color:#f92672">(</span>String cle<span style="color:#f92672">,</span> V valeur<span style="color:#f92672">);</span>
+
+	V <span style="color:#a6e22e">recuprerValeur</span><span style="color:#f92672">(</span>String cle<span style="color:#f92672">);</span>
+	
+	String <span style="color:#a6e22e">trouverCle</span><span style="color:#f92672">(</span>V valeur<span style="color:#f92672">);</span>
+
+<span style="color:#f92672">}</span>
+
+
+</code></pre></div><ul>
 <li>Quand on entrepose une valeur, le dictionnaire:
 <ul>
 <li>grandit si la clé n&rsquo;existait pas</li>
@@ -903,16 +898,15 @@ https://github.com/alex-shpak/hugo-book
 </ul>
 </li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>Dictionnaire<span style="color:#f92672">&lt;</span>Integer<span style="color:#f92672">&gt;</span> dico <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> MonDictionnaire<span style="color:#f92672">&lt;&gt;();</span> 
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>                                     <span style="color:#75715e">// {}
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>dico<span style="color:#f92672">.</span><span style="color:#a6e22e">entreposerValeur</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;cle01&#34;</span><span style="color:#f92672">,</span> 12<span style="color:#f92672">);</span>  <span style="color:#75715e">// {&#34;cle01&#34;:12}
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>dico<span style="color:#f92672">.</span><span style="color:#a6e22e">entreposerValeur</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;cle01&#34;</span><span style="color:#f92672">,</span> 42<span style="color:#f92672">);</span>  <span style="color:#75715e">// {&#34;cle01&#34;:42}
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>dico<span style="color:#f92672">.</span><span style="color:#a6e22e">entreposerValeur</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;cle02&#34;</span><span style="color:#f92672">,</span> 14<span style="color:#f92672">);</span>  <span style="color:#75715e">// {&#34;cle01&#34;:42, &#34;cle02&#34;:14}
-</span></span></span></code></pre></div><h2 id="json-est-un-format-récursif">
-  JSON est un format récursif
-  <a class="anchor" href="#json-est-un-format-r%c3%a9cursif">#</a>
-</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">Dictionnaire<span style="color:#f92672">&lt;</span>Integer<span style="color:#f92672">&gt;</span> dico <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> MonDictionnaire<span style="color:#f92672">&lt;&gt;();</span> 
+
+                                     <span style="color:#75715e">// {}
+</span><span style="color:#75715e"></span>dico<span style="color:#f92672">.</span><span style="color:#a6e22e">entreposerValeur</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;cle01&#34;</span><span style="color:#f92672">,</span> 12<span style="color:#f92672">);</span>  <span style="color:#75715e">// {&#34;cle01&#34;:12}
+</span><span style="color:#75715e"></span>dico<span style="color:#f92672">.</span><span style="color:#a6e22e">entreposerValeur</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;cle01&#34;</span><span style="color:#f92672">,</span> 42<span style="color:#f92672">);</span>  <span style="color:#75715e">// {&#34;cle01&#34;:42}
+</span><span style="color:#75715e"></span>dico<span style="color:#f92672">.</span><span style="color:#a6e22e">entreposerValeur</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;cle02&#34;</span><span style="color:#f92672">,</span> 14<span style="color:#f92672">);</span>  <span style="color:#75715e">// {&#34;cle01&#34;:42, &#34;cle02&#34;:14}
+</span><span style="color:#75715e"></span>
+
+</code></pre></div><h2 id="json-est-un-format-récursif">JSON est un format récursif</h2>
 <ul>
 <li>
 <p>La présentation de JSON à date est incomplète</p>
@@ -999,6 +993,7 @@ https://github.com/alex-shpak/hugo-book
       <img src="/svg/calendar.svg" class="book-icon" alt="Calendar" />
       <span>2022-10-06</span>
     </a>
+      <div style="padding-top:12px;">©&nbsp;Mathieu&nbsp;Bergeron</div>
   </div>
 
 
@@ -1010,13 +1005,8 @@ https://github.com/alex-shpak/hugo-book
     </a>
   </div>
 
-
 </div>
-
-
-<br>
-
-<div style="float:right;">
+<div style="float:right;position:relative;top:-12px;">
     <div style="float:right;">
         <a ref="" href="https://creativecommons.org/licenses/by-sa/4.0/deed.fr" style="font-size:2em;">
         <img alt="Creative Commons License" style="border-width:0" src="/cc.svg" /></a>
@@ -1031,7 +1021,8 @@ https://github.com/alex-shpak/hugo-book
 
 
 
-  <script>(function(){function e(n){const e=window.getSelection(),t=document.createRange();t.selectNodeContents(n),e.removeAllRanges(),e.addRange(t)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+  <script>(function(){function select(element){const selection=window.getSelection();const range=document.createRange();range.selectNodeContents(element);selection.removeAllRanges();selection.addRange(range);}
+document.querySelectorAll("pre code").forEach(code=>{code.addEventListener("click",function(event){select(code.parentElement);if(navigator.clipboard){navigator.clipboard.writeText(code.parentElement.textContent);}});});})();</script>
 
 
  

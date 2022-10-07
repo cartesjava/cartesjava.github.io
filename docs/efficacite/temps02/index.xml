@@ -5,7 +5,11 @@
     <link>https://cartesjava.github.io/efficacite/temps02/</link>
     <description>Recent content in Efficacité en temps (2) on Cartes Java</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>fr-ca</language><atom:link href="https://cartesjava.github.io/efficacite/temps02/index.xml" rel="self" type="application/rss+xml" />
+    <language>fr-ca</language>
+    
+	<atom:link href="https://cartesjava.github.io/efficacite/temps02/index.xml" rel="self" type="application/rss+xml" />
+    
+    
     <item>
       <title></title>
       <link>https://cartesjava.github.io/efficacite/temps02/ChercheurNaif/</link>

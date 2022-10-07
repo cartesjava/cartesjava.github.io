@@ -5,6 +5,10 @@
     <link>https://cartesjava.github.io/categories/</link>
     <description>Recent content in Categories on Cartes Java</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>fr-ca</language><atom:link href="https://cartesjava.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <language>fr-ca</language>
+    
+	<atom:link href="https://cartesjava.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
   </channel>
 </rss>

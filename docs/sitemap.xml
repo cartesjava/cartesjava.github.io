@@ -1,155 +1,268 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
   <url>
     <loc>https://cartesjava.github.io/efficacite/temps02/ChercheurNaif/</loc>
-  </url><url>
+    <lastmod>2022-10-06T15:57:26-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://cartesjava.github.io/efficacite/temps02/TrieurNaif/</loc>
-  </url><url>
+    <lastmod>2022-10-06T15:57:26-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://cartesjava.github.io/efficacite/temps02/TrieurNaif_valeurMinimale/</loc>
-  </url><url>
+    <lastmod>2022-10-06T15:57:26-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://cartesjava.github.io/efficacite/temps02/TriFusion/</loc>
-  </url><url>
+    <lastmod>2022-10-06T15:57:26-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://cartesjava.github.io/efficacite/temps02/TriFusion_fusionner/</loc>
-  </url><url>
+    <lastmod>2022-10-06T15:57:26-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://cartesjava.github.io/encadres/</loc>
     <lastmod>2022-10-06T14:17:03-04:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://cartesjava.github.io/procedures/gitlab/</loc>
     <lastmod>2022-10-06T14:17:03-04:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://cartesjava.github.io/procedures/windows/</loc>
     <lastmod>2022-10-06T14:17:03-04:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://cartesjava.github.io/preface/bilan_juin_2022/</loc>
     <lastmod>2022-10-06T14:32:01-04:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://cartesjava.github.io/preface/bilan_octobre_2022/</loc>
     <lastmod>2022-10-06T14:17:03-04:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://cartesjava.github.io/</loc>
     <lastmod>2022-10-06T14:40:59-04:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://cartesjava.github.io/modelisation/java/graphe/</loc>
     <lastmod>2022-10-06T15:19:55-04:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://cartesjava.github.io/modelisation/java/dessiner_tableau/</loc>
     <lastmod>2022-10-06T15:19:55-04:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://cartesjava.github.io/modelisation/recursivite/fibonacci/</loc>
     <lastmod>2022-10-06T15:19:55-04:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://cartesjava.github.io/modelisation/json/format_json/</loc>
     <lastmod>2022-10-06T15:19:55-04:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://cartesjava.github.io/listes/tableau/</loc>
     <lastmod>2022-10-06T15:53:06-04:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://cartesjava.github.io/modelisation/json/modele/</loc>
     <lastmod>2022-10-06T15:19:55-04:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://cartesjava.github.io/modelisation/recursivite/pile_appel/</loc>
     <lastmod>2022-10-06T15:19:55-04:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://cartesjava.github.io/procedures/</loc>
     <lastmod>2022-10-06T14:17:03-04:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://cartesjava.github.io/preface/</loc>
     <lastmod>2022-10-06T14:17:03-04:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://cartesjava.github.io/modelisation/java/structures/</loc>
     <lastmod>2022-10-06T15:19:55-04:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://cartesjava.github.io/modelisation/java/references_multiples/</loc>
     <lastmod>2022-10-06T15:19:55-04:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://cartesjava.github.io/procedures/windows/eclipse/</loc>
     <lastmod>2022-10-06T14:17:03-04:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://cartesjava.github.io/procedures/windows/git/</loc>
     <lastmod>2022-10-06T14:17:03-04:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://cartesjava.github.io/procedures/windows/jdk11/</loc>
     <lastmod>2022-10-06T14:17:03-04:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://cartesjava.github.io/procedures/gitlab/inscription/</loc>
     <lastmod>2022-10-06T14:17:03-04:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://cartesjava.github.io/efficacite/temps01/</loc>
-  </url><url>
+    <lastmod>2022-10-06T15:57:26-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://cartesjava.github.io/intro/</loc>
     <lastmod>2022-10-06T14:17:03-04:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://cartesjava.github.io/approche/ntro/</loc>
     <lastmod>2022-10-06T15:19:55-04:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://cartesjava.github.io/mappage/hachage/</loc>
     <lastmod>2022-10-06T15:53:06-04:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://cartesjava.github.io/efficacite/temps02/</loc>
-  </url><url>
+    <lastmod>2022-10-06T15:57:26-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://cartesjava.github.io/listes/chainee_simple/</loc>
     <lastmod>2022-10-06T15:53:06-04:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://cartesjava.github.io/approche/</loc>
     <lastmod>2022-10-06T14:32:01-04:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://cartesjava.github.io/approche/cartes_a_jouer/</loc>
     <lastmod>2022-10-06T15:19:55-04:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://cartesjava.github.io/listes/chainee_double/</loc>
     <lastmod>2022-10-06T15:53:06-04:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://cartesjava.github.io/modelisation/</loc>
     <lastmod>2022-10-06T15:19:55-04:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://cartesjava.github.io/modelisation/json/</loc>
     <lastmod>2022-10-06T15:19:55-04:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://cartesjava.github.io/modelisation/java/</loc>
     <lastmod>2022-10-06T15:19:55-04:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://cartesjava.github.io/efficacite/espace/</loc>
-    <lastmod>2022-10-06T14:17:03-04:00</lastmod>
-  </url><url>
+    <lastmod>2022-10-06T15:57:26-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://cartesjava.github.io/efficacite/</loc>
     <lastmod>2022-10-06T14:17:03-04:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://cartesjava.github.io/listes/</loc>
     <lastmod>2022-10-06T14:17:03-04:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://cartesjava.github.io/arbres/</loc>
     <lastmod>2022-10-06T14:17:03-04:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://cartesjava.github.io/modelisation/recursivite/</loc>
     <lastmod>2022-10-06T15:19:55-04:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://cartesjava.github.io/arbres/generique/</loc>
     <lastmod>2022-10-06T14:17:03-04:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://cartesjava.github.io/arbres/binaire/</loc>
     <lastmod>2022-10-06T14:17:03-04:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://cartesjava.github.io/mappage/</loc>
     <lastmod>2022-10-06T14:17:03-04:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://cartesjava.github.io/conclusion/</loc>
     <lastmod>2022-10-06T14:17:03-04:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://cartesjava.github.io/grand-o/</loc>
     <lastmod>2022-10-06T15:31:54-04:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://cartesjava.github.io/modifier/</loc>
     <lastmod>2022-10-06T14:35:19-04:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://cartesjava.github.io/categories/</loc>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://cartesjava.github.io/mappage/arbre/</loc>
     <lastmod>2022-10-06T15:55:10-04:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://cartesjava.github.io/tags/</loc>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://cartesjava.github.io/modelisation/recursivite/donnees/</loc>
     <lastmod>2022-10-06T15:19:55-04:00</lastmod>
   </url>
+  
 </urlset>

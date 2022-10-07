@@ -5,6 +5,10 @@
     <link>https://cartesjava.github.io/modelisation/recursivite/pile_appel/</link>
     <description>Recent content in Pile d&#39;appel on Cartes Java</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>fr-ca</language><atom:link href="https://cartesjava.github.io/modelisation/recursivite/pile_appel/index.xml" rel="self" type="application/rss+xml" />
+    <language>fr-ca</language>
+    
+	<atom:link href="https://cartesjava.github.io/modelisation/recursivite/pile_appel/index.xml" rel="self" type="application/rss+xml" />
+    
+    
   </channel>
 </rss>
