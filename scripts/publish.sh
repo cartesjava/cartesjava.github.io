@@ -36,7 +36,7 @@ find "$publishDir" -name "*.mp4" | while read i; do rm -v "$i"; done
 
 git add .
 
-git commit -m"publish"
+git commit -m"publication $(date)"
 
 git push
 
