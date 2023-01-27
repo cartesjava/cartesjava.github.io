@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="fr-ca" dir="ltr">
-<head>
-  <meta charset="UTF-8">
+    <head>
+        <meta charset="UTF-8">
+
+
+
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Section 5.2: Liste chaînée simple #   Une liste chaînée utilise des pointeurs (références), p.ex:      Chaque noeud ci-haut est un objet qui contient une valeur
-  Pour obtenir le prochain élément, on suit la référence (la flèche)
-  Inconvénient:
- il faut faire une boucle pour obtenir un élément de la liste    Avantages:
- l&rsquo;insertion/retrait au début est efficace on ne consome pas d&rsquo;espace mémoire en trop    Exemple: ajouts dans liste chaînée simple #     liste">
+<meta name="description" content="Section 4.3: Liste chaînée simple #  ">
 <meta name="theme-color" content="#FFFFFF">
 <meta name="color-scheme" content="light dark"><meta property="og:title" content="Liste chaînée simple" />
 <meta property="og:description" content="" />
@@ -24,9 +24,9 @@
 </title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
-<link rel="stylesheet" href="/book.min.62522f734605549ffb41c7c071c68ae6cea09d216f30ede20c344054d503fc2f.css" integrity="sha256-YlIvc0YFVJ/7QcfAccaK5s6gnSFvMO3iDDRAVNUD/C8=" crossorigin="anonymous">
+<link rel="stylesheet" href="/book.min.e4869670571a4fc0a50f4a2c889ed6ee3b49dac25cd9095e9eea1f69c426d18a.css" integrity="sha256-5IaWcFcaT8ClD0osiJ7W7jtJ2sJc2QlenuofacQm0Yo=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/fr.search.min.bc40142dec67f2e88370ee28d94ead455da62203ec3db12cdd3001f26ce0084d.js" integrity="sha256-vEAULexn8uiDcO4o2U6tRV2mIgPsPbEs3TAB8mzgCE0=" crossorigin="anonymous"></script>
+  <script defer src="/fr.search.min.0e5eca3384d4e84a083eaf733dd004e479c5ffdbd8211494050eba149a9c560e.js" integrity="sha256-Dl7KM4TU6EoIPq9zPdAE5HnF/9vYIRSUBQ66FJqcVg4=" crossorigin="anonymous"></script>
 
   <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" integrity="sha256-b2&#43;Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC&#43;NdcPIvZhzk=" crossorigin="anonymous"></script>
 
@@ -35,16 +35,16 @@
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
 -->
-  
-</head>
-<body dir="ltr">
-  <input type="checkbox" class="hidden toggle" id="menu-control" />
-  <input type="checkbox" class="hidden toggle" id="toc-control" />
-  <main class="container flex">
-    <aside class="book-menu">
-      <div class="book-menu-content">
         
-  <nav>
+    </head>
+    <body dir="ltr">
+        <input type="checkbox" class="hidden toggle" id="menu-control" />
+        <input type="checkbox" class="hidden toggle" id="toc-control" />
+        <main class="container flex">
+            <aside class="book-menu">
+                <div class="book-menu-content">
+                    
+<nav>
 <h2 class="book-brand">
   <a class="flex align-center" href="/"><span>Cartes Java</span>
   </a>
@@ -82,36 +82,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-7480a34dac08ecd5c3d7a70eb628cf1a" class="toggle"  />
-    <label for="section-7480a34dac08ecd5c3d7a70eb628cf1a" class="flex justify-between">
-      <a role="button" class="">Préface</a>
-    </label>
-  
-
-          
-  <ul>
-    
-      
-        <li>
-            
-  
-  
-
-  
-    <a href="/preface/bilan_juin_2022/" class="">Bilan juin 2022</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/preface/bilan_octobre_2022/" class="">Bilan octobre 2022</a>
+    <a href="/preface/" class="">Préface</a>
   
 
           
@@ -122,20 +93,20 @@ https://github.com/alex-shpak/hugo-book
         </li>
       
     
-  </ul>
-
-        </li>
-      
-    
       
         <li>
-            
+          
   
   
 
   
-    <a href="/intro/" class="">1. Introduction</a>
+    <a href="/intro/" class="">Introduction</a>
   
+
+          
+  <ul>
+    
+  </ul>
 
         </li>
       
@@ -149,7 +120,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-b1f25d69250e7772af5811e7ef44e922" class="toggle"  />
     <label for="section-b1f25d69250e7772af5811e7ef44e922" class="flex justify-between">
-      <a href="/approche/" class="">2. Présentation de l&#39;approche</a>
+      <a href="/approche/" class="">1. Présentation de l&#39;approche</a>
     </label>
   
 
@@ -163,7 +134,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/approche/ntro/" class="">2.1. Librairie Ntro</a>
+    <a href="/approche/outil/" class="">1.1. Outil de validation</a>
   
 
           
@@ -181,7 +152,25 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/approche/cartes_a_jouer/" class="">2.2. Utilisation de cartes à jouer</a>
+    <a href="/approche/langages_et_notations/" class="">1.2. Langages et notations utilisées</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/approche/cartes_a_jouer/" class="">1.3. Visualisations avec des cartes à jouer</a>
   
 
           
@@ -206,7 +195,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-20d2db300e0f4ab0130280f200c4f2fc" class="toggle"  />
     <label for="section-20d2db300e0f4ab0130280f200c4f2fc" class="flex justify-between">
-      <a role="button" class="">3. Modéliser des données</a>
+      <a href="/modelisation/" class="">2. Modélisation des données et limitations de l&#39;approche</a>
     </label>
   
 
@@ -220,7 +209,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/modelisation/format_json/" class="">3.1. Format JSON</a>
+    <a href="/modelisation/objets/" class="">2.1. Objets</a>
   
 
           
@@ -238,7 +227,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/modelisation/modele/" class="">3.2. Notion de modèle</a>
+    <a href="/modelisation/tableau_d_objets/" class="">2.2. Tableaux d&#39;objets</a>
   
 
           
@@ -256,115 +245,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/modelisation/dessiner_tableau/" class="">3.3. Dessiner un tableau d&#39;objets</a>
-  
-
-          
-  <ul>
-    
-  </ul>
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/modelisation/graphe/" class="">3.4. Dessiner un graphe d&#39;objets</a>
-  
-
-          
-  <ul>
-    
-  </ul>
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/modelisation/references_multiples/" class="">3.5. Visualiser les références multiples</a>
-  
-
-          
-  <ul>
-    
-  </ul>
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/modelisation/structures/" class="">3.6. Structures en Java</a>
-  
-
-          
-  <ul>
-    
-  </ul>
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/modelisation/types_recursifs/" class="">3.7. Types récursifs</a>
-  
-
-          
-  <ul>
-    
-  </ul>
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/modelisation/pile_appel/" class="">3.8. Pile d&#39;appel</a>
-  
-
-          
-  <ul>
-    
-  </ul>
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/modelisation/fibonacci/" class="">3.9. Exemple: Fibonacci</a>
+    <a href="/modelisation/graphe_d_objets/" class="">2.3. Graphes d&#39;objets</a>
   
 
           
@@ -389,7 +270,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-89a3727667e5590a4150c67be9175eaa" class="toggle"  />
     <label for="section-89a3727667e5590a4150c67be9175eaa" class="flex justify-between">
-      <a role="button" class="">4. Qu&#39;est-ce que l&#39;efficacité?</a>
+      <a href="/efficacite/" class="">3. Qu&#39;est-ce que l&#39;efficacité?</a>
     </label>
   
 
@@ -403,7 +284,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/efficacite/temps01/" class="">4.1. Performance Vs efficacité</a>
+    <a href="/efficacite/performance_vs_efficacite/" class="">3.1. Performance Vs efficacité</a>
   
 
           
@@ -421,7 +302,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/efficacite/temps02/" class="">4.2. Efficacité en temps</a>
+    <a href="/efficacite/temps/" class="">3.2. Efficacité en temps</a>
   
 
           
@@ -434,13 +315,18 @@ https://github.com/alex-shpak/hugo-book
     
       
         <li>
-            
+          
   
   
 
   
-    <a href="/efficacite/espace/" class="">4.3. Efficacité en espace</a>
+    <a href="/efficacite/espace/" class="">3.3. Efficacité en espace</a>
   
+
+          
+  <ul>
+    
+  </ul>
 
         </li>
       
@@ -459,7 +345,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-b12c28f0f1b1687a56347184fa5203f8" class="toggle" checked />
     <label for="section-b12c28f0f1b1687a56347184fa5203f8" class="flex justify-between">
-      <a role="button" class="">5. Comprendre les listes</a>
+      <a href="/listes/" class="">4. Comprendre les listes</a>
     </label>
   
 
@@ -473,7 +359,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/listes/tableau/" class="">5.1. Liste par tableau</a>
+    <a href="/listes/naive/" class="">4.1. Liste naïve</a>
   
 
           
@@ -491,7 +377,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/listes/chainee_simple/" class=" active">5.2. Liste chaînée simple</a>
+    <a href="/listes/tableau/" class="">4.2. Liste par tableau</a>
   
 
           
@@ -509,7 +395,25 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/listes/chainee_double/" class="">5.3. Liste chaînée double</a>
+    <a href="/listes/chainee_simple/" class=" active">4.3. Liste chaînée simple</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/listes/chainee_double/" class="">4.4. Liste chaînée double</a>
   
 
           
@@ -534,54 +438,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-4d776affa1be45887905ae21b1d04b2a" class="toggle"  />
     <label for="section-4d776affa1be45887905ae21b1d04b2a" class="flex justify-between">
-      <a role="button" class="">6. Comprendre les arbres</a>
-    </label>
-  
-
-          
-  <ul>
-    
-      
-        <li>
-            
-  
-  
-
-  
-    <a href="/arbres/generique/" class="">6.1. Arbre générique</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-            
-  
-  
-
-  
-    <a href="/arbres/binaire/" class="">6.2. Arbre binaire</a>
-  
-
-        </li>
-      
-    
-  </ul>
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <input type="checkbox" id="section-10c66eed6dc4c3d72fd2b94c05e4e477" class="toggle"  />
-    <label for="section-10c66eed6dc4c3d72fd2b94c05e4e477" class="flex justify-between">
-      <a role="button" class="">7. Comprendre les mappages</a>
+      <a href="/arbres/" class="">5. Comprendre les arbres</a>
     </label>
   
 
@@ -595,43 +452,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/mappage/hachage/" class="">7.1. Mappage par hachage</a>
-  
-
-          
-  <ul>
-    
-  </ul>
-
-        </li>
-      
-    
-      
-        <li>
-            
-  
-  
-
-  
-    <a href="/mappage/arbre/" class="">7.2. Mappage avec arbre</a>
-  
-
-        </li>
-      
-    
-  </ul>
-
-        </li>
-      
-    
-      
-        <li>
-            
-  
-  
-
-  
-    <a href="/conclusion/" class="">8. Conclusion</a>
+    <a href="/arbres/generique/" class="">5.1. Arbre générique</a>
   
 
         </li>
@@ -644,11 +465,11 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/grand-o/" class="">Annexe 1: sémantique de la notation grand O</a>
+    <a href="/arbres/binaire/" class="">5.2. Arbre binaire</a>
   
 
-          
-  <ul>
+        </li>
+      
     
   </ul>
 
@@ -662,11 +483,337 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/modifier/" class="">Annexe 2: suggérer une modification à ce manuel</a>
+    <input type="checkbox" id="section-3e48974585d14c8908a67306d3ef0b3b" class="toggle"  />
+    <label for="section-3e48974585d14c8908a67306d3ef0b3b" class="flex justify-between">
+      <a href="/mappages/" class="">6. Comprendre les mappages</a>
+    </label>
   
 
           
   <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/mappages/naif/" class="">6.1. Mappage naïf</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/mappages/hachage/" class="">6.2. Mappage par hachage</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/mappages/arbre/" class="">6.3. Mappage avec arbre</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/conclusion/" class="">Conclusion</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/bibliographie/" class="">Bibliographie</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-9ea2d72b97e9d02a8b97ae9357b7969b" class="toggle"  />
+    <label for="section-9ea2d72b97e9d02a8b97ae9357b7969b" class="flex justify-between">
+      <a role="button" class="">Annexes</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/annexes/annexe_grand_o/" class="">Annexe 1: la notation grand O</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/annexes/annexe_acceder_exemples/" class="">Annexe 2: accéder aux exemples</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/annexes/annexe_programmer_exemple/" class="">Annexe 3: programmer un nouvel exemple</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/annexes/annexe_modifier_manuel/" class="">Annexe 4: suggérer une modification à ce manuel</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-3b1da941c278c90106392151b814a2c6" class="toggle"  />
+    <label for="section-3b1da941c278c90106392151b814a2c6" class="flex justify-between">
+      <a href="/annexes/annexe_ateliers/" class="">Annexe 5: exemples d&#39;ateliers</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/annexes/annexe_ateliers/deplacer_decaler/" class="">Procédures déplacer/décaler</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/annexes/annexe_ateliers/fibonacci/" class="">Modéliser la suite de Fibonacci</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/annexes/annexe_ateliers/liste_tableau/" class="">Liste par tableau</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/annexes/annexe_ateliers/arbre_binaire/" class="">Arbre binaire</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-47be0624d93c2dddef9d700a6ef60a09" class="toggle"  />
+    <label for="section-47be0624d93c2dddef9d700a6ef60a09" class="flex justify-between">
+      <a href="/annexes/annexe_bilans/" class="">Annexe 6: bilans</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/annexes/annexe_bilans/bilan_juin_2022/" class="">Bilan juin 2022</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/annexes/annexe_bilans/bilan_octobre_2022/" class="">Bilan octobre 2022</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
     
   </ul>
 
@@ -698,13 +845,14 @@ https://github.com/alex-shpak/hugo-book
 
 
  
-      </div>
-    </aside>
+                </div>
+            </aside>
 
-    <div class="book-page">
-      <header class="book-header">
-        
-  <div class="flex align-center justify-between">
+            <div class="book-page-and-footer">
+                <div class="book-page">
+                    <header class="book-header">
+                        
+<div class="flex align-center justify-between">
   <label for="menu-control">
     <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
@@ -719,212 +867,132 @@ https://github.com/alex-shpak/hugo-book
 </div>
 
 
-  
-  <aside class="hidden clearfix">
+
+<aside class="hidden clearfix">
     
-  
-<nav id="TableOfContents">
-  <ul>
-    <li><a href="#liste-chaînée-simple">Liste chaînée simple</a>
-      <ul>
-        <li><a href="#exemple-ajouts-dans-liste-chaînée-simple">Exemple: ajouts dans liste chaînée simple</a></li>
-        <li><a href="#liste-chaînée-simple-en-java">Liste chaînée simple en Java</a></li>
-      </ul>
-    </li>
-  </ul>
+
+
+
+<nav id='TableOfContents'>
+    
+
+    
+    
+
+    
+    
+        
+            
+        
+    
+
+    <ul>
+        <li><a href='#liste-cha%c3%aen%c3%a9e-simple'>4.3 Liste chaînée simple</a></li>
+
+        
+
+    </ul>
+
+
 </nav>
 
 
 
-  </aside>
-  
+
+
+
+
+</aside>
+
  
-      </header>
+                    </header>
 
-      
-      
-  <article class="markdown"><h1 id="liste-chaînée-simple">
+                    
+                    
+<article class="markdown"><h1 id="liste-chaînée-simple">
 
-Section 5.2: Liste chaînée simple
+
+
+
+
+
+
+
+
+
+
+
+Section 4.3: 
+
+    
+
+
+
+
+
+Liste chaînée simple
 
 <a class="anchor" href="#liste-cha%c3%aen%c3%a9e-simple">#</a>
 
 </h1>
-<ul>
-<li>Une liste chaînée utilise des pointeurs (références), p.ex:</li>
-</ul>
-<center>
-    <img src="liste01.svg" width="98%"/>
-</center>
-<ul>
-<li>
-<p>Chaque noeud ci-haut est un objet qui contient une valeur</p>
-</li>
-<li>
-<p>Pour obtenir le prochain élément, on suit la référence (la flèche)</p>
-</li>
-<li>
-<p>Inconvénient:</p>
-<ul>
-<li>il faut faire une boucle pour obtenir un élément de la liste</li>
-</ul>
-</li>
-<li>
-<p>Avantages:</p>
-<ul>
-<li>l&rsquo;insertion/retrait au début est efficace</li>
-<li>on ne consome pas d&rsquo;espace mémoire en trop</li>
-</ul>
-</li>
-</ul>
-<h2 id="exemple-ajouts-dans-liste-chaînée-simple">
-
-Exemple: ajouts dans liste chaînée simple
-
-<a class="anchor" href="#exemple-ajouts-dans-liste-cha%c3%aen%c3%a9e-simple">#</a>
-
-</h2>
-<table>
-<tr>
-<td>
-<code>liste<br>// []</code>
-</td>
-<td>
-<img src="simple_add01.svg"/>
-</td>
-</tr>
-<tr>
-<td>
-<code>liste.add('a')<br>// [a]</code>
-</td>
-<td>
-<img src="simple_add02.svg"/>
-</td>
-</tr>
-<tr>
-<td>
-<code>liste.add('b')<br>// [a,b]</code>
-</td>
-<td>
-<img src="simple_add03.svg"/>
-</td>
-</tr>
-<tr>
-<td>
-<code>liste.add('c')<br>// [a,b,c]</code>
-</td>
-<td>
-<img src="simple_add04.svg"/>
-</td>
-</tr>
-</table>
-<h2 id="liste-chaînée-simple-en-java">
-
-Liste chaînée simple en Java
-
-<a class="anchor" href="#liste-cha%c3%aen%c3%a9e-simple-en-java">#</a>
-
-</h2>
-<ul>
-<li>Il faut une classe pour représenter un élément:
-<ul>
-<li>l&rsquo;élément contient la valeur et un pointeur vers l&rsquo;élément suivant</li>
-</ul>
-</li>
-</ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">ElementChaineSimple</span><span style="color:#f92672">&lt;</span>E<span style="color:#f92672">&gt;</span> <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>	
-</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">private</span> E valeur<span style="color:#f92672">;</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">private</span> ElementChaineSimple<span style="color:#f92672">&lt;</span>E<span style="color:#f92672">&gt;</span> suivant <span style="color:#f92672">=</span> <span style="color:#66d9ef">null</span><span style="color:#f92672">;</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>	<span style="color:#75715e">// [...]
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	
-</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">insererApres</span><span style="color:#f92672">(</span>E e<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>		ElementChaineSimple<span style="color:#f92672">&lt;</span>E<span style="color:#f92672">&gt;</span> nouveau <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> ElementChaineSimple<span style="color:#f92672">&lt;</span>E<span style="color:#f92672">&gt;(</span>e<span style="color:#f92672">);</span>
-</span></span><span style="display:flex;"><span>		
-</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">if</span><span style="color:#f92672">(</span><span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">suivant</span> <span style="color:#f92672">!=</span> <span style="color:#66d9ef">null</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>			nouveau<span style="color:#f92672">.</span><span style="color:#a6e22e">setSuivant</span><span style="color:#f92672">(</span><span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">suivant</span><span style="color:#f92672">);</span>
-</span></span><span style="display:flex;"><span>		<span style="color:#f92672">}</span>
-</span></span><span style="display:flex;"><span>		
-</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">suivant</span> <span style="color:#f92672">=</span> nouveau<span style="color:#f92672">;</span>
-</span></span><span style="display:flex;"><span>	<span style="color:#f92672">}</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>	<span style="color:#75715e">// [...]
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#f92672">}</span>
-</span></span></code></pre></div><ul>
-<li>Et une classe pour la liste:
-<ul>
-<li>on mémorise la tête et la taille</li>
-</ul>
-</li>
-</ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">ListeJavaChaineeSimple</span><span style="color:#f92672">&lt;</span>E <span style="color:#66d9ef">extends</span> Object<span style="color:#f92672">&gt;</span> <span style="color:#66d9ef">extends</span> ListeJava<span style="color:#f92672">&lt;</span>E<span style="color:#f92672">&gt;</span> <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>	
-</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">private</span> <span style="color:#66d9ef">int</span> taille <span style="color:#f92672">=</span> 0<span style="color:#f92672">;</span>
-</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">private</span> ElementChaineSimple<span style="color:#f92672">&lt;</span>E<span style="color:#f92672">&gt;</span> tete <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> ElementChaineSimple<span style="color:#f92672">&lt;</span>E<span style="color:#f92672">&gt;();</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>	<span style="color:#75715e">// [...]
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	
-</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">private</span> ElementChaineSimple<span style="color:#f92672">&lt;</span>E<span style="color:#f92672">&gt;</span> <span style="color:#a6e22e">atteindreElement</span><span style="color:#f92672">(</span><span style="color:#66d9ef">int</span> position<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>		ElementChaineSimple<span style="color:#f92672">&lt;</span>E<span style="color:#f92672">&gt;</span> element <span style="color:#f92672">=</span> tete<span style="color:#f92672">;</span>
-</span></span><span style="display:flex;"><span>		
-</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">for</span><span style="color:#f92672">(</span><span style="color:#66d9ef">int</span> i <span style="color:#f92672">=</span> 0<span style="color:#f92672">;</span> i <span style="color:#f92672">&lt;</span> position<span style="color:#f92672">;</span> i<span style="color:#f92672">++)</span> <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>			<span style="color:#66d9ef">if</span><span style="color:#f92672">(</span>element <span style="color:#f92672">!=</span> <span style="color:#66d9ef">null</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>				element <span style="color:#f92672">=</span> element<span style="color:#f92672">.</span><span style="color:#a6e22e">suivant</span><span style="color:#f92672">();</span>
-</span></span><span style="display:flex;"><span>			<span style="color:#f92672">}</span>
-</span></span><span style="display:flex;"><span>		<span style="color:#f92672">}</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">return</span> element<span style="color:#f92672">;</span>
-</span></span><span style="display:flex;"><span>	<span style="color:#f92672">}</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">@Override</span>
-</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">set</span><span style="color:#f92672">(</span><span style="color:#66d9ef">int</span> position<span style="color:#f92672">,</span> E e<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>		ElementChaineSimple<span style="color:#f92672">&lt;</span>E<span style="color:#f92672">&gt;</span> element <span style="color:#f92672">=</span> atteindreElement<span style="color:#f92672">(</span>position<span style="color:#f92672">);</span>
-</span></span><span style="display:flex;"><span>		
-</span></span><span style="display:flex;"><span>		element<span style="color:#f92672">.</span><span style="color:#a6e22e">set</span><span style="color:#f92672">(</span>e<span style="color:#f92672">);</span>
-</span></span><span style="display:flex;"><span>	<span style="color:#f92672">}</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>	<span style="color:#75715e">// [...]
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#f92672">}</span>
-</span></span></code></pre></div><ul>
-<li>Pour modifier un élément, il d&rsquo;abord le trouver avec une boucle</li>
-</ul>
 </article>
  
-      
+                    <br>    <br>    <div class="footer-next-page"/>        <a class="link-next-page" href="https://cartesjava.github.io/listes/chainee_double/">↪&nbsp;Section 4.4: &nbsp;Liste chaînée double</a>        </div>    
+                    
+                     
+                    <label for="menu-control" class="hidden book-menu-overlay"></label>
+                </div>
 
-      <footer class="book-footer">
+                <footer class="book-footer">
+                    
+<div class="flex flex-wrap justify-between">
+
+    <div>
         
-  <div class="flex flex-wrap justify-between">
+        <div>
+            <a href="https://fabriquerel.org/">
+	            <img style="width:20em;height:100%" alt="FabriqueREL" src="/F-REL_logo-coul-horiz.png" />
+            </a>
+        </div>
+        <div style="position:relative;left:1.25em;">
+            <a href="https://www.cmontmorency.qc.ca/">
+	            <img style="width:20em;height:100%" alt="Collège Montmorency" src="/LogomoHC.png" />
+            </a>
+        </div>
+        
+    </div>
 
+    <div style="padding-top:2em;">
+        
+        <div class="flex justify-end"><a href="https://github.com/cartesjava/cartesjava.github.io/commit/d45e761c23f5dcb850e36bfe7f806e94b365d2af" title='Dernière modification par Mathieu Bergeron | 2023-01-27' target="_blank" rel="noopener">
+                <span>2023-01-27</span>
+                <img src="/svg/calendar.svg" class="book-icon" alt="Calendar" />
+            </a>
+        </div>
+        
 
-  <div><a class="flex align-center" href="https://github.com/cartesjava/cartesjava.github.io/commit/4ab654b681811e4c11f7f3f9423d81fe8893410d" title='Dernière modification par Mathieu Bergeron | 2022-10-06' target="_blank" rel="noopener">
-      <img src="/svg/calendar.svg" class="book-icon" alt="Calendar" />
-      <span>2022-10-06</span>
-    </a>
-      <div style="padding-top:12px;">©&nbsp;Mathieu&nbsp;Bergeron</div>
-  </div>
+        
+        <div class="flex justify-end" style="padding-top:1em;">
+            <a href="https://github.com/cartesjava/cartesjava.github.io/edit/main//pages/listes/chainee_simple/_index.md" target="_blank" rel="noopener">
+                <span>Suggérer une modification</span>
+                <img src="/svg/edit.svg" class="book-icon" alt="Edit" />
+            </a>
+        </div>
+        
 
+        <div class="flex justify-end" style="padding-top:2em;">
+            <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.fr" style="font-size:2em;">
+	            <img alt="Creative Commons License" style="border-width:0" src="/cc.svg" />
+            </a>
 
+            <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.fr" style="font-size:2em;">
+                <img alt="Creative Commons Attribution" style="border-width:0" src="/by.svg" />
+            </a>
 
-  <div>
-    <a class="flex align-center" href="https://github.com/cartesjava/cartesjava.github.io/edit/main//content/listes/chainee_simple/_index.md" target="_blank" rel="noopener">
-      <img src="/svg/edit.svg" class="book-icon" alt="Edit" />
-      <span>Suggérer une modification</span>
-    </a>
-  </div>
-
-</div>
-<div style="float:right;position:relative;top:-12px;">
-    <div style="float:right;">
-        <a ref="" href="https://creativecommons.org/licenses/by-sa/4.0/deed.fr" style="font-size:2em;">
-        <img alt="Creative Commons License" style="border-width:0" src="/cc.svg" /></a>
-        <a ref="" href="https://creativecommons.org/licenses/by-sa/4.0/deed.fr" style="font-size:2em;">
-        <img alt="Creative Commons Attribution" style="border-width:0" src="/by.svg" /></a>
-        <a ref="" href="https://creativecommons.org/licenses/by-sa/4.0/deed.fr" style="font-size:2em;">
-        <img alt="Creative Commons ShareAlike" style="border-width:0" src="/sa.svg" /></a>
+            <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.fr" style="font-size:2em;"> 
+                <img alt="Creative Commons ShareAlike" style="border-width:0" src="/sa.svg" />
+            </a>
+        </div>
     </div>
 </div>
 
@@ -932,49 +1000,60 @@ Liste chaînée simple en Java
 
 
 
-  <script>(function(){function e(n){const e=window.getSelection(),t=document.createRange();t.selectNodeContents(n),e.removeAllRanges(),e.addRange(t)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+
+<script>(function(){function e(n){const e=window.getSelection(),t=document.createRange();t.selectNodeContents(n),e.removeAllRanges(),e.addRange(t)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
 
 
  
-        
-      </footer>
+                    
+                </footer>
+            </div>
 
-      
-  
-  <div class="book-comments">
+            
+            <aside class="book-toc">
+                <div class="book-toc-content">
+                    
 
-</div>
-  
- 
 
-      <label for="menu-control" class="hidden book-menu-overlay"></label>
-    </div>
+
+<nav id='TableOfContents'>
+    
 
     
-    <aside class="book-toc">
-      <div class="book-toc-content">
+    
+
+    
+    
         
-  
-<nav id="TableOfContents">
-  <ul>
-    <li><a href="#liste-chaînée-simple">Liste chaînée simple</a>
-      <ul>
-        <li><a href="#exemple-ajouts-dans-liste-chaînée-simple">Exemple: ajouts dans liste chaînée simple</a></li>
-        <li><a href="#liste-chaînée-simple-en-java">Liste chaînée simple en Java</a></li>
-      </ul>
-    </li>
-  </ul>
+            
+        
+    
+
+    <ul>
+        <li><a href='#liste-cha%c3%aen%c3%a9e-simple'>4.3 Liste chaînée simple</a></li>
+
+        
+
+    </ul>
+
+
 </nav>
 
 
- 
-      </div>
-    </aside>
-    
-  </main>
 
-  
-</body>
+
+
+
+ 
+                </div>
+            </aside>
+            
+        </main>
+
+        
+    </body>
 </html>
 
 
