@@ -7,13 +7,13 @@
 
         {{ template "apply_video_shortcode" . }}
 
-    {{ else if eq $name "key" }}
-
-        {{ template "apply_key_shortcode" . }}
-
     {{ else if eq $name "animation" }}
 
         {{ template "apply_animation_shortcode" . }}
+
+    {{ else if eq $name "key" }}
+
+        {{ template "apply_key_shortcode" . }}
 
     {{ else if or (eq $name "node") (eq $name "rootNode") }}
 

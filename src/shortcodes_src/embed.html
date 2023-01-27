@@ -1,20 +1,19 @@
 {{ $params := newScratch }}
 
+{{/* FIXME: refactor to new style: apply_shortcode, see e.g. shortcode_src/animation.html */}}
+
 {{ $src := .Get 0 }}
 {{ if not $src }}
     {{ $src = .Get "src" }}
 {{ end }}
 {{ $params.Set "src" $src }}
 
-{{ $params.Set "indent" (.Get "indent") }}
+{{ $params.Set "indent_level" (.Get "indent-level") }}
 
 {{ $params.Set "first_line" (.Get "first-line") }}
 
 {{ $params.Set "last_line" (.Get "last-line") }}
 
 {{ $params.Set "base_path" ($.Page.File.Dir) }}
-
-{{ $params.Set "extraDir" .Page.Site.Params.extraDir }}
-{{ $params.Set "extras" .Page.Site.Params.extras  }}
 
 {{ template "embed" $params }}

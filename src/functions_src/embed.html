@@ -1,10 +1,11 @@
 {{- define "embed" -}}
     {{ $params := . }}
     {{ $src := .Get "src" }}
-    {{ $indent := 0 }}
-    {{ if not (eq (.Get "indent") "") }}
-        {{ $indent = int (.Get "indent") }}
+    {{ $indent_level := .Get "indent_level" }}
+    {{ if eq $indent_level "" }}
+        {{ $indent_level = "0" }}
     {{ end }}
+    {{ $indent_level = int $indent_level }}
     {{ $first_line := 0 }}
     {{ if not (eq (.Get "first_line") "") }}
         {{ $first_line = int (.Get "first_line") }}
@@ -19,6 +20,10 @@
     {{ end }}
     {{ $file_content := $src | readFile }}
     {{ $lines := split $file_content "\n" }}
+    {{ $index_last_line := sub (len $lines) 1 }}
+    {{ if eq $last_line 0 }}
+        {{ $last_line = $index_last_line }}
+    {{ end }}
     {{ $ignore_line := false }}
     {{ $start_stop_ignoring_header := false }}
     {{ $line_number := 0 }}
@@ -30,10 +35,10 @@
         {{ end }}
         {{ if and (not $ignore_line) (not $start_stop_ignoring_header) }}
             {{ $line_number = add $line_number 1 }}
-            {{ if and (or (eq $first_line 0) (ge $line_number $first_line)) (or (eq $last_line 0) (le $line_number $last_line)) }}
-                {{ if not ($first_printed_line) }}
-                    {{ range $num := (seq $indent) }}
-                        {{ "    " }}
+            {{ if and (ge $line_number $first_line) (le $line_number $last_line) }}
+                {{ if and (not ($first_printed_line)) (not (eq $line ""))}}
+                    {{ range $num := (seq $indent_level) }}
+                        {{ "    " | safeHTML }}
                     {{ end }}
                 {{ else }}
                     {{ $first_printed_line = false }}
@@ -45,8 +50,12 @@
                     {{ $params.Set "shortcodes" $shortcodes }}
                     {{ template "apply_shortcodes" $params }}
                 {{ else }}
-                    {{ $line | safeHTML }}
-                    {{ "\n" | safeHTML }}
+                    {{ if le $index $last_line }}
+                        {{ $line | safeHTML }}
+                    {{ end }}
+                    {{ if lt $line_number $last_line }}
+                        {{ "\n" }}
+                    {{ end }}
                 {{ end }}
             {{ end }}
         {{ end }}

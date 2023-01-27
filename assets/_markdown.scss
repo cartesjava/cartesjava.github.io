@@ -8,6 +8,12 @@
     margin-top: 0;
   }
 
+  h1 {
+
+      text-align:center;
+
+  }
+
   h1,
   h2,
   h3,
@@ -92,11 +98,18 @@
   }
 
   blockquote {
-    margin: $padding-16 0;
+    margin-left: 4*$padding-16;
+    margin-right: 4*$padding-16;
     padding: $padding-8 $padding-16 $padding-8 ($padding-16 - $padding-4); //to keep total left space 16dp
 
     border-inline-start: $padding-4 solid var(--gray-200);
-    border-radius: $border-radius;
+    border-radius: 4*$border-radius;
+
+    border: dotted var(--gray-500) 2px;
+
+    background-color: var(--body-background);
+
+    margin-bottom: 3rem;
 
     :first-child {
       margin-top: 0;

@@ -1,6 +1,49 @@
 <h{{ .Level }} id="{{ .Anchor | safeURL }}">
 
-{{ if eq .Level 1 }}{{- partial "numbering" (dict "Page" .Page.Page "NumberOnly" false) -}}{{ end }}{{ .Text | safeHTML }}
+
+{{ $level := .Level }}
+{{ $page := .Page.Page }}
+{{ $anchor := .Anchor }}
+{{ $text := .Text }}
+
+{{ $thisTocNode := newScratch }}
+{{ $thisTocNode.Set "title" ($text | plainify) }}
+{{ $thisTocNode.Set "anchor" $anchor }}
+{{ $thisTocNode.Set "subNodes" (slice) }}
+
+{{ if eq .Level 1 }}
+
+    {{- partial "numbering" (dict "Page" $page "NumberOnly" false) -}}
+
+    {{ $thisTocNode.Set "number" ($page.Scratch.Get "sectionNumber") }}
+
+    {{ $page.Scratch.Set "PageToc" $thisTocNode }}
+
+{{ else }}
+
+    {{ $number := "" }}
+    {{ $ancestorLevel := sub $level 1 }}
+    {{ $ancestorTocNode := $page.Scratch.Get (printf "currentPageTocNodeLevel%02d" $ancestorLevel) }}
+
+    {{ if $ancestorTocNode }}
+        {{ $ancestorNumber := $ancestorTocNode.Get "number" }}
+        {{ $ancestorTocNode.Set "subNodes" ($ancestorTocNode.Get "subNodes" | append $thisTocNode) }}
+        {{ $number = $ancestorTocNode.Get "number" }}
+        {{ $number = printf "%s.%d" $number (len ($ancestorTocNode.Get "subNodes")) }}
+    {{ end }}
+
+    {{ if and (default true $page.Site.Params.BookNumbering) (default true $page.Params.BookNumbering) }}
+
+        {{ $thisTocNode.Set "number" $number }}
+        {{ $thisTocNode.Get "number" | safeHTML }}
+
+    {{ end }}
+
+{{ end }}
+
+{{ .Page.Page.Scratch.Set (printf "currentPageTocNodeLevel%02d" .Level) $thisTocNode }}
+
+{{ .Text | safeHTML }}
 
 <a class="anchor" href="#{{ .Anchor | safeURL }}">#</a>
 

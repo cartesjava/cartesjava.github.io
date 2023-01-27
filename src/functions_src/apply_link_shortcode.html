@@ -3,6 +3,9 @@
     {{ $params := newScratch }}
 
     {{ $args := .Get "args" }}
+    {{ $context := .Get "context" }}
+
+    {{ $base_path := $context.Page.File.Dir }}
 
     {{ $src := "" }}
     {{ $text := "" }}
@@ -29,6 +32,7 @@
 
     {{ $params.Set "src" $src }}
     {{ $params.Set "text" $text }}
+    {{ $params.Set "base_path" $base_path }}
 
     {{ template "link" $params }}
 

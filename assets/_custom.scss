@@ -3,8 +3,12 @@
 // @import "plugins/numbered";
 
 
-.figure, .small-figure, .animation {
+.figure-border{
     border: 1px solid darkgray;
+}
+
+.border-black {
+    border: 1px solid black;
 }
 
 .figure {
@@ -27,8 +31,38 @@
 }
 
 .book-page {
-    /*background: var(--page-background) !important;*/
+    background: var(--page-background) !important;
+    border: 1px solid lightgray;
 }
+
+.book-footer {
+    background: var(--body-background) !important;
+}
+
+h1 {
+
+    padding-top:0.5rem;
+    padding-bottom:0.5rem;
+    border-top:solid black 2px;
+    border-bottom:solid black 2px;
+
+    margin-bottom:3rem !important;
+}
+
+.footer-next-page {
+    display:flex;
+    justify-content:center;
+    padding-top:0.5rem;
+    padding-bottom:0.5rem;
+    border-top:solid black 2px;
+    border-bottom:solid black 2px;
+}
+
+.footer-divider {
+    padding-bottom:0.5rem;
+    border-bottom:solid black 2px;
+}
+
 
 kbd {
     display: inline-block;
@@ -71,12 +105,14 @@ kbd {
     border-radius: 10px;
     background-color: #F8F8FF;
 
+    /*
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    */
 
     overflow: visible;
     width: 750px;
@@ -110,57 +146,39 @@ kbd {
     list-style-type:square;
 }
 
-
-/*
-body {counter-reset: h2}
-h2 {counter-reset: h3}
-h3 {counter-reset: h4}
-h4 {counter-reset: h5}
-
-article h2:before {
-
-    counter-increment: h2; 
-    content: counter(h2) ". "; 
-
+div.highlight {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
-article h3:before {
-
-    counter-increment: h3; 
-    content: counter(h2) "." counter(h3) ". ";
-
+div.highlight pre {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
-article h4:before {
-
-    counter-increment: h4; 
-    content: counter(h2) "." counter(h3) "." counter(h4) ". ";
-
+div.highlight pre code {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
-.book-toc-content ul { 
-
-    counter-reset: item;
-
+div.highlight pre code span {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
-
-.book-toc-content li a:before { 
-
-    content: counters(item, ".") ". "; counter-increment: item;
-
-}
-
-.book-menu-content ul { 
-
-    counter-reset: item;
-
-}
-
-.book-menu-content li a:before { 
-
-    content: counters(item, ".") ". "; counter-increment: item;
-
-}
-*/
-
 

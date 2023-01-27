@@ -1,5 +1,6 @@
 
 {{ $filename := .Get 0 }}
+
 {{ $base_path := .Page.File.Dir }}
 
 {{ $src := path.Join $base_path $filename }}
@@ -8,4 +9,5 @@
 
 {{ $base64_content := $file_content | base64Encode }}
 
-<img src="data:image/jpeg;base64, {{ $base64_content }}">
+
+<img src="data:image/png;base64, {{ $base64_content }}" >

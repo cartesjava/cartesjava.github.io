@@ -1,1 +1,7 @@
-{{ $params := newScratch }}{{ $params.Set "src" (.Get 0) }}{{ $params.Set "text" (.Get 1) }}{{ $params.Set "base_path" ($.Page.File.Dir) }}{{ $params.Set "download" true }}{{ template "link" $params }}
+{{ $params := newScratch }}
+
+{{ $params.Set "name" "download" }}
+{{ $params.Set "args" . }}
+{{ $params.Set "context" . }}
+
+{{ template "apply_shortcode" $params }}

@@ -1,40 +1,63 @@
 <div class="flex flex-wrap justify-between">
 
-{{ if and .GitInfo .Site.Params.BookRepo }}
-  <div>
-    {{- $date := partial "docs/date" (dict "Date" .GitInfo.AuthorDate.Local "Format" .Site.Params.BookDateFormat) -}}
-    {{- $commitPath := default "commit" .Site.Params.BookCommitPath -}}
-    <a class="flex align-center" href="{{ .Site.Params.BookRepo }}/{{ $commitPath }}/{{ .GitInfo.Hash }}" title='{{ i18n "Last modified by" }} {{ .GitInfo.AuthorName }} | {{ $date }}' target="_blank" rel="noopener">
-      <img src="{{ "svg/calendar.svg" | relURL }}" class="book-icon" alt="Calendar" />
-      <span>{{ $date }}</span>
-    </a>
-      <div style="padding-top:12px;">©&nbsp;Mathieu&nbsp;Bergeron</div>
-  </div>
-{{ end }}
+    <div>
+        {{ if and .GitInfo .Site.Params.Logos }}
+        <div>
+            <a href="https://fabriquerel.org/">
+	            <img style="width:20em;height:100%" alt="FabriqueREL" src="/F-REL_logo-coul-horiz.png" />
+            </a>
+        </div>
+        <div style="position:relative;left:1.25em;">
+            <a href="https://www.cmontmorency.qc.ca/">
+	            <img style="width:20em;height:100%" alt="Collège Montmorency" src="/LogomoHC.png" />
+            </a>
+        </div>
+        {{ end }}
+    </div>
 
-{{ if and .File .Site.Params.BookRepo .Site.Params.BookEditPath }}
-  <div>
-    <a class="flex align-center" href="{{ .Site.Params.BookRepo }}/{{ .Site.Params.BookEditPath }}/{{ .Site.Params.contentDir | default "content" }}/{{ replace .File.Path "\\" "/" }}" target="_blank" rel="noopener">
-      <img src="{{ "svg/edit.svg" | relURL }}" class="book-icon" alt="Edit" />
-      <span>{{ i18n "Edit this page" }}</span>
-    </a>
-  </div>
-{{ end }}
-</div>
-<div style="float:right;position:relative;top:-12px;">
-    <div style="float:right;">
-        <a ref="" href="https://creativecommons.org/licenses/by-sa/4.0/deed.fr" style="font-size:2em;">
-        <img alt="Creative Commons License" style="border-width:0" src="/cc.svg" /></a>
-        <a ref="" href="https://creativecommons.org/licenses/by-sa/4.0/deed.fr" style="font-size:2em;">
-        <img alt="Creative Commons Attribution" style="border-width:0" src="/by.svg" /></a>
-        <a ref="" href="https://creativecommons.org/licenses/by-sa/4.0/deed.fr" style="font-size:2em;">
-        <img alt="Creative Commons ShareAlike" style="border-width:0" src="/sa.svg" /></a>
+    <div style="padding-top:2em;">
+        {{ if and .GitInfo .Site.Params.BookRepo }}
+        <div class="flex justify-end">
+            {{- $date := partial "docs/date" (dict "Date" .GitInfo.AuthorDate.Local "Format" .Site.Params.BookDateFormat) -}}
+            {{- $commitPath := default "commit" .Site.Params.BookCommitPath -}}
+            <a href="{{ .Site.Params.BookRepo }}/{{ $commitPath }}/{{ .GitInfo.Hash }}" title='{{ i18n "Last modified by" }} {{ .GitInfo.AuthorName }} | {{ $date }}' target="_blank" rel="noopener">
+                <span>{{ $date }}</span>
+                <img src="{{ "svg/calendar.svg" | relURL }}" class="book-icon" alt="Calendar" />
+            </a>
+        </div>
+        {{ end }}
+
+        {{ if and .File .Site.Params.BookRepo .Site.Params.BookEditPath }}
+        <div class="flex justify-end" style="padding-top:1em;">
+            <a href="{{ .Site.Params.BookRepo }}/{{ .Site.Params.BookEditPath }}/{{ default "pages" .Site.Params.contentDir }}/{{ replace .File.Path "\\" "/" }}" target="_blank" rel="noopener">
+                <span>{{ i18n "Edit this page" }}</span>
+                <img src="{{ "svg/edit.svg" | relURL }}" class="book-icon" alt="Edit" />
+            </a>
+        </div>
+        {{ end }}
+
+        <div class="flex justify-end" style="padding-top:2em;">
+            <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.fr" style="font-size:2em;">
+	            <img alt="Creative Commons License" style="border-width:0" src="/cc.svg" />
+            </a>
+
+            <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.fr" style="font-size:2em;">
+                <img alt="Creative Commons Attribution" style="border-width:0" src="/by.svg" />
+            </a>
+
+            <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.fr" style="font-size:2em;"> 
+                <img alt="Creative Commons ShareAlike" style="border-width:0" src="/sa.svg" />
+            </a>
+        </div>
     </div>
 </div>
 
 
 
+
+
+
 {{ $script := resources.Get "clipboard.js" | resources.Minify }}
 {{ with $script.Content }}
-  <script>{{ . | safeJS }}</script>
+<script>{{ . | safeJS }}</script>
 {{ end }}

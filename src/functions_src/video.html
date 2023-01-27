@@ -49,8 +49,6 @@
 
     {{ end }}
 
-    <!--
-
     <center>
         <video {{ printf "width='%s'" ($attrs.Get "width") | safeHTMLAttr }} 
 
@@ -61,6 +59,7 @@
             {{ else }} 
 
                 crossOrigin="use-credentials" preload="none"
+
 
             {{ end }}
 
@@ -76,8 +75,6 @@
             {{ end }}
         </video>
     </center>
-
-    -->
 
 {{ end }}
 

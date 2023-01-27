@@ -20,6 +20,8 @@ markup:
       unsafe: true
   tableOfContents:
     startLevel: 1
+  highlight:
+    style: monokailight
 
 languages:
   fr:
@@ -28,6 +30,18 @@ languages:
     languageCode: fr-ca
 
 params:
+  # redirect to cartesjava.github.io
+  Redirect: false
+
+  # logo
+  Logos: true
+
+  # add numbering
+  BookNumbering: true
+
+  # add NextPageFooter
+  NextPageFooter: true
+
   # (Optional, default light) Sets color theme: light, dark or auto.
   # Theme 'auto' switches between dark and light modes based on browser/os preferences
   BookTheme: auto
