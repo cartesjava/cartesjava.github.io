@@ -1,0 +1,1604 @@
+<!DOCTYPE html>
+<html lang="fr-ca" dir="ltr">
+    <head>
+        <meta charset="UTF-8">
+
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Pile d&rsquo;appel #   C&rsquo;est quand une methode() fait un appel à elle-même:  public void methode(){  /* ... */    methode();    /* ... */ }   Le résultat est une boucle
+  Plusieurs algorithmes sont plus faciles à coder de cette façon
+ c&rsquo;est souvent plus proche de la définition papier (mathématique)    Par exemple:
+  définition mathématique de la fonction factorielle:">
+<meta name="theme-color" content="#FFFFFF">
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="Pile d&#39;appel" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://cartesjava.github.io/modelisation/_brouillons/pile_appel/" />
+
+<title>
+
+
+    Pile d&#39;appel 
+
+
+
+</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/book.min.e4869670571a4fc0a50f4a2c889ed6ee3b49dac25cd9095e9eea1f69c426d18a.css" integrity="sha256-5IaWcFcaT8ClD0osiJ7W7jtJ2sJc2QlenuofacQm0Yo=" crossorigin="anonymous">
+  <script defer src="/flexsearch.min.js"></script>
+  <script defer src="/fr.search.min.0e5eca3384d4e84a083eaf733dd004e479c5ffdbd8211494050eba149a9c560e.js" integrity="sha256-Dl7KM4TU6EoIPq9zPdAE5HnF/9vYIRSUBQ66FJqcVg4=" crossorigin="anonymous"></script>
+
+  <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" integrity="sha256-b2&#43;Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC&#43;NdcPIvZhzk=" crossorigin="anonymous"></script>
+
+<script defer src="/reload_videos.min.4a5aa164333a19381a7fd1dde8e03eadc175bdda3a31e8f4fc8e0951775577ca.js" integrity="sha256-SlqhZDM6GTgaf9Hd6OA&#43;rcF1vdo6Mej0/I4JUXdVd8o=" crossorigin="anonymous"></script><link rel="alternate" type="application/rss+xml" href="https://cartesjava.github.io/modelisation/_brouillons/pile_appel/index.xml" title="Cartes Java" />
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+        
+    </head>
+    <body dir="ltr">
+        <input type="checkbox" class="hidden toggle" id="menu-control" />
+        <input type="checkbox" class="hidden toggle" id="toc-control" />
+        <main class="container flex">
+            <aside class="book-menu">
+                <div class="book-menu-content">
+                    
+<nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><span>Cartes Java</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Rechercher" aria-label="Rechercher" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/preface/" class="">Préface</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/intro/" class="">Introduction</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-b1f25d69250e7772af5811e7ef44e922" class="toggle"  />
+    <label for="section-b1f25d69250e7772af5811e7ef44e922" class="flex justify-between">
+      <a href="/approche/" class="">1. Présentation de l&#39;approche</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/approche/outil/" class="">1.1. Outil de validation</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/approche/langages_et_notations/" class="">1.2. Langages et notations utilisées</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/approche/cartes_a_jouer/" class="">1.3. Visualisations avec des cartes à jouer</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-20d2db300e0f4ab0130280f200c4f2fc" class="toggle" checked />
+    <label for="section-20d2db300e0f4ab0130280f200c4f2fc" class="flex justify-between">
+      <a href="/modelisation/" class="">2. Modélisation des données et limitations de l&#39;approche</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/modelisation/objets/" class="">2.1. Objets</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/modelisation/tableau_d_objets/" class="">2.2. Tableaux d&#39;objets</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/modelisation/graphe_d_objets/" class="">2.3. Graphes d&#39;objets</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-89a3727667e5590a4150c67be9175eaa" class="toggle"  />
+    <label for="section-89a3727667e5590a4150c67be9175eaa" class="flex justify-between">
+      <a href="/efficacite/" class="">3. Qu&#39;est-ce que l&#39;efficacité?</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/efficacite/performance_vs_efficacite/" class="">3.1. Performance Vs efficacité</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/efficacite/temps/" class="">3.2. Efficacité en temps</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/efficacite/espace/" class="">3.3. Efficacité en espace</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-b12c28f0f1b1687a56347184fa5203f8" class="toggle"  />
+    <label for="section-b12c28f0f1b1687a56347184fa5203f8" class="flex justify-between">
+      <a href="/listes/" class="">4. Comprendre les listes</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/listes/naive/" class="">4.1. Liste naïve</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/listes/tableau/" class="">4.2. Liste par tableau</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/listes/chainee_simple/" class="">4.3. Liste chaînée simple</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/listes/chainee_double/" class="">4.4. Liste chaînée double</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-4d776affa1be45887905ae21b1d04b2a" class="toggle"  />
+    <label for="section-4d776affa1be45887905ae21b1d04b2a" class="flex justify-between">
+      <a href="/arbres/" class="">5. Comprendre les arbres</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/arbres/generique/" class="">5.1. Arbre générique</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/arbres/binaire/" class="">5.2. Arbre binaire</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-3e48974585d14c8908a67306d3ef0b3b" class="toggle"  />
+    <label for="section-3e48974585d14c8908a67306d3ef0b3b" class="flex justify-between">
+      <a href="/mappages/" class="">6. Comprendre les mappages</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/mappages/naif/" class="">6.1. Mappage naïf</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/mappages/hachage/" class="">6.2. Mappage par hachage</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/mappages/arbre/" class="">6.3. Mappage avec arbre</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/conclusion/" class="">Conclusion</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/bibliographie/" class="">Bibliographie</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-9ea2d72b97e9d02a8b97ae9357b7969b" class="toggle"  />
+    <label for="section-9ea2d72b97e9d02a8b97ae9357b7969b" class="flex justify-between">
+      <a role="button" class="">Annexes</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/annexes/annexe_grand_o/" class="">Annexe 1: la notation grand O</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/annexes/annexe_acceder_exemples/" class="">Annexe 2: accéder aux exemples</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/annexes/annexe_programmer_exemple/" class="">Annexe 3: programmer un nouvel exemple</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/annexes/annexe_modifier_manuel/" class="">Annexe 4: suggérer une modification à ce manuel</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-3b1da941c278c90106392151b814a2c6" class="toggle"  />
+    <label for="section-3b1da941c278c90106392151b814a2c6" class="flex justify-between">
+      <a href="/annexes/annexe_ateliers/" class="">Annexe 5: exemples d&#39;ateliers</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/annexes/annexe_ateliers/deplacer_decaler/" class="">Procédures déplacer/décaler</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/annexes/annexe_ateliers/fibonacci/" class="">Modéliser la suite de Fibonacci</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/annexes/annexe_ateliers/liste_tableau/" class="">Liste par tableau</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/annexes/annexe_ateliers/arbre_binaire/" class="">Arbre binaire</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-47be0624d93c2dddef9d700a6ef60a09" class="toggle"  />
+    <label for="section-47be0624d93c2dddef9d700a6ef60a09" class="flex justify-between">
+      <a href="/annexes/annexe_bilans/" class="">Annexe 6: bilans</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/annexes/annexe_bilans/bilan_juin_2022/" class="">Bilan juin 2022</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/annexes/annexe_bilans/bilan_octobre_2022/" class="">Bilan octobre 2022</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+                </div>
+            </aside>
+
+            <div class="book-page-and-footer">
+                <div class="book-page">
+                    <header class="book-header">
+                        
+<div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Pile d&#39;appel</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+
+<aside class="hidden clearfix">
+    
+
+
+
+<nav id='TableOfContents'>
+    
+
+    
+    
+
+    
+    
+        
+    
+
+    <ul>
+        <li><a href='#pile-dappel'>Pile d&rsquo;appel</a></li>
+
+        
+
+            
+
+    
+    
+
+    
+    
+        
+            
+        
+    
+
+    <ul>
+        <li><a href='#pile-dappel-1'>%!s(<nil>).1 Pile d&rsquo;appel</a></li>
+
+        
+
+    </ul>
+
+
+
+        
+
+            
+
+    
+    
+
+    
+    
+        
+            
+        
+    
+
+    <ul>
+        <li><a href='#avantages-de-la-r%c3%a9cursivit%c3%a9'>%!s(<nil>).2 Avantages de la récursivité</a></li>
+
+        
+
+    </ul>
+
+
+
+        
+
+            
+
+    
+    
+
+    
+    
+        
+            
+        
+    
+
+    <ul>
+        <li><a href='#inconv%c3%a9nient-de-la-r%c3%a9cursivit%c3%a9'>%!s(<nil>).3 Inconvénient de la récursivité</a></li>
+
+        
+
+    </ul>
+
+
+
+        
+
+            
+
+    
+    
+
+    
+    
+        
+            
+        
+    
+
+    <ul>
+        <li><a href='#transformer-en-boucle-normale'>%!s(<nil>).4 Transformer en boucle normale</a></li>
+
+        
+
+    </ul>
+
+
+
+        
+
+    </ul>
+
+
+</nav>
+
+
+
+
+
+
+
+</aside>
+
+ 
+                    </header>
+
+                    
+                    
+<article class="markdown"><h1 id="pile-dappel">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+Pile d&rsquo;appel
+
+<a class="anchor" href="#pile-dappel">#</a>
+
+</h1>
+<ul>
+<li>C&rsquo;est quand une <code>methode()</code> fait un appel à elle-même:</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#00a8c8">public</span> <span style="color:#00a8c8">void</span> <span style="color:#75af00">methode</span><span style="color:#f92672">(){</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">/* ... */</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">methode</span><span style="color:#f92672">();</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">/* ... */</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span></code></pre></div><ul>
+<li>
+<p>Le résultat est une boucle</p>
+</li>
+<li>
+<p>Plusieurs algorithmes sont plus faciles à coder de cette façon</p>
+<ul>
+<li>c&rsquo;est souvent plus proche de la définition papier (mathématique)</li>
+</ul>
+</li>
+<li>
+<p>Par exemple:</p>
+<ul>
+<li>
+<p>définition mathématique de la fonction factorielle:</p>
+  <pre>
+  fac(0) = 1
+  fac(n) = n * fac(n-1)
+  </pre>
+</li>
+<li>
+<p>code Java récursif:</p>
+</li>
+</ul>
+</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#00a8c8">public</span> <span style="color:#00a8c8">int</span> <span style="color:#75af00">factoriel</span><span style="color:#f92672">(</span><span style="color:#00a8c8">int</span> <span style="color:#111">n</span><span style="color:#f92672">){</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">if</span><span style="color:#f92672">(</span><span style="color:#111">n</span> <span style="color:#f92672">==</span> <span style="color:#111">0</span><span style="color:#f92672">){</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#00a8c8">return</span> <span style="color:#111">1</span><span style="color:#f92672">;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">}</span><span style="color:#00a8c8">else</span><span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#00a8c8">return</span> <span style="color:#111">n</span> <span style="color:#f92672">*</span> <span style="color:#111">factoriel</span><span style="color:#f92672">(</span><span style="color:#111">n</span><span style="color:#f92672">-</span><span style="color:#111">1</span><span style="color:#f92672">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span></code></pre></div><ul>
+<li>
+<p>NOTE: le prof ignore volontairement le guide de style en faisant deux <code>return</code></p>
+</li>
+<li>
+<p>Il est toujours possible de transformer des appels récursifs en boucle normale</p>
+</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#00a8c8">public</span> <span style="color:#00a8c8">int</span> <span style="color:#75af00">factoriel</span><span style="color:#f92672">(</span><span style="color:#00a8c8">int</span> <span style="color:#111">n</span><span style="color:#f92672">){</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">int</span> <span style="color:#111">resultat</span><span style="color:#f92672">;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">if</span><span style="color:#f92672">(</span><span style="color:#111">i</span> <span style="color:#f92672">==</span> <span style="color:#111">0</span><span style="color:#f92672">){</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">resultat</span> <span style="color:#f92672">=</span> <span style="color:#111">1</span><span style="color:#f92672">;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">}</span><span style="color:#00a8c8">else</span><span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">resultat</span> <span style="color:#f92672">=</span> <span style="color:#111">n</span><span style="color:#f92672">;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#00a8c8">for</span><span style="color:#f92672">(</span><span style="color:#00a8c8">int</span> <span style="color:#111">i</span> <span style="color:#f92672">=</span> <span style="color:#111">n</span><span style="color:#f92672">-</span><span style="color:#111">1</span><span style="color:#f92672">;</span> <span style="color:#111">i</span> <span style="color:#f92672">&gt;</span> <span style="color:#111">0</span><span style="color:#f92672">;</span> <span style="color:#111">i</span><span style="color:#f92672">--){</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#111">resultat</span> <span style="color:#f92672">=</span> <span style="color:#111">resulat</span> <span style="color:#f92672">*</span> <span style="color:#111">i</span><span style="color:#f92672">;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">return</span> <span style="color:#111">resultat</span><span style="color:#f92672">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span></code></pre></div><ul>
+<li>NOTE: on voit comment la code est plus loin de la définition mathématique</li>
+</ul>
+<h2 id="pile-dappel-1">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
+
+    
+        
+        
+        
+        
+    
+
+    
+
+        
+        %!s(<nil>).1
+
+    
+
+
+
+
+
+Pile d&rsquo;appel
+
+<a class="anchor" href="#pile-dappel-1">#</a>
+
+</h2>
+<ul>
+<li>
+<p>La récursivité utilise la pile d&rsquo;appels pour mémoriser des valeurs</p>
+</li>
+<li>
+<p>Qu&rsquo;est-ce que la pile d&rsquo;appels?</p>
+<ul>
+<li>quand on fait un appel de méthode, les arguments sont stoqués sur la pile</li>
+<li>quand la méthode termine, c&rsquo;est retiré de la pile</li>
+<li>la pile permet de revenir là où on était dans la méthode précédente</li>
+</ul>
+</li>
+<li>
+<p>Par exemple:</p>
+</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#00a8c8">public</span> <span style="color:#00a8c8">static</span> <span style="color:#00a8c8">void</span> <span style="color:#75af00">A</span><span style="color:#f92672">(</span><span style="color:#00a8c8">int</span> <span style="color:#111">x</span><span style="color:#f92672">,</span> <span style="color:#00a8c8">int</span> <span style="color:#111">y</span><span style="color:#f92672">){</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">B</span><span style="color:#f92672">(</span><span style="color:#d88200">&#34;a&#34;</span><span style="color:#f92672">);</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#00a8c8">public</span> <span style="color:#00a8c8">static</span> <span style="color:#00a8c8">void</span> <span style="color:#75af00">B</span><span style="color:#f92672">(</span><span style="color:#111">String</span> <span style="color:#111">c</span><span style="color:#f92672">){</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">C</span><span style="color:#f92672">(</span><span style="color:#00a8c8">new</span> <span style="color:#00a8c8">char</span><span style="color:#f92672">[]{</span><span style="color:#d88200">&#39;a&#39;</span><span style="color:#f92672">,</span><span style="color:#d88200">&#39;b&#39;</span><span style="color:#f92672">});</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#00a8c8">public</span> <span style="color:#00a8c8">static</span> <span style="color:#00a8c8">void</span> <span style="color:#75af00">C</span><span style="color:#f92672">(</span><span style="color:#00a8c8">char</span><span style="color:#f92672">[]</span> <span style="color:#111">tab</span><span style="color:#f92672">){</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#00a8c8">public</span> <span style="color:#00a8c8">static</span> <span style="color:#00a8c8">void</span> <span style="color:#75af00">main</span><span style="color:#f92672">(</span><span style="color:#111">String</span><span style="color:#f92672">[]</span> <span style="color:#111">args</span><span style="color:#f92672">){</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">A</span><span style="color:#f92672">(</span><span style="color:#111">0</span><span style="color:#f92672">,</span><span style="color:#111">1</span><span style="color:#f92672">);</span>  
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// La pile va être
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#75715e">//
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#75715e">// au début:     main()                
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#75715e">// appel de A:   main(), A(0,1)
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#75715e">// appel de B:   main(), A(0,1), B(&#34;a&#34;)
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#75715e">// appel de C:   main(), A(0,1), B(&#34;a&#34;), C({&#39;a&#39;,&#39;b&#39;})
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#75715e">// retour de C:  main(), A(0,1), B(&#34;a&#34;)
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#75715e">// retour de B:  main(), A(0,1)
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#75715e">// retour de A:  main()
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#f92672">}</span>
+</span></span></code></pre></div><ul>
+<li>
+<p>En cas de plantage, la pile d&rsquo;appel est affichée (équivalent de la ligne 24):</p>
+<pre><code>  Exception in thread &quot;main&quot; java.lang.RuntimeException
+      at Pile.C(Pile.java:15)
+      at Pile.B(Pile.java:11)
+      at Pile.A(Pile.java:6)
+      at Pile.main(Pile.java:20)
+</code></pre>
+</li>
+</ul>
+<h2 id="avantages-de-la-récursivité">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
+
+    
+        
+        
+        
+        
+    
+
+    
+
+        
+        %!s(<nil>).2
+
+    
+
+
+
+
+
+Avantages de la récursivité
+
+<a class="anchor" href="#avantages-de-la-r%c3%a9cursivit%c3%a9">#</a>
+
+</h2>
+<ul>
+<li>
+<p>Code souvent plus simple et plus lisible</p>
+</li>
+<li>
+<p>Les boucles infinies sont détectées par des erreurs de débordement de pile</p>
+<ul>
+<li>
+<p>en anglais: <em>stack overflow</em></p>
+<pre><code>  Exception in thread &quot;main&quot; java.lang.StackOverflowError
+      at Pile.A(Pile.java:6)
+      at Pile.A(Pile.java:6)
+      at Pile.A(Pile.java:6)
+      at Pile.A(Pile.java:6)
+      at Pile.A(Pile.java:6)
+      at Pile.A(Pile.java:6)
+      at Pile.A(Pile.java:6)
+      at Pile.A(Pile.java:6)
+      at Pile.A(Pile.java:6)
+      ...
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="inconvénient-de-la-récursivité">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
+
+    
+        
+        
+        
+        
+    
+
+    
+
+        
+        %!s(<nil>).3
+
+    
+
+
+
+
+
+Inconvénient de la récursivité
+
+<a class="anchor" href="#inconv%c3%a9nient-de-la-r%c3%a9cursivit%c3%a9">#</a>
+
+</h2>
+<ul>
+<li>
+<p>Plus facile d&rsquo;écrire des boucles infinies (condition d&rsquo;arrêt implicite)</p>
+</li>
+<li>
+<p>En pratique, la pile d&rsquo;appel est assez petite (p.ex. 1000 appels)</p>
+<ul>
+<li>donc souvent impossible d&rsquo;utiliser la récursivité sur des gros problèmes</li>
+</ul>
+  <!--* (à moins que le nombre d'appels soit `O(log(n) comme pour le tri fusion)`-->
+</li>
+</ul>
+<h2 id="transformer-en-boucle-normale">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
+
+    
+        
+        
+        
+        
+    
+
+    
+
+        
+        %!s(<nil>).4
+
+    
+
+
+
+
+
+Transformer en boucle normale
+
+<a class="anchor" href="#transformer-en-boucle-normale">#</a>
+
+</h2>
+<ul>
+<li>
+<p>On peut transformer n&rsquo;importe quelle méthode récursive en boucle</p>
+</li>
+<li>
+<p>On peut écrire du code récursif pour un prototype</p>
+<ul>
+<li>et éliminer la récursivité pour le code de production</li>
+</ul>
+</li>
+<li>
+<p>Certains compilateurs peuvent éliminer automatiquement la récursivité</p>
+<ul>
+<li>à condition que l&rsquo;appel récursif soit la <strong>toute dernière instruction</strong> de la méthode</li>
+</ul>
+</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#00a8c8">public</span> <span style="color:#00a8c8">int</span> <span style="color:#75af00">factoriel</span><span style="color:#f92672">(</span><span style="color:#00a8c8">int</span> <span style="color:#111">n</span><span style="color:#f92672">){</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">return</span> <span style="color:#111">factoriel</span><span style="color:#f92672">(</span><span style="color:#111">n</span><span style="color:#f92672">,</span> <span style="color:#111">1</span><span style="color:#f92672">);</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#00a8c8">public</span> <span style="color:#00a8c8">int</span> <span style="color:#75af00">factoriel</span><span style="color:#f92672">(</span><span style="color:#00a8c8">int</span> <span style="color:#111">n</span><span style="color:#f92672">,</span> <span style="color:#00a8c8">int</span> <span style="color:#111">courant</span><span style="color:#f92672">){</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">if</span><span style="color:#f92672">(</span><span style="color:#111">n</span> <span style="color:#f92672">==</span> <span style="color:#111">0</span><span style="color:#f92672">){</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#00a8c8">return</span> <span style="color:#111">courant</span><span style="color:#f92672">;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">}</span><span style="color:#00a8c8">else</span><span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#00a8c8">return</span> <span style="color:#111">factoriel</span><span style="color:#f92672">(</span><span style="color:#111">n</span><span style="color:#f92672">-</span><span style="color:#111">1</span><span style="color:#f92672">,</span> <span style="color:#111">n</span> <span style="color:#f92672">*</span> <span style="color:#111">courant</span><span style="color:#f92672">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span></code></pre></div></article>
+ 
+                    <br>    <br>    
+                    
+                     
+                    <label for="menu-control" class="hidden book-menu-overlay"></label>
+                </div>
+
+                <footer class="book-footer">
+                    
+<div class="flex flex-wrap justify-between">
+
+    <div>
+        
+    </div>
+
+    <div style="padding-top:2em;">
+        
+
+        
+        <div class="flex justify-end" style="padding-top:1em;">
+            <a href="https://github.com/cartesjava/cartesjava.github.io/edit/main//pages/modelisation/_brouillons/pile_appel/_index.md" target="_blank" rel="noopener">
+                <span>Suggérer une modification</span>
+                <img src="/svg/edit.svg" class="book-icon" alt="Edit" />
+            </a>
+        </div>
+        
+
+        <div class="flex justify-end" style="padding-top:2em;">
+            <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.fr" style="font-size:2em;">
+	            <img alt="Creative Commons License" style="border-width:0" src="/cc.svg" />
+            </a>
+
+            <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.fr" style="font-size:2em;">
+                <img alt="Creative Commons Attribution" style="border-width:0" src="/by.svg" />
+            </a>
+
+            <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.fr" style="font-size:2em;"> 
+                <img alt="Creative Commons ShareAlike" style="border-width:0" src="/sa.svg" />
+            </a>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+<script>(function(){function e(n){const e=window.getSelection(),t=document.createRange();t.selectNodeContents(n),e.removeAllRanges(),e.addRange(t)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+                    
+                </footer>
+            </div>
+
+            
+            <aside class="book-toc">
+                <div class="book-toc-content">
+                    
+
+
+
+<nav id='TableOfContents'>
+    
+
+    
+    
+
+    
+    
+        
+    
+
+    <ul>
+        <li><a href='#pile-dappel'>Pile d&rsquo;appel</a></li>
+
+        
+
+            
+
+    
+    
+
+    
+    
+        
+            
+        
+    
+
+    <ul>
+        <li><a href='#pile-dappel-1'>%!s(<nil>).1 Pile d&rsquo;appel</a></li>
+
+        
+
+    </ul>
+
+
+
+        
+
+            
+
+    
+    
+
+    
+    
+        
+            
+        
+    
+
+    <ul>
+        <li><a href='#avantages-de-la-r%c3%a9cursivit%c3%a9'>%!s(<nil>).2 Avantages de la récursivité</a></li>
+
+        
+
+    </ul>
+
+
+
+        
+
+            
+
+    
+    
+
+    
+    
+        
+            
+        
+    
+
+    <ul>
+        <li><a href='#inconv%c3%a9nient-de-la-r%c3%a9cursivit%c3%a9'>%!s(<nil>).3 Inconvénient de la récursivité</a></li>
+
+        
+
+    </ul>
+
+
+
+        
+
+            
+
+    
+    
+
+    
+    
+        
+            
+        
+    
+
+    <ul>
+        <li><a href='#transformer-en-boucle-normale'>%!s(<nil>).4 Transformer en boucle normale</a></li>
+
+        
+
+    </ul>
+
+
+
+        
+
+    </ul>
+
+
+</nav>
+
+
+
+
+
+
+ 
+                </div>
+            </aside>
+            
+        </main>
+
+        
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

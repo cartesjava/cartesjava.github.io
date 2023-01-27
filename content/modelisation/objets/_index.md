@@ -1,0 +1,173 @@
+---
+title: "Objets"
+weight: 10
+bookHidden: false
+---
+
+{{% pageTitle %}}
+
+## Modéliser une carte
+
+<img class="figure" src="Carte.png">
+
+<table>
+
+<tr>
+<td>
+<img class="figure" src="Carte01.png">
+</td>
+<td>
+
+```json
+{{% embed src="Carte01.json" %}}
+```
+
+</td>
+<td>
+<img class="figure" src="Carte01_visualisation.png">
+</td>
+</tr>
+
+
+<tr>
+<td>
+<img class="figure" src="Carte02.png">
+</td>
+<td>
+
+```json
+{{% embed src="Carte02.json" %}}
+```
+
+</td>
+<td>
+<img class="figure" src="Carte02_visualisation.png">
+</td>
+
+</tr>
+
+
+<tr>
+<td>
+<img class="figure" src="Carte03.png">
+</td>
+<td>
+
+```json
+{{% embed src="Carte03.json" %}}
+```
+
+</td>
+<td>
+<img class="figure" src="Carte03_visualisation.png">
+</td>
+
+</tr>
+
+
+</table>
+
+
+
+
+## Modéliser un film et un personnage
+
+<img class="figure" src="FilmObjet.png">
+
+
+<table>
+
+<tr>
+<td>
+
+<img class="figure" src="FilmObjet01.png"/>
+
+</td>
+
+<td>
+
+```json
+{{% embed src="FilmObjet01.json" %}}
+```
+
+</td>
+</tr>
+
+<tr>
+<td>
+
+<img class="figure" src="FilmObjet02.png"/>
+
+</td>
+
+<td>
+
+```json
+{{% embed src="FilmObjet02.json" %}}
+```
+
+</td>
+</tr>
+
+
+
+</table>
+
+<br>
+
+<img class="figure" src="PersonnageObjet.png">
+
+<table>
+
+<tr>
+<td>
+
+<img class="figure" src="PersonnageObjet01.png"/>
+
+</td>
+
+<td>
+
+```json
+{{% embed src="PersonnageObjet01.json" %}}
+```
+
+</td>
+</tr>
+
+<tr>
+<td>
+
+<img class="figure" src="PersonnageObjet02.png"/>
+
+</td>
+
+<td>
+
+```json
+{{% embed src="PersonnageObjet02.json" %}}
+```
+
+</td>
+</tr>
+
+<tr>
+<td>
+
+<img class="figure" src="PersonnageObjet03.png"/>
+
+</td>
+
+<td>
+
+```json
+{{% embed src="PersonnageObjet03.json" %}}
+```
+
+</td>
+</tr>
+
+
+
+</table>
+

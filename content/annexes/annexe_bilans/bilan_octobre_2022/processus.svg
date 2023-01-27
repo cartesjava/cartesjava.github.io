@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="60cm" height="40cm" viewBox="538 441 1183 798" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 4; stroke: #000000" x="923.527" y="650.135" width="593.644" height="59.3644"/>
+  <g>
+    <rect style="fill: #ffffff" x="906.14" y="445.5" width="128.15" height="36"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="906.14" y="445.5" width="128.15" height="36"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="970.215" y="467.4">
+      <tspan x="970.215" y="467.4">Porteur de projet</tspan>
+    </text>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="916.14" y1="470.45" x2="1024.29" y2="470.45"/>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="1088.42" y="443.66" width="105.75" height="36"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="1088.42" y="443.66" width="105.75" height="36"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="1141.29" y="465.56">
+      <tspan x="1141.29" y="465.56">Équipe locale</tspan>
+    </text>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="1098.42" y1="468.61" x2="1184.17" y2="468.61"/>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="1247.56" y="444.3" width="99.3" height="36"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="1247.56" y="444.3" width="99.3" height="36"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="1297.21" y="466.2">
+      <tspan x="1297.21" y="466.2">FabriqueREL</tspan>
+    </text>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="1257.56" y1="469.25" x2="1336.86" y2="469.25"/>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="1624" y="442.8" width="47.3" height="36"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="1624" y="442.8" width="47.3" height="36"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="1647.65" y="464.7">
+      <tspan x="1647.65" y="464.7">MES</tspan>
+    </text>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="1634" y1="467.75" x2="1661.3" y2="467.75"/>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="1387.5" y="443.3" width="181.1" height="36"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="1387.5" y="443.3" width="181.1" height="36"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="1478.05" y="465.2">
+      <tspan x="1478.05" y="465.2">Autres porteurs de projet</tspan>
+    </text>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="1397.5" y1="468.25" x2="1558.6" y2="468.25"/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke-dasharray: 8; stroke: #000000" x1="970.215" y1="481.5" x2="970.215" y2="541.595"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke-dasharray: 8; stroke: #000000" x1="970.215" y1="581.595" x2="970.215" y2="601.595"/>
+    <rect style="fill: #ffffff" x="963.215" y="541.595" width="14" height="40"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="963.215" y="541.595" width="14" height="40"/>
+  </g>
+  <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="905.5" y="575.05">
+    <tspan x="905.5" y="575.05"></tspan>
+  </text>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke-dasharray: 8; stroke: #000000" x1="1297.21" y1="480.3" x2="1297.21" y2="531.675"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke-dasharray: 8; stroke: #000000" x1="1297.21" y1="571.675" x2="1297.21" y2="581.675"/>
+    <rect style="fill: #ffffff" x="1290.21" y="531.675" width="14" height="40"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="1290.21" y="531.675" width="14" height="40"/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke-dasharray: 8; stroke: #000000" x1="1141.29" y1="479.66" x2="1141.29" y2="658.715"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke-dasharray: 8; stroke: #000000" x1="1141.29" y1="698.715" x2="1141.29" y2="698.715"/>
+    <rect style="fill: #ffffff" x="1134.29" y="658.715" width="14" height="40"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="1134.29" y="658.715" width="14" height="40"/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke-dasharray: 8; stroke: #000000" x1="1647.65" y1="478.8" x2="1647.65" y2="1134.22"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke-dasharray: 8; stroke: #000000" x1="1647.65" y1="1174.22" x2="1647.65" y2="1236.65"/>
+    <rect style="fill: #ffffff" x="1640.65" y="1134.22" width="14" height="40"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="1640.65" y="1134.22" width="14" height="40"/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke-dasharray: 8; stroke: #000000" x1="1478.05" y1="479.3" x2="1478.05" y2="658.395"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke-dasharray: 8; stroke: #000000" x1="1478.05" y1="698.395" x2="1478.05" y2="698.395"/>
+    <rect style="fill: #ffffff" x="1471.05" y="658.395" width="14" height="40"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="1471.05" y="658.395" width="14" height="40"/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke-dasharray: 8; stroke: #000000" x1="970.215" y1="581.595" x2="970.215" y2="601.115"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke-dasharray: 8; stroke: #000000" x1="970.215" y1="641.115" x2="970.215" y2="641.115"/>
+    <rect style="fill: #ffffff" x="963.215" y="601.115" width="14" height="40"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="963.215" y="601.115" width="14" height="40"/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="963.215,561.595 869.595,561.595 869.595,611.115 953.479,611.115 "/>
+    <polygon style="fill: #000000" points="960.979,611.115 950.979,616.115 953.479,611.115 950.979,606.115 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="960.979,611.115 950.979,616.115 953.479,611.115 950.979,606.115 "/>
+  </g>
+  <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="739.035" y="589.595">
+    <tspan x="739.035" y="589.595">Début des travaux</tspan>
+  </text>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="1290.21" y1="561.675" x2="986.951" y2="561.598"/>
+    <polygon style="fill: #000000" points="979.451,561.596 989.452,556.598 986.951,561.598 989.45,566.598 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="979.451,561.596 989.452,556.598 986.951,561.598 989.45,566.598 "/>
+  </g>
+  <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="1007.19" y="551.195">
+    <tspan x="1007.19" y="551.195">Lettre d'acceptation confirmant le budget</tspan>
+  </text>
+  <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="691.355" y="568.407">
+    <tspan x="691.355" y="568.407">Demande de dégagement</tspan>
+  </text>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke-dasharray: 8; stroke: #000000" x1="1297.21" y1="571.675" x2="1297.21" y2="659.675"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke-dasharray: 8; stroke: #000000" x1="1297.21" y1="699.675" x2="1297.21" y2="699.675"/>
+    <rect style="fill: #ffffff" x="1290.21" y="659.675" width="14" height="40"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="1290.21" y="659.675" width="14" height="40"/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke-dasharray: 8; stroke: #000000" x1="970.215" y1="641.115" x2="970.215" y2="659.035"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke-dasharray: 8; stroke: #000000" x1="970.215" y1="699.035" x2="970.215" y2="699.035"/>
+    <rect style="fill: #ffffff" x="963.215" y="659.035" width="14" height="40"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="963.215" y="659.035" width="14" height="40"/>
+  </g>
+  <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="1390.88" y="646.643">
+    <tspan x="1390.88" y="646.643">Rencontre de démarrage</tspan>
+  </text>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke-dasharray: 8; stroke: #000000" x1="1141.29" y1="698.715" x2="1141.29" y2="753.877"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke-dasharray: 8; stroke: #000000" x1="1141.29" y1="793.877" x2="1141.29" y2="793.877"/>
+    <rect style="fill: #ffffff" x="1134.29" y="753.877" width="14" height="40"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="1134.29" y="753.877" width="14" height="40"/>
+  </g>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 4; stroke: #000000" x="1123.86" y="747.34" width="205.32" height="61.2453"/>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke-dasharray: 8; stroke: #000000" x1="1297.21" y1="699.675" x2="1297.21" y2="760.437"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke-dasharray: 8; stroke: #000000" x1="1297.21" y1="800.437" x2="1297.21" y2="800.437"/>
+    <rect style="fill: #ffffff" x="1290.21" y="760.437" width="14" height="40"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="1290.21" y="760.437" width="14" height="40"/>
+  </g>
+  <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="1090.85" y="742.526">
+    <tspan x="1090.85" y="742.526">Rencontre sur le processus en 6 étapes</tspan>
+  </text>
+  <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="1278.55" y="755.623">
+    <tspan x="1278.55" y="755.623"></tspan>
+  </text>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke-dasharray: 8; stroke: #000000" x1="970.215" y1="699.035" x2="970.215" y2="831.138"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke-dasharray: 8; stroke: #000000" x1="970.215" y1="871.138" x2="970.215" y2="931.825"/>
+    <rect style="fill: #ffffff" x="963.215" y="831.138" width="14" height="40"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="963.215" y="831.138" width="14" height="40"/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke-dasharray: 8; stroke: #000000" x1="970.215" y1="871.138" x2="970.215" y2="890.926"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke-dasharray: 8; stroke: #000000" x1="970.215" y1="930.926" x2="970.215" y2="930.926"/>
+    <rect style="fill: #ffffff" x="963.215" y="890.926" width="14" height="40"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="963.215" y="890.926" width="14" height="40"/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke-dasharray: 8; stroke: #000000" x1="970.215" y1="930.926" x2="970.215" y2="950.714"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke-dasharray: 8; stroke: #000000" x1="970.215" y1="990.714" x2="970.215" y2="990.714"/>
+    <rect style="fill: #ffffff" x="963.215" y="950.714" width="14" height="40"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="963.215" y="950.714" width="14" height="40"/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke-dasharray: 8; stroke: #000000" x1="1141.29" y1="793.877" x2="1141.29" y2="857.91"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke-dasharray: 8; stroke: #000000" x1="1141.29" y1="897.91" x2="1141.29" y2="962.512"/>
+    <rect style="fill: #ffffff" x="1134.29" y="857.91" width="14" height="40"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="1134.29" y="857.91" width="14" height="40"/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke-dasharray: 8; stroke: #000000" x1="1297.21" y1="800.437" x2="1297.21" y2="1041.82"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke-dasharray: 8; stroke: #000000" x1="1297.21" y1="1081.82" x2="1297.21" y2="1237.23"/>
+    <rect style="fill: #ffffff" x="1290.21" y="1041.82" width="14" height="40"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="1290.21" y="1041.82" width="14" height="40"/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke-dasharray: 8; stroke: #000000" x1="970.215" y1="990.714" x2="970.215" y2="1041.24"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke-dasharray: 8; stroke: #000000" x1="970.215" y1="1081.24" x2="970.215" y2="1160.09"/>
+    <rect style="fill: #ffffff" x="963.215" y="1041.24" width="14" height="40"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="963.215" y="1041.24" width="14" height="40"/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke-dasharray: 8; stroke: #000000" x1="1478.05" y1="698.395" x2="1478.05" y2="1132.47"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke-dasharray: 8; stroke: #000000" x1="1478.05" y1="1172.47" x2="1478.05" y2="1237.23"/>
+    <rect style="fill: #ffffff" x="1471.05" y="1132.47" width="14" height="40"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="1471.05" y="1132.47" width="14" height="40"/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke-dasharray: 8; stroke: #000000" x1="1141.29" y1="897.91" x2="1141.29" y2="911.891"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke-dasharray: 8; stroke: #000000" x1="1141.29" y1="951.891" x2="1141.29" y2="951.891"/>
+    <rect style="fill: #ffffff" x="1134.29" y="911.891" width="14" height="40"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="1134.29" y="911.891" width="14" height="40"/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke-dasharray: 8; stroke: #000000" x1="1141.29" y1="951.891" x2="1141.29" y2="965.872"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke-dasharray: 8; stroke: #000000" x1="1141.29" y1="1005.87" x2="1141.29" y2="1005.87"/>
+    <rect style="fill: #ffffff" x="1134.29" y="965.872" width="14" height="40"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="1134.29" y="965.872" width="14" height="40"/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="977.215,851.138 1124.7,876.274 "/>
+    <polygon style="fill: #000000" points="1132.09,877.534 1121.39,880.783 1124.7,876.274 1123.07,870.925 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="1132.09,877.534 1121.39,880.783 1124.7,876.274 1123.07,870.925 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="977.215,910.926 1124.64,930.603 "/>
+    <polygon style="fill: #000000" points="1132.08,931.595 1121.51,935.228 1124.64,930.603 1122.83,925.316 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="1132.08,931.595 1121.51,935.228 1124.64,930.603 1122.83,925.316 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="977.215,970.714 1124.6,984.937 "/>
+    <polygon style="fill: #000000" points="1132.07,985.657 1121.64,989.673 1124.6,984.937 1122.6,979.72 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="1132.07,985.657 1121.64,989.673 1124.6,984.937 1122.6,979.72 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 20; stroke: #000000" points="1134.29,887.91 986.918,900.122 "/>
+    <polygon style="fill: #000000" points="979.443,900.741 988.996,894.933 986.918,900.122 989.822,904.898 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="979.443,900.741 988.996,894.933 986.918,900.122 989.822,904.898 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 20; stroke: #000000" points="1134.29,941.891 986.882,959.556 "/>
+    <polygon style="fill: #000000" points="979.435,960.448 988.769,954.294 986.882,959.556 989.959,964.223 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="979.435,960.448 988.769,954.294 986.882,959.556 989.959,964.223 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke-dasharray: 8; stroke: #000000" x1="1141.29" y1="1005.87" x2="1141.29" y2="1041.82"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke-dasharray: 8; stroke: #000000" x1="1141.29" y1="1081.82" x2="1141.29" y2="1238.98"/>
+    <rect style="fill: #ffffff" x="1134.29" y="1041.82" width="14" height="40"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="1134.29" y="1041.82" width="14" height="40"/>
+  </g>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 4; stroke: #000000" x="956.828" y="1032.52" width="374.684" height="59.3644"/>
+  <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="1160.11" y="1029.6">
+    <tspan x="1160.11" y="1029.6">Bilan et rencontre de mi-parcours</tspan>
+  </text>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke-dasharray: 8; stroke: #000000" x1="1297.21" y1="1081.82" x2="1297.21" y2="1129.56"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke-dasharray: 8; stroke: #000000" x1="1297.21" y1="1169.56" x2="1297.21" y2="1188.04"/>
+    <rect style="fill: #ffffff" x="1290.21" y="1129.56" width="14" height="40"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="1290.21" y="1129.56" width="14" height="40"/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke-dasharray: 8; stroke: #000000" x1="970.215" y1="1081.24" x2="970.215" y2="1126.81"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke-dasharray: 8; stroke: #000000" x1="970.215" y1="1166.81" x2="970.215" y2="1237.81"/>
+    <rect style="fill: #ffffff" x="963.215" y="1126.81" width="14" height="40"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="963.215" y="1126.81" width="14" height="40"/>
+  </g>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 4; stroke: #000000" x="956.701" y="1120.99" width="715.41" height="59.3644"/>
+  <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="1280.59" y="1114.72">
+    <tspan x="1280.59" y="1114.72">Renconte de mi-parcours facultative visant à promouvoir les travaux</tspan>
+  </text>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 4; stroke: #000000" x="950.426" y="824.164" width="208.23" height="189.723"/>
+  <text font-size="12.7998" style="fill: #000000;text-anchor:end;font-family:sans-serif;font-style:normal;font-weight:normal" x="942.442" y="832.736">
+    <tspan x="942.442" y="832.736">Dépôt de 2-3 brouillons</tspan>
+    <tspan x="942.442" y="848.736">L'équipe locale évalue les brouillons selon les 6 étapes</tspan>
+    <tspan x="942.442" y="864.736">L'équipe locale fait des suggestions concrètes</tspan>
+    <tspan x="942.442" y="880.736">(en commentant contenu du brouillon)</tspan>
+    <tspan x="942.442" y="896.736">p.ex. «devrait-on chercher pour d'autres REL à inclure?»</tspan>
+    <tspan x="942.442" y="912.736">p.ex. «devrait-on diviser ce chapitre en sections numérotées?»</tspan>
+  </text>
+  <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="934.003" y="881.19">
+    <tspan x="934.003" y="881.19"></tspan>
+  </text>
+</svg>

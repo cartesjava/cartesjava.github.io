@@ -1,0 +1,1770 @@
+<!DOCTYPE html>
+<html lang="fr-ca" dir="ltr">
+    <head>
+        <meta charset="UTF-8">
+
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Structures en Java #   NOTE:
+ on va voir les paramètres de types plus en détail à l&rsquo;étape 3     Le JDK Java contient plusieurs structures de données déjà codées
+  Dans ce cours, on va se concentrer sur les deux principales:
+ List&lt;E&gt;: une liste Map&lt;K,V&gt;: un dictionnaire (mappage)    À partir de maintenant, vous devriez:
+ presque toujours utiliser une List&lt;Integer&gt; et jamais un tableau int[] presque toujours utiliser les structures fournies dans le JDK Java    Exception: pour des raisons pédagogiques">
+<meta name="theme-color" content="#FFFFFF">
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="Structures en Java" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://cartesjava.github.io/modelisation/_brouillons/structures/" />
+
+<title>
+
+
+    Structures en Java 
+
+
+
+</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/book.min.e4869670571a4fc0a50f4a2c889ed6ee3b49dac25cd9095e9eea1f69c426d18a.css" integrity="sha256-5IaWcFcaT8ClD0osiJ7W7jtJ2sJc2QlenuofacQm0Yo=" crossorigin="anonymous">
+  <script defer src="/flexsearch.min.js"></script>
+  <script defer src="/fr.search.min.0e5eca3384d4e84a083eaf733dd004e479c5ffdbd8211494050eba149a9c560e.js" integrity="sha256-Dl7KM4TU6EoIPq9zPdAE5HnF/9vYIRSUBQ66FJqcVg4=" crossorigin="anonymous"></script>
+
+  <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" integrity="sha256-b2&#43;Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC&#43;NdcPIvZhzk=" crossorigin="anonymous"></script>
+
+<script defer src="/reload_videos.min.4a5aa164333a19381a7fd1dde8e03eadc175bdda3a31e8f4fc8e0951775577ca.js" integrity="sha256-SlqhZDM6GTgaf9Hd6OA&#43;rcF1vdo6Mej0/I4JUXdVd8o=" crossorigin="anonymous"></script><link rel="alternate" type="application/rss+xml" href="https://cartesjava.github.io/modelisation/_brouillons/structures/index.xml" title="Cartes Java" />
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+        
+    </head>
+    <body dir="ltr">
+        <input type="checkbox" class="hidden toggle" id="menu-control" />
+        <input type="checkbox" class="hidden toggle" id="toc-control" />
+        <main class="container flex">
+            <aside class="book-menu">
+                <div class="book-menu-content">
+                    
+<nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><span>Cartes Java</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Rechercher" aria-label="Rechercher" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/preface/" class="">Préface</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/intro/" class="">Introduction</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-b1f25d69250e7772af5811e7ef44e922" class="toggle"  />
+    <label for="section-b1f25d69250e7772af5811e7ef44e922" class="flex justify-between">
+      <a href="/approche/" class="">1. Présentation de l&#39;approche</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/approche/outil/" class="">1.1. Outil de validation</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/approche/langages_et_notations/" class="">1.2. Langages et notations utilisées</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/approche/cartes_a_jouer/" class="">1.3. Visualisations avec des cartes à jouer</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-20d2db300e0f4ab0130280f200c4f2fc" class="toggle" checked />
+    <label for="section-20d2db300e0f4ab0130280f200c4f2fc" class="flex justify-between">
+      <a href="/modelisation/" class="">2. Modélisation des données et limitations de l&#39;approche</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/modelisation/objets/" class="">2.1. Objets</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/modelisation/tableau_d_objets/" class="">2.2. Tableaux d&#39;objets</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/modelisation/graphe_d_objets/" class="">2.3. Graphes d&#39;objets</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-89a3727667e5590a4150c67be9175eaa" class="toggle"  />
+    <label for="section-89a3727667e5590a4150c67be9175eaa" class="flex justify-between">
+      <a href="/efficacite/" class="">3. Qu&#39;est-ce que l&#39;efficacité?</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/efficacite/performance_vs_efficacite/" class="">3.1. Performance Vs efficacité</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/efficacite/temps/" class="">3.2. Efficacité en temps</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/efficacite/espace/" class="">3.3. Efficacité en espace</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-b12c28f0f1b1687a56347184fa5203f8" class="toggle"  />
+    <label for="section-b12c28f0f1b1687a56347184fa5203f8" class="flex justify-between">
+      <a href="/listes/" class="">4. Comprendre les listes</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/listes/naive/" class="">4.1. Liste naïve</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/listes/tableau/" class="">4.2. Liste par tableau</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/listes/chainee_simple/" class="">4.3. Liste chaînée simple</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/listes/chainee_double/" class="">4.4. Liste chaînée double</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-4d776affa1be45887905ae21b1d04b2a" class="toggle"  />
+    <label for="section-4d776affa1be45887905ae21b1d04b2a" class="flex justify-between">
+      <a href="/arbres/" class="">5. Comprendre les arbres</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/arbres/generique/" class="">5.1. Arbre générique</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/arbres/binaire/" class="">5.2. Arbre binaire</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-3e48974585d14c8908a67306d3ef0b3b" class="toggle"  />
+    <label for="section-3e48974585d14c8908a67306d3ef0b3b" class="flex justify-between">
+      <a href="/mappages/" class="">6. Comprendre les mappages</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/mappages/naif/" class="">6.1. Mappage naïf</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/mappages/hachage/" class="">6.2. Mappage par hachage</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/mappages/arbre/" class="">6.3. Mappage avec arbre</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/conclusion/" class="">Conclusion</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/bibliographie/" class="">Bibliographie</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-9ea2d72b97e9d02a8b97ae9357b7969b" class="toggle"  />
+    <label for="section-9ea2d72b97e9d02a8b97ae9357b7969b" class="flex justify-between">
+      <a role="button" class="">Annexes</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/annexes/annexe_grand_o/" class="">Annexe 1: la notation grand O</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/annexes/annexe_acceder_exemples/" class="">Annexe 2: accéder aux exemples</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/annexes/annexe_programmer_exemple/" class="">Annexe 3: programmer un nouvel exemple</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/annexes/annexe_modifier_manuel/" class="">Annexe 4: suggérer une modification à ce manuel</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-3b1da941c278c90106392151b814a2c6" class="toggle"  />
+    <label for="section-3b1da941c278c90106392151b814a2c6" class="flex justify-between">
+      <a href="/annexes/annexe_ateliers/" class="">Annexe 5: exemples d&#39;ateliers</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/annexes/annexe_ateliers/deplacer_decaler/" class="">Procédures déplacer/décaler</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/annexes/annexe_ateliers/fibonacci/" class="">Modéliser la suite de Fibonacci</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/annexes/annexe_ateliers/liste_tableau/" class="">Liste par tableau</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/annexes/annexe_ateliers/arbre_binaire/" class="">Arbre binaire</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-47be0624d93c2dddef9d700a6ef60a09" class="toggle"  />
+    <label for="section-47be0624d93c2dddef9d700a6ef60a09" class="flex justify-between">
+      <a href="/annexes/annexe_bilans/" class="">Annexe 6: bilans</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/annexes/annexe_bilans/bilan_juin_2022/" class="">Bilan juin 2022</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/annexes/annexe_bilans/bilan_octobre_2022/" class="">Bilan octobre 2022</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+                </div>
+            </aside>
+
+            <div class="book-page-and-footer">
+                <div class="book-page">
+                    <header class="book-header">
+                        
+<div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Structures en Java</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+
+<aside class="hidden clearfix">
+    
+
+
+
+<nav id='TableOfContents'>
+    
+
+    
+    
+
+    
+    
+        
+    
+
+    <ul>
+        <li><a href='#structures-en-java'>Structures en Java</a></li>
+
+        
+
+            
+
+    
+    
+
+    
+    
+        
+            
+        
+    
+
+    <ul>
+        <li><a href='#liste-liste-en-java'>%!s(<nil>).1 List&lt;E&gt;: liste en Java</a></li>
+
+        
+
+    </ul>
+
+
+
+        
+
+            
+
+    
+    
+
+    
+    
+        
+            
+        
+    
+
+    <ul>
+        <li><a href='#implantations-de-liste'>%!s(<nil>).2 Implantations de List&lt;E&gt;</a></li>
+
+        
+
+    </ul>
+
+
+
+        
+
+            
+
+    
+    
+
+    
+    
+        
+            
+        
+    
+
+    <ul>
+        <li><a href='#mapkv-mappage-en-java'>%!s(<nil>).3 Map&lt;K,V&gt;: mappage en Java</a></li>
+
+        
+
+    </ul>
+
+
+
+        
+
+            
+
+    
+    
+
+    
+    
+        
+            
+        
+    
+
+    <ul>
+        <li><a href='#implantations-de-mapkv'>%!s(<nil>).4 Implantations de Map&lt;K,V&gt;</a></li>
+
+        
+
+    </ul>
+
+
+
+        
+
+            
+
+    
+    
+
+    
+    
+        
+            
+        
+    
+
+    <ul>
+        <li><a href='#encoder-des-donn%c3%a9es-json-en-java'>%!s(<nil>).5 Encoder des données JSON en Java</a></li>
+
+        
+
+    </ul>
+
+
+
+        
+
+    </ul>
+
+
+</nav>
+
+
+
+
+
+
+
+</aside>
+
+ 
+                    </header>
+
+                    
+                    
+<article class="markdown"><h1 id="structures-en-java">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+Structures en Java
+
+<a class="anchor" href="#structures-en-java">#</a>
+
+</h1>
+<center>    <div class='excerpt note' style=''>    <div style="text-align:left">    <p>NOTE:</p>
+<ul>
+<li>on va voir les paramètres de types plus en détail à l&rsquo;étape 3</li>
+</ul>
+</div></div></center>
+<br>
+<br>
+<ul>
+<li>
+<p>Le JDK Java contient plusieurs structures de données déjà codées</p>
+</li>
+<li>
+<p>Dans ce cours, on va se concentrer sur les deux principales:</p>
+<ul>
+<li><code>List&lt;E&gt;</code>: une liste</li>
+<li><code>Map&lt;K,V&gt;</code>: un dictionnaire (mappage)</li>
+</ul>
+</li>
+<li>
+<p>À partir de maintenant, vous devriez:</p>
+<ul>
+<li>presque toujours utiliser une <code>List&lt;Integer&gt;</code> et jamais un tableau <code>int[]</code></li>
+<li>presque toujours utiliser les structures fournies dans le JDK Java</li>
+</ul>
+</li>
+<li>
+<p>Exception: pour des raisons pédagogiques</p>
+<ul>
+<li>p.ex. pour comprendre comment coder une liste</li>
+</ul>
+</li>
+<li>
+<p>Exception: dans des cas bien précis où on a besoin de notre propre structure de données</p>
+<ul>
+<li>p.ex. liste d&rsquo;objets 2d conçue pour détection de collision</li>
+</ul>
+</li>
+</ul>
+<h2 id="liste-liste-en-java">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
+
+    
+        
+        
+        
+        
+    
+
+    
+
+        
+        %!s(<nil>).1
+
+    
+
+
+
+
+
+<code>List&lt;E&gt;</code>: liste en Java
+
+<a class="anchor" href="#liste-liste-en-java">#</a>
+
+</h2>
+<ul>
+<li>Exemple d&rsquo;utilisation:</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#75715e">// interface                        implantation
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>   <span style="color:#111">List</span><span style="color:#f92672">&lt;</span><span style="color:#111">String</span><span style="color:#f92672">&gt;</span> <span style="color:#111">listeChaines</span>  <span style="color:#f92672">=</span> <span style="color:#00a8c8">new</span> <span style="color:#111">ArrayList</span><span style="color:#f92672">&lt;&gt;();</span> 
+</span></span><span style="display:flex;"><span>   <span style="color:#111">List</span><span style="color:#f92672">&lt;</span><span style="color:#111">Double</span><span style="color:#f92672">&gt;</span> <span style="color:#111">listeReels</span>    <span style="color:#f92672">=</span> <span style="color:#00a8c8">new</span> <span style="color:#111">LinkedList</span><span style="color:#f92672">&lt;&gt;();</span> 
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#111">listeChaines</span><span style="color:#f92672">.</span><span style="color:#75af00">add</span><span style="color:#f92672">(</span><span style="color:#d88200">&#34;sdf&#34;</span><span style="color:#f92672">);</span>        <span style="color:#75715e">// ajoute à la fin
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#111">listeChaines</span><span style="color:#f92672">.</span><span style="color:#75af00">add</span><span style="color:#f92672">(</span><span style="color:#d88200">&#34;34g&#34;</span><span style="color:#f92672">);</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">listeChaines</span><span style="color:#f92672">.</span><span style="color:#75af00">add</span><span style="color:#f92672">(</span><span style="color:#d88200">&#34;j554&#34;</span><span style="color:#f92672">);</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">listeChaines</span><span style="color:#f92672">.</span><span style="color:#75af00">add</span><span style="color:#f92672">(</span><span style="color:#111">9</span><span style="color:#f92672">,</span><span style="color:#d88200">&#34;asdf&#34;</span><span style="color:#f92672">);</span>     <span style="color:#75715e">// nouvel élément
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#111">listeChaines</span><span style="color:#f92672">.</span><span style="color:#75af00">set</span><span style="color:#f92672">(</span><span style="color:#111">9</span><span style="color:#f92672">,</span><span style="color:#d88200">&#34;asdf&#34;</span><span style="color:#f92672">);</span>     <span style="color:#75715e">// change la valeur
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#111">String</span> <span style="color:#111">chaine</span> <span style="color:#f92672">=</span> <span style="color:#111">listeChaines</span><span style="color:#f92672">.</span><span style="color:#75af00">get</span><span style="color:#f92672">(</span><span style="color:#111">2</span><span style="color:#f92672">);</span>
+</span></span></code></pre></div><ul>
+<li>Extrait de l&rsquo;interface:</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#00a8c8">public</span> <span style="color:#00a8c8">interface</span> <span style="color:#75af00">List</span><span style="color:#f92672">&lt;</span><span style="color:#111">E</span> <span style="color:#00a8c8">extends</span> <span style="color:#111">Object</span><span style="color:#f92672">&gt;</span> <span style="color:#00a8c8">extends</span> <span style="color:#111">Collection</span><span style="color:#f92672">&lt;</span><span style="color:#111">E</span><span style="color:#f92672">&gt;{</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">boolean</span>    <span style="color:#75af00">add</span><span style="color:#f92672">(</span><span style="color:#111">E</span> <span style="color:#111">e</span><span style="color:#f92672">);</span>           <span style="color:#75715e">// ajoute à la fin
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#00a8c8">void</span>       <span style="color:#75af00">add</span><span style="color:#f92672">(</span><span style="color:#00a8c8">int</span> <span style="color:#111">i</span><span style="color:#f92672">,</span> <span style="color:#111">E</span> <span style="color:#111">e</span><span style="color:#f92672">);</span>    <span style="color:#75715e">// insère une nouvelle valeur à la position i
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#00a8c8">void</span>       <span style="color:#75af00">set</span><span style="color:#f92672">(</span><span style="color:#00a8c8">int</span> <span style="color:#111">i</span><span style="color:#f92672">,</span> <span style="color:#111">E</span> <span style="color:#111">e</span><span style="color:#f92672">);</span>    <span style="color:#75715e">// modifie la valeur à la position i
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#111">E</span>          <span style="color:#75af00">get</span><span style="color:#f92672">(</span><span style="color:#00a8c8">int</span> <span style="color:#111">i</span><span style="color:#f92672">);</span>         <span style="color:#75715e">// obtenir la valeur à la position i
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#00a8c8">void</span>       <span style="color:#75af00">clear</span><span style="color:#f92672">();</span>            <span style="color:#75715e">// vide la liste
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#00a8c8">int</span>        <span style="color:#75af00">size</span><span style="color:#f92672">();</span>             <span style="color:#75715e">// taille de la liste
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#00a8c8">boolean</span>    <span style="color:#75af00">isEmpty</span><span style="color:#f92672">();</span>          <span style="color:#75715e">// si vide
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#00a8c8">boolean</span>    <span style="color:#75af00">contains</span><span style="color:#f92672">(</span><span style="color:#111">Object</span> <span style="color:#111">o</span><span style="color:#f92672">);</span> <span style="color:#75715e">// si la liste contient la valeur o
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#00a8c8">int</span>        <span style="color:#75af00">indexOf</span><span style="color:#f92672">(</span><span style="color:#111">Object</span> <span style="color:#111">o</span><span style="color:#f92672">);</span>  <span style="color:#75715e">// indice de la valeur o
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">//...
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#f92672">}</span>
+</span></span></code></pre></div><ul>
+<li>Documentation complète:
+<ul>
+<li><a target="_blank" href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html">
+  <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html">https://docs.oracle.com/javase/8/docs/api/java/util/List.html</a></a></li>
+</ul>
+</li>
+</ul>
+<h2 id="implantations-de-liste">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
+
+    
+        
+        
+        
+        
+    
+
+    
+
+        
+        %!s(<nil>).2
+
+    
+
+
+
+
+
+Implantations de <code>List&lt;E&gt;</code>
+
+<a class="anchor" href="#implantations-de-liste">#</a>
+
+</h2>
+<ul>
+<li>
+<p><code>List&lt;E&gt;</code> est une interface</p>
+</li>
+<li>
+<p>Le JDK Java fournit différentes implantations, p.ex:</p>
+<ul>
+<li><code>ArrayList&lt;E&gt;</code></li>
+<li><code>LinkedList&lt;E&gt;</code></li>
+</ul>
+</li>
+<li>
+<p>Pour l&rsquo;instant, on va utiliser <code>ArrayList&lt;E&gt;</code></p>
+</li>
+<li>
+<p>Quelle est la différence?</p>
+<ul>
+<li>à utiliser: aucune (c&rsquo;est la même interface)</li>
+<li>en terme d&rsquo;efficacité? à coder?
+<ul>
+<li>on va en parler à l&rsquo;étape 4</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="mapkv-mappage-en-java">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
+
+    
+        
+        
+        
+        
+    
+
+    
+
+        
+        %!s(<nil>).3
+
+    
+
+
+
+
+
+<code>Map&lt;K,V&gt;</code>: mappage en Java
+
+<a class="anchor" href="#mapkv-mappage-en-java">#</a>
+
+</h2>
+<ul>
+<li>
+<p>Les clés d&rsquo;un mappage peuvent être de n&rsquo;importe quel type</p>
+<ul>
+<li>contrairement à notre <code>Dictionnaire</code> où les clés étaients toujours des chaînes</li>
+</ul>
+</li>
+<li>
+<p>Il y a deux paramètres de types:</p>
+<ul>
+<li><code>K</code>: le type des clés</li>
+<li><code>V</code>: le type des valeurs</li>
+</ul>
+</li>
+<li>
+<p>IMPORTANT: une clé est associée à <strong>une seule valeur</strong></p>
+</li>
+<li>
+<p>Exemple d&rsquo;utilisation:</p>
+</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#75715e">// interface                          implantation
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>   <span style="color:#111">Map</span><span style="color:#f92672">&lt;</span><span style="color:#111">String</span><span style="color:#f92672">,</span> <span style="color:#111">Object</span><span style="color:#f92672">&gt;</span>     <span style="color:#111">objetJson</span>  <span style="color:#f92672">=</span> <span style="color:#00a8c8">new</span> <span style="color:#111">HashMap</span><span style="color:#f92672">&lt;&gt;();</span> 
+</span></span><span style="display:flex;"><span>   <span style="color:#111">Map</span><span style="color:#f92672">&lt;</span><span style="color:#111">Integer</span><span style="color:#f92672">,</span> <span style="color:#111">String</span><span style="color:#f92672">&gt;</span>    <span style="color:#111">parDA</span>      <span style="color:#f92672">=</span> <span style="color:#00a8c8">new</span> <span style="color:#111">TreeMap</span><span style="color:#f92672">&lt;&gt;();</span> 
+</span></span><span style="display:flex;"><span>   <span style="color:#111">Map</span><span style="color:#f92672">&lt;</span><span style="color:#111">StudentId</span><span style="color:#f92672">,</span> <span style="color:#111">Billet</span><span style="color:#f92672">&gt;</span>  <span style="color:#111">rendezVous</span> <span style="color:#f92672">=</span> <span style="color:#00a8c8">new</span> <span style="color:#111">LinkedHashMap</span><span style="color:#f92672">&lt;&gt;();</span> 
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#111">objetJson</span><span style="color:#f92672">.</span><span style="color:#75af00">put</span><span style="color:#f92672">(</span><span style="color:#d88200">&#34;attr01&#34;</span><span style="color:#f92672">,</span> <span style="color:#00a8c8">true</span><span style="color:#f92672">);</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">objetJson</span><span style="color:#f92672">.</span><span style="color:#75af00">put</span><span style="color:#f92672">(</span><span style="color:#d88200">&#34;attr02&#34;</span><span style="color:#f92672">,</span> <span style="color:#00a8c8">null</span><span style="color:#f92672">);</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">objetJson</span><span style="color:#f92672">.</span><span style="color:#75af00">put</span><span style="color:#f92672">(</span><span style="color:#d88200">&#34;attr03&#34;</span><span style="color:#f92672">,</span> <span style="color:#111">123</span><span style="color:#f92672">.</span><span style="color:#75af00">4</span><span style="color:#f92672">);</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#111">Object</span> <span style="color:#111">valeur01</span> <span style="color:#f92672">=</span> <span style="color:#111">objetJson</span><span style="color:#f92672">.</span><span style="color:#75af00">get</span><span style="color:#f92672">(</span><span style="color:#d88200">&#34;attr01&#34;</span><span style="color:#f92672">);</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#111">parDA</span><span style="color:#f92672">.</span><span style="color:#75af00">put</span><span style="color:#f92672">(</span><span style="color:#111">421235</span><span style="color:#f92672">,</span> <span style="color:#d88200">&#34;Amina&#34;</span><span style="color:#f92672">);</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">parDA</span><span style="color:#f92672">.</span><span style="color:#75af00">put</span><span style="color:#f92672">(</span><span style="color:#111">413354</span><span style="color:#f92672">,</span> <span style="color:#d88200">&#34;Bénison&#34;</span><span style="color:#f92672">);</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">parDA</span><span style="color:#f92672">.</span><span style="color:#75af00">put</span><span style="color:#f92672">(</span><span style="color:#111">565624</span><span style="color:#f92672">,</span> <span style="color:#d88200">&#34;Carlos&#34;</span><span style="color:#f92672">);</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">parDA</span><span style="color:#f92672">.</span><span style="color:#75af00">put</span><span style="color:#f92672">(</span><span style="color:#111">645143</span><span style="color:#f92672">,</span> <span style="color:#d88200">&#34;Delpine&#34;</span><span style="color:#f92672">);</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#111">String</span> <span style="color:#111">nomEtudiant</span> <span style="color:#f92672">=</span> <span style="color:#111">parDA</span><span style="color:#f92672">.</span><span style="color:#75af00">get</span><span style="color:#f92672">(</span><span style="color:#111">413354</span><span style="color:#f92672">);</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#111">StudentId</span> <span style="color:#111">id</span> <span style="color:#f92672">=</span> <span style="color:#00a8c8">new</span> <span style="color:#111">StudentId</span><span style="color:#f92672">(</span><span style="color:#111">645143</span><span style="color:#f92672">);</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#111">rendezVous</span><span style="color:#f92672">.</span><span style="color:#75af00">put</span><span style="color:#f92672">(</span><span style="color:#111">id</span><span style="color:#f92672">,</span> <span style="color:#00a8c8">new</span> <span style="color:#111">rendezVous</span><span style="color:#f92672">());</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">rendezVous</span><span style="color:#f92672">.</span><span style="color:#75af00">get</span><span style="color:#f92672">(</span><span style="color:#111">id</span><span style="color:#f92672">);</span>
+</span></span></code></pre></div><ul>
+<li>
+<p>NOTE: on utilise la notation <code>&lt;P1, P2&gt;</code> quand il y a plusieurs paramètres de type</p>
+</li>
+<li>
+<p>Extrait de l&rsquo;interface:</p>
+</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#00a8c8">public</span> <span style="color:#00a8c8">interface</span> <span style="color:#75af00">Map</span><span style="color:#f92672">&lt;</span><span style="color:#111">K</span> <span style="color:#00a8c8">extends</span> <span style="color:#111">Object</span><span style="color:#f92672">,</span> <span style="color:#111">V</span> <span style="color:#00a8c8">extends</span> <span style="color:#111">Object</span><span style="color:#f92672">&gt;</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">V</span>          <span style="color:#75af00">put</span><span style="color:#f92672">(</span><span style="color:#111">K</span> <span style="color:#111">c</span><span style="color:#f92672">,</span> <span style="color:#111">V</span> <span style="color:#111">v</span><span style="color:#f92672">);</span>           <span style="color:#75715e">// associe la valeur v à la clé c
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#111">V</span>          <span style="color:#75af00">get</span><span style="color:#f92672">(</span><span style="color:#111">K</span> <span style="color:#111">c</span><span style="color:#f92672">);</span>                <span style="color:#75715e">// obtenir la valeur associée à la clé c
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#00a8c8">void</span>       <span style="color:#75af00">clear</span><span style="color:#f92672">();</span>                 <span style="color:#75715e">// vide le map
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#00a8c8">int</span>        <span style="color:#75af00">size</span><span style="color:#f92672">();</span>                  <span style="color:#75715e">// taille du map
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#00a8c8">boolean</span>    <span style="color:#75af00">isEmpty</span><span style="color:#f92672">();</span>               <span style="color:#75715e">// si vide
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#00a8c8">boolean</span>    <span style="color:#75af00">containsKey</span><span style="color:#f92672">(</span><span style="color:#111">Object</span> <span style="color:#111">c</span><span style="color:#f92672">);</span>   <span style="color:#75715e">// si le map contient la clé c
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#00a8c8">boolean</span>    <span style="color:#75af00">containsValue</span><span style="color:#f92672">(</span><span style="color:#111">Object</span> <span style="color:#111">v</span><span style="color:#f92672">);</span> <span style="color:#75715e">// si le map contient la valeur v
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">//...
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#f92672">}</span>
+</span></span></code></pre></div><ul>
+<li>Documentation complète:
+<ul>
+<li><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html" target="_blank">
+  <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html">https://docs.oracle.com/javase/8/docs/api/java/util/Map.html</a></a></li>
+</ul>
+</li>
+</ul>
+<h2 id="implantations-de-mapkv">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
+
+    
+        
+        
+        
+        
+    
+
+    
+
+        
+        %!s(<nil>).4
+
+    
+
+
+
+
+
+Implantations de <code>Map&lt;K,V&gt;</code>
+
+<a class="anchor" href="#implantations-de-mapkv">#</a>
+
+</h2>
+<ul>
+<li>
+<p>Le JDK Java fournit différentes implantations, p.ex:</p>
+<ul>
+<li><code>HashMap&lt;K,V&gt;</code></li>
+<li><code>TreeMap&lt;K,V&gt;</code></li>
+<li><code>LinkedHashMap&lt;K,V&gt;</code></li>
+</ul>
+</li>
+<li>
+<p>Quelle est la différence?</p>
+<ul>
+<li>à utiliser: presqu&rsquo;aucune (*)</li>
+<li>à coder? en terme d&rsquo;efficacité?
+<ul>
+<li>on en parle à l&rsquo;étape 5</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>(*) <code>LinkedHashMap</code> est un cas spécial:</p>
+<ul>
+<li>en plus d&rsquo;implanter l&rsquo;interface <code>Map&lt;K,V&gt;</code>, on ajoute la promesse suivante:
+<ul>
+<li>il est possible d&rsquo;accéder aux clés dans l&rsquo;ordre où elles ont été insérées</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="encoder-des-données-json-en-java">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
+
+    
+        
+        
+        
+        
+    
+
+    
+
+        
+        %!s(<nil>).5
+
+    
+
+
+
+
+
+Encoder des données JSON en Java
+
+<a class="anchor" href="#encoder-des-donn%c3%a9es-json-en-java">#</a>
+
+</h2>
+<ul>
+<li>
+<p>Une liste JSON est représenté en Java par <code>List&lt;Object&gt;</code></p>
+</li>
+<li>
+<p>Un objet JSON est représenté en Java par <code>Map&lt;String, Object&gt;</code></p>
+</li>
+<li>
+<p>Par exemple:</p>
+</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;_C&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;MesDonneesJson&#34;</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;racine&#34;</span><span style="color:#111">:</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;vehicules&#34;</span><span style="color:#111">:</span> <span style="color:#111">[</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;nombreDeRoues&#34;</span><span style="color:#111">:</span> <span style="color:#ae81ff">2</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;type&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;mobilette&#34;</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;etat&#34;</span><span style="color:#111">:</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">&#34;besoinChangementHuile&#34;</span><span style="color:#111">:</span> <span style="color:#00a8c8">false</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">&#34;kilometrage&#34;</span><span style="color:#111">:</span> <span style="color:#ae81ff">14.45</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#111">},</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;nombreDeRoues&#34;</span><span style="color:#111">:</span> <span style="color:#ae81ff">4</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;type&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;camion&#34;</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;etat&#34;</span><span style="color:#111">:</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">&#34;besoinChangementHuile&#34;</span><span style="color:#111">:</span> <span style="color:#00a8c8">true</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">&#34;kilometrage&#34;</span><span style="color:#111">:</span> <span style="color:#ae81ff">13344.5</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">]</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">}</span>
+</span></span></code></pre></div><img src="./MesDonneesJson03.png"/>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#00a8c8">public</span> <span style="color:#00a8c8">class</span> <span style="color:#75af00">MesDonneesJava</span> <span style="color:#00a8c8">extends</span> <span style="color:#111">DonneesJava</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75af00">@Override</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">public</span> <span style="color:#00a8c8">void</span> <span style="color:#75af00">initialiser</span><span style="color:#f92672">(){</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">Map</span><span style="color:#f92672">&lt;</span><span style="color:#111">String</span><span style="color:#f92672">,</span> <span style="color:#111">Object</span><span style="color:#f92672">&gt;</span> <span style="color:#111">laRacine</span> <span style="color:#f92672">=</span> <span style="color:#00a8c8">new</span> <span style="color:#111">HashMap</span><span style="color:#f92672">&lt;&gt;();</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#00a8c8">this</span><span style="color:#f92672">.</span><span style="color:#75af00">setRacine</span><span style="color:#f92672">(</span><span style="color:#111">laRacine</span><span style="color:#f92672">);</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">List</span><span style="color:#f92672">&lt;</span><span style="color:#111">Object</span><span style="color:#f92672">&gt;</span> <span style="color:#111">lesVehicules</span> <span style="color:#f92672">=</span> <span style="color:#00a8c8">new</span> <span style="color:#111">ArrayList</span><span style="color:#f92672">&lt;&gt;();</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">laRacine</span><span style="color:#f92672">.</span><span style="color:#75af00">put</span><span style="color:#f92672">(</span><span style="color:#d88200">&#34;vehicules&#34;</span><span style="color:#f92672">,</span> <span style="color:#111">lesVehicules</span><span style="color:#f92672">);</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">Map</span><span style="color:#f92672">&lt;</span><span style="color:#111">String</span><span style="color:#f92672">,</span> <span style="color:#111">Object</span><span style="color:#f92672">&gt;</span> <span style="color:#111">vehicule01</span> <span style="color:#f92672">=</span> <span style="color:#00a8c8">new</span> <span style="color:#111">HashMap</span><span style="color:#f92672">&lt;&gt;();</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">lesVehicules</span><span style="color:#f92672">.</span><span style="color:#75af00">add</span><span style="color:#f92672">(</span><span style="color:#111">vehicule01</span><span style="color:#f92672">);</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">vehicule01</span><span style="color:#f92672">.</span><span style="color:#75af00">put</span><span style="color:#f92672">(</span><span style="color:#d88200">&#34;nombreDeRoues&#34;</span><span style="color:#f92672">,</span> <span style="color:#111">2</span><span style="color:#f92672">);</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">vehicule01</span><span style="color:#f92672">.</span><span style="color:#75af00">put</span><span style="color:#f92672">(</span><span style="color:#d88200">&#34;type&#34;</span><span style="color:#f92672">,</span> <span style="color:#d88200">&#34;mobilette&#34;</span><span style="color:#f92672">);</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">Map</span><span style="color:#f92672">&lt;</span><span style="color:#111">String</span><span style="color:#f92672">,</span> <span style="color:#111">Object</span><span style="color:#f92672">&gt;</span> <span style="color:#111">etat01</span> <span style="color:#f92672">=</span> <span style="color:#00a8c8">new</span> <span style="color:#111">HashMap</span><span style="color:#f92672">&lt;&gt;();</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">vehicule01</span><span style="color:#f92672">.</span><span style="color:#75af00">put</span><span style="color:#f92672">(</span><span style="color:#d88200">&#34;etat&#34;</span><span style="color:#f92672">,</span> <span style="color:#111">etat01</span><span style="color:#f92672">);</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">etat01</span><span style="color:#f92672">.</span><span style="color:#75af00">put</span><span style="color:#f92672">(</span><span style="color:#d88200">&#34;kilometrage&#34;</span><span style="color:#f92672">,</span><span style="color:#111">14</span><span style="color:#f92672">.</span><span style="color:#75af00">45</span><span style="color:#f92672">);</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">etat01</span><span style="color:#f92672">.</span><span style="color:#75af00">put</span><span style="color:#f92672">(</span><span style="color:#d88200">&#34;besoinChangementHuile&#34;</span><span style="color:#f92672">,</span><span style="color:#00a8c8">false</span><span style="color:#f92672">);</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">Map</span><span style="color:#f92672">&lt;</span><span style="color:#111">String</span><span style="color:#f92672">,</span> <span style="color:#111">Object</span><span style="color:#f92672">&gt;</span> <span style="color:#111">vehicule02</span> <span style="color:#f92672">=</span> <span style="color:#00a8c8">new</span> <span style="color:#111">HashMap</span><span style="color:#f92672">&lt;&gt;();</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">lesVehicules</span><span style="color:#f92672">.</span><span style="color:#75af00">add</span><span style="color:#f92672">(</span><span style="color:#111">vehicule02</span><span style="color:#f92672">);</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">vehicule02</span><span style="color:#f92672">.</span><span style="color:#75af00">put</span><span style="color:#f92672">(</span><span style="color:#d88200">&#34;nombreDeRoues&#34;</span><span style="color:#f92672">,</span> <span style="color:#111">4</span><span style="color:#f92672">);</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">vehicule02</span><span style="color:#f92672">.</span><span style="color:#75af00">put</span><span style="color:#f92672">(</span><span style="color:#d88200">&#34;type&#34;</span><span style="color:#f92672">,</span> <span style="color:#d88200">&#34;camion&#34;</span><span style="color:#f92672">);</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">Map</span><span style="color:#f92672">&lt;</span><span style="color:#111">String</span><span style="color:#f92672">,</span> <span style="color:#111">Object</span><span style="color:#f92672">&gt;</span> <span style="color:#111">etat02</span> <span style="color:#f92672">=</span> <span style="color:#00a8c8">new</span> <span style="color:#111">HashMap</span><span style="color:#f92672">&lt;&gt;();</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">vehicule02</span><span style="color:#f92672">.</span><span style="color:#75af00">put</span><span style="color:#f92672">(</span><span style="color:#d88200">&#34;etat&#34;</span><span style="color:#f92672">,</span> <span style="color:#111">etat02</span><span style="color:#f92672">);</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">etat02</span><span style="color:#f92672">.</span><span style="color:#75af00">put</span><span style="color:#f92672">(</span><span style="color:#d88200">&#34;kilometrage&#34;</span><span style="color:#f92672">,</span><span style="color:#111">13344</span><span style="color:#f92672">.</span><span style="color:#75af00">5</span><span style="color:#f92672">);</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">etat02</span><span style="color:#f92672">.</span><span style="color:#75af00">put</span><span style="color:#f92672">(</span><span style="color:#d88200">&#34;besoinChangementHuile&#34;</span><span style="color:#f92672">,</span><span style="color:#00a8c8">true</span><span style="color:#f92672">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span></code></pre></div></article>
+ 
+                    <br>    <br>    
+                    
+                     
+                    <label for="menu-control" class="hidden book-menu-overlay"></label>
+                </div>
+
+                <footer class="book-footer">
+                    
+<div class="flex flex-wrap justify-between">
+
+    <div>
+        
+    </div>
+
+    <div style="padding-top:2em;">
+        
+
+        
+        <div class="flex justify-end" style="padding-top:1em;">
+            <a href="https://github.com/cartesjava/cartesjava.github.io/edit/main//pages/modelisation/_brouillons/structures/_index.md" target="_blank" rel="noopener">
+                <span>Suggérer une modification</span>
+                <img src="/svg/edit.svg" class="book-icon" alt="Edit" />
+            </a>
+        </div>
+        
+
+        <div class="flex justify-end" style="padding-top:2em;">
+            <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.fr" style="font-size:2em;">
+	            <img alt="Creative Commons License" style="border-width:0" src="/cc.svg" />
+            </a>
+
+            <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.fr" style="font-size:2em;">
+                <img alt="Creative Commons Attribution" style="border-width:0" src="/by.svg" />
+            </a>
+
+            <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.fr" style="font-size:2em;"> 
+                <img alt="Creative Commons ShareAlike" style="border-width:0" src="/sa.svg" />
+            </a>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+<script>(function(){function e(n){const e=window.getSelection(),t=document.createRange();t.selectNodeContents(n),e.removeAllRanges(),e.addRange(t)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+                    
+                </footer>
+            </div>
+
+            
+            <aside class="book-toc">
+                <div class="book-toc-content">
+                    
+
+
+
+<nav id='TableOfContents'>
+    
+
+    
+    
+
+    
+    
+        
+    
+
+    <ul>
+        <li><a href='#structures-en-java'>Structures en Java</a></li>
+
+        
+
+            
+
+    
+    
+
+    
+    
+        
+            
+        
+    
+
+    <ul>
+        <li><a href='#liste-liste-en-java'>%!s(<nil>).1 List&lt;E&gt;: liste en Java</a></li>
+
+        
+
+    </ul>
+
+
+
+        
+
+            
+
+    
+    
+
+    
+    
+        
+            
+        
+    
+
+    <ul>
+        <li><a href='#implantations-de-liste'>%!s(<nil>).2 Implantations de List&lt;E&gt;</a></li>
+
+        
+
+    </ul>
+
+
+
+        
+
+            
+
+    
+    
+
+    
+    
+        
+            
+        
+    
+
+    <ul>
+        <li><a href='#mapkv-mappage-en-java'>%!s(<nil>).3 Map&lt;K,V&gt;: mappage en Java</a></li>
+
+        
+
+    </ul>
+
+
+
+        
+
+            
+
+    
+    
+
+    
+    
+        
+            
+        
+    
+
+    <ul>
+        <li><a href='#implantations-de-mapkv'>%!s(<nil>).4 Implantations de Map&lt;K,V&gt;</a></li>
+
+        
+
+    </ul>
+
+
+
+        
+
+            
+
+    
+    
+
+    
+    
+        
+            
+        
+    
+
+    <ul>
+        <li><a href='#encoder-des-donn%c3%a9es-json-en-java'>%!s(<nil>).5 Encoder des données JSON en Java</a></li>
+
+        
+
+    </ul>
+
+
+
+        
+
+    </ul>
+
+
+</nav>
+
+
+
+
+
+
+ 
+                </div>
+            </aside>
+            
+        </main>
+
+        
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

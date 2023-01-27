@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="25cm" height="12cm" viewBox="435 272 482 232" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <rect style="fill: #ffffff" x="436" y="391" width="187.7" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="436" y="391" width="187.7" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="529.85" y="410">ListeChaineeSimple</text>
+    <rect style="fill: #ffffff" x="436" y="419" width="187.7" height="36"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="436" y="419" width="187.7" height="36"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="439" y="433"> int taille</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="439" y="449"> MaillonSimple tete</text>
+    <rect style="fill: #ffffff" x="436" y="455" width="187.7" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="436" y="455" width="187.7" height="8"/>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="474.5" y="273.3" width="110.1" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="474.5" y="273.3" width="110.1" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:italic;font-weight:700" x="529.55" y="292.3">Liste</text>
+    <rect style="fill: #ffffff" x="474.5" y="301.3" width="110.1" height="20"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="474.5" y="301.3" width="110.1" height="20"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="477.5" y="315.3"> int taille()</text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="529.55,340.542 529.55,364.149 529.85,364.149 529.85,389.991 "/>
+    <polygon style="fill: #ffffff" points="537.55,340.542 529.55,324.542 521.55,340.542 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="537.55,340.542 529.55,324.542 521.55,340.542 "/>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="694.4" y="430.9" width="179.4" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="694.4" y="430.9" width="179.4" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="784.1" y="449.9">MaillonSimple</text>
+    <rect style="fill: #ffffff" x="694.4" y="458.9" width="179.4" height="36"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="694.4" y="458.9" width="179.4" height="36"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="697.4" y="472.9"> Object valeur</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="697.4" y="488.9"> MaillonSimple suivant</text>
+    <rect style="fill: #ffffff" x="694.4" y="494.9" width="179.4" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="694.4" y="494.9" width="179.4" height="8"/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="648.872,445 666.05,445 666.05,444.9 694.4,444.9 "/>
+    <polygon style="fill: #ffffff" points="623.7,445 637.7,440.2 651.7,445 637.7,449.8 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="623.7,445 637.7,440.2 651.7,445 637.7,449.8 "/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="668.05" y="440.95"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="655.7" y="441"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:normal" x="690.4" y="440.9"/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="898.972,484.9 914,484.9 914,444.9 873.8,444.9 "/>
+    <polygon style="fill: #ffffff" points="873.8,484.9 887.8,480.1 901.8,484.9 887.8,489.7 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="873.8,484.9 887.8,480.1 901.8,484.9 887.8,489.7 "/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="916" y="460.9"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="905.8" y="480.9"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="877.8" y="440.9"/>
+  </g>
+</svg>

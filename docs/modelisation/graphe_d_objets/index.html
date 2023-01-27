@@ -1,0 +1,2513 @@
+<!DOCTYPE html>
+<html lang="fr-ca" dir="ltr">
+    <head>
+        <meta charset="UTF-8">
+
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Section 2.3: Graphes d&rsquo;objets #  2.3.1 Arbre #    Un arbre est une structure avec une racine et des branches:
+   NOTE: l&rsquo;arbre est typiquement dessiné avec la racine en haut    Chaque cercle ci-haut est appelé un noeud
+  Chaque noeud peut avoir des enfants (indiqués par les flèches)
+  Chaque noeud a exactement un parent (sauf la racine qui n&rsquo;a aucun parent)">
+<meta name="theme-color" content="#FFFFFF">
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="Graphes d&#39;objets" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://cartesjava.github.io/modelisation/graphe_d_objets/" />
+
+<title>
+
+
+    Graphes d&#39;objets 
+
+
+
+</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/book.min.e4869670571a4fc0a50f4a2c889ed6ee3b49dac25cd9095e9eea1f69c426d18a.css" integrity="sha256-5IaWcFcaT8ClD0osiJ7W7jtJ2sJc2QlenuofacQm0Yo=" crossorigin="anonymous">
+  <script defer src="/flexsearch.min.js"></script>
+  <script defer src="/fr.search.min.0e5eca3384d4e84a083eaf733dd004e479c5ffdbd8211494050eba149a9c560e.js" integrity="sha256-Dl7KM4TU6EoIPq9zPdAE5HnF/9vYIRSUBQ66FJqcVg4=" crossorigin="anonymous"></script>
+
+  <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" integrity="sha256-b2&#43;Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC&#43;NdcPIvZhzk=" crossorigin="anonymous"></script>
+
+<script defer src="/reload_videos.min.4a5aa164333a19381a7fd1dde8e03eadc175bdda3a31e8f4fc8e0951775577ca.js" integrity="sha256-SlqhZDM6GTgaf9Hd6OA&#43;rcF1vdo6Mej0/I4JUXdVd8o=" crossorigin="anonymous"></script><link rel="alternate" type="application/rss+xml" href="https://cartesjava.github.io/modelisation/graphe_d_objets/index.xml" title="Cartes Java" />
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+        
+    </head>
+    <body dir="ltr">
+        <input type="checkbox" class="hidden toggle" id="menu-control" />
+        <input type="checkbox" class="hidden toggle" id="toc-control" />
+        <main class="container flex">
+            <aside class="book-menu">
+                <div class="book-menu-content">
+                    
+<nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><span>Cartes Java</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Rechercher" aria-label="Rechercher" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/preface/" class="">Préface</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/intro/" class="">Introduction</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-b1f25d69250e7772af5811e7ef44e922" class="toggle"  />
+    <label for="section-b1f25d69250e7772af5811e7ef44e922" class="flex justify-between">
+      <a href="/approche/" class="">1. Présentation de l&#39;approche</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/approche/outil/" class="">1.1. Outil de validation</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/approche/langages_et_notations/" class="">1.2. Langages et notations utilisées</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/approche/cartes_a_jouer/" class="">1.3. Visualisations avec des cartes à jouer</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-20d2db300e0f4ab0130280f200c4f2fc" class="toggle" checked />
+    <label for="section-20d2db300e0f4ab0130280f200c4f2fc" class="flex justify-between">
+      <a href="/modelisation/" class="">2. Modélisation des données et limitations de l&#39;approche</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/modelisation/objets/" class="">2.1. Objets</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/modelisation/tableau_d_objets/" class="">2.2. Tableaux d&#39;objets</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/modelisation/graphe_d_objets/" class=" active">2.3. Graphes d&#39;objets</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-89a3727667e5590a4150c67be9175eaa" class="toggle"  />
+    <label for="section-89a3727667e5590a4150c67be9175eaa" class="flex justify-between">
+      <a href="/efficacite/" class="">3. Qu&#39;est-ce que l&#39;efficacité?</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/efficacite/performance_vs_efficacite/" class="">3.1. Performance Vs efficacité</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/efficacite/temps/" class="">3.2. Efficacité en temps</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/efficacite/espace/" class="">3.3. Efficacité en espace</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-b12c28f0f1b1687a56347184fa5203f8" class="toggle"  />
+    <label for="section-b12c28f0f1b1687a56347184fa5203f8" class="flex justify-between">
+      <a href="/listes/" class="">4. Comprendre les listes</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/listes/naive/" class="">4.1. Liste naïve</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/listes/tableau/" class="">4.2. Liste par tableau</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/listes/chainee_simple/" class="">4.3. Liste chaînée simple</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/listes/chainee_double/" class="">4.4. Liste chaînée double</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-4d776affa1be45887905ae21b1d04b2a" class="toggle"  />
+    <label for="section-4d776affa1be45887905ae21b1d04b2a" class="flex justify-between">
+      <a href="/arbres/" class="">5. Comprendre les arbres</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/arbres/generique/" class="">5.1. Arbre générique</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/arbres/binaire/" class="">5.2. Arbre binaire</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-3e48974585d14c8908a67306d3ef0b3b" class="toggle"  />
+    <label for="section-3e48974585d14c8908a67306d3ef0b3b" class="flex justify-between">
+      <a href="/mappages/" class="">6. Comprendre les mappages</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/mappages/naif/" class="">6.1. Mappage naïf</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/mappages/hachage/" class="">6.2. Mappage par hachage</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/mappages/arbre/" class="">6.3. Mappage avec arbre</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/conclusion/" class="">Conclusion</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/bibliographie/" class="">Bibliographie</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-9ea2d72b97e9d02a8b97ae9357b7969b" class="toggle"  />
+    <label for="section-9ea2d72b97e9d02a8b97ae9357b7969b" class="flex justify-between">
+      <a role="button" class="">Annexes</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/annexes/annexe_grand_o/" class="">Annexe 1: la notation grand O</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/annexes/annexe_acceder_exemples/" class="">Annexe 2: accéder aux exemples</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/annexes/annexe_programmer_exemple/" class="">Annexe 3: programmer un nouvel exemple</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/annexes/annexe_modifier_manuel/" class="">Annexe 4: suggérer une modification à ce manuel</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-3b1da941c278c90106392151b814a2c6" class="toggle"  />
+    <label for="section-3b1da941c278c90106392151b814a2c6" class="flex justify-between">
+      <a href="/annexes/annexe_ateliers/" class="">Annexe 5: exemples d&#39;ateliers</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/annexes/annexe_ateliers/deplacer_decaler/" class="">Procédures déplacer/décaler</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/annexes/annexe_ateliers/fibonacci/" class="">Modéliser la suite de Fibonacci</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/annexes/annexe_ateliers/liste_tableau/" class="">Liste par tableau</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/annexes/annexe_ateliers/arbre_binaire/" class="">Arbre binaire</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-47be0624d93c2dddef9d700a6ef60a09" class="toggle"  />
+    <label for="section-47be0624d93c2dddef9d700a6ef60a09" class="flex justify-between">
+      <a href="/annexes/annexe_bilans/" class="">Annexe 6: bilans</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/annexes/annexe_bilans/bilan_juin_2022/" class="">Bilan juin 2022</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/annexes/annexe_bilans/bilan_octobre_2022/" class="">Bilan octobre 2022</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+                </div>
+            </aside>
+
+            <div class="book-page-and-footer">
+                <div class="book-page">
+                    <header class="book-header">
+                        
+<div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Graphes d&#39;objets</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+
+<aside class="hidden clearfix">
+    
+
+
+
+<nav id='TableOfContents'>
+    
+
+    
+    
+
+    
+    
+        
+            
+        
+    
+
+    <ul>
+        <li><a href='#graphes-dobjets'>2.3 Graphes d&rsquo;objets</a></li>
+
+        
+
+            
+
+    
+    
+
+    
+    
+        
+            
+        
+    
+
+    <ul>
+        <li><a href='#arbre'>2.3.1 Arbre</a></li>
+
+        
+
+    </ul>
+
+
+
+        
+
+            
+
+    
+    
+
+    
+    
+        
+            
+        
+    
+
+    <ul>
+        <li><a href='#arbre-binaire-de-recherche'>2.3.2 Arbre binaire de recherche</a></li>
+
+        
+
+    </ul>
+
+
+
+        
+
+            
+
+    
+    
+
+    
+    
+        
+            
+        
+    
+
+    <ul>
+        <li><a href='#arbre-binaire-en-java'>2.3.3 Arbre binaire en Java</a></li>
+
+        
+
+    </ul>
+
+
+
+        
+
+            
+
+    
+    
+
+    
+    
+        
+            
+        
+    
+
+    <ul>
+        <li><a href='#exemple-fibonacci'>2.3.4 Exemple: Fibonacci</a></li>
+
+        
+
+    </ul>
+
+
+
+        
+
+            
+
+    
+    
+
+    
+    
+        
+            
+        
+    
+
+    <ul>
+        <li><a href='#d%c3%a9finition'>2.3.5 Définition</a></li>
+
+        
+
+    </ul>
+
+
+
+        
+
+            
+
+    
+    
+
+    
+    
+        
+            
+        
+    
+
+    <ul>
+        <li><a href='#nombre-dor'>2.3.6 Nombre d&rsquo;or</a></li>
+
+        
+
+    </ul>
+
+
+
+        
+
+            
+
+    
+    
+
+    
+    
+        
+            
+        
+    
+
+    <ul>
+        <li><a href='#mod%c3%a9liser-la-suite-de-fibonnaci'>2.3.7 Modéliser la suite de Fibonnaci</a></li>
+
+        
+
+    </ul>
+
+
+
+        
+
+            
+
+    
+    
+
+    
+    
+        
+            
+        
+    
+
+    <ul>
+        <li><a href='#pour-calculer-la-r%c3%a9ponse-et-le-nombre-dor'>2.3.8 Pour calculer la réponse et le nombre d&rsquo;or</a></li>
+
+        
+
+    </ul>
+
+
+
+        
+
+            
+
+    
+    
+
+    
+    
+        
+            
+        
+    
+
+    <ul>
+        <li><a href='#construire-le-graphe-dobjets-r%c3%a9cursivement'>2.3.9 Construire le graphe d&rsquo;objets récursivement</a></li>
+
+        
+
+    </ul>
+
+
+
+        
+
+            
+
+    
+    
+
+    
+    
+        
+            
+        
+    
+
+    <ul>
+        <li><a href='#construire-le-graphe-dobjets-dynamiquement'>2.3.10 Construire le graphe d&rsquo;objets dynamiquement</a></li>
+
+        
+
+    </ul>
+
+
+
+        
+
+            
+
+    
+    
+
+    
+    
+        
+            
+        
+    
+
+    <ul>
+        <li><a href='#graphe'>2.3.11 Graphe</a></li>
+
+        
+
+    </ul>
+
+
+
+        
+
+            
+
+    
+    
+
+    
+    
+        
+            
+        
+    
+
+    <ul>
+        <li><a href='#graphe-dobjets-en-json'>2.3.12 Graphe d&rsquo;objets en JSON</a></li>
+
+        
+
+    </ul>
+
+
+
+        
+
+    </ul>
+
+
+</nav>
+
+
+
+
+
+
+
+</aside>
+
+ 
+                    </header>
+
+                    
+                    
+<article class="markdown"><h1 id="graphes-dobjets">
+
+
+
+
+
+
+
+
+
+
+
+
+Section 2.3: 
+
+    
+
+
+
+
+
+Graphes d&rsquo;objets
+
+<a class="anchor" href="#graphes-dobjets">#</a>
+
+</h1>
+<h2 id="arbre">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
+
+    
+        
+        
+        
+        
+    
+
+    
+
+        
+        2.3.1
+
+    
+
+
+
+
+
+Arbre
+
+<a class="anchor" href="#arbre">#</a>
+
+</h2>
+<ul>
+<li>
+<p>Un arbre est une structure avec une racine et des branches:</p>
+  <center>
+      <img src="arbre01.svg" width="50%">
+  </center>
+<ul>
+<li>NOTE: l&rsquo;arbre est typiquement dessiné avec la racine en haut</li>
+</ul>
+</li>
+<li>
+<p>Chaque cercle ci-haut est appelé un noeud</p>
+</li>
+<li>
+<p>Chaque noeud peut avoir des enfants (indiqués par les flèches)</p>
+</li>
+<li>
+<p>Chaque noeud a exactement un parent (sauf la racine qui n&rsquo;a aucun parent)</p>
+</li>
+</ul>
+<h2 id="arbre-binaire-de-recherche">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
+
+    
+        
+        
+        
+        
+    
+
+    
+
+        
+        2.3.2
+
+    
+
+
+
+
+
+Arbre binaire de recherche
+
+<a class="anchor" href="#arbre-binaire-de-recherche">#</a>
+
+</h2>
+<ul>
+<li>
+<p>C&rsquo;est un type d&rsquo;arbre très utilisé en informatique:</p>
+  <center>
+      <img src="arbre02.svg" width="50%">
+  </center>
+</li>
+<li>
+<p>Chaque noeud contient un <code>Comparable</code> (p.ex. un <code>int</code>)</p>
+</li>
+<li>
+<p>Chaque noeud a au plus deux enfants</p>
+</li>
+<li>
+<p>L&rsquo;enfant à gauche est toujours plus petit que le parent (et grand-parent, etc.)</p>
+<ul>
+<li>p.ex.: <code>0 &lt; 1</code> et <code>4&lt;5</code></li>
+</ul>
+</li>
+<li>
+<p>L&rsquo;enfant à droite est toujours plus grand que le parent (et grand-parent, etc.)</p>
+<ul>
+<li>p.ex.: <code>5&gt;3</code> et <code>2&gt;1</code></li>
+</ul>
+</li>
+</ul>
+<h2 id="arbre-binaire-en-java">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
+
+    
+        
+        
+        
+        
+    
+
+    
+
+        
+        2.3.3
+
+    
+
+
+
+
+
+Arbre binaire en Java
+
+<a class="anchor" href="#arbre-binaire-en-java">#</a>
+
+</h2>
+<ul>
+<li>
+<p>Il suffit de représenter un <code>Noeud</code></p>
+  <img class="figure" src="Noeud.png"/>
+</li>
+<li>
+<p>La définition de <code>Noeud</code> est récursive:</p>
+<ul>
+<li>Qu&rsquo;est-ce qu&rsquo;un <code>Noeud</code>?
+<ul>
+<li>quelque chose qui contient deux noeuds!
+<ul>
+<li><code>enfantGauche()</code> et <code>enfantDroit()</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Par exemple, pour représenter l&rsquo;arbre ci-haut:</p>
+</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#111">Noeud</span> <span style="color:#111">racine</span> <span style="color:#f92672">=</span> <span style="color:#00a8c8">new</span> <span style="color:#111">MonNoeud</span><span style="color:#f92672">(</span><span style="color:#111">3</span><span style="color:#f92672">);</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#111">Noeud</span> <span style="color:#111">gauche</span> <span style="color:#f92672">=</span> <span style="color:#00a8c8">new</span> <span style="color:#111">MonNoeud</span><span style="color:#f92672">(</span><span style="color:#111">1</span><span style="color:#f92672">);</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">Noeud</span> <span style="color:#111">droite</span> <span style="color:#f92672">=</span> <span style="color:#00a8c8">new</span> <span style="color:#111">MonNoeud</span><span style="color:#f92672">(</span><span style="color:#111">5</span><span style="color:#f92672">);</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#111">Noeud</span> <span style="color:#111">gaucheGauche</span> <span style="color:#f92672">=</span> <span style="color:#00a8c8">new</span> <span style="color:#111">MonNoeud</span><span style="color:#f92672">(</span><span style="color:#111">0</span><span style="color:#f92672">);</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">Noeud</span> <span style="color:#111">gaucheDroite</span><span style="color:#f92672">=</span> <span style="color:#00a8c8">new</span> <span style="color:#111">MonNoeud</span><span style="color:#f92672">(</span><span style="color:#111">2</span><span style="color:#f92672">);</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#111">Noeud</span> <span style="color:#111">droiteGauche</span> <span style="color:#f92672">=</span> <span style="color:#00a8c8">new</span> <span style="color:#111">MonNoeud</span><span style="color:#f92672">(</span><span style="color:#111">4</span><span style="color:#f92672">);</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">Noeud</span> <span style="color:#111">droiteDroite</span><span style="color:#f92672">=</span> <span style="color:#00a8c8">new</span> <span style="color:#111">MonNoeud</span><span style="color:#f92672">(</span><span style="color:#111">6</span><span style="color:#f92672">);</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#111">racine</span><span style="color:#f92672">.</span><span style="color:#75af00">setEnfantGauche</span><span style="color:#f92672">(</span><span style="color:#111">gauche</span><span style="color:#f92672">);</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">racine</span><span style="color:#f92672">.</span><span style="color:#75af00">setEnfantDroit</span><span style="color:#f92672">(</span><span style="color:#111">droite</span><span style="color:#f92672">);</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#111">gauche</span><span style="color:#f92672">.</span><span style="color:#75af00">setEnfantGauche</span><span style="color:#f92672">(</span><span style="color:#111">gaucheGauche</span><span style="color:#f92672">);</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">gauche</span><span style="color:#f92672">.</span><span style="color:#75af00">setEnfantDroit</span><span style="color:#f92672">(</span><span style="color:#111">gaucheDroite</span><span style="color:#f92672">);</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#111">droite</span><span style="color:#f92672">.</span><span style="color:#75af00">setEnfantGauche</span><span style="color:#f92672">(</span><span style="color:#111">droiteGauche</span><span style="color:#f92672">);</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">droite</span><span style="color:#f92672">.</span><span style="color:#75af00">setEnfantDroit</span><span style="color:#f92672">(</span><span style="color:#111">droiteDroite</span><span style="color:#f92672">);</span>
+</span></span></code></pre></div><img src="Arbre01.png" />
+<h2 id="exemple-fibonacci">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
+
+    
+        
+        
+        
+        
+    
+
+    
+
+        
+        2.3.4
+
+    
+
+
+
+
+
+Exemple: Fibonacci
+
+<a class="anchor" href="#exemple-fibonacci">#</a>
+
+</h2>
+<h2 id="définition">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
+
+    
+        
+        
+        
+        
+    
+
+    
+
+        
+        2.3.5
+
+    
+
+
+
+
+
+Définition
+
+<a class="anchor" href="#d%c3%a9finition">#</a>
+
+</h2>
+<ol>
+<li>
+<p>Voici le début de la suite de Fibonacci</p>
+<pre tabindex="0"><code>0 1 1 2 3 5 8 13 21 34 55 89 144 ...
+</code></pre></li>
+<li>
+<p>La définition mathématique est récursive</p>
+
+<link rel="stylesheet" href="/katex/katex.min.css" />
+<script defer src="/katex/katex.min.js"></script>
+<script defer src="/katex/auto-render.min.js" onload="renderMathInElement(document.body);"></script><span class="text-center">
+  \(    F_0 = 0\\~\\
+
+    F_1 = 1\\~\\
+
+    F_n = F_{n-1} &#43; F_{n-2}\\~\\
+    \)
+</span>
+</li>
+<li>
+<p>Autrement dit:</p>
+<ul>
+<li>
+<p><code>0</code> et <code>1</code> sont deux cas spéciaux</p>
+</li>
+<li>
+<p>sinon le prochain nombre de la suite est toujours l&rsquo;addition deux nombres précédents</p>
+</li>
+</ul>
+</li>
+</ol>
+<h2 id="nombre-dor">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
+
+    
+        
+        
+        
+        
+    
+
+    
+
+        
+        2.3.6
+
+    
+
+
+
+
+
+Nombre d&rsquo;or
+
+<a class="anchor" href="#nombre-dor">#</a>
+
+</h2>
+<ol>
+<li>
+<p>La suite de Fibonacci est utilisée pour calculer le <a target="_blank" href="https://fr.wikipedia.org/wiki/Nombre_d'or">nombre d&rsquo;or</a>, soit environs <code>1.618</code></p>
+<ul>
+<li>(le nombre d&rsquo;or est reconnu, entre autres choses, comme une proportion hauteur/largeur agréable à l&rsquo;oeil)</li>
+</ul>
+</li>
+<li>
+<p>Comme pour π, on peut le calculer le nombre d&rsquo;or avec autant que précision que désiré</p>
+<ul>
+<li>(c-à-d avec autant de chiffres après le point que désiré)</li>
+</ul>
+</li>
+<li>
+<p>Pour calculer un approximation du nombre d&rsquo;or on fait tout simplement:</p>
+<span class="text-center">
+  \(    \text{nombre d&#39;or} \approx \dfrac{F_{n}}{F_{n-1}} \text{~~~pour~~~} n\geq 2
+    \)
+</span>
+</li>
+<li>
+<p>Plus on prend un <code>n</code> élevé, plus la précision est bonne</p>
+</li>
+<li>
+<p>Autrement dit, le nombre d&rsquo;or est à peu près égal à:</p>
+<ul>
+<li>
+<p>un nombre de la suite de Fibonacci, divisé par le nombre qui le précède</p>
+</li>
+<li>
+<p>(plus on prend un nombre loin dans la suite, plus l&rsquo;approximation est bonne)</p>
+</li>
+</ul>
+</li>
+</ol>
+<h2 id="modéliser-la-suite-de-fibonnaci">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
+
+    
+        
+        
+        
+        
+    
+
+    
+
+        
+        2.3.7
+
+    
+
+
+
+
+
+Modéliser la suite de Fibonnaci
+
+<a class="anchor" href="#mod%c3%a9liser-la-suite-de-fibonnaci">#</a>
+
+</h2>
+<ol>
+<li>Pour modéliser la suite en Java, on va créer une structure de données récursive</li>
+</ol>
+<center>
+<img class="figure no-border" src="Fibonacci.svg" />
+</center>
+<ol>
+<li>
+<p>Pour <code>n = 0</code>, on a le graphe d&rsquo;objets suivant</p>
+ <img src="Fib_0.png" />
+</li>
+<li>
+<p>Pour <code>n = 1</code>, on a le graphe d&rsquo;objets suivant</p>
+ <img src="Fib_1.png" />
+</li>
+<li>
+<p>Pour <code>n = 2</code>, on a le graphe d&rsquo;objets suivant</p>
+ <img src="Fib_2.png" />
+<ul>
+<li>NOTE: la suite se lit de droite à gauche</li>
+</ul>
+</li>
+<li>
+<p>Pour <code>n = 3</code>, on a le graphe d&rsquo;objets suivant</p>
+ <img src="Fib_3.png" />
+</li>
+<li>
+<p>Et ainsi de suite&hellip;</p>
+</li>
+</ol>
+<center>    <div class='excerpt note' style=''>    <div style="text-align:left">    Il existe une modélisation plus simple. Chut, ne le dis pas! C&rsquo;est la question bonus de l&rsquo;atelier 2.3.</div></div></center>
+<h2 id="pour-calculer-la-réponse-et-le-nombre-dor">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
+
+    
+        
+        
+        
+        
+    
+
+    
+
+        
+        2.3.8
+
+    
+
+
+
+
+
+Pour calculer la réponse et le nombre d&rsquo;or
+
+<a class="anchor" href="#pour-calculer-la-r%c3%a9ponse-et-le-nombre-dor">#</a>
+
+</h2>
+<ol>
+<li>
+<p>Calculer la réponse pour <code>n &gt;= 2</code> est simple</p>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#111">reponse</span> <span style="color:#f92672">=</span> <span style="color:#111">moinsUn</span><span style="color:#f92672">.</span><span style="color:#75af00">getReponse</span><span style="color:#f92672">()</span> <span style="color:#f92672">+</span> <span style="color:#111">moinsDeux</span><span style="color:#f92672">.</span><span style="color:#75af00">getReponse</span><span style="color:#f92672">();</span>
+</span></span></code></pre></div></li>
+<li>
+<p>Même chose pour le nombre d&rsquo;or</p>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#111">nombreOr</span> <span style="color:#f92672">=</span> <span style="color:#111">Double</span><span style="color:#f92672">.</span><span style="color:#75af00">valueOf</span><span style="color:#f92672">(</span><span style="color:#111">reponse</span><span style="color:#f92672">)</span> <span style="color:#f92672">/</span> <span style="color:#111">Double</span><span style="color:#f92672">.</span><span style="color:#75af00">valueOf</span><span style="color:#f92672">(</span><span style="color:#111">moinsUn</span><span style="color:#f92672">.</span><span style="color:#75af00">getReponse</span><span style="color:#f92672">());</span>
+</span></span></code></pre></div></li>
+<li>
+<p>Le défi est qu&rsquo;il faut d&rsquo;abord construire le graphe d&rsquo;objet</p>
+</li>
+</ol>
+<h2 id="construire-le-graphe-dobjets-récursivement">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
+
+    
+        
+        
+        
+        
+    
+
+    
+
+        
+        2.3.9
+
+    
+
+
+
+
+
+Construire le graphe d&rsquo;objets récursivement
+
+<a class="anchor" href="#construire-le-graphe-dobjets-r%c3%a9cursivement">#</a>
+
+</h2>
+<ol>
+<li>
+<p>Avec des appels récursifs, on va construire d&rsquo;abord, puis calculer</p>
+ <div>        <video width='100%'crossOrigin="use-credentials" preload="none" autoplay muted loop disablepictureinpicture disableremoteplayback playsinline>            <source src="/modelisation/fibonacci/calcul_recursif.webm" type="video/webm"/>            </video>    </div>
+<ul>
+<li>on crée d&rsquo;abord l&rsquo;objet <code>n</code>, puis <code>n-1</code>, et ainsi de suite jusqu&rsquo;à l&rsquo;objet <code>0</code></li>
+</ul>
+</li>
+<li>
+<p>Pour le cas <code>n &gt;= 2</code>, voici comment procéder</p>
+<ul>
+<li>
+<p>créer un nouvel objet <code>MonFibonacci</code> et le mémoriser dans <code>moinsUn</code></p>
+</li>
+<li>
+<p>enregistrer que le <code>n</code> de ce <code>moinsUn</code> est <code>n-1</code> (le <code>n</code> courant moins <code>1</code>)</p>
+</li>
+<li>
+<p>créer le reste du graphe récursivement en appelant <code>moinsUn.construireGrapheRecursivement()</code></p>
+</li>
+<li>
+<p>enregister que le <code>moinsDeux</code> courant est <code>moinsUn.getMoinsUn()</code> (le <code>moinsUn</code> du <code>moinsUn</code> courant)</p>
+</li>
+<li>
+<p>calculer la réponse courante à partir des réponses de <code>moinsUn</code> et <code>moinsDeux</code></p>
+</li>
+</ul>
+</li>
+<li>
+<p>L&rsquo;appel récursif est plus proche de la définition mathématique</p>
+<ul>
+<li>(pour calculer la réponse en <code>n</code>, il faut d&rsquo;abord calculer la réponse en <code>n-1</code>)</li>
+</ul>
+</li>
+<li>
+<p>L&rsquo;inconvénient est qu&rsquo;on peut déborder la pile d&rsquo;appel</p>
+<pre tabindex="0"><code>Exception in thread &#34;main&#34; java.lang.StackOverflowError
+    at ca.ntro.cards.fibonacci.solution.MonFibonacci.construireGrapheRecursivement(MonFibonacci.java:31)
+    at ca.ntro.cards.fibonacci.solution.MonFibonacci.construireGrapheRecursivement(MonFibonacci.java:31)
+    at ca.ntro.cards.fibonacci.solution.MonFibonacci.construireGrapheRecursivement(MonFibonacci.java:31)
+    at ca.ntro.cards.fibonacci.solution.MonFibonacci.construireGrapheRecursivement(MonFibonacci.java:31)
+    at ca.ntro.cards.fibonacci.solution.MonFibonacci.construireGrapheRecursivement(MonFibonacci.java:31)
+    at ca.ntro.cards.fibonacci.solution.MonFibonacci.construireGrapheRecursivement(MonFibonacci.java:31)
+    at ca.ntro.cards.fibonacci.solution.MonFibonacci.construireGrapheRecursivement(MonFibonacci.java:31)
+    at ca.ntro.cards.fibonacci.solution.MonFibonacci.construireGrapheRecursivement(MonFibonacci.java:31)
+    at ca.ntro.cards.fibonacci.solution.MonFibonacci.construireGrapheRecursivement(MonFibonacci.java:31)
+    at ca.ntro.cards.fibonacci.solution.MonFibonacci.construireGrapheRecursivement(MonFibonacci.java:31)
+    at ca.ntro.cards.fibonacci.solution.MonFibonacci.construireGrapheRecursivement(MonFibonacci.java:31)
+    at ca.ntro.cards.fibonacci.solution.MonFibonacci.construireGrapheRecursivement(MonFibonacci.java:31)
+    ...
+</code></pre><ul>
+<li>RAPPEL: le code n&rsquo;est pas bogué, mais limité par la mémoire attribuée à la pile d&rsquo;appel</li>
+</ul>
+</li>
+</ol>
+<h2 id="construire-le-graphe-dobjets-dynamiquement">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
+
+    
+        
+        
+        
+        
+    
+
+    
+
+        
+        2.3.10
+
+    
+
+
+
+
+
+Construire le graphe d&rsquo;objets dynamiquement
+
+<a class="anchor" href="#construire-le-graphe-dobjets-dynamiquement">#</a>
+
+</h2>
+<ol>
+<li>
+<p>En programmation dynamique, on calcule en même temps qu&rsquo;on construit</p>
+ <div>        <video width='100%'crossOrigin="use-credentials" preload="none" autoplay muted loop disablepictureinpicture disableremoteplayback playsinline>            <source src="/modelisation/fibonacci/calcul_dynamique.webm" type="video/webm"/>            </video>    </div>
+<ul>
+<li>on crée d&rsquo;abord l&rsquo;objet <code>0</code>, puis <code>1</code>, et ainsi de suite jusqu&rsquo;à l&rsquo;objet <code>n</code></li>
+</ul>
+</li>
+<li>
+<p>L&rsquo;idée est qu&rsquo;on fait une boucle pour créer le graphe d&rsquo;objets</p>
+<ul>
+<li>
+<p>on crée une <code>nouvelleTete</code></p>
+</li>
+<li>
+<p>le <code>moinsUn</code> de la <code>nouvelleTete</code> est l&rsquo;ancienne <code>tete</code></p>
+</li>
+<li>
+<p>le <code>moinsDeux</code> de la <code>nouvelleTete</code> est le <code>moinsUn</code> de l&rsquo;ancienne <code>tete</code></p>
+</li>
+<li>
+<p>c-à-d on insère la <code>nouvelleTete</code> à gauche, et on «pousse» les objets existants vers la droite</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Pour le cas <code>n &gt;= 2</code>, voici comment procéder</p>
+<ul>
+<li>
+<p>pour chaque <code>i</code> allant de <code>2</code> à <code>n</code> (inclusivement)</p>
+<ul>
+<li>
+<p>créer un nouvel objet <code>MonFibonacci</code> pour représenter la <code>nouvelleTete</code></p>
+</li>
+<li>
+<p>enregistrer que le <code>n</code> de la <code>nouvelleTete</code> est <code>i</code></p>
+</li>
+<li>
+<p>enregistrer que le <code>moinsUn</code> de la <code>nouvelleTete</code> est la <code>tete</code> courante</p>
+</li>
+<li>
+<p>enregistrer que le <code>moinsDeux</code> de la <code>nouvelleTete</code> est le <code>moinsUn</code> de la <code>tete</code> courante</p>
+</li>
+<li>
+<p>enregistrer que <code>tete</code> pointe maintenant vers la <code>nouvelleTete</code></p>
+</li>
+<li>
+<p>calculer la réponse pour <code>tete</code></p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Le calcul dynamique est moins intuitif (et moins proche de la définition mathématique), mais</p>
+<ul>
+<li>on a éliminé l&rsquo;appel récursif, alors on ne peut plus déborder la pile d&rsquo;appel</li>
+</ul>
+</li>
+</ol>
+<h2 id="graphe">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
+
+    
+        
+        
+        
+        
+    
+
+    
+
+        
+        2.3.11
+
+    
+
+
+
+
+
+Graphe
+
+<a class="anchor" href="#graphe">#</a>
+
+</h2>
+<ol>
+<li>
+<p>Un modèle Java contient des références</p>
+ <img class="figure no-border" src="FilmGraphe.png"/>
+<ul>
+<li>Un <code>Personnage</code> apparaît dans plusieurs <code>Film</code></li>
+<li>Un <code>Film</code> contient plusieurs <code>Personnage</code></li>
+</ul>
+</li>
+<li>
+<p>Très souvent, ces références forment des boucles</p>
+ <img src="FilmGraphe01.png"/>
+<ul>
+<li>Le <code>Personnage</code> James Bond apparaît dans deux films: Dr. No et Bon Baisers de Russie</li>
+<li>Le <code>Film</code> Dr. No contient deux personnages: James Bond et Dr. no</li>
+</ul>
+</li>
+<li>
+<p>On parle alors de graphe d&rsquo;objets (plutôt que de tableau d&rsquo;objets)</p>
+</li>
+</ol>
+<h2 id="graphe-dobjets-en-json">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
+
+    
+        
+        
+        
+        
+    
+
+    
+
+        
+        2.3.12
+
+    
+
+
+
+
+
+Graphe d&rsquo;objets en JSON
+
+<a class="anchor" href="#graphe-dobjets-en-json">#</a>
+
+</h2>
+<ol>
+<li>
+<p>JSON n&rsquo;a pas de notion de référence</p>
+</li>
+<li>
+<p>Dans ce cours, on ajoute un objet spécial <code>{&quot;_R&quot;:&quot;/chemin/vers/objet/cible&quot;}</code> pour représenter certaines références</p>
+<ul>
+<li>(sans l&rsquo;objet spécial, on ne peut pas représenter les boucles)</li>
+</ul>
+</li>
+<li>
+<p>Par exemple, le graphe ci-haut est représenté comme suit en JSON</p>
+</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;_C&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;FilmGraphe01&#34;</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;titre&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;Dr. No&#34;</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;annee&#34;</span><span style="color:#111">:</span> <span style="color:#ae81ff">0</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;personnages&#34;</span><span style="color:#111">:</span> <span style="color:#111">[</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;_C&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;PersonnageGraphe&#34;</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;nom&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;James Bond&#34;</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;personnagePrincipal&#34;</span><span style="color:#111">:</span> <span style="color:#00a8c8">true</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;films&#34;</span><span style="color:#111">:</span> <span style="color:#111">[</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">&#34;_R&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;/&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">},</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">&#34;_C&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;FilmGraphe&#34;</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">&#34;titre&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;Bons Baisers de Russie&#34;</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">&#34;annee&#34;</span><span style="color:#111">:</span> <span style="color:#ae81ff">0</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">&#34;personnages&#34;</span><span style="color:#111">:</span> <span style="color:#111">[</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>              <span style="color:#f92672">&#34;_R&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;/personnages/0&#34;</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#111">},</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>              <span style="color:#f92672">&#34;_C&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;PersonnageGraphe&#34;</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>              <span style="color:#f92672">&#34;nom&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;Rosa Klebb&#34;</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>              <span style="color:#f92672">&#34;personnagePrincipal&#34;</span><span style="color:#111">:</span> <span style="color:#00a8c8">false</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>              <span style="color:#f92672">&#34;films&#34;</span><span style="color:#111">:</span> <span style="color:#111">[</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>                  <span style="color:#f92672">&#34;_R&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;/personnages/0/films/1&#34;</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span>              <span style="color:#111">]</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#111">]</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#111">]</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">},</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;_C&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;PersonnageGraphe&#34;</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;nom&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;Docteur No&#34;</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;personnagePrincipal&#34;</span><span style="color:#111">:</span> <span style="color:#00a8c8">false</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;films&#34;</span><span style="color:#111">:</span> <span style="color:#111">[</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">&#34;_R&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;/&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#111">]</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#111">]</span>
+</span></span></code></pre></div><center>    <div class='excerpt note' style=''>    <div style="text-align:left">    <p>NOTE:</p>
+<ul>
+<li>on ne va pas vous demander d&rsquo;écrire du JSON avec l&rsquo;objet spécial <code>{&quot;_R&quot;:&quot;/chemin/cible&quot;}</code></li>
+<li>il vous faut uniquement comprendre que ça existe</li>
+<li>et comprendre la notion de graphe d&rsquo;objets en POO</li>
+</ul>
+</div></div></center>
+</article>
+ 
+                    <br>    <br>    <div class="footer-next-page"/>        <a class="link-next-page" href="https://cartesjava.github.io/efficacite/">↪&nbsp;Chapitre 3: &nbsp;Qu&#39;est-ce que l&#39;efficacité?</a>        </div>    
+                    
+                     
+                    <label for="menu-control" class="hidden book-menu-overlay"></label>
+                </div>
+
+                <footer class="book-footer">
+                    
+<div class="flex flex-wrap justify-between">
+
+    <div>
+        
+    </div>
+
+    <div style="padding-top:2em;">
+        
+
+        
+        <div class="flex justify-end" style="padding-top:1em;">
+            <a href="https://github.com/cartesjava/cartesjava.github.io/edit/main//pages/modelisation/graphe_d_objets/_index.md" target="_blank" rel="noopener">
+                <span>Suggérer une modification</span>
+                <img src="/svg/edit.svg" class="book-icon" alt="Edit" />
+            </a>
+        </div>
+        
+
+        <div class="flex justify-end" style="padding-top:2em;">
+            <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.fr" style="font-size:2em;">
+	            <img alt="Creative Commons License" style="border-width:0" src="/cc.svg" />
+            </a>
+
+            <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.fr" style="font-size:2em;">
+                <img alt="Creative Commons Attribution" style="border-width:0" src="/by.svg" />
+            </a>
+
+            <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.fr" style="font-size:2em;"> 
+                <img alt="Creative Commons ShareAlike" style="border-width:0" src="/sa.svg" />
+            </a>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+<script>(function(){function e(n){const e=window.getSelection(),t=document.createRange();t.selectNodeContents(n),e.removeAllRanges(),e.addRange(t)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+                    
+                </footer>
+            </div>
+
+            
+            <aside class="book-toc">
+                <div class="book-toc-content">
+                    
+
+
+
+<nav id='TableOfContents'>
+    
+
+    
+    
+
+    
+    
+        
+            
+        
+    
+
+    <ul>
+        <li><a href='#graphes-dobjets'>2.3 Graphes d&rsquo;objets</a></li>
+
+        
+
+            
+
+    
+    
+
+    
+    
+        
+            
+        
+    
+
+    <ul>
+        <li><a href='#arbre'>2.3.1 Arbre</a></li>
+
+        
+
+    </ul>
+
+
+
+        
+
+            
+
+    
+    
+
+    
+    
+        
+            
+        
+    
+
+    <ul>
+        <li><a href='#arbre-binaire-de-recherche'>2.3.2 Arbre binaire de recherche</a></li>
+
+        
+
+    </ul>
+
+
+
+        
+
+            
+
+    
+    
+
+    
+    
+        
+            
+        
+    
+
+    <ul>
+        <li><a href='#arbre-binaire-en-java'>2.3.3 Arbre binaire en Java</a></li>
+
+        
+
+    </ul>
+
+
+
+        
+
+            
+
+    
+    
+
+    
+    
+        
+            
+        
+    
+
+    <ul>
+        <li><a href='#exemple-fibonacci'>2.3.4 Exemple: Fibonacci</a></li>
+
+        
+
+    </ul>
+
+
+
+        
+
+            
+
+    
+    
+
+    
+    
+        
+            
+        
+    
+
+    <ul>
+        <li><a href='#d%c3%a9finition'>2.3.5 Définition</a></li>
+
+        
+
+    </ul>
+
+
+
+        
+
+            
+
+    
+    
+
+    
+    
+        
+            
+        
+    
+
+    <ul>
+        <li><a href='#nombre-dor'>2.3.6 Nombre d&rsquo;or</a></li>
+
+        
+
+    </ul>
+
+
+
+        
+
+            
+
+    
+    
+
+    
+    
+        
+            
+        
+    
+
+    <ul>
+        <li><a href='#mod%c3%a9liser-la-suite-de-fibonnaci'>2.3.7 Modéliser la suite de Fibonnaci</a></li>
+
+        
+
+    </ul>
+
+
+
+        
+
+            
+
+    
+    
+
+    
+    
+        
+            
+        
+    
+
+    <ul>
+        <li><a href='#pour-calculer-la-r%c3%a9ponse-et-le-nombre-dor'>2.3.8 Pour calculer la réponse et le nombre d&rsquo;or</a></li>
+
+        
+
+    </ul>
+
+
+
+        
+
+            
+
+    
+    
+
+    
+    
+        
+            
+        
+    
+
+    <ul>
+        <li><a href='#construire-le-graphe-dobjets-r%c3%a9cursivement'>2.3.9 Construire le graphe d&rsquo;objets récursivement</a></li>
+
+        
+
+    </ul>
+
+
+
+        
+
+            
+
+    
+    
+
+    
+    
+        
+            
+        
+    
+
+    <ul>
+        <li><a href='#construire-le-graphe-dobjets-dynamiquement'>2.3.10 Construire le graphe d&rsquo;objets dynamiquement</a></li>
+
+        
+
+    </ul>
+
+
+
+        
+
+            
+
+    
+    
+
+    
+    
+        
+            
+        
+    
+
+    <ul>
+        <li><a href='#graphe'>2.3.11 Graphe</a></li>
+
+        
+
+    </ul>
+
+
+
+        
+
+            
+
+    
+    
+
+    
+    
+        
+            
+        
+    
+
+    <ul>
+        <li><a href='#graphe-dobjets-en-json'>2.3.12 Graphe d&rsquo;objets en JSON</a></li>
+
+        
+
+    </ul>
+
+
+
+        
+
+    </ul>
+
+
+</nav>
+
+
+
+
+
+
+ 
+                </div>
+            </aside>
+            
+        </main>
+
+        
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

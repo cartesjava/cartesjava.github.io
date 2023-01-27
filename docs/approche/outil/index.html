@@ -1,0 +1,2029 @@
+<!DOCTYPE html>
+<html lang="fr-ca" dir="ltr">
+    <head>
+        <meta charset="UTF-8">
+
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Section 1.1: Outil de validation #  1.1.1 Démarrer l&rsquo;outil #  Pour utiliser l&rsquo;outil de validation, il faut l&rsquo;intégrer à un projet Java. Pour l&rsquo;exemple présenter en introduction, on débutera avec le code suivant:
+public class MonTableau extends Tableau {   public void deplacerDecaler() {  // implanter la procédure ici  } } public class Procedure extends ProcedureDecaler&lt;MonTableau&gt; {   public static void main(String[] args) {  NtroClientFx.">
+<meta name="theme-color" content="#FFFFFF">
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="Outil de validation" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://cartesjava.github.io/approche/outil/" />
+
+<title>
+
+
+    Outil de validation 
+
+
+
+</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/book.min.e4869670571a4fc0a50f4a2c889ed6ee3b49dac25cd9095e9eea1f69c426d18a.css" integrity="sha256-5IaWcFcaT8ClD0osiJ7W7jtJ2sJc2QlenuofacQm0Yo=" crossorigin="anonymous">
+  <script defer src="/flexsearch.min.js"></script>
+  <script defer src="/fr.search.min.0e5eca3384d4e84a083eaf733dd004e479c5ffdbd8211494050eba149a9c560e.js" integrity="sha256-Dl7KM4TU6EoIPq9zPdAE5HnF/9vYIRSUBQ66FJqcVg4=" crossorigin="anonymous"></script>
+
+  <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" integrity="sha256-b2&#43;Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC&#43;NdcPIvZhzk=" crossorigin="anonymous"></script>
+
+<script defer src="/reload_videos.min.4a5aa164333a19381a7fd1dde8e03eadc175bdda3a31e8f4fc8e0951775577ca.js" integrity="sha256-SlqhZDM6GTgaf9Hd6OA&#43;rcF1vdo6Mej0/I4JUXdVd8o=" crossorigin="anonymous"></script><link rel="alternate" type="application/rss+xml" href="https://cartesjava.github.io/approche/outil/index.xml" title="Cartes Java" />
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+        
+    </head>
+    <body dir="ltr">
+        <input type="checkbox" class="hidden toggle" id="menu-control" />
+        <input type="checkbox" class="hidden toggle" id="toc-control" />
+        <main class="container flex">
+            <aside class="book-menu">
+                <div class="book-menu-content">
+                    
+<nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><span>Cartes Java</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Rechercher" aria-label="Rechercher" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/preface/" class="">Préface</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/intro/" class="">Introduction</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-b1f25d69250e7772af5811e7ef44e922" class="toggle" checked />
+    <label for="section-b1f25d69250e7772af5811e7ef44e922" class="flex justify-between">
+      <a href="/approche/" class="">1. Présentation de l&#39;approche</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/approche/outil/" class=" active">1.1. Outil de validation</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/approche/langages_et_notations/" class="">1.2. Langages et notations utilisées</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/approche/cartes_a_jouer/" class="">1.3. Visualisations avec des cartes à jouer</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-20d2db300e0f4ab0130280f200c4f2fc" class="toggle"  />
+    <label for="section-20d2db300e0f4ab0130280f200c4f2fc" class="flex justify-between">
+      <a href="/modelisation/" class="">2. Modélisation des données et limitations de l&#39;approche</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/modelisation/objets/" class="">2.1. Objets</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/modelisation/tableau_d_objets/" class="">2.2. Tableaux d&#39;objets</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/modelisation/graphe_d_objets/" class="">2.3. Graphes d&#39;objets</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-89a3727667e5590a4150c67be9175eaa" class="toggle"  />
+    <label for="section-89a3727667e5590a4150c67be9175eaa" class="flex justify-between">
+      <a href="/efficacite/" class="">3. Qu&#39;est-ce que l&#39;efficacité?</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/efficacite/performance_vs_efficacite/" class="">3.1. Performance Vs efficacité</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/efficacite/temps/" class="">3.2. Efficacité en temps</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/efficacite/espace/" class="">3.3. Efficacité en espace</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-b12c28f0f1b1687a56347184fa5203f8" class="toggle"  />
+    <label for="section-b12c28f0f1b1687a56347184fa5203f8" class="flex justify-between">
+      <a href="/listes/" class="">4. Comprendre les listes</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/listes/naive/" class="">4.1. Liste naïve</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/listes/tableau/" class="">4.2. Liste par tableau</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/listes/chainee_simple/" class="">4.3. Liste chaînée simple</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/listes/chainee_double/" class="">4.4. Liste chaînée double</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-4d776affa1be45887905ae21b1d04b2a" class="toggle"  />
+    <label for="section-4d776affa1be45887905ae21b1d04b2a" class="flex justify-between">
+      <a href="/arbres/" class="">5. Comprendre les arbres</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/arbres/generique/" class="">5.1. Arbre générique</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/arbres/binaire/" class="">5.2. Arbre binaire</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-3e48974585d14c8908a67306d3ef0b3b" class="toggle"  />
+    <label for="section-3e48974585d14c8908a67306d3ef0b3b" class="flex justify-between">
+      <a href="/mappages/" class="">6. Comprendre les mappages</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/mappages/naif/" class="">6.1. Mappage naïf</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/mappages/hachage/" class="">6.2. Mappage par hachage</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/mappages/arbre/" class="">6.3. Mappage avec arbre</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/conclusion/" class="">Conclusion</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/bibliographie/" class="">Bibliographie</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-9ea2d72b97e9d02a8b97ae9357b7969b" class="toggle"  />
+    <label for="section-9ea2d72b97e9d02a8b97ae9357b7969b" class="flex justify-between">
+      <a role="button" class="">Annexes</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/annexes/annexe_grand_o/" class="">Annexe 1: la notation grand O</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/annexes/annexe_acceder_exemples/" class="">Annexe 2: accéder aux exemples</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/annexes/annexe_programmer_exemple/" class="">Annexe 3: programmer un nouvel exemple</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/annexes/annexe_modifier_manuel/" class="">Annexe 4: suggérer une modification à ce manuel</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-3b1da941c278c90106392151b814a2c6" class="toggle"  />
+    <label for="section-3b1da941c278c90106392151b814a2c6" class="flex justify-between">
+      <a href="/annexes/annexe_ateliers/" class="">Annexe 5: exemples d&#39;ateliers</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/annexes/annexe_ateliers/deplacer_decaler/" class="">Procédures déplacer/décaler</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/annexes/annexe_ateliers/fibonacci/" class="">Modéliser la suite de Fibonacci</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/annexes/annexe_ateliers/liste_tableau/" class="">Liste par tableau</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/annexes/annexe_ateliers/arbre_binaire/" class="">Arbre binaire</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-47be0624d93c2dddef9d700a6ef60a09" class="toggle"  />
+    <label for="section-47be0624d93c2dddef9d700a6ef60a09" class="flex justify-between">
+      <a href="/annexes/annexe_bilans/" class="">Annexe 6: bilans</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/annexes/annexe_bilans/bilan_juin_2022/" class="">Bilan juin 2022</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/annexes/annexe_bilans/bilan_octobre_2022/" class="">Bilan octobre 2022</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+                </div>
+            </aside>
+
+            <div class="book-page-and-footer">
+                <div class="book-page">
+                    <header class="book-header">
+                        
+<div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Outil de validation</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+
+<aside class="hidden clearfix">
+    
+
+
+
+<nav id='TableOfContents'>
+    
+
+    
+    
+
+    
+    
+        
+            
+        
+    
+
+    <ul>
+        <li><a href='#outil-de-validation'>1.1 Outil de validation</a></li>
+
+        
+
+            
+
+    
+    
+
+    
+    
+        
+            
+        
+    
+
+    <ul>
+        <li><a href='#d%c3%a9marrer-loutil'>1.1.1 Démarrer l&rsquo;outil</a></li>
+
+        
+
+    </ul>
+
+
+
+        
+
+            
+
+    
+    
+
+    
+    
+        
+            
+        
+    
+
+    <ul>
+        <li><a href='#utiliser-loutil'>1.1.2 Utiliser l&rsquo;outil</a></li>
+
+        
+
+            
+
+    
+    
+
+    
+    
+        
+            
+        
+    
+
+    <ul>
+        <li><a href='#visualisation-avec-des-cartes-%c3%a0-jouer'>1.1.2.1 Visualisation avec des cartes à jouer</a></li>
+
+        
+
+    </ul>
+
+
+
+        
+
+            
+
+    
+    
+
+    
+    
+        
+            
+        
+    
+
+    <ul>
+        <li><a href='#s%c3%a9lection-de-diff%c3%a9rents-cas-de-test'>1.1.2.2 Sélection de différents cas de test</a></li>
+
+        
+
+    </ul>
+
+
+
+        
+
+            
+
+    
+    
+
+    
+    
+        
+            
+        
+    
+
+    <ul>
+        <li><a href='#navigation-entre-les-%c3%a9tapes-de-la-proc%c3%a9dure'>1.1.2.3 Navigation entre les étapes de la procédure</a></li>
+
+        
+
+    </ul>
+
+
+
+        
+
+            
+
+    
+    
+
+    
+    
+        
+            
+        
+    
+
+    <ul>
+        <li><a href='#valeurs-des-attributs'>1.1.2.4 Valeurs des attributs</a></li>
+
+        
+
+    </ul>
+
+
+
+        
+
+    </ul>
+
+
+
+        
+
+            
+
+    
+    
+
+    
+    
+        
+            
+        
+    
+
+    <ul>
+        <li><a href='#exp%c3%a9rimenter-avec-les-donn%c3%a9es'>1.1.3 Expérimenter avec les données</a></li>
+
+        
+
+    </ul>
+
+
+
+        
+
+            
+
+    
+    
+
+    
+    
+        
+            
+        
+    
+
+    <ul>
+        <li><a href='#trouver-des-erreurs-dans-la-proc%c3%a9dure-implant%c3%a9e'>1.1.4 Trouver des erreurs dans la procédure implantée</a></li>
+
+        
+
+    </ul>
+
+
+
+        
+
+            
+
+    
+    
+
+    
+    
+        
+            
+        
+    
+
+    <ul>
+        <li><a href='#afficher-le-graphe-dobjets'>1.1.5 Afficher le graphe d&rsquo;objets</a></li>
+
+        
+
+    </ul>
+
+
+
+        
+
+    </ul>
+
+
+</nav>
+
+
+
+
+
+
+
+</aside>
+
+ 
+                    </header>
+
+                    
+                    
+<article class="markdown"><h1 id="outil-de-validation">
+
+
+
+
+
+
+
+
+
+
+
+
+Section 1.1: 
+
+    
+
+
+
+
+
+Outil de validation
+
+<a class="anchor" href="#outil-de-validation">#</a>
+
+</h1>
+<h2 id="démarrer-loutil">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
+
+    
+        
+        
+        
+        
+    
+
+    
+
+        
+        1.1.1
+
+    
+
+
+
+
+
+Démarrer l&rsquo;outil
+
+<a class="anchor" href="#d%c3%a9marrer-loutil">#</a>
+
+</h2>
+<p>Pour utiliser l&rsquo;outil de validation, il faut l&rsquo;intégrer à un projet Java.
+Pour l&rsquo;exemple présenter en <a href="/intro">introduction</a>, on
+débutera avec le code suivant:</p>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#00a8c8">public</span> <span style="color:#00a8c8">class</span> <span style="color:#75af00">MonTableau</span> <span style="color:#00a8c8">extends</span> <span style="color:#111">Tableau</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">public</span> <span style="color:#00a8c8">void</span> <span style="color:#75af00">deplacerDecaler</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// implanter la procédure ici
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#00a8c8">public</span> <span style="color:#00a8c8">class</span> <span style="color:#75af00">Procedure</span> <span style="color:#00a8c8">extends</span> <span style="color:#111">ProcedureDecaler</span><span style="color:#f92672">&lt;</span><span style="color:#111">MonTableau</span><span style="color:#f92672">&gt;</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">public</span> <span style="color:#00a8c8">static</span> <span style="color:#00a8c8">void</span> <span style="color:#75af00">main</span><span style="color:#f92672">(</span><span style="color:#111">String</span><span style="color:#f92672">[]</span> <span style="color:#111">args</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">NtroClientFx</span><span style="color:#f92672">.</span><span style="color:#75af00">launch</span><span style="color:#f92672">(</span><span style="color:#111">args</span><span style="color:#f92672">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">protected</span> <span style="color:#111">Class</span><span style="color:#f92672">&lt;</span><span style="color:#111">MonTableau</span><span style="color:#f92672">&gt;</span> <span style="color:#75af00">classeMonTableau</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#00a8c8">return</span> <span style="color:#111">MonTableau</span><span style="color:#f92672">.</span><span style="color:#75af00">class</span><span style="color:#f92672">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span></code></pre></div><p>À l&rsquo;exception de la méthode <code>deplacerDelacer</code>, qui doit être complétée, les
+étudiant·s n&rsquo;ont pas à comprendre ce code, qui ne sert qu&rsquo;à intégrer
+l&rsquo;outil de validation à leur projet Java. Pour plus de détails, voir les exemples d&rsquo;ateliers
+à <a href="/annexe-ateliers">l&rsquo;Annexe 4</a>.</p>
+<p>Exécuter le projet Java va démarrer l&rsquo;outil:</p>
+<center>
+<img class="figure" src="outil01.png"/>
+</center>
+<p>À noter que bien que le manuel fait référence à un outil de validation (au
+singulier), il faut en réalité intégrer une version différente de l&rsquo;outil de
+validation pour chaque procédure à valider. Chaque version définit aussi sa
+propre visualiation des données avec des cartes à jouer.  Voir <a
+href="/annexe-ateliers">l&rsquo;Annexe 2</a> pour plus de détails.</p>
+<h2 id="utiliser-loutil">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
+
+    
+        
+        
+        
+        
+    
+
+    
+
+        
+        1.1.2
+
+    
+
+
+
+
+
+Utiliser l&rsquo;outil
+
+<a class="anchor" href="#utiliser-loutil">#</a>
+
+</h2>
+<p>Voici les affichages principaux de l&rsquo;outil de valiation</p>
+<center>
+<img class="figure" src="outil02.png"/>
+</center>
+<h3 id="visualisation-avec-des-cartes-à-jouer">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
+
+    
+        
+        
+        
+        
+    
+
+    
+
+        
+        1.1.2.1
+
+    
+
+
+
+
+
+Visualisation avec des cartes à jouer
+
+<a class="anchor" href="#visualisation-avec-des-cartes-%c3%a0-jouer">#</a>
+
+</h3>
+<center>
+<video autoplay loop mute controls="false" style="width:300px;">
+    <source src="visualisation01.mp4" type="video/mp4"/>
+    <source src="visualisation01.mp4" type="video/webm"/>
+</video>
+</center>
+<h3 id="sélection-de-différents-cas-de-test">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
+
+    
+        
+        
+        
+        
+    
+
+    
+
+        
+        1.1.2.2
+
+    
+
+
+
+
+
+Sélection de différents cas de test
+
+<a class="anchor" href="#s%c3%a9lection-de-diff%c3%a9rents-cas-de-test">#</a>
+
+</h3>
+<center>
+<img class="figure" src="cas_de_test01.png"/>
+</center>
+<center>
+<table>
+<tr>
+<th>Symbole </th>
+<th>Signification </th>
+</tr>
+<tr>
+<th><span style="font-size:1.5rem;">✔</span></th>
+<td>Validation réussie</td>
+</tr>
+<tr>
+<th><span style="font-size:1.5rem;">✗</span></th>
+<td>Erreur de validation</td>
+</tr>
+<tr>
+<th><span style="font-size:1.5rem;">¤</span></th>
+<td>Plantage lors de la validation</td>
+</tr>
+</table>
+</center>
+<h3 id="navigation-entre-les-étapes-de-la-procédure">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
+
+    
+        
+        
+        
+        
+    
+
+    
+
+        
+        1.1.2.3
+
+    
+
+
+
+
+
+Navigation entre les étapes de la procédure
+
+<a class="anchor" href="#navigation-entre-les-%c3%a9tapes-de-la-proc%c3%a9dure">#</a>
+
+</h3>
+<center>
+<video autoplay loop mute controls="false" style="width:300px;">
+    <source src="navigation01.mp4" type="video/mp4"/>
+    <source src="navigation02.mp4" type="video/webm"/>
+</video>
+</center>
+<h3 id="valeurs-des-attributs">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
+
+    
+        
+        
+        
+        
+    
+
+    
+
+        
+        1.1.2.4
+
+    
+
+
+
+
+
+Valeurs des attributs
+
+<a class="anchor" href="#valeurs-des-attributs">#</a>
+
+</h3>
+<center>
+<table>
+<tr>
+<th>Étape 1</th>
+<th>Étape 2</th>
+</tr>
+<tr>
+<td>
+<img src="variables01.png"/>
+</td>
+<td>
+<img src="variables02.png"/>
+</td>
+</tr>
+<tr>
+<th>Étape 3</th>
+<th>Étape 4</th>
+</tr>
+<td>
+<img src="variables03.png"/>
+</td>
+<td>
+<img src="variables04.png"/>
+</td>
+</tr>
+</table>
+</center>
+<h2 id="expérimenter-avec-les-données">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
+
+    
+        
+        
+        
+        
+    
+
+    
+
+        
+        1.1.3
+
+    
+
+
+
+
+
+Expérimenter avec les données
+
+<a class="anchor" href="#exp%c3%a9rimenter-avec-les-donn%c3%a9es">#</a>
+
+</h2>
+<p>Format JSON à <a href="/approche/langages_et_notations/#json">Section 1.2.3</a></p>
+<center>
+<video class="border-black" autoplay loop mute controls="false" style="max-width:75%;">
+    <source src="modifier_json.mp4" type="video/mp4"/>
+    <source src="modifier_json.mp4" type="video/webm"/>
+</video>
+</center>
+<h2 id="trouver-des-erreurs-dans-la-procédure-implantée">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
+
+    
+        
+        
+        
+        
+    
+
+    
+
+        
+        1.1.4
+
+    
+
+
+
+
+
+Trouver des erreurs dans la procédure implantée
+
+<a class="anchor" href="#trouver-des-erreurs-dans-la-proc%c3%a9dure-implant%c3%a9e">#</a>
+
+</h2>
+<center>
+<table>
+<tr>
+<th>
+Procédure correcte (solution)
+</th>
+<td>
+<video autoplay loop mute controls="false" style="width:300px;">
+    <source src="visualisation01.mp4" type="video/mp4"/>
+    <source src="visualisation01.mp4" type="video/webm"/>
+</video>
+</td>
+</tr>
+<tr>
+<th>
+Procédure erronée
+</th>
+<td>
+<video autoplay loop mute controls="false" style="width:300px;">
+    <source src="trouver_erreur01.mp4" type="video/mp4"/>
+    <source src="trouver_erreur01.mp4" type="video/webm"/>
+</video>
+</td>
+</tr>
+</table>
+</center>
+<h2 id="afficher-le-graphe-dobjets">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
+
+    
+        
+        
+        
+        
+    
+
+    
+
+        
+        1.1.5
+
+    
+
+
+
+
+
+Afficher le graphe d&rsquo;objets
+
+<a class="anchor" href="#afficher-le-graphe-dobjets">#</a>
+
+</h2>
+<p>Graphe d&rsquo;objets <a href="/approche/langages_et_notations/#graphe-dobjets">Section 1.2.2</a></p>
+<table>
+<tr>
+<th>
+Données JSON
+</th>
+<th>
+Graphe d'objets
+</th>
+</tr>
+<tr>
+<td>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;_C&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;MonTableau&#34;</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;aDeplacer&#34;</span><span style="color:#111">:</span> <span style="color:#ae81ff">3</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;i&#34;</span><span style="color:#111">:</span> <span style="color:#ae81ff">0</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;cartes&#34;</span><span style="color:#111">:</span> <span style="color:#111">[</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">null</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;_C&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;Carte&#34;</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;numero&#34;</span><span style="color:#111">:</span> <span style="color:#ae81ff">5</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;sorte&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;TREFLE&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">},</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;_C&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;Carte&#34;</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;numero&#34;</span><span style="color:#111">:</span> <span style="color:#ae81ff">3</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;sorte&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;CARREAU&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">},</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">null</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;_C&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;Carte&#34;</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;numero&#34;</span><span style="color:#111">:</span> <span style="color:#ae81ff">7</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;sorte&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;PIQUE&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">},</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;_C&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;Carte&#34;</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;numero&#34;</span><span style="color:#111">:</span> <span style="color:#ae81ff">2</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;sorte&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;COEUR&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#111">],</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;memoireA&#34;</span><span style="color:#111">:</span> <span style="color:#00a8c8">null</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;memoireB&#34;</span><span style="color:#111">:</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;_C&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;Carte&#34;</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;numero&#34;</span><span style="color:#111">:</span> <span style="color:#ae81ff">2</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;sorte&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;TREFLE&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">}</span>
+</span></span></code></pre></div></td>
+<td>
+<img src="MonTableau.png"/>
+</td>
+</tr>
+</table>
+</article>
+ 
+                    <br>    <br>    <div class="footer-next-page"/>        <a class="link-next-page" href="https://cartesjava.github.io/approche/langages_et_notations/">↪&nbsp;Section 1.2: &nbsp;Langages et notations utilisées</a>        </div>    
+                    
+                     
+                    <label for="menu-control" class="hidden book-menu-overlay"></label>
+                </div>
+
+                <footer class="book-footer">
+                    
+<div class="flex flex-wrap justify-between">
+
+    <div>
+        
+    </div>
+
+    <div style="padding-top:2em;">
+        
+
+        
+        <div class="flex justify-end" style="padding-top:1em;">
+            <a href="https://github.com/cartesjava/cartesjava.github.io/edit/main//pages/approche/outil/_index.md" target="_blank" rel="noopener">
+                <span>Suggérer une modification</span>
+                <img src="/svg/edit.svg" class="book-icon" alt="Edit" />
+            </a>
+        </div>
+        
+
+        <div class="flex justify-end" style="padding-top:2em;">
+            <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.fr" style="font-size:2em;">
+	            <img alt="Creative Commons License" style="border-width:0" src="/cc.svg" />
+            </a>
+
+            <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.fr" style="font-size:2em;">
+                <img alt="Creative Commons Attribution" style="border-width:0" src="/by.svg" />
+            </a>
+
+            <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.fr" style="font-size:2em;"> 
+                <img alt="Creative Commons ShareAlike" style="border-width:0" src="/sa.svg" />
+            </a>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+<script>(function(){function e(n){const e=window.getSelection(),t=document.createRange();t.selectNodeContents(n),e.removeAllRanges(),e.addRange(t)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+                    
+                </footer>
+            </div>
+
+            
+            <aside class="book-toc">
+                <div class="book-toc-content">
+                    
+
+
+
+<nav id='TableOfContents'>
+    
+
+    
+    
+
+    
+    
+        
+            
+        
+    
+
+    <ul>
+        <li><a href='#outil-de-validation'>1.1 Outil de validation</a></li>
+
+        
+
+            
+
+    
+    
+
+    
+    
+        
+            
+        
+    
+
+    <ul>
+        <li><a href='#d%c3%a9marrer-loutil'>1.1.1 Démarrer l&rsquo;outil</a></li>
+
+        
+
+    </ul>
+
+
+
+        
+
+            
+
+    
+    
+
+    
+    
+        
+            
+        
+    
+
+    <ul>
+        <li><a href='#utiliser-loutil'>1.1.2 Utiliser l&rsquo;outil</a></li>
+
+        
+
+            
+
+    
+    
+
+    
+    
+        
+            
+        
+    
+
+    <ul>
+        <li><a href='#visualisation-avec-des-cartes-%c3%a0-jouer'>1.1.2.1 Visualisation avec des cartes à jouer</a></li>
+
+        
+
+    </ul>
+
+
+
+        
+
+            
+
+    
+    
+
+    
+    
+        
+            
+        
+    
+
+    <ul>
+        <li><a href='#s%c3%a9lection-de-diff%c3%a9rents-cas-de-test'>1.1.2.2 Sélection de différents cas de test</a></li>
+
+        
+
+    </ul>
+
+
+
+        
+
+            
+
+    
+    
+
+    
+    
+        
+            
+        
+    
+
+    <ul>
+        <li><a href='#navigation-entre-les-%c3%a9tapes-de-la-proc%c3%a9dure'>1.1.2.3 Navigation entre les étapes de la procédure</a></li>
+
+        
+
+    </ul>
+
+
+
+        
+
+            
+
+    
+    
+
+    
+    
+        
+            
+        
+    
+
+    <ul>
+        <li><a href='#valeurs-des-attributs'>1.1.2.4 Valeurs des attributs</a></li>
+
+        
+
+    </ul>
+
+
+
+        
+
+    </ul>
+
+
+
+        
+
+            
+
+    
+    
+
+    
+    
+        
+            
+        
+    
+
+    <ul>
+        <li><a href='#exp%c3%a9rimenter-avec-les-donn%c3%a9es'>1.1.3 Expérimenter avec les données</a></li>
+
+        
+
+    </ul>
+
+
+
+        
+
+            
+
+    
+    
+
+    
+    
+        
+            
+        
+    
+
+    <ul>
+        <li><a href='#trouver-des-erreurs-dans-la-proc%c3%a9dure-implant%c3%a9e'>1.1.4 Trouver des erreurs dans la procédure implantée</a></li>
+
+        
+
+    </ul>
+
+
+
+        
+
+            
+
+    
+    
+
+    
+    
+        
+            
+        
+    
+
+    <ul>
+        <li><a href='#afficher-le-graphe-dobjets'>1.1.5 Afficher le graphe d&rsquo;objets</a></li>
+
+        
+
+    </ul>
+
+
+
+        
+
+    </ul>
+
+
+</nav>
+
+
+
+
+
+
+ 
+                </div>
+            </aside>
+            
+        </main>
+
+        
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
