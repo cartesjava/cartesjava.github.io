@@ -448,10 +448,9 @@ Le résultat est qu'on a des références multiples: plusieurs références vers
 Si on visualise du code typique avec les cartes, on va visualiser les références multiples en affichant plusieurs copies d'une carte.
 
 <center>
-<video autoplay loop mute controls="false" style="width:300px;">
-    <source src="references_multiples.webm" type="video/mp4"/>
-    <source src="references_multiples.mp4" type="video/webm"/>
-</video>
+<div style="max-width:300px;"/>
+    {{% animation src="/modelisation/tableau_d_objets/references_multiples.webm" %}}
+</div>
 </center>
 
 

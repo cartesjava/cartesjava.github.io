@@ -130,7 +130,7 @@ Comme exemple, nous développons une modélisation de la séquence de Fibonacci.
 
 1. Avec des appels récursifs, on va construire d'abord, puis calculer
 
-    {{% animation src="/modelisation/fibonacci/calcul_recursif.webm" width="100%" %}}
+    {{% animation src="/modelisation/graphe_d_objets/calcul_recursif.webm" width="100%" %}}
 
     * on crée d'abord l'objet `n`, puis `n-1`, et ainsi de suite jusqu'à l'objet `0`
 
@@ -176,7 +176,7 @@ Comme exemple, nous développons une modélisation de la séquence de Fibonacci.
 
 1. En programmation dynamique, on calcule en même temps qu'on construit
 
-    {{% animation src="/modelisation/fibonacci/calcul_dynamique.webm" width="100%" %}}
+    {{% animation src="/modelisation/graphe_d_objets/calcul_dynamique.webm" width="100%" %}}
 
     * on crée d'abord l'objet `0`, puis `1`, et ainsi de suite jusqu'à l'objet `n`
 

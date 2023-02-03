@@ -65,10 +65,9 @@ Voici les affichages principaux de l'outil de valiation.
 Des cartes à jouer animées permettent de visualiser l'exécution d'une procédure informatique.
 
 <center>
-<video autoplay loop mute controls="false" style="width:300px;">
-    <source src="visualisation01.mp4" type="video/mp4"/>
-    <source src="visualisation01.mp4" type="video/webm"/>
-</video>
+<div style="max-width:300px;"/>
+    {{% animation src="/approche/outil/visualisation01.webm" %}}
+</div>
 </center>
 
 L'exécution de la procédure se déroule en un certain nombre d'étape. La transition d'une étape à l'autre est illustrée par une animation où, 
@@ -128,11 +127,11 @@ On peut comparer, étape par étape, le déroulement de la solution au déroulem
 de procédure implantée par l'étudiant·e.
 
 <center>
-<video autoplay loop mute controls="false" style="width:300px;">
-    <source src="navigation01.mp4" type="video/mp4"/>
-    <source src="navigation02.mp4" type="video/webm"/>
-</video>
+<div style="max-width:300px;"/>
+    {{% animation src="/approche/outil/navigation01.webm" %}}
+</div>
 </center>
+
 
 À noter que l'outil de validation exécute la procédure dès le démarrage
 Les étapes d'exécution sont ainsi mémorisées à l'avance.
@@ -177,10 +176,9 @@ L'outil supporte la modification en temps réel du fichier de données correspon
 Cette fonctionnalité permet de créer des exercices où les étudiant.es doivent encoder des données de façon à produire la bonne visualisation.
 
 <center>
-<video class="border-black" autoplay loop mute controls="false" style="max-width:75%;">
-    <source src="modifier_json.mp4" type="video/mp4"/>
-    <source src="modifier_json.mp4" type="video/webm"/>
-</video>
+<div style="max-width:75%;"/>
+    {{% animation src="/approche/outil/modifier_json.webm" %}}
+</div>
 </center>
 
 À noter que l'outil sauvegarde les données dans un fichier `.json` situé dans le répertoire `_storage/models` (le format JSON est présenté à la <a href="/approche/langages_et_notations/#json">Section 1.2.3</a>).
@@ -205,10 +203,9 @@ Procédure correcte (solution)
 </th>
 
 <td>
-<video autoplay loop mute controls="false" style="width:300px;">
-    <source src="visualisation01.mp4" type="video/mp4"/>
-    <source src="visualisation01.mp4" type="video/webm"/>
-</video>
+<div style="max-width:300px;"/>
+    {{% animation src="/approche/outil/visualisation01.webm" %}}
+</div>
 </td>
 </tr>
 
@@ -218,10 +215,9 @@ Procédure erronée
 </th>
 
 <td>
-<video autoplay loop mute controls="false" style="width:300px;">
-    <source src="trouver_erreur01.mp4" type="video/mp4"/>
-    <source src="trouver_erreur01.mp4" type="video/webm"/>
-</video>
+<div style="max-width:300px;"/>
+    {{% animation src="/approche/outil/trouver_erreur01.webm" %}}
+</div>
 </td>
 </tr>
 </table>
