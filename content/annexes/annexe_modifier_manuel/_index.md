@@ -46,5 +46,17 @@ Le dépôt source est ici: https://github.com/cartesjava/cartesjava.github.io
 1. Attendre que le propriétaire du dépôt d'origine évalue votre suggestion
 
 
+## Modifier le manuel en local
+
+1. Installer <a href="https://gohugo.io/" target="_blank">Hugo</a> sur votre machine
+
+1. Démarrer Hugo à la racine du dépôt Git `cartesjava.github.io`
+
+    ```bash
+    $ hugo server
+    ```
+
+1. Naviguer vers <a href="http://localhost:1313" target="blank">localhost:1313</a>
+
 
     

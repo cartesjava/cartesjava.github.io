@@ -7,10 +7,10 @@
 
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Section 2.3: Graphes d&rsquo;objets #  2.3.1 Arbre #    Un arbre est une structure avec une racine et des branches:
-   NOTE: l&rsquo;arbre est typiquement dessiné avec la racine en haut    Chaque cercle ci-haut est appelé un noeud
-  Chaque noeud peut avoir des enfants (indiqués par les flèches)
-  Chaque noeud a exactement un parent (sauf la racine qui n&rsquo;a aucun parent)">
+<meta name="description" content="Section 2.3: Graphes d&rsquo;objets #  Dans le cas général, des données orientée-objet forme un graphe.
+2.3.1 Graphe film/personnage #  On peut compléter ainsi la modélisation des films et des personnages présentées aux chapitres précédents.
+ Un Personnage apparaît dans plusieurs Film Un Film contient plusieurs Personnage  Voici un exemple de données se conformant à cette modélisation.
+ Le Personnage James Bond apparaît dans deux films: Dr. No et Bon Baisers de Russie Le Film Dr.">
 <meta name="theme-color" content="#FFFFFF">
 <meta name="color-scheme" content="light dark"><meta property="og:title" content="Graphes d&#39;objets" />
 <meta property="og:description" content="" />
@@ -27,9 +27,9 @@
 </title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
-<link rel="stylesheet" href="/book.min.e4869670571a4fc0a50f4a2c889ed6ee3b49dac25cd9095e9eea1f69c426d18a.css" integrity="sha256-5IaWcFcaT8ClD0osiJ7W7jtJ2sJc2QlenuofacQm0Yo=" crossorigin="anonymous">
+<link rel="stylesheet" href="/book.min.6eff5a840770643758c6b07018dc6302b7461f1593281c294fae77c00766cf48.css" integrity="sha256-bv9ahAdwZDdYxrBwGNxjArdGHxWTKBwpT653wAdmz0g=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/fr.search.min.0e5eca3384d4e84a083eaf733dd004e479c5ffdbd8211494050eba149a9c560e.js" integrity="sha256-Dl7KM4TU6EoIPq9zPdAE5HnF/9vYIRSUBQ66FJqcVg4=" crossorigin="anonymous"></script>
+  <script defer src="/fr.search.min.551de89f158a3d7e4917d34fe84ebee48f3321e7e5f7f875b849dd5829f275a5.js" integrity="sha256-VR3onxWKPX5JF9NP6E6&#43;5I8zIefl9/h1uEndWCnydaU=" crossorigin="anonymous"></script>
 
   <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" integrity="sha256-b2&#43;Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC&#43;NdcPIvZhzk=" crossorigin="anonymous"></script>
 
@@ -907,7 +907,7 @@ https://github.com/alex-shpak/hugo-book
     
 
     <ul>
-        <li><a href='#arbre'>2.3.1 Arbre</a></li>
+        <li><a href='#graphe-filmpersonnage'>2.3.1 Graphe film/personnage</a></li>
 
         
 
@@ -930,7 +930,7 @@ https://github.com/alex-shpak/hugo-book
     
 
     <ul>
-        <li><a href='#arbre-binaire-de-recherche'>2.3.2 Arbre binaire de recherche</a></li>
+        <li><a href='#exemple-fibonacci'>2.3.2 Exemple: Fibonacci</a></li>
 
         
 
@@ -953,7 +953,7 @@ https://github.com/alex-shpak/hugo-book
     
 
     <ul>
-        <li><a href='#arbre-binaire-en-java'>2.3.3 Arbre binaire en Java</a></li>
+        <li><a href='#d%c3%a9finition'>2.3.3 Définition</a></li>
 
         
 
@@ -976,7 +976,7 @@ https://github.com/alex-shpak/hugo-book
     
 
     <ul>
-        <li><a href='#exemple-fibonacci'>2.3.4 Exemple: Fibonacci</a></li>
+        <li><a href='#nombre-dor'>2.3.4 Nombre d&rsquo;or</a></li>
 
         
 
@@ -999,7 +999,7 @@ https://github.com/alex-shpak/hugo-book
     
 
     <ul>
-        <li><a href='#d%c3%a9finition'>2.3.5 Définition</a></li>
+        <li><a href='#mod%c3%a9liser-la-suite-de-fibonnaci'>2.3.5 Modéliser la suite de Fibonnaci</a></li>
 
         
 
@@ -1022,7 +1022,7 @@ https://github.com/alex-shpak/hugo-book
     
 
     <ul>
-        <li><a href='#nombre-dor'>2.3.6 Nombre d&rsquo;or</a></li>
+        <li><a href='#pour-calculer-la-r%c3%a9ponse-et-le-nombre-dor'>2.3.6 Pour calculer la réponse et le nombre d&rsquo;or</a></li>
 
         
 
@@ -1045,7 +1045,7 @@ https://github.com/alex-shpak/hugo-book
     
 
     <ul>
-        <li><a href='#mod%c3%a9liser-la-suite-de-fibonnaci'>2.3.7 Modéliser la suite de Fibonnaci</a></li>
+        <li><a href='#construire-le-graphe-dobjets-r%c3%a9cursivement'>2.3.7 Construire le graphe d&rsquo;objets récursivement</a></li>
 
         
 
@@ -1068,99 +1068,7 @@ https://github.com/alex-shpak/hugo-book
     
 
     <ul>
-        <li><a href='#pour-calculer-la-r%c3%a9ponse-et-le-nombre-dor'>2.3.8 Pour calculer la réponse et le nombre d&rsquo;or</a></li>
-
-        
-
-    </ul>
-
-
-
-        
-
-            
-
-    
-    
-
-    
-    
-        
-            
-        
-    
-
-    <ul>
-        <li><a href='#construire-le-graphe-dobjets-r%c3%a9cursivement'>2.3.9 Construire le graphe d&rsquo;objets récursivement</a></li>
-
-        
-
-    </ul>
-
-
-
-        
-
-            
-
-    
-    
-
-    
-    
-        
-            
-        
-    
-
-    <ul>
-        <li><a href='#construire-le-graphe-dobjets-dynamiquement'>2.3.10 Construire le graphe d&rsquo;objets dynamiquement</a></li>
-
-        
-
-    </ul>
-
-
-
-        
-
-            
-
-    
-    
-
-    
-    
-        
-            
-        
-    
-
-    <ul>
-        <li><a href='#graphe'>2.3.11 Graphe</a></li>
-
-        
-
-    </ul>
-
-
-
-        
-
-            
-
-    
-    
-
-    
-    
-        
-            
-        
-    
-
-    <ul>
-        <li><a href='#graphe-dobjets-en-json'>2.3.12 Graphe d&rsquo;objets en JSON</a></li>
+        <li><a href='#construire-le-graphe-dobjets-dynamiquement'>2.3.8 Construire le graphe d&rsquo;objets dynamiquement</a></li>
 
         
 
@@ -1214,7 +1122,8 @@ Graphes d&rsquo;objets
 <a class="anchor" href="#graphes-dobjets">#</a>
 
 </h1>
-<h2 id="arbre">
+<p>Dans le cas général, des données orientée-objet forme un graphe.</p>
+<h2 id="graphe-filmpersonnage">
 
 
 
@@ -1251,32 +1160,24 @@ Graphes d&rsquo;objets
 
 
 
-Arbre
+Graphe film/personnage
 
-<a class="anchor" href="#arbre">#</a>
+<a class="anchor" href="#graphe-filmpersonnage">#</a>
 
 </h2>
+<p>On peut compléter ainsi la modélisation des films et des personnages présentées aux chapitres précédents.</p>
+<img class="figure no-border" src="FilmGraphe.png"/>
 <ul>
-<li>
-<p>Un arbre est une structure avec une racine et des branches:</p>
-  <center>
-      <img src="arbre01.svg" width="50%">
-  </center>
+<li>Un <code>Personnage</code> apparaît dans plusieurs <code>Film</code></li>
+<li>Un <code>Film</code> contient plusieurs <code>Personnage</code></li>
+</ul>
+<p>Voici un exemple de données se conformant à cette modélisation.</p>
+<img src="FilmGraphe01.png"/>
 <ul>
-<li>NOTE: l&rsquo;arbre est typiquement dessiné avec la racine en haut</li>
+<li>Le <code>Personnage</code> James Bond apparaît dans deux films: Dr. No et Bon Baisers de Russie</li>
+<li>Le <code>Film</code> Dr. No contient deux personnages: James Bond et Dr. no</li>
 </ul>
-</li>
-<li>
-<p>Chaque cercle ci-haut est appelé un noeud</p>
-</li>
-<li>
-<p>Chaque noeud peut avoir des enfants (indiqués par les flèches)</p>
-</li>
-<li>
-<p>Chaque noeud a exactement un parent (sauf la racine qui n&rsquo;a aucun parent)</p>
-</li>
-</ul>
-<h2 id="arbre-binaire-de-recherche">
+<h2 id="exemple-fibonacci">
 
 
 
@@ -1313,164 +1214,14 @@ Arbre
 
 
 
-Arbre binaire de recherche
-
-<a class="anchor" href="#arbre-binaire-de-recherche">#</a>
-
-</h2>
-<ul>
-<li>
-<p>C&rsquo;est un type d&rsquo;arbre très utilisé en informatique:</p>
-  <center>
-      <img src="arbre02.svg" width="50%">
-  </center>
-</li>
-<li>
-<p>Chaque noeud contient un <code>Comparable</code> (p.ex. un <code>int</code>)</p>
-</li>
-<li>
-<p>Chaque noeud a au plus deux enfants</p>
-</li>
-<li>
-<p>L&rsquo;enfant à gauche est toujours plus petit que le parent (et grand-parent, etc.)</p>
-<ul>
-<li>p.ex.: <code>0 &lt; 1</code> et <code>4&lt;5</code></li>
-</ul>
-</li>
-<li>
-<p>L&rsquo;enfant à droite est toujours plus grand que le parent (et grand-parent, etc.)</p>
-<ul>
-<li>p.ex.: <code>5&gt;3</code> et <code>2&gt;1</code></li>
-</ul>
-</li>
-</ul>
-<h2 id="arbre-binaire-en-java">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-    
-    
-
-    
-        
-        
-        
-        
-    
-
-    
-
-        
-        2.3.3
-
-    
-
-
-
-
-
-Arbre binaire en Java
-
-<a class="anchor" href="#arbre-binaire-en-java">#</a>
-
-</h2>
-<ul>
-<li>
-<p>Il suffit de représenter un <code>Noeud</code></p>
-  <img class="figure" src="Noeud.png"/>
-</li>
-<li>
-<p>La définition de <code>Noeud</code> est récursive:</p>
-<ul>
-<li>Qu&rsquo;est-ce qu&rsquo;un <code>Noeud</code>?
-<ul>
-<li>quelque chose qui contient deux noeuds!
-<ul>
-<li><code>enfantGauche()</code> et <code>enfantDroit()</code></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>
-<p>Par exemple, pour représenter l&rsquo;arbre ci-haut:</p>
-</li>
-</ul>
-<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#111">Noeud</span> <span style="color:#111">racine</span> <span style="color:#f92672">=</span> <span style="color:#00a8c8">new</span> <span style="color:#111">MonNoeud</span><span style="color:#f92672">(</span><span style="color:#111">3</span><span style="color:#f92672">);</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#111">Noeud</span> <span style="color:#111">gauche</span> <span style="color:#f92672">=</span> <span style="color:#00a8c8">new</span> <span style="color:#111">MonNoeud</span><span style="color:#f92672">(</span><span style="color:#111">1</span><span style="color:#f92672">);</span>
-</span></span><span style="display:flex;"><span><span style="color:#111">Noeud</span> <span style="color:#111">droite</span> <span style="color:#f92672">=</span> <span style="color:#00a8c8">new</span> <span style="color:#111">MonNoeud</span><span style="color:#f92672">(</span><span style="color:#111">5</span><span style="color:#f92672">);</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#111">Noeud</span> <span style="color:#111">gaucheGauche</span> <span style="color:#f92672">=</span> <span style="color:#00a8c8">new</span> <span style="color:#111">MonNoeud</span><span style="color:#f92672">(</span><span style="color:#111">0</span><span style="color:#f92672">);</span>
-</span></span><span style="display:flex;"><span><span style="color:#111">Noeud</span> <span style="color:#111">gaucheDroite</span><span style="color:#f92672">=</span> <span style="color:#00a8c8">new</span> <span style="color:#111">MonNoeud</span><span style="color:#f92672">(</span><span style="color:#111">2</span><span style="color:#f92672">);</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#111">Noeud</span> <span style="color:#111">droiteGauche</span> <span style="color:#f92672">=</span> <span style="color:#00a8c8">new</span> <span style="color:#111">MonNoeud</span><span style="color:#f92672">(</span><span style="color:#111">4</span><span style="color:#f92672">);</span>
-</span></span><span style="display:flex;"><span><span style="color:#111">Noeud</span> <span style="color:#111">droiteDroite</span><span style="color:#f92672">=</span> <span style="color:#00a8c8">new</span> <span style="color:#111">MonNoeud</span><span style="color:#f92672">(</span><span style="color:#111">6</span><span style="color:#f92672">);</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#111">racine</span><span style="color:#f92672">.</span><span style="color:#75af00">setEnfantGauche</span><span style="color:#f92672">(</span><span style="color:#111">gauche</span><span style="color:#f92672">);</span>
-</span></span><span style="display:flex;"><span><span style="color:#111">racine</span><span style="color:#f92672">.</span><span style="color:#75af00">setEnfantDroit</span><span style="color:#f92672">(</span><span style="color:#111">droite</span><span style="color:#f92672">);</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#111">gauche</span><span style="color:#f92672">.</span><span style="color:#75af00">setEnfantGauche</span><span style="color:#f92672">(</span><span style="color:#111">gaucheGauche</span><span style="color:#f92672">);</span>
-</span></span><span style="display:flex;"><span><span style="color:#111">gauche</span><span style="color:#f92672">.</span><span style="color:#75af00">setEnfantDroit</span><span style="color:#f92672">(</span><span style="color:#111">gaucheDroite</span><span style="color:#f92672">);</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#111">droite</span><span style="color:#f92672">.</span><span style="color:#75af00">setEnfantGauche</span><span style="color:#f92672">(</span><span style="color:#111">droiteGauche</span><span style="color:#f92672">);</span>
-</span></span><span style="display:flex;"><span><span style="color:#111">droite</span><span style="color:#f92672">.</span><span style="color:#75af00">setEnfantDroit</span><span style="color:#f92672">(</span><span style="color:#111">droiteDroite</span><span style="color:#f92672">);</span>
-</span></span></code></pre></div><img src="Arbre01.png" />
-<h2 id="exemple-fibonacci">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-    
-    
-
-    
-        
-        
-        
-        
-    
-
-    
-
-        
-        2.3.4
-
-    
-
-
-
-
-
 Exemple: Fibonacci
 
 <a class="anchor" href="#exemple-fibonacci">#</a>
 
 </h2>
+<p>Dans le cas général, il n&rsquo;est pas facile de visualiser un graphe d&rsquo;objet avec des cartes.
+Dans notre approche, il est donc nécessaire de s&rsquo;en tenir à des cas particuliers.
+Comme exemple, nous développons une modélisation de la séquence de Fibonacci.</p>
 <h2 id="définition">
 
 
@@ -1500,7 +1251,7 @@ Exemple: Fibonacci
     
 
         
-        2.3.5
+        2.3.3
 
     
 
@@ -1573,7 +1324,7 @@ Définition
     
 
         
-        2.3.6
+        2.3.4
 
     
 
@@ -1650,7 +1401,7 @@ Nombre d&rsquo;or
     
 
         
-        2.3.7
+        2.3.5
 
     
 
@@ -1693,7 +1444,6 @@ Modéliser la suite de Fibonnaci
 <p>Et ainsi de suite&hellip;</p>
 </li>
 </ol>
-<center>    <div class='excerpt note' style=''>    <div style="text-align:left">    Il existe une modélisation plus simple. Chut, ne le dis pas! C&rsquo;est la question bonus de l&rsquo;atelier 2.3.</div></div></center>
 <h2 id="pour-calculer-la-réponse-et-le-nombre-dor">
 
 
@@ -1723,7 +1473,7 @@ Modéliser la suite de Fibonnaci
     
 
         
-        2.3.8
+        2.3.6
 
     
 
@@ -1778,7 +1528,7 @@ Pour calculer la réponse et le nombre d&rsquo;or
     
 
         
-        2.3.9
+        2.3.7
 
     
 
@@ -1875,7 +1625,7 @@ Construire le graphe d&rsquo;objets récursivement
     
 
         
-        2.3.10
+        2.3.8
 
     
 
@@ -1948,178 +1698,6 @@ Construire le graphe d&rsquo;objets dynamiquement
 </ul>
 </li>
 </ol>
-<h2 id="graphe">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-    
-    
-
-    
-        
-        
-        
-        
-    
-
-    
-
-        
-        2.3.11
-
-    
-
-
-
-
-
-Graphe
-
-<a class="anchor" href="#graphe">#</a>
-
-</h2>
-<ol>
-<li>
-<p>Un modèle Java contient des références</p>
- <img class="figure no-border" src="FilmGraphe.png"/>
-<ul>
-<li>Un <code>Personnage</code> apparaît dans plusieurs <code>Film</code></li>
-<li>Un <code>Film</code> contient plusieurs <code>Personnage</code></li>
-</ul>
-</li>
-<li>
-<p>Très souvent, ces références forment des boucles</p>
- <img src="FilmGraphe01.png"/>
-<ul>
-<li>Le <code>Personnage</code> James Bond apparaît dans deux films: Dr. No et Bon Baisers de Russie</li>
-<li>Le <code>Film</code> Dr. No contient deux personnages: James Bond et Dr. no</li>
-</ul>
-</li>
-<li>
-<p>On parle alors de graphe d&rsquo;objets (plutôt que de tableau d&rsquo;objets)</p>
-</li>
-</ol>
-<h2 id="graphe-dobjets-en-json">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-    
-    
-
-    
-        
-        
-        
-        
-    
-
-    
-
-        
-        2.3.12
-
-    
-
-
-
-
-
-Graphe d&rsquo;objets en JSON
-
-<a class="anchor" href="#graphe-dobjets-en-json">#</a>
-
-</h2>
-<ol>
-<li>
-<p>JSON n&rsquo;a pas de notion de référence</p>
-</li>
-<li>
-<p>Dans ce cours, on ajoute un objet spécial <code>{&quot;_R&quot;:&quot;/chemin/vers/objet/cible&quot;}</code> pour représenter certaines références</p>
-<ul>
-<li>(sans l&rsquo;objet spécial, on ne peut pas représenter les boucles)</li>
-</ul>
-</li>
-<li>
-<p>Par exemple, le graphe ci-haut est représenté comme suit en JSON</p>
-</li>
-</ol>
-<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#111">{</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;_C&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;FilmGraphe01&#34;</span><span style="color:#111">,</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;titre&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;Dr. No&#34;</span><span style="color:#111">,</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;annee&#34;</span><span style="color:#111">:</span> <span style="color:#ae81ff">0</span><span style="color:#111">,</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;personnages&#34;</span><span style="color:#111">:</span> <span style="color:#111">[</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#111">{</span>
-</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;_C&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;PersonnageGraphe&#34;</span><span style="color:#111">,</span>
-</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;nom&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;James Bond&#34;</span><span style="color:#111">,</span>
-</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;personnagePrincipal&#34;</span><span style="color:#111">:</span> <span style="color:#00a8c8">true</span><span style="color:#111">,</span>
-</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;films&#34;</span><span style="color:#111">:</span> <span style="color:#111">[</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#111">{</span>
-</span></span><span style="display:flex;"><span>          <span style="color:#f92672">&#34;_R&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;/&#34;</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#111">},</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#111">{</span>
-</span></span><span style="display:flex;"><span>          <span style="color:#f92672">&#34;_C&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;FilmGraphe&#34;</span><span style="color:#111">,</span>
-</span></span><span style="display:flex;"><span>          <span style="color:#f92672">&#34;titre&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;Bons Baisers de Russie&#34;</span><span style="color:#111">,</span>
-</span></span><span style="display:flex;"><span>          <span style="color:#f92672">&#34;annee&#34;</span><span style="color:#111">:</span> <span style="color:#ae81ff">0</span><span style="color:#111">,</span>
-</span></span><span style="display:flex;"><span>          <span style="color:#f92672">&#34;personnages&#34;</span><span style="color:#111">:</span> <span style="color:#111">[</span>
-</span></span><span style="display:flex;"><span>            <span style="color:#111">{</span>
-</span></span><span style="display:flex;"><span>              <span style="color:#f92672">&#34;_R&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;/personnages/0&#34;</span>
-</span></span><span style="display:flex;"><span>            <span style="color:#111">},</span>
-</span></span><span style="display:flex;"><span>            <span style="color:#111">{</span>
-</span></span><span style="display:flex;"><span>              <span style="color:#f92672">&#34;_C&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;PersonnageGraphe&#34;</span><span style="color:#111">,</span>
-</span></span><span style="display:flex;"><span>              <span style="color:#f92672">&#34;nom&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;Rosa Klebb&#34;</span><span style="color:#111">,</span>
-</span></span><span style="display:flex;"><span>              <span style="color:#f92672">&#34;personnagePrincipal&#34;</span><span style="color:#111">:</span> <span style="color:#00a8c8">false</span><span style="color:#111">,</span>
-</span></span><span style="display:flex;"><span>              <span style="color:#f92672">&#34;films&#34;</span><span style="color:#111">:</span> <span style="color:#111">[</span>
-</span></span><span style="display:flex;"><span>                <span style="color:#111">{</span>
-</span></span><span style="display:flex;"><span>                  <span style="color:#f92672">&#34;_R&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;/personnages/0/films/1&#34;</span>
-</span></span><span style="display:flex;"><span>                <span style="color:#111">}</span>
-</span></span><span style="display:flex;"><span>              <span style="color:#111">]</span>
-</span></span><span style="display:flex;"><span>            <span style="color:#111">}</span>
-</span></span><span style="display:flex;"><span>          <span style="color:#111">]</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#111">}</span>
-</span></span><span style="display:flex;"><span>      <span style="color:#111">]</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#111">},</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#111">{</span>
-</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;_C&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;PersonnageGraphe&#34;</span><span style="color:#111">,</span>
-</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;nom&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;Docteur No&#34;</span><span style="color:#111">,</span>
-</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;personnagePrincipal&#34;</span><span style="color:#111">:</span> <span style="color:#00a8c8">false</span><span style="color:#111">,</span>
-</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;films&#34;</span><span style="color:#111">:</span> <span style="color:#111">[</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#111">{</span>
-</span></span><span style="display:flex;"><span>          <span style="color:#f92672">&#34;_R&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;/&#34;</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#111">}</span>
-</span></span><span style="display:flex;"><span>      <span style="color:#111">]</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#111">}</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#111">]</span>
-</span></span></code></pre></div><center>    <div class='excerpt note' style=''>    <div style="text-align:left">    <p>NOTE:</p>
-<ul>
-<li>on ne va pas vous demander d&rsquo;écrire du JSON avec l&rsquo;objet spécial <code>{&quot;_R&quot;:&quot;/chemin/cible&quot;}</code></li>
-<li>il vous faut uniquement comprendre que ça existe</li>
-<li>et comprendre la notion de graphe d&rsquo;objets en POO</li>
-</ul>
-</div></div></center>
 </article>
  
                     <br>    <br>    <div class="footer-next-page"/>        <a class="link-next-page" href="https://cartesjava.github.io/efficacite/">↪&nbsp;Chapitre 3: &nbsp;Qu&#39;est-ce que l&#39;efficacité?</a>        </div>    
@@ -2134,15 +1712,32 @@ Graphe d&rsquo;objets en JSON
 
     <div>
         
+        <div>
+            <a href="https://fabriquerel.org/">
+	            <img style="width:20em;height:100%" alt="FabriqueREL" src="/F-REL_logo-coul-horiz.png" />
+            </a>
+        </div>
+        <div style="position:relative;left:1.25em;">
+            <a href="https://www.cmontmorency.qc.ca/">
+	            <img style="width:20em;height:100%" alt="Collège Montmorency" src="/LogomoHC.png" />
+            </a>
+        </div>
+        
     </div>
 
     <div style="padding-top:2em;">
+        
+        <div class="flex justify-end"><a href="https://github.com/cartesjava/cartesjava.github.io/commit/4addf6fb571af68d5dc3541c0ed48c50d3e39d69" title='Dernière modification par Mathieu Bergeron | 2023-01-27' target="_blank" rel="noopener">
+                <span>2023-01-27</span>
+                <img src="/svg/calendar.svg" class="book-icon" alt="Calendar" />
+            </a>
+        </div>
         
 
         
         <div class="flex justify-end" style="padding-top:1em;">
             <a href="https://github.com/cartesjava/cartesjava.github.io/edit/main//pages/modelisation/graphe_d_objets/_index.md" target="_blank" rel="noopener">
-                <span>Suggérer une modification</span>
+                <span>Modifier cette page</span>
                 <img src="/svg/edit.svg" class="book-icon" alt="Edit" />
             </a>
         </div>
@@ -2217,7 +1812,7 @@ Graphe d&rsquo;objets en JSON
     
 
     <ul>
-        <li><a href='#arbre'>2.3.1 Arbre</a></li>
+        <li><a href='#graphe-filmpersonnage'>2.3.1 Graphe film/personnage</a></li>
 
         
 
@@ -2240,7 +1835,7 @@ Graphe d&rsquo;objets en JSON
     
 
     <ul>
-        <li><a href='#arbre-binaire-de-recherche'>2.3.2 Arbre binaire de recherche</a></li>
+        <li><a href='#exemple-fibonacci'>2.3.2 Exemple: Fibonacci</a></li>
 
         
 
@@ -2263,7 +1858,7 @@ Graphe d&rsquo;objets en JSON
     
 
     <ul>
-        <li><a href='#arbre-binaire-en-java'>2.3.3 Arbre binaire en Java</a></li>
+        <li><a href='#d%c3%a9finition'>2.3.3 Définition</a></li>
 
         
 
@@ -2286,7 +1881,7 @@ Graphe d&rsquo;objets en JSON
     
 
     <ul>
-        <li><a href='#exemple-fibonacci'>2.3.4 Exemple: Fibonacci</a></li>
+        <li><a href='#nombre-dor'>2.3.4 Nombre d&rsquo;or</a></li>
 
         
 
@@ -2309,7 +1904,7 @@ Graphe d&rsquo;objets en JSON
     
 
     <ul>
-        <li><a href='#d%c3%a9finition'>2.3.5 Définition</a></li>
+        <li><a href='#mod%c3%a9liser-la-suite-de-fibonnaci'>2.3.5 Modéliser la suite de Fibonnaci</a></li>
 
         
 
@@ -2332,7 +1927,7 @@ Graphe d&rsquo;objets en JSON
     
 
     <ul>
-        <li><a href='#nombre-dor'>2.3.6 Nombre d&rsquo;or</a></li>
+        <li><a href='#pour-calculer-la-r%c3%a9ponse-et-le-nombre-dor'>2.3.6 Pour calculer la réponse et le nombre d&rsquo;or</a></li>
 
         
 
@@ -2355,7 +1950,7 @@ Graphe d&rsquo;objets en JSON
     
 
     <ul>
-        <li><a href='#mod%c3%a9liser-la-suite-de-fibonnaci'>2.3.7 Modéliser la suite de Fibonnaci</a></li>
+        <li><a href='#construire-le-graphe-dobjets-r%c3%a9cursivement'>2.3.7 Construire le graphe d&rsquo;objets récursivement</a></li>
 
         
 
@@ -2378,99 +1973,7 @@ Graphe d&rsquo;objets en JSON
     
 
     <ul>
-        <li><a href='#pour-calculer-la-r%c3%a9ponse-et-le-nombre-dor'>2.3.8 Pour calculer la réponse et le nombre d&rsquo;or</a></li>
-
-        
-
-    </ul>
-
-
-
-        
-
-            
-
-    
-    
-
-    
-    
-        
-            
-        
-    
-
-    <ul>
-        <li><a href='#construire-le-graphe-dobjets-r%c3%a9cursivement'>2.3.9 Construire le graphe d&rsquo;objets récursivement</a></li>
-
-        
-
-    </ul>
-
-
-
-        
-
-            
-
-    
-    
-
-    
-    
-        
-            
-        
-    
-
-    <ul>
-        <li><a href='#construire-le-graphe-dobjets-dynamiquement'>2.3.10 Construire le graphe d&rsquo;objets dynamiquement</a></li>
-
-        
-
-    </ul>
-
-
-
-        
-
-            
-
-    
-    
-
-    
-    
-        
-            
-        
-    
-
-    <ul>
-        <li><a href='#graphe'>2.3.11 Graphe</a></li>
-
-        
-
-    </ul>
-
-
-
-        
-
-            
-
-    
-    
-
-    
-    
-        
-            
-        
-    
-
-    <ul>
-        <li><a href='#graphe-dobjets-en-json'>2.3.12 Graphe d&rsquo;objets en JSON</a></li>
+        <li><a href='#construire-le-graphe-dobjets-dynamiquement'>2.3.8 Construire le graphe d&rsquo;objets dynamiquement</a></li>
 
         
 

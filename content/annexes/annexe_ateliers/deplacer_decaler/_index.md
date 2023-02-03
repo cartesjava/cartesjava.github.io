@@ -7,29 +7,32 @@ bookNumbering: false
 
 {{% pageTitle %}}
 
+## Préalable
+
+* JDK 11 ou plus récent (testé jusqu'à JDK18)
+* Git
+* Eclipse
+
 ## Créer le projet
 
-1. Télécharger {{% download "atelier1_3.zip" "atelier1_3.zip" %}}
+1. Télécharger {{% download "shift.zip" "shift.zip" %}}
 
-1. Copier le fichier `atelier1_3.zip` **à la racine** de mon dépôt Git
+1. Copier le fichier `shift.zip` **à la racine** d'un répertoire de travail vide
 
-1. Extraire les fichiers **directement** à la racine du dépôt Git
+1. Extraire les fichiers **directement** à la racine de ce répertoire de travail
 
     * Clic-droit sur le fichier => *Extraire tout*
 
-    * **Effacer `atelier1_3` du chemin proposé**
+    * **Effacer `shift` du chemin proposé**
 
     * Cliquer sur *Extraire*
 
     * Choisir *Remplacer les fichiers dans la destination*
 
-    * Vérifier que les fichiers sont **à la racine** du dépôt Git 
+    * Vérifier que les fichiers sont **à la racine** du répertoire de travail
 
-        * dans le même répertoire que `.git`
 
-        
-
-1. Ouvrir *Git Bash* **à la racine** de mon dépôt Git
+1. Ouvrir *Git Bash* **à la racine** du répertoire de travail
 
     * *Windows 10* : Clic-droit => *Git Bash Here*
     * *Windows 11* : Clic-droit => *Show more options* => *Git Bash Here*
@@ -44,14 +47,13 @@ bookNumbering: false
 
     * appuyer sur {{% key "Entrée" %}} dans fenêtre *Git Bash* pour vraiment lancer le script
 
-
 1. Attendre que le script termine
 
-1. Ouvrir Eclipse et importer le projet `atelier1_3`
+1. Ouvrir Eclipse et importer le projet `shift`
 
     * *File* => *Import* => *Existing Projects into Workspace*
 
-    * Cliquer sur *Browse* et naviguer jusqu'à la racine de mon dépôt Git
+    * Cliquer sur *Browse* et naviguer jusqu'à la racine du répertoire de travail
 
     * Cliquer sur *Sélectionner un dossier*
 
@@ -62,9 +64,9 @@ bookNumbering: false
 
 ## Créer la classe `MonTableau`
 
-1. Dans Eclipse, sélectionner le projet `atelier1_3`
+1. Dans Eclipse, sélectionner le projet `shift`
 
-1. Ajouter la classe suivante au projet `atelier1_3`
+1. Ajouter la classe suivante au projet `shift`
     * Nom de la classe: `MonTableau`
     * **Ne pas** cocher `public static ...`
 
@@ -81,7 +83,7 @@ bookNumbering: false
 
 ## Créer la classe `Procedure`
 
-1. Ajouter la classe suivante au projet `atelier1_3`
+1. Ajouter la classe suivante au projet `shift`
     * Nom de la classe: `Procedure`
     * **cocher** `public static ...`
 
@@ -148,6 +150,8 @@ bookNumbering: false
     * **TRUC** ajouter des méthodes privées à votre classe `MonTableau` et les appeler selon la valeur de `insererAuDebut`
 
 ## Exécuter l'outil de validation
+
+1. Clic-droit sur `Procedure.java` => *Run As* => *Java Application*
 
 1. L'outil va vous indiquer si votre code est une solution (✔) ou s'il contient une ou des erreurs (✗)
 

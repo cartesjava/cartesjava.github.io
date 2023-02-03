@@ -1,4 +1,4 @@
-digraph "Carte02" {
+digraph "Carte" {
 graph ["rankdir"="LR","compound"="true","ranksep"="1.0","nodesep"="1.0"]
-"/" ["label"="<_C>Carte02|{numero|3}|{sorte|\"TREFLE\"}","style"="filled","fillcolor"="white","shape"="record"]
+"/" ["label"="<_C>Carte|{numero|3}|{sorte|\"TREFLE\"}","style"="filled","fillcolor"="white","shape"="record"]
 }

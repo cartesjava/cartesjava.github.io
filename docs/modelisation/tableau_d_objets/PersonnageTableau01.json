@@ -1,0 +1,17 @@
+{
+  "_C": "Personnage",
+  "nom": "James Bond",
+  "personnagePrincipal": true,
+  "films": [
+    {
+      "_C": "FilmObjet",
+      "titre": "Dr. No",
+      "annee": 1962
+    },
+    {
+      "_C": "FilmObjet",
+      "titre": "Bons Baisers de Russie",
+      "annee": 1963
+    }
+  ]
+}

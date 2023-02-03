@@ -7,7 +7,10 @@
 
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Annexe 3: programmer un nouvel exemple #  Modélisation avec graphe d&rsquo;objets #  Visualisation avec des cartes #  ">
+<meta name="description" content="Annexe 3: programmer un nouvel exemple #  Préalables #   JDK 11 ou plus récent (testé jusqu&rsquo;à JDK18) Git Eclipse  Cloner les sources #  Dans un GitBash (ou à la console en Linux ou Mac)
+$ git clone https://github.com/cartesjava/ca.ntro.cards.git Créer un nouveau projet #  Pour créer une nouvelle visualisation avec les cartes:
+$ sh scripts/new_project.sh MonProjet mon_projet Pour créer un nouveau validateur:
+$ sh scripts/new_validator.sh MesModeles mes_modeles Créer et importer les projets Eclipse #  Générer les projets Eclipse avec">
 <meta name="theme-color" content="#FFFFFF">
 <meta name="color-scheme" content="light dark"><meta property="og:title" content="Annexe 3: programmer un nouvel exemple" />
 <meta property="og:description" content="" />
@@ -24,9 +27,9 @@
 </title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
-<link rel="stylesheet" href="/book.min.e4869670571a4fc0a50f4a2c889ed6ee3b49dac25cd9095e9eea1f69c426d18a.css" integrity="sha256-5IaWcFcaT8ClD0osiJ7W7jtJ2sJc2QlenuofacQm0Yo=" crossorigin="anonymous">
+<link rel="stylesheet" href="/book.min.6eff5a840770643758c6b07018dc6302b7461f1593281c294fae77c00766cf48.css" integrity="sha256-bv9ahAdwZDdYxrBwGNxjArdGHxWTKBwpT653wAdmz0g=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/fr.search.min.0e5eca3384d4e84a083eaf733dd004e479c5ffdbd8211494050eba149a9c560e.js" integrity="sha256-Dl7KM4TU6EoIPq9zPdAE5HnF/9vYIRSUBQ66FJqcVg4=" crossorigin="anonymous"></script>
+  <script defer src="/fr.search.min.551de89f158a3d7e4917d34fe84ebee48f3321e7e5f7f875b849dd5829f275a5.js" integrity="sha256-VR3onxWKPX5JF9NP6E6&#43;5I8zIefl9/h1uEndWCnydaU=" crossorigin="anonymous"></script>
 
   <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" integrity="sha256-b2&#43;Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC&#43;NdcPIvZhzk=" crossorigin="anonymous"></script>
 
@@ -900,7 +903,7 @@ https://github.com/alex-shpak/hugo-book
     
 
     <ul>
-        <li><a href='#mod%c3%a9lisation-avec-graphe-dobjets'>Modélisation avec graphe d&rsquo;objets</a></li>
+        <li><a href='#pr%c3%a9alables'>Préalables</a></li>
 
         
 
@@ -921,7 +924,91 @@ https://github.com/alex-shpak/hugo-book
     
 
     <ul>
-        <li><a href='#visualisation-avec-des-cartes'>Visualisation avec des cartes</a></li>
+        <li><a href='#cloner-les-sources'>Cloner les sources</a></li>
+
+        
+
+    </ul>
+
+
+
+        
+
+            
+
+    
+    
+
+    
+    
+        
+    
+
+    <ul>
+        <li><a href='#cr%c3%a9er-un-nouveau-projet'>Créer un nouveau projet</a></li>
+
+        
+
+    </ul>
+
+
+
+        
+
+            
+
+    
+    
+
+    
+    
+        
+    
+
+    <ul>
+        <li><a href='#cr%c3%a9er-et-importer-les-projets-eclipse'>Créer et importer les projets Eclipse</a></li>
+
+        
+
+    </ul>
+
+
+
+        
+
+            
+
+    
+    
+
+    
+    
+        
+    
+
+    <ul>
+        <li><a href='#modifier-la-visualisation-avec-les-cartes'>Modifier la visualisation avec les cartes</a></li>
+
+        
+
+    </ul>
+
+
+
+        
+
+            
+
+    
+    
+
+    
+    
+        
+    
+
+    <ul>
+        <li><a href='#ajouter-des-mod%c3%a8les-%c3%a0-un-validateur'>Ajouter des modèles à un validateur</a></li>
 
         
 
@@ -975,7 +1062,7 @@ Annexe 3: programmer un nouvel exemple
 <a class="anchor" href="#annexe-3-programmer-un-nouvel-exemple">#</a>
 
 </h1>
-<h2 id="modélisation-avec-graphe-dobjets">
+<h2 id="préalables">
 
 
 
@@ -1007,12 +1094,17 @@ Annexe 3: programmer un nouvel exemple
 
 
 
-Modélisation avec graphe d&rsquo;objets
+Préalables
 
-<a class="anchor" href="#mod%c3%a9lisation-avec-graphe-dobjets">#</a>
+<a class="anchor" href="#pr%c3%a9alables">#</a>
 
 </h2>
-<h2 id="visualisation-avec-des-cartes">
+<ul>
+<li>JDK 11 ou plus récent (testé jusqu&rsquo;à JDK18)</li>
+<li>Git</li>
+<li>Eclipse</li>
+</ul>
+<h2 id="cloner-les-sources">
 
 
 
@@ -1044,11 +1136,185 @@ Modélisation avec graphe d&rsquo;objets
 
 
 
-Visualisation avec des cartes
+Cloner les sources
 
-<a class="anchor" href="#visualisation-avec-des-cartes">#</a>
+<a class="anchor" href="#cloner-les-sources">#</a>
 
 </h2>
+<p>Dans un GitBash (ou à la console en Linux ou Mac)</p>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ git clone https://github.com/cartesjava/ca.ntro.cards.git
+</span></span></code></pre></div><h2 id="créer-un-nouveau-projet">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
+
+    
+        
+        
+        
+        
+    
+
+    
+
+
+
+
+
+Créer un nouveau projet
+
+<a class="anchor" href="#cr%c3%a9er-un-nouveau-projet">#</a>
+
+</h2>
+<p>Pour créer une nouvelle visualisation avec les cartes:</p>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ sh scripts/new_project.sh MonProjet mon_projet
+</span></span></code></pre></div><p>Pour créer un nouveau validateur:</p>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ sh scripts/new_validator.sh MesModeles mes_modeles
+</span></span></code></pre></div><h2 id="créer-et-importer-les-projets-eclipse">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
+
+    
+        
+        
+        
+        
+    
+
+    
+
+
+
+
+
+Créer et importer les projets Eclipse
+
+<a class="anchor" href="#cr%c3%a9er-et-importer-les-projets-eclipse">#</a>
+
+</h2>
+<p>Générer les projets Eclipse avec</p>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ sh gradlew eclipse
+</span></span></code></pre></div><p>Importer les projets en Eclipse</p>
+<h2 id="modifier-la-visualisation-avec-les-cartes">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
+
+    
+        
+        
+        
+        
+    
+
+    
+
+
+
+
+
+Modifier la visualisation avec les cartes
+
+<a class="anchor" href="#modifier-la-visualisation-avec-les-cartes">#</a>
+
+</h2>
+<p>S&rsquo;inspirer des projets <code>shift_procedure</code> et <code>fibonacci_procedure</code></p>
+<p>Dans le projet <code>mon_projet_procedure</code>, modifier le paquet <code>models</code></p>
+<p>Renommer au besoin la classe <code>MonProjetCardsModel</code></p>
+<p>Implanter les méthodes marquées d&rsquo;un <code>TODO</code> et que l&rsquo;outil de validation utilise:</p>
+<ul>
+<li><code>copyDataFrom</code>: copier les données d&rsquo;un autre modèle</li>
+<li><code>compareToSolution</code>: valider si le modèle courant est une solution</li>
+<li><code>updateViewDataImpl</code>: afficher les cartes correspondant au modèle courant</li>
+<li><code>initializeAsTestCase</code>: données de départ d&rsquo;un cas de test</li>
+</ul>
+<p>Finalement, modifier aussi  <code>test_cases.MonProjetTestCaseDatabase</code>, en particulier:</p>
+<ul>
+<li><code>describeTestCasesToGenerate</code>: faire la liste des cas de tests à générer</li>
+</ul>
+<h2 id="ajouter-des-modèles-à-un-validateur">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
+
+    
+        
+        
+        
+        
+    
+
+    
+
+
+
+
+
+Ajouter des modèles à un validateur
+
+<a class="anchor" href="#ajouter-des-mod%c3%a8les-%c3%a0-un-validateur">#</a>
+
+</h2>
+<p>Dans le projet <code>validator_mes_modeles</code>, modifier le paquet <code>models</code></p>
+<p>S&rsquo;inspirer de <code>Model01</code> et <code>Model01SuperClass</code> pour voir comment créer un nouveau modèle</p>
+<p>Ne pas oublier d&rsquo;implanter la méthode <code>copyDataFrom</code> qui est utilisé par l&rsquo;outil copier un modèle.</p>
 </article>
  
                     <br>    <br>    <div class="footer-next-page"/>        <a class="link-next-page" href="https://cartesjava.github.io/annexes/annexe_modifier_manuel/">↪&nbsp;&nbsp;Annexe 4: suggérer une modification à ce manuel</a>        </div>    
@@ -1063,15 +1329,32 @@ Visualisation avec des cartes
 
     <div>
         
+        <div>
+            <a href="https://fabriquerel.org/">
+	            <img style="width:20em;height:100%" alt="FabriqueREL" src="/F-REL_logo-coul-horiz.png" />
+            </a>
+        </div>
+        <div style="position:relative;left:1.25em;">
+            <a href="https://www.cmontmorency.qc.ca/">
+	            <img style="width:20em;height:100%" alt="Collège Montmorency" src="/LogomoHC.png" />
+            </a>
+        </div>
+        
     </div>
 
     <div style="padding-top:2em;">
+        
+        <div class="flex justify-end"><a href="https://github.com/cartesjava/cartesjava.github.io/commit/4addf6fb571af68d5dc3541c0ed48c50d3e39d69" title='Dernière modification par Mathieu Bergeron | 2023-01-27' target="_blank" rel="noopener">
+                <span>2023-01-27</span>
+                <img src="/svg/calendar.svg" class="book-icon" alt="Calendar" />
+            </a>
+        </div>
         
 
         
         <div class="flex justify-end" style="padding-top:1em;">
             <a href="https://github.com/cartesjava/cartesjava.github.io/edit/main//pages/annexes/annexe_programmer_exemple/_index.md" target="_blank" rel="noopener">
-                <span>Suggérer une modification</span>
+                <span>Modifier cette page</span>
                 <img src="/svg/edit.svg" class="book-icon" alt="Edit" />
             </a>
         </div>
@@ -1142,7 +1425,7 @@ Visualisation avec des cartes
     
 
     <ul>
-        <li><a href='#mod%c3%a9lisation-avec-graphe-dobjets'>Modélisation avec graphe d&rsquo;objets</a></li>
+        <li><a href='#pr%c3%a9alables'>Préalables</a></li>
 
         
 
@@ -1163,7 +1446,91 @@ Visualisation avec des cartes
     
 
     <ul>
-        <li><a href='#visualisation-avec-des-cartes'>Visualisation avec des cartes</a></li>
+        <li><a href='#cloner-les-sources'>Cloner les sources</a></li>
+
+        
+
+    </ul>
+
+
+
+        
+
+            
+
+    
+    
+
+    
+    
+        
+    
+
+    <ul>
+        <li><a href='#cr%c3%a9er-un-nouveau-projet'>Créer un nouveau projet</a></li>
+
+        
+
+    </ul>
+
+
+
+        
+
+            
+
+    
+    
+
+    
+    
+        
+    
+
+    <ul>
+        <li><a href='#cr%c3%a9er-et-importer-les-projets-eclipse'>Créer et importer les projets Eclipse</a></li>
+
+        
+
+    </ul>
+
+
+
+        
+
+            
+
+    
+    
+
+    
+    
+        
+    
+
+    <ul>
+        <li><a href='#modifier-la-visualisation-avec-les-cartes'>Modifier la visualisation avec les cartes</a></li>
+
+        
+
+    </ul>
+
+
+
+        
+
+            
+
+    
+    
+
+    
+    
+        
+    
+
+    <ul>
+        <li><a href='#ajouter-des-mod%c3%a8les-%c3%a0-un-validateur'>Ajouter des modèles à un validateur</a></li>
 
         
 

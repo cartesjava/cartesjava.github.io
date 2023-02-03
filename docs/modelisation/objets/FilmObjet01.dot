@@ -1,0 +1,4 @@
+digraph "Film" {
+graph ["rankdir"="LR","compound"="true","ranksep"="1.0","nodesep"="1.0"]
+"/" ["label"="<_C>Film|{titre|\"Dr. No\"}|{annee|1962}","style"="filled","fillcolor"="white","shape"="record"]
+}

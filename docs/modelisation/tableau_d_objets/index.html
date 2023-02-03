@@ -7,7 +7,9 @@
 
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Section 2.2: Tableaux d&rsquo;objets #  2.2.1 Tableau de cartes #  2.2.1.1 Exemple 1 #  2.2.1.2 Exemple 2 #  2.2.2 Tableau de films et de personnages #  2.2.3 Comprendre l&rsquo;effet d&rsquo;instructions typiques #  2.2.3.1 Accéder à une valeur #  2.2.3.1.1 Example 1 #    Objets au départ Instructions Résultat      memoireA.getNumero(); memoireA.getSorte();   5 &#34;TREFLE&#34;    2.">
+<meta name="description" content="Section 2.2: Tableaux d&rsquo;objets #  Une fois les objets modélisés, la prochaine étape est de spécifier les relations entre ces objets, c&rsquo;est-à-dire l&rsquo;organisation de ces objets dans la mémoire du programme.
+2.2.1 Tableau de personnages #  On peut améliorer la modélisation d&rsquo;un film présentée au chapitre précédent en ajoutant la relation suivante:
+ Un film contient des personnages  Voici des exemples de données se conformant à cette modélisation.">
 <meta name="theme-color" content="#FFFFFF">
 <meta name="color-scheme" content="light dark"><meta property="og:title" content="Tableaux d&#39;objets" />
 <meta property="og:description" content="" />
@@ -24,9 +26,9 @@
 </title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
-<link rel="stylesheet" href="/book.min.e4869670571a4fc0a50f4a2c889ed6ee3b49dac25cd9095e9eea1f69c426d18a.css" integrity="sha256-5IaWcFcaT8ClD0osiJ7W7jtJ2sJc2QlenuofacQm0Yo=" crossorigin="anonymous">
+<link rel="stylesheet" href="/book.min.6eff5a840770643758c6b07018dc6302b7461f1593281c294fae77c00766cf48.css" integrity="sha256-bv9ahAdwZDdYxrBwGNxjArdGHxWTKBwpT653wAdmz0g=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/fr.search.min.0e5eca3384d4e84a083eaf733dd004e479c5ffdbd8211494050eba149a9c560e.js" integrity="sha256-Dl7KM4TU6EoIPq9zPdAE5HnF/9vYIRSUBQ66FJqcVg4=" crossorigin="anonymous"></script>
+  <script defer src="/fr.search.min.551de89f158a3d7e4917d34fe84ebee48f3321e7e5f7f875b849dd5829f275a5.js" integrity="sha256-VR3onxWKPX5JF9NP6E6&#43;5I8zIefl9/h1uEndWCnydaU=" crossorigin="anonymous"></script>
 
   <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" integrity="sha256-b2&#43;Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC&#43;NdcPIvZhzk=" crossorigin="anonymous"></script>
 
@@ -904,24 +906,7 @@ https://github.com/alex-shpak/hugo-book
     
 
     <ul>
-        <li><a href='#tableau-de-cartes'>2.2.1 Tableau de cartes</a></li>
-
-        
-
-            
-
-    
-    
-
-    
-    
-        
-            
-        
-    
-
-    <ul>
-        <li><a href='#exemple-1'>2.2.1.1 Exemple 1</a></li>
+        <li><a href='#tableau-de-personnages'>2.2.1 Tableau de personnages</a></li>
 
         
 
@@ -944,36 +929,7 @@ https://github.com/alex-shpak/hugo-book
     
 
     <ul>
-        <li><a href='#exemple-2'>2.2.1.2 Exemple 2</a></li>
-
-        
-
-    </ul>
-
-
-
-        
-
-    </ul>
-
-
-
-        
-
-            
-
-    
-    
-
-    
-    
-        
-            
-        
-    
-
-    <ul>
-        <li><a href='#tableau-de-films-et-de-personnages'>2.2.2 Tableau de films et de personnages</a></li>
+        <li><a href='#tableau-de-films'>2.2.2 Tableau de films</a></li>
 
         
 
@@ -996,41 +952,7 @@ https://github.com/alex-shpak/hugo-book
     
 
     <ul>
-        <li><a href='#comprendre-leffet-dinstructions-typiques'>2.2.3 Comprendre l&rsquo;effet d&rsquo;instructions typiques</a></li>
-
-        
-
-            
-
-    
-    
-
-    
-    
-        
-            
-        
-    
-
-    <ul>
-        <li><a href='#acc%c3%a9der-%c3%a0-une-valeur'>2.2.3.1 Accéder à une valeur</a></li>
-
-        
-
-            
-
-    
-    
-
-    
-    
-        
-            
-        
-    
-
-    <ul>
-        <li><a href='#example-1'>2.2.3.1.1 Example 1</a></li>
+        <li><a href='#tableau-de-cartes'>2.2.3 Tableau de cartes</a></li>
 
         
 
@@ -1053,7 +975,24 @@ https://github.com/alex-shpak/hugo-book
     
 
     <ul>
-        <li><a href='#example-2'>2.2.3.1.2 Example 2</a></li>
+        <li><a href='#comprendre-leffet-dinstructions-typiques'>2.2.4 Comprendre l&rsquo;effet d&rsquo;instructions typiques</a></li>
+
+        
+
+            
+
+    
+    
+
+    
+    
+        
+            
+        
+    
+
+    <ul>
+        <li><a href='#acc%c3%a9der-%c3%a0-une-valeur'>2.2.4.1 Accéder à une valeur</a></li>
 
         
 
@@ -1076,7 +1015,53 @@ https://github.com/alex-shpak/hugo-book
     
 
     <ul>
-        <li><a href='#example-3'>2.2.3.1.3 Example 3</a></li>
+        <li><a href='#d%c3%a9placer-un-objet-d%c3%a9placer-une-carte'>2.2.4.2 Déplacer un objet (déplacer une carte)</a></li>
+
+        
+
+    </ul>
+
+
+
+        
+
+            
+
+    
+    
+
+    
+    
+        
+            
+        
+    
+
+    <ul>
+        <li><a href='#copier-la-r%c3%a9f%c3%a9rence-%c3%a0-un-objet'>2.2.4.3 Copier la référence à un objet</a></li>
+
+        
+
+    </ul>
+
+
+
+        
+
+            
+
+    
+    
+
+    
+    
+        
+            
+        
+    
+
+    <ul>
+        <li><a href='#cr%c3%a9er-un-nouvel-objet-cr%c3%a9er-une-nouvelle-carte'>2.2.4.4 Créer un nouvel objet (créer une nouvelle carte)</a></li>
 
         
 
@@ -1105,220 +1090,7 @@ https://github.com/alex-shpak/hugo-book
     
 
     <ul>
-        <li><a href='#d%c3%a9placer-un-objet-d%c3%a9placer-une-carte'>2.2.3.2 Déplacer un objet (déplacer une carte)</a></li>
-
-        
-
-            
-
-    
-    
-
-    
-    
-        
-            
-        
-    
-
-    <ul>
-        <li><a href='#exemple-1-1'>2.2.3.2.1 Exemple 1</a></li>
-
-        
-
-    </ul>
-
-
-
-        
-
-            
-
-    
-    
-
-    
-    
-        
-            
-        
-    
-
-    <ul>
-        <li><a href='#exemple-2-1'>2.2.3.2.2 Exemple 2</a></li>
-
-        
-
-    </ul>
-
-
-
-        
-
-    </ul>
-
-
-
-        
-
-            
-
-    
-    
-
-    
-    
-        
-            
-        
-    
-
-    <ul>
-        <li><a href='#copier-la-r%c3%a9f%c3%a9rence-%c3%a0-un-objet'>2.2.3.3 Copier la référence à un objet</a></li>
-
-        
-
-            
-
-    
-    
-
-    
-    
-        
-            
-        
-    
-
-    <ul>
-        <li><a href='#exemple-1-2'>2.2.3.3.1 Exemple 1</a></li>
-
-        
-
-    </ul>
-
-
-
-        
-
-            
-
-    
-    
-
-    
-    
-        
-            
-        
-    
-
-    <ul>
-        <li><a href='#exemple-2-2'>2.2.3.3.2 Exemple 2</a></li>
-
-        
-
-    </ul>
-
-
-
-        
-
-    </ul>
-
-
-
-        
-
-            
-
-    
-    
-
-    
-    
-        
-            
-        
-    
-
-    <ul>
-        <li><a href='#cr%c3%a9er-un-nouvel-objet-cr%c3%a9er-une-nouvelle-carte'>2.2.3.4 Créer un nouvel objet (créer une nouvelle carte)</a></li>
-
-        
-
-            
-
-    
-    
-
-    
-    
-        
-            
-        
-    
-
-    <ul>
-        <li><a href='#exemple-1-3'>2.2.3.4.1 Exemple 1</a></li>
-
-        
-
-    </ul>
-
-
-
-        
-
-            
-
-    
-    
-
-    
-    
-        
-            
-        
-    
-
-    <ul>
-        <li><a href='#exemple-2-3'>2.2.3.4.2 Exemple 2</a></li>
-
-        
-
-    </ul>
-
-
-
-        
-
-    </ul>
-
-
-
-        
-
-    </ul>
-
-
-
-        
-
-            
-
-    
-    
-
-    
-    
-        
-            
-        
-    
-
-    <ul>
-        <li><a href='#r%c3%a9f%c3%a9rences-multiples'>2.2.4 Références multiples</a></li>
+        <li><a href='#r%c3%a9f%c3%a9rences-multiples'>2.2.5 Références multiples</a></li>
 
         
 
@@ -1372,7 +1144,10 @@ Tableaux d&rsquo;objets
 <a class="anchor" href="#tableaux-dobjets">#</a>
 
 </h1>
-<h2 id="tableau-de-cartes">
+<p>Une fois les objets modélisés, la prochaine étape est de spécifier les
+relations entre ces objets, c&rsquo;est-à-dire l&rsquo;organisation de ces objets dans
+la mémoire du programme.</p>
+<h2 id="tableau-de-personnages">
 
 
 
@@ -1409,101 +1184,67 @@ Tableaux d&rsquo;objets
 
 
 
-Tableau de cartes
+Tableau de personnages
 
-<a class="anchor" href="#tableau-de-cartes">#</a>
+<a class="anchor" href="#tableau-de-personnages">#</a>
 
 </h2>
-<img class="figure" src="MonTableau.png"/>
-<h3 id="exemple-1">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-    
-    
-
-    
-        
-        
-        
-        
-    
-
-    
-
-        
-        2.2.1.1
-
-    
-
-
-
-
-
-Exemple 1
-
-<a class="anchor" href="#exemple-1">#</a>
-
-</h3>
-<img class="figure" src="cartesA.png"/>
-<img class="figure" src="tableauA.png"/>
-<h3 id="exemple-2">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-    
-    
-
-    
-        
-        
-        
-        
-    
-
-    
-
-        
-        2.2.1.2
-
-    
-
-
-
-
-
-Exemple 2
-
-<a class="anchor" href="#exemple-2">#</a>
-
-</h3>
-<img class="figure" src="cartesB.png"/>
-<img class="figure" src="tableauB.png"/>
-<h2 id="tableau-de-films-et-de-personnages">
+<p>On peut améliorer la modélisation d&rsquo;un film présentée au chapitre précédent en ajoutant
+la relation suivante:</p>
+<ul>
+<li>Un film contient des personnages</li>
+</ul>
+<img class="figure" src="FilmTableau.png"/>
+<p>Voici des exemples de données se conformant à cette modélisation.</p>
+<table>
+<tr>
+<td>
+<img class="figure" src="FilmTableau01.png"/>
+</td>
+<td>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;_C&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;Film&#34;</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;titre&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;Dr. No&#34;</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;annee&#34;</span><span style="color:#111">:</span> <span style="color:#ae81ff">1962</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;personnages&#34;</span><span style="color:#111">:</span> <span style="color:#111">[</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;_C&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;PersonnageObjet&#34;</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;nom&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;James Bond&#34;</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;personnagePrincipal&#34;</span><span style="color:#111">:</span> <span style="color:#00a8c8">true</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">},</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;_C&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;PersonnageObjet&#34;</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;nom&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;Docteur No&#34;</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;personnagePrincipal&#34;</span><span style="color:#111">:</span> <span style="color:#00a8c8">false</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#111">]</span>
+</span></span></code></pre></div></td>
+</tr>
+<tr>
+<td>
+<img class="figure" src="FilmTableau02.png"/>
+</td>
+<td>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;_C&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;Film&#34;</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;titre&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;Bons Baisers de Russie&#34;</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;annee&#34;</span><span style="color:#111">:</span> <span style="color:#ae81ff">1963</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;personnages&#34;</span><span style="color:#111">:</span> <span style="color:#111">[</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;_C&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;PersonnageObjet&#34;</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;nom&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;James Bond&#34;</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;personnagePrincipal&#34;</span><span style="color:#111">:</span> <span style="color:#00a8c8">true</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">},</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;_C&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;PersonnageObjet&#34;</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;nom&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;Rosa Klebb&#34;</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;personnagePrincipal&#34;</span><span style="color:#111">:</span> <span style="color:#00a8c8">false</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#111">]</span>
+</span></span></code></pre></div></td>
+</tr>
+</table>
+<h2 id="tableau-de-films">
 
 
 
@@ -1540,15 +1281,62 @@ Exemple 2
 
 
 
-Tableau de films et de personnages
+Tableau de films
 
-<a class="anchor" href="#tableau-de-films-et-de-personnages">#</a>
+<a class="anchor" href="#tableau-de-films">#</a>
 
 </h2>
-<img class="figure" src="FilmTableau.png"/>
-<br>
+<p>On peut améliorer la modélisation d&rsquo;un personage présentée au chapitre précédent en ajoutant
+la relation suivante:</p>
+<ul>
+<li>Un personnage apparaît un ou plusieurs films</li>
+</ul>
 <img class="figure" src="PersonnageTableau.png"/>
-<h2 id="comprendre-leffet-dinstructions-typiques">
+<p>Voici des exemples de données se conformant à cette modélisation.</p>
+<table>
+<tr>
+<td>
+<img class="figure" src="PersonnageTableau01.png"/>
+</td>
+<td>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;_C&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;Personnage&#34;</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;nom&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;James Bond&#34;</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;personnagePrincipal&#34;</span><span style="color:#111">:</span> <span style="color:#00a8c8">true</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;films&#34;</span><span style="color:#111">:</span> <span style="color:#111">[</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;_C&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;FilmObjet&#34;</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;titre&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;Dr. No&#34;</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;annee&#34;</span><span style="color:#111">:</span> <span style="color:#ae81ff">1962</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">},</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;_C&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;FilmObjet&#34;</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;titre&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;Bons Baisers de Russie&#34;</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;annee&#34;</span><span style="color:#111">:</span> <span style="color:#ae81ff">1963</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#111">]</span>
+</span></span></code></pre></div></td>
+</tr>
+<tr>
+<td>
+<img class="figure" src="PersonnageTableau02.png"/>
+</td>
+<td>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;_C&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;Personnage&#34;</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;nom&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;Docteur No&#34;</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;personnagePrincipal&#34;</span><span style="color:#111">:</span> <span style="color:#00a8c8">false</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;films&#34;</span><span style="color:#111">:</span> <span style="color:#111">[</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;_C&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;FilmObjet&#34;</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;titre&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;Dr. No&#34;</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;annee&#34;</span><span style="color:#111">:</span> <span style="color:#ae81ff">1962</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#111">]</span>
+</span></span></code></pre></div></td>
+</tr>
+</table>
+<h2 id="tableau-de-cartes">
 
 
 
@@ -1585,11 +1373,77 @@ Tableau de films et de personnages
 
 
 
+Tableau de cartes
+
+<a class="anchor" href="#tableau-de-cartes">#</a>
+
+</h2>
+<p>Les exemples de tableau de cartes sont plus pertinents à notre approche.
+Considérer le digramme de classe suivant.</p>
+<img class="figure" src="MonTableau.png"/>
+<p>Voici des exemples de tableau de cartes.</p>
+<table>
+<tr>
+<td>
+<img class="figure" src="cartesA.png"/>
+</td>
+<td>
+<img class="figure" src="tableauA.png"/>
+</td>
+</tr>
+<tr>
+<td>
+<img class="figure" src="cartesB.png"/>
+</td>
+<td>
+<img class="figure" src="tableauB.png"/>
+</td>
+</tr>
+</table>
+<h2 id="comprendre-leffet-dinstructions-typiques">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
+
+    
+        
+        
+        
+        
+    
+
+    
+
+        
+        2.2.4
+
+    
+
+
+
+
+
 Comprendre l&rsquo;effet d&rsquo;instructions typiques
 
 <a class="anchor" href="#comprendre-leffet-dinstructions-typiques">#</a>
 
 </h2>
+<p>Pour comprendre comment les cartes sont animées dans l&rsquo;outil de validation,
+il est important de comprendre l&rsquo;effet d&rsquo;instructions typiques.</p>
 <h3 id="accéder-à-une-valeur">
 
 
@@ -1619,7 +1473,7 @@ Comprendre l&rsquo;effet d&rsquo;instructions typiques
     
 
         
-        2.2.3.1
+        2.2.4.1
 
     
 
@@ -1632,48 +1486,6 @@ Accéder à une valeur
 <a class="anchor" href="#acc%c3%a9der-%c3%a0-une-valeur">#</a>
 
 </h3>
-<h4 id="example-1">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-    
-    
-
-    
-        
-        
-        
-        
-    
-
-    
-
-        
-        2.2.3.1.1
-
-    
-
-
-
-
-
-Example 1
-
-<a class="anchor" href="#example-1">#</a>
-
-</h4>
 <table>
 <tr>
 <th>Objets au départ</th>
@@ -1694,48 +1506,6 @@ Example 1
 </span></span></code></pre></div></td>
 </tr>
 </table>
-<h4 id="example-2">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-    
-    
-
-    
-        
-        
-        
-        
-    
-
-    
-
-        
-        2.2.3.1.2
-
-    
-
-
-
-
-
-Example 2
-
-<a class="anchor" href="#example-2">#</a>
-
-</h4>
 <table>
 <tr>
 <th>Objets au départ</th>
@@ -1756,48 +1526,6 @@ Example 2
 </span></span></code></pre></div></td>
 </tr>
 </table>
-<h4 id="example-3">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-    
-    
-
-    
-        
-        
-        
-        
-    
-
-    
-
-        
-        2.2.3.1.3
-
-    
-
-
-
-
-
-Example 3
-
-<a class="anchor" href="#example-3">#</a>
-
-</h4>
 <table>
 <tr>
 <th>Objets au départ</th>
@@ -1847,7 +1575,7 @@ Example 3
     
 
         
-        2.2.3.2
+        2.2.4.2
 
     
 
@@ -1860,48 +1588,6 @@ Déplacer un objet (déplacer une carte)
 <a class="anchor" href="#d%c3%a9placer-un-objet-d%c3%a9placer-une-carte">#</a>
 
 </h3>
-<h4 id="exemple-1-1">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-    
-    
-
-    
-        
-        
-        
-        
-    
-
-    
-
-        
-        2.2.3.2.1
-
-    
-
-
-
-
-
-Exemple 1
-
-<a class="anchor" href="#exemple-1-1">#</a>
-
-</h4>
 <table>
 <tr>
 <th>Objets au départ</th>
@@ -1921,48 +1607,6 @@ Exemple 1
 </td>
 </tr>
 </table>
-<h4 id="exemple-2-1">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-    
-    
-
-    
-        
-        
-        
-        
-    
-
-    
-
-        
-        2.2.3.2.2
-
-    
-
-
-
-
-
-Exemple 2
-
-<a class="anchor" href="#exemple-2-1">#</a>
-
-</h4>
 <table>
 <tr>
 <th>Objets au départ</th>
@@ -2011,7 +1655,7 @@ Exemple 2
     
 
         
-        2.2.3.3
+        2.2.4.3
 
     
 
@@ -2024,48 +1668,6 @@ Copier la référence à un objet
 <a class="anchor" href="#copier-la-r%c3%a9f%c3%a9rence-%c3%a0-un-objet">#</a>
 
 </h3>
-<h4 id="exemple-1-2">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-    
-    
-
-    
-        
-        
-        
-        
-    
-
-    
-
-        
-        2.2.3.3.1
-
-    
-
-
-
-
-
-Exemple 1
-
-<a class="anchor" href="#exemple-1-2">#</a>
-
-</h4>
 <table>
 <tr>
 <th>Objets au départ</th>
@@ -2084,48 +1686,6 @@ Exemple 1
 </td>
 </tr>
 </table>
-<h4 id="exemple-2-2">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-    
-    
-
-    
-        
-        
-        
-        
-    
-
-    
-
-        
-        2.2.3.3.2
-
-    
-
-
-
-
-
-Exemple 2
-
-<a class="anchor" href="#exemple-2-2">#</a>
-
-</h4>
 <table>
 <tr>
 <th>Objets au départ</th>
@@ -2173,7 +1733,7 @@ Exemple 2
     
 
         
-        2.2.3.4
+        2.2.4.4
 
     
 
@@ -2186,48 +1746,6 @@ Créer un nouvel objet (créer une nouvelle carte)
 <a class="anchor" href="#cr%c3%a9er-un-nouvel-objet-cr%c3%a9er-une-nouvelle-carte">#</a>
 
 </h3>
-<h4 id="exemple-1-3">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-    
-    
-
-    
-        
-        
-        
-        
-    
-
-    
-
-        
-        2.2.3.4.1
-
-    
-
-
-
-
-
-Exemple 1
-
-<a class="anchor" href="#exemple-1-3">#</a>
-
-</h4>
 <table>
 <tr>
 <th>Objets au départ</th>
@@ -2246,48 +1764,6 @@ Exemple 1
 </td>
 </tr>
 </table>
-<h4 id="exemple-2-3">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-    
-    
-
-    
-        
-        
-        
-        
-    
-
-    
-
-        
-        2.2.3.4.2
-
-    
-
-
-
-
-
-Exemple 2
-
-<a class="anchor" href="#exemple-2-3">#</a>
-
-</h4>
 <table>
 <tr>
 <th>Objets au départ</th>
@@ -2335,7 +1811,7 @@ Exemple 2
     
 
         
-        2.2.4
+        2.2.5
 
     
 
@@ -2381,9 +1857,9 @@ Plus rare
 <img class="figure" src="cartesA.png"/>
 <img class="figure" src="tableauA.png"/>
 <p>Autant que possible, on va expliquer les procédures en déplaçant les cartes,
-c&rsquo;est-à-dire
-en évitant de créer des références multiples.
-Cependant, il faut garder en tête que le code typique contient très souvent des références multiples.</p>
+c&rsquo;est-à-dire en évitant de créer des références multiples.  Cependant, il faut
+garder en tête que le code typique contient très souvent des références
+multiples.</p>
 </article>
  
                     <br>    <br>    <div class="footer-next-page"/>        <a class="link-next-page" href="https://cartesjava.github.io/modelisation/graphe_d_objets/">↪&nbsp;Section 2.3: &nbsp;Graphes d&#39;objets</a>        </div>    
@@ -2398,15 +1874,32 @@ Cependant, il faut garder en tête que le code typique contient très souvent de
 
     <div>
         
+        <div>
+            <a href="https://fabriquerel.org/">
+	            <img style="width:20em;height:100%" alt="FabriqueREL" src="/F-REL_logo-coul-horiz.png" />
+            </a>
+        </div>
+        <div style="position:relative;left:1.25em;">
+            <a href="https://www.cmontmorency.qc.ca/">
+	            <img style="width:20em;height:100%" alt="Collège Montmorency" src="/LogomoHC.png" />
+            </a>
+        </div>
+        
     </div>
 
     <div style="padding-top:2em;">
+        
+        <div class="flex justify-end"><a href="https://github.com/cartesjava/cartesjava.github.io/commit/4addf6fb571af68d5dc3541c0ed48c50d3e39d69" title='Dernière modification par Mathieu Bergeron | 2023-01-27' target="_blank" rel="noopener">
+                <span>2023-01-27</span>
+                <img src="/svg/calendar.svg" class="book-icon" alt="Calendar" />
+            </a>
+        </div>
         
 
         
         <div class="flex justify-end" style="padding-top:1em;">
             <a href="https://github.com/cartesjava/cartesjava.github.io/edit/main//pages/modelisation/tableau_d_objets/_index.md" target="_blank" rel="noopener">
-                <span>Suggérer une modification</span>
+                <span>Modifier cette page</span>
                 <img src="/svg/edit.svg" class="book-icon" alt="Edit" />
             </a>
         </div>
@@ -2481,24 +1974,7 @@ Cependant, il faut garder en tête que le code typique contient très souvent de
     
 
     <ul>
-        <li><a href='#tableau-de-cartes'>2.2.1 Tableau de cartes</a></li>
-
-        
-
-            
-
-    
-    
-
-    
-    
-        
-            
-        
-    
-
-    <ul>
-        <li><a href='#exemple-1'>2.2.1.1 Exemple 1</a></li>
+        <li><a href='#tableau-de-personnages'>2.2.1 Tableau de personnages</a></li>
 
         
 
@@ -2521,36 +1997,7 @@ Cependant, il faut garder en tête que le code typique contient très souvent de
     
 
     <ul>
-        <li><a href='#exemple-2'>2.2.1.2 Exemple 2</a></li>
-
-        
-
-    </ul>
-
-
-
-        
-
-    </ul>
-
-
-
-        
-
-            
-
-    
-    
-
-    
-    
-        
-            
-        
-    
-
-    <ul>
-        <li><a href='#tableau-de-films-et-de-personnages'>2.2.2 Tableau de films et de personnages</a></li>
+        <li><a href='#tableau-de-films'>2.2.2 Tableau de films</a></li>
 
         
 
@@ -2573,41 +2020,7 @@ Cependant, il faut garder en tête que le code typique contient très souvent de
     
 
     <ul>
-        <li><a href='#comprendre-leffet-dinstructions-typiques'>2.2.3 Comprendre l&rsquo;effet d&rsquo;instructions typiques</a></li>
-
-        
-
-            
-
-    
-    
-
-    
-    
-        
-            
-        
-    
-
-    <ul>
-        <li><a href='#acc%c3%a9der-%c3%a0-une-valeur'>2.2.3.1 Accéder à une valeur</a></li>
-
-        
-
-            
-
-    
-    
-
-    
-    
-        
-            
-        
-    
-
-    <ul>
-        <li><a href='#example-1'>2.2.3.1.1 Example 1</a></li>
+        <li><a href='#tableau-de-cartes'>2.2.3 Tableau de cartes</a></li>
 
         
 
@@ -2630,7 +2043,24 @@ Cependant, il faut garder en tête que le code typique contient très souvent de
     
 
     <ul>
-        <li><a href='#example-2'>2.2.3.1.2 Example 2</a></li>
+        <li><a href='#comprendre-leffet-dinstructions-typiques'>2.2.4 Comprendre l&rsquo;effet d&rsquo;instructions typiques</a></li>
+
+        
+
+            
+
+    
+    
+
+    
+    
+        
+            
+        
+    
+
+    <ul>
+        <li><a href='#acc%c3%a9der-%c3%a0-une-valeur'>2.2.4.1 Accéder à une valeur</a></li>
 
         
 
@@ -2653,7 +2083,53 @@ Cependant, il faut garder en tête que le code typique contient très souvent de
     
 
     <ul>
-        <li><a href='#example-3'>2.2.3.1.3 Example 3</a></li>
+        <li><a href='#d%c3%a9placer-un-objet-d%c3%a9placer-une-carte'>2.2.4.2 Déplacer un objet (déplacer une carte)</a></li>
+
+        
+
+    </ul>
+
+
+
+        
+
+            
+
+    
+    
+
+    
+    
+        
+            
+        
+    
+
+    <ul>
+        <li><a href='#copier-la-r%c3%a9f%c3%a9rence-%c3%a0-un-objet'>2.2.4.3 Copier la référence à un objet</a></li>
+
+        
+
+    </ul>
+
+
+
+        
+
+            
+
+    
+    
+
+    
+    
+        
+            
+        
+    
+
+    <ul>
+        <li><a href='#cr%c3%a9er-un-nouvel-objet-cr%c3%a9er-une-nouvelle-carte'>2.2.4.4 Créer un nouvel objet (créer une nouvelle carte)</a></li>
 
         
 
@@ -2682,220 +2158,7 @@ Cependant, il faut garder en tête que le code typique contient très souvent de
     
 
     <ul>
-        <li><a href='#d%c3%a9placer-un-objet-d%c3%a9placer-une-carte'>2.2.3.2 Déplacer un objet (déplacer une carte)</a></li>
-
-        
-
-            
-
-    
-    
-
-    
-    
-        
-            
-        
-    
-
-    <ul>
-        <li><a href='#exemple-1-1'>2.2.3.2.1 Exemple 1</a></li>
-
-        
-
-    </ul>
-
-
-
-        
-
-            
-
-    
-    
-
-    
-    
-        
-            
-        
-    
-
-    <ul>
-        <li><a href='#exemple-2-1'>2.2.3.2.2 Exemple 2</a></li>
-
-        
-
-    </ul>
-
-
-
-        
-
-    </ul>
-
-
-
-        
-
-            
-
-    
-    
-
-    
-    
-        
-            
-        
-    
-
-    <ul>
-        <li><a href='#copier-la-r%c3%a9f%c3%a9rence-%c3%a0-un-objet'>2.2.3.3 Copier la référence à un objet</a></li>
-
-        
-
-            
-
-    
-    
-
-    
-    
-        
-            
-        
-    
-
-    <ul>
-        <li><a href='#exemple-1-2'>2.2.3.3.1 Exemple 1</a></li>
-
-        
-
-    </ul>
-
-
-
-        
-
-            
-
-    
-    
-
-    
-    
-        
-            
-        
-    
-
-    <ul>
-        <li><a href='#exemple-2-2'>2.2.3.3.2 Exemple 2</a></li>
-
-        
-
-    </ul>
-
-
-
-        
-
-    </ul>
-
-
-
-        
-
-            
-
-    
-    
-
-    
-    
-        
-            
-        
-    
-
-    <ul>
-        <li><a href='#cr%c3%a9er-un-nouvel-objet-cr%c3%a9er-une-nouvelle-carte'>2.2.3.4 Créer un nouvel objet (créer une nouvelle carte)</a></li>
-
-        
-
-            
-
-    
-    
-
-    
-    
-        
-            
-        
-    
-
-    <ul>
-        <li><a href='#exemple-1-3'>2.2.3.4.1 Exemple 1</a></li>
-
-        
-
-    </ul>
-
-
-
-        
-
-            
-
-    
-    
-
-    
-    
-        
-            
-        
-    
-
-    <ul>
-        <li><a href='#exemple-2-3'>2.2.3.4.2 Exemple 2</a></li>
-
-        
-
-    </ul>
-
-
-
-        
-
-    </ul>
-
-
-
-        
-
-    </ul>
-
-
-
-        
-
-            
-
-    
-    
-
-    
-    
-        
-            
-        
-    
-
-    <ul>
-        <li><a href='#r%c3%a9f%c3%a9rences-multiples'>2.2.4 Références multiples</a></li>
+        <li><a href='#r%c3%a9f%c3%a9rences-multiples'>2.2.5 Références multiples</a></li>
 
         
 

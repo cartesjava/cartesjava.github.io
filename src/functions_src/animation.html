@@ -29,24 +29,29 @@
 
     {{ $filepath := $src }}
     {{ $video_base64 := "" }}
+    {{ $base64 := .Get "base64" }}
 
-    {{ if not (fileExists $filepath) }}
+    {{ if not (eq $base64 "") }}
 
-        {{ $filepath = path.Join "static" $filepath }}
+        {{ if not (fileExists $filepath) }}
+
+            {{ $filepath = path.Join "static" $filepath }}
+
+        {{ end }}
+
+        {{ if fileExists $filepath }}
+
+            {{ $video_content := $filepath | readFile }}
+            {{ $video_base64 = $video_content | base64Encode }}
+
+        {{ end }}
 
     {{ end }}
-
-    {{ if fileExists $filepath }}
-
-        {{ $video_content := $filepath | readFile }}
-        {{ $video_base64 = $video_content | base64Encode }}
-
-    {{ end }}
-
 
     <div>
         <video {{ printf "width='%s'" ($attrs.Get "width") | safeHTMLAttr }} crossOrigin="use-credentials" preload="none" autoplay muted loop disablepictureinpicture disableremoteplayback playsinline>
             {{ if eq $video_base64 "" }}
+
                 <source src="{{$baseUrl}}{{$src}}" type="video/{{$ext}}"/>
 
             {{ else }}

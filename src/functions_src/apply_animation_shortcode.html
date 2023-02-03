@@ -5,10 +5,12 @@
     {{ $args := .Get "args" }}
 
     {{ $src := "" }}
+    {{ $base64 := "" }}
 
     {{ if reflect.IsSlice $args }}
 
         {{ $src = index $args 0 }}
+        {{ $base64 = index $args 1 }}
 
     {{ else }}
 
@@ -17,9 +19,15 @@
             {{ $src = $args.Get 0 }}
         {{ end }}
 
+        {{ $base64 = $args.Get "base64" }}
+        {{ if not $base64 }}
+            {{ $base64 = $args.Get 1 }}
+        {{ end }}
+
     {{ end }}
 
     {{ $params.Set "src" $src }}
+    {{ $params.Set "base64" $base64 }}
 
     {{ $context := .Get "context" }}
 

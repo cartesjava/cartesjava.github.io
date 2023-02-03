@@ -1,10 +1,10 @@
 {
-  "_C": "FilmGraphe01",
+  "_C": "Film",
   "titre": "Dr. No",
   "annee": 0,
   "personnages": [
     {
-      "_C": "PersonnageGraphe",
+      "_C": "Personnage",
       "nom": "James Bond",
       "personnagePrincipal": true,
       "films": [
@@ -12,7 +12,7 @@
           "_R": "/"
         },
         {
-          "_C": "FilmGraphe",
+          "_C": "Film",
           "titre": "Bons Baisers de Russie",
           "annee": 0,
           "personnages": [
@@ -20,7 +20,7 @@
               "_R": "/personnages/0"
             },
             {
-              "_C": "PersonnageGraphe",
+              "_C": "Personnage",
               "nom": "Rosa Klebb",
               "personnagePrincipal": false,
               "films": [
@@ -34,7 +34,7 @@
       ]
     },
     {
-      "_C": "PersonnageGraphe",
+      "_C": "Personnage",
       "nom": "Docteur No",
       "personnagePrincipal": false,
       "films": [

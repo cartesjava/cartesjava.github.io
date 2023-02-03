@@ -1,0 +1,13 @@
+for i in *.json *.dot;
+do 
+    sed "s/FilmGraphe01/Film/g" -i $i
+    sed "s/FilmGraphe02/Film/g" -i $i
+    sed "s/PersonnageGraphe01/Personnage/g" -i $i
+    sed "s/PersonnageGraphe02/Personnage/g" -i $i
+    sed "s/PersonnageGraphe03/Personnage/g" -i $i
+done
+
+for i in *.dot;
+do
+    dot $i -Tpng > $(echo $i | sed "s/dot/png/")
+done

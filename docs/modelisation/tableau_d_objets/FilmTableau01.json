@@ -1,0 +1,17 @@
+{
+  "_C": "Film",
+  "titre": "Dr. No",
+  "annee": 1962,
+  "personnages": [
+    {
+      "_C": "PersonnageObjet",
+      "nom": "James Bond",
+      "personnagePrincipal": true
+    },
+    {
+      "_C": "PersonnageObjet",
+      "nom": "Docteur No",
+      "personnagePrincipal": false
+    }
+  ]
+}

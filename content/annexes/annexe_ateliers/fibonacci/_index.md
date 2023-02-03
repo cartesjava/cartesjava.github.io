@@ -7,28 +7,32 @@ bookNumbering: false
 
 {{% pageTitle %}}
 
+## Préalable
+
+* JDK 11 ou plus récent (testé jusqu'à JDK18)
+* Git
+* Eclipse
+
 ## Créer le projet
 
-1. Télécharger {{% download "atelier2_3.zip" "atelier2_3.zip" %}}
+1. Télécharger {{% download "fibonacci.zip" "fibonacci.zip" %}}
 
-1. Copier le fichier `atelier2_3.zip` **à la racine** de mon dépôt Git
+1. Copier le fichier `fiboacci.zip` **à la racine** d'un répertoire de travail vide
 
-1. Extraire les fichiers **directement** à la racine du dépôt Git
+1. Extraire les fichiers **directement** à la racine de ce répertoire de travail
 
     * Clic-droit sur le fichier => *Extraire tout*
 
-    * **Effacer `atelier2_3` du chemin proposé**
+    * **Effacer `fibonacci` du chemin proposé**
 
     * Cliquer sur *Extraire*
 
     * Choisir *Remplacer les fichiers dans la destination*
 
-    * Vérifier que les fichiers sont **à la racine** du dépôt Git 
-
-        * dans le même répertoire que `.git`
+    * Vérifier que les fichiers sont **à la racine** du répertoire de travail
 
 
-1. Ouvrir *Git Bash* **à la racine** de mon dépôt Git
+1. Ouvrir *Git Bash* **à la racine** de mon répertoire de travail
 
     * *Windows 10* : Clic-droit => *Git Bash Here*
     * *Windows 11* : Clic-droit => *Show more options* => *Git Bash Here*
@@ -46,7 +50,7 @@ bookNumbering: false
 
 1. Attendre que le script termine
 
-1. Ouvrir Eclipse et importer le projet `atelier2_3`
+1. Ouvrir Eclipse et importer le projet `fibonacci`
 
     * *File* => *Import* => *Existing Projects into Workspace*
 
@@ -54,14 +58,14 @@ bookNumbering: false
 
     * Cliquer sur *Sélectionner un dossier*
 
-    * Vérifier que le projet `atelier2_3` apparaît dans la case *Projects*
+    * Vérifier que le projet `fibonacci` apparaît dans la case *Projects*
 
     * Cliquer sur *Finish*
 
 
 ## Créer la classe `MonFibonacci`
 
-1. Ajouter la classe suivante au projet `atelier2_3`
+1. Ajouter la classe suivante au projet `fibonacci`
     * Nom de la classe: `MonFibonacci`
     * **Ne pas** cocher `public static ...`
 
@@ -130,7 +134,7 @@ bookNumbering: false
 
 ## Créer la classe `Procedure`
 
-1. Ajouter la classe suivante au projet `atelier2_3`
+1. Ajouter la classe suivante au projet `fibonacci`
     * Nom de la classe: `Procedure`
     * **cocher** `public static ...`
 
@@ -177,7 +181,7 @@ bookNumbering: false
 
 ## Exécuter l'outil de validation une première fois
 
-* Dans Eclipse, sélectionner le projet `atelier2_3`
+* Dans Eclipse, sélectionner le projet `fibonacci`
 
 * Clic-droit sur la classe `Procedure`
 

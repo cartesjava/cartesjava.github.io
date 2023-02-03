@@ -6,67 +6,29 @@ bookHidden: false
 
 {{% pageTitle %}}
 
+Dans le cas général, des données orientée-objet forme un graphe.
 
-## Arbre 
+## Graphe film/personnage
 
+On peut compléter ainsi la modélisation des films et des personnages présentées aux chapitres précédents.
 
-* Un arbre est une structure avec une racine et des branches:
+<img class="figure no-border" src="FilmGraphe.png"/>
 
-    <center>
-        <img src="arbre01.svg" width="50%">
-    </center>
+* Un `Personnage` apparaît dans plusieurs `Film`
+* Un `Film` contient plusieurs `Personnage`
 
-    * NOTE: l'arbre est typiquement dessiné avec la racine en haut
+Voici un exemple de données se conformant à cette modélisation.
 
-* Chaque cercle ci-haut est appelé un noeud
+<img src="FilmGraphe01.png"/>
 
-* Chaque noeud peut avoir des enfants (indiqués par les flèches)
- 
-* Chaque noeud a exactement un parent (sauf la racine qui n'a aucun parent)
-
-## Arbre binaire de recherche
-
-
-* C'est un type d'arbre très utilisé en informatique:
-
-    <center>
-        <img src="arbre02.svg" width="50%">
-    </center>
-
-* Chaque noeud contient un `Comparable` (p.ex. un `int`)
-
-* Chaque noeud a au plus deux enfants
-
-* L'enfant à gauche est toujours plus petit que le parent (et grand-parent, etc.)
-    * p.ex.: `0 < 1` et `4<5`
-
-* L'enfant à droite est toujours plus grand que le parent (et grand-parent, etc.)
-    * p.ex.: `5>3` et `2>1`
-
-## Arbre binaire en Java
-
-
-* Il suffit de représenter un `Noeud`
-
-    <img class="figure" src="Noeud.png"/>
-
-* La définition de `Noeud` est récursive:
-    * Qu'est-ce qu'un `Noeud`?
-        * quelque chose qui contient deux noeuds!
-            * `enfantGauche()` et `enfantDroit()`
-
-* Par exemple, pour représenter l'arbre ci-haut:
-
-```java
-{{% embed "Arbre02.java" %}}
-```
-
-<img src="Arbre01.png" />
-
-
-
+* Le `Personnage` James Bond apparaît dans deux films: Dr. No et Bon Baisers de Russie
+* Le `Film` Dr. No contient deux personnages: James Bond et Dr. no
 
 ## Exemple: Fibonacci
+
+Dans le cas général, il n'est pas facile de visualiser un graphe d'objet avec des cartes.
+Dans notre approche, il est donc nécessaire de s'en tenir à des cas particuliers.
+Comme exemple, nous développons une modélisation de la séquence de Fibonacci.
 
 ## Définition
 
@@ -145,12 +107,6 @@ bookHidden: false
     <img src="Fib_3.png" />
 
 1. Et ainsi de suite...
-
-{{<excerpt class="note">}}
-
-Il existe une modélisation plus simple. Chut, ne le dis pas! C'est la question bonus de l'atelier 2.3.
-
-{{</excerpt>}}
 
 ## Pour calculer la réponse et le nombre d'or
 
@@ -253,48 +209,4 @@ Il existe une modélisation plus simple. Chut, ne le dis pas! C'est la question 
 1. Le calcul dynamique est moins intuitif (et moins proche de la définition mathématique), mais
 
     * on a éliminé l'appel récursif, alors on ne peut plus déborder la pile d'appel
-
-
-## Graphe
-
-1. Un modèle Java contient des références
-
-    <img class="figure no-border" src="FilmGraphe.png"/>
-
-    * Un `Personnage` apparaît dans plusieurs `Film`
-    * Un `Film` contient plusieurs `Personnage`
-
-1. Très souvent, ces références forment des boucles
-
-    <img src="FilmGraphe01.png"/>
-
-    * Le `Personnage` James Bond apparaît dans deux films: Dr. No et Bon Baisers de Russie
-    * Le `Film` Dr. No contient deux personnages: James Bond et Dr. no
-
-1. On parle alors de graphe d'objets (plutôt que de tableau d'objets)
-
-
-## Graphe d'objets en JSON
-
-
-1. JSON n'a pas de notion de référence
-
-1. Dans ce cours, on ajoute un objet spécial `{"_R":"/chemin/vers/objet/cible"}` pour représenter certaines références
-
-    * (sans l'objet spécial, on ne peut pas représenter les boucles)
-
-1. Par exemple, le graphe ci-haut est représenté comme suit en JSON
-
-```json
-{{% embed "FilmGraphe01.json" %}}
-```
-
-{{<excerpt class="note">}}
-NOTE:
-
-* on ne va pas vous demander d'écrire du JSON avec l'objet spécial `{"_R":"/chemin/cible"}`
-* il vous faut uniquement comprendre que ça existe 
-* et comprendre la notion de graphe d'objets en POO
-
-{{</excerpt>}}
 

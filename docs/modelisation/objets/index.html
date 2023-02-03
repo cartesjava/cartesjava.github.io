@@ -7,7 +7,10 @@
 
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Section 2.1: Objets #  2.1.1 Modéliser une carte #       {  &#34;_C&#34;: &#34;Carte01&#34;,  &#34;numero&#34;: 9,  &#34;sorte&#34;: &#34;CARREAU&#34; }         {  &#34;_C&#34;: &#34;Carte02&#34;,  &#34;numero&#34;: 3,  &#34;sorte&#34;: &#34;TREFLE&#34; }         {  &#34;_C&#34;: &#34;Carte03&#34;,  &#34;numero&#34;: 58,  &#34;sorte&#34;: &#34;PIQUE&#34; }      2.">
+<meta name="description" content="Section 2.1: Objets #  L&rsquo;unité de base d&rsquo;un modélisation orientée-objet est l&rsquo;objet. Nous donnons ici quelques exemples de modélisations, tout en discutant de la possibilité de visualiser ces données avec des cartes à jouer.
+2.1.1 Modéliser une carte #  Une carte est modélisée par la classe suivante:
+L&rsquo;attribut de type Sorte correspond à une énumération:
+public enum Sorte {  COEUR, CARREAU, TREFLE, PIQUE; } Voici quelques exemples de cartes.">
 <meta name="theme-color" content="#FFFFFF">
 <meta name="color-scheme" content="light dark"><meta property="og:title" content="Objets" />
 <meta property="og:description" content="" />
@@ -24,9 +27,9 @@
 </title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
-<link rel="stylesheet" href="/book.min.e4869670571a4fc0a50f4a2c889ed6ee3b49dac25cd9095e9eea1f69c426d18a.css" integrity="sha256-5IaWcFcaT8ClD0osiJ7W7jtJ2sJc2QlenuofacQm0Yo=" crossorigin="anonymous">
+<link rel="stylesheet" href="/book.min.6eff5a840770643758c6b07018dc6302b7461f1593281c294fae77c00766cf48.css" integrity="sha256-bv9ahAdwZDdYxrBwGNxjArdGHxWTKBwpT653wAdmz0g=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/fr.search.min.0e5eca3384d4e84a083eaf733dd004e479c5ffdbd8211494050eba149a9c560e.js" integrity="sha256-Dl7KM4TU6EoIPq9zPdAE5HnF/9vYIRSUBQ66FJqcVg4=" crossorigin="anonymous"></script>
+  <script defer src="/fr.search.min.551de89f158a3d7e4917d34fe84ebee48f3321e7e5f7f875b849dd5829f275a5.js" integrity="sha256-VR3onxWKPX5JF9NP6E6&#43;5I8zIefl9/h1uEndWCnydaU=" crossorigin="anonymous"></script>
 
   <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" integrity="sha256-b2&#43;Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC&#43;NdcPIvZhzk=" crossorigin="anonymous"></script>
 
@@ -981,6 +984,9 @@ Objets
 <a class="anchor" href="#objets">#</a>
 
 </h1>
+<p>L&rsquo;unité de base d&rsquo;un modélisation orientée-objet est l&rsquo;objet.  Nous donnons ici
+quelques exemples de modélisations, tout en discutant de la possibilité de
+visualiser ces données avec des cartes à jouer.</p>
 <h2 id="modéliser-une-carte">
 
 
@@ -1023,7 +1029,13 @@ Modéliser une carte
 <a class="anchor" href="#mod%c3%a9liser-une-carte">#</a>
 
 </h2>
+<p>Une carte est modélisée par la classe suivante:</p>
 <img class="figure" src="Carte.png">
+<p>L&rsquo;attribut de type <code>Sorte</code> correspond à une énumération:</p>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#00a8c8">public</span> <span style="color:#00a8c8">enum</span> <span style="color:#111">Sorte</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">COEUR</span><span style="color:#f92672">,</span> <span style="color:#111">CARREAU</span><span style="color:#f92672">,</span> <span style="color:#111">TREFLE</span><span style="color:#f92672">,</span> <span style="color:#111">PIQUE</span><span style="color:#f92672">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span></code></pre></div><p>Voici quelques exemples de cartes.</p>
 <table>
 <tr>
 <td>
@@ -1031,7 +1043,7 @@ Modéliser une carte
 </td>
 <td>
 <div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#111">{</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;_C&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;Carte01&#34;</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;_C&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;Carte&#34;</span><span style="color:#111">,</span>
 </span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;numero&#34;</span><span style="color:#111">:</span> <span style="color:#ae81ff">9</span><span style="color:#111">,</span>
 </span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;sorte&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;CARREAU&#34;</span>
 </span></span><span style="display:flex;"><span><span style="color:#111">}</span>
@@ -1046,7 +1058,7 @@ Modéliser une carte
 </td>
 <td>
 <div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#111">{</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;_C&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;Carte02&#34;</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;_C&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;Carte&#34;</span><span style="color:#111">,</span>
 </span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;numero&#34;</span><span style="color:#111">:</span> <span style="color:#ae81ff">3</span><span style="color:#111">,</span>
 </span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;sorte&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;TREFLE&#34;</span>
 </span></span><span style="display:flex;"><span><span style="color:#111">}</span>
@@ -1061,7 +1073,7 @@ Modéliser une carte
 </td>
 <td>
 <div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#111">{</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;_C&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;Carte03&#34;</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;_C&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;Carte&#34;</span><span style="color:#111">,</span>
 </span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;numero&#34;</span><span style="color:#111">:</span> <span style="color:#ae81ff">58</span><span style="color:#111">,</span>
 </span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;sorte&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;PIQUE&#34;</span>
 </span></span><span style="display:flex;"><span><span style="color:#111">}</span>
@@ -1071,6 +1083,16 @@ Modéliser une carte
 </td>
 </tr>
 </table>
+<p>À noter qu&rsquo;on peut représenter des cartes qui n&rsquo;existent pas dans un paquet de carte ordinaire (comme le 58 de pique ci-haut).
+Par contre, comme notre objectif est que chaque procédure visualisée avec des cartes puisse être aisément réalisée sur une table, avec de vraies cartes à jouer,
+il est préférable de s&rsquo;en tenir aux cartes suivantes:</p>
+<ul>
+<li>2-10 de coeur</li>
+<li>2-10 de carreau</li>
+<li>2-10 de trèfle</li>
+<li>2-10 de pique</li>
+</ul>
+<p>Idéallement, les exemples illustrés par des cartes devraient donc se limiter à 32 objets.</p>
 <h2 id="modéliser-un-film-et-un-personnage">
 
 
@@ -1113,7 +1135,10 @@ Modéliser un film et un personnage
 <a class="anchor" href="#mod%c3%a9liser-un-film-et-un-personnage">#</a>
 
 </h2>
+<p>On peut évidemment modéliser autre chose que des cartes.
+Voici par exemple une classe représentant un film.</p>
 <img class="figure" src="FilmObjet.png">
+<p>Voici des objets représentant certains films en particulier.</p>
 <table>
 <tr>
 <td>
@@ -1121,7 +1146,7 @@ Modéliser un film et un personnage
 </td>
 <td>
 <div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#111">{</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;_C&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;FilmObjet01&#34;</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;_C&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;Film&#34;</span><span style="color:#111">,</span>
 </span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;titre&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;Dr. No&#34;</span><span style="color:#111">,</span>
 </span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;annee&#34;</span><span style="color:#111">:</span> <span style="color:#ae81ff">1962</span>
 </span></span><span style="display:flex;"><span><span style="color:#111">}</span>
@@ -1133,15 +1158,17 @@ Modéliser un film et un personnage
 </td>
 <td>
 <div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#111">{</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;_C&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;FilmObjet02&#34;</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;_C&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;Film&#34;</span><span style="color:#111">,</span>
 </span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;titre&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;Bons Baisers de Russie&#34;</span><span style="color:#111">,</span>
 </span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;annee&#34;</span><span style="color:#111">:</span> <span style="color:#ae81ff">1963</span>
 </span></span><span style="display:flex;"><span><span style="color:#111">}</span>
 </span></span></code></pre></div></td>
 </tr>
+<p>Voici une classe représentant un personnage.</p>
 </table>
 <br>
 <img class="figure" src="PersonnageObjet.png">
+<p>Finalement, voici des objets représentant des personnages en particulier.</p>
 <table>
 <tr>
 <td>
@@ -1149,7 +1176,7 @@ Modéliser un film et un personnage
 </td>
 <td>
 <div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#111">{</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;_C&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;PersonnageObjet01&#34;</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;_C&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;Personnage&#34;</span><span style="color:#111">,</span>
 </span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;personnagePrincipal&#34;</span><span style="color:#111">:</span> <span style="color:#00a8c8">true</span><span style="color:#111">,</span>
 </span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;nom&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;James Bond&#34;</span>
 </span></span></code></pre></div></td>
@@ -1160,7 +1187,7 @@ Modéliser un film et un personnage
 </td>
 <td>
 <div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#111">{</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;_C&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;PersonnageObjet02&#34;</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;_C&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;Personnage&#34;</span><span style="color:#111">,</span>
 </span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;nom&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;Docteur No&#34;</span><span style="color:#111">,</span>
 </span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;personnagePrincipal&#34;</span><span style="color:#111">:</span> <span style="color:#00a8c8">false</span>
 </span></span><span style="display:flex;"><span><span style="color:#111">}</span>
@@ -1172,7 +1199,7 @@ Modéliser un film et un personnage
 </td>
 <td>
 <div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#111">{</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;_C&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;PersonnageObjet03&#34;</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;_C&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;Personnage&#34;</span><span style="color:#111">,</span>
 </span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;nom&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;Rosa Klebb&#34;</span><span style="color:#111">,</span>
 </span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;personnagePrincipal&#34;</span><span style="color:#111">:</span> <span style="color:#00a8c8">false</span>
 </span></span><span style="display:flex;"><span><span style="color:#111">}</span>
@@ -1193,15 +1220,32 @@ Modéliser un film et un personnage
 
     <div>
         
+        <div>
+            <a href="https://fabriquerel.org/">
+	            <img style="width:20em;height:100%" alt="FabriqueREL" src="/F-REL_logo-coul-horiz.png" />
+            </a>
+        </div>
+        <div style="position:relative;left:1.25em;">
+            <a href="https://www.cmontmorency.qc.ca/">
+	            <img style="width:20em;height:100%" alt="Collège Montmorency" src="/LogomoHC.png" />
+            </a>
+        </div>
+        
     </div>
 
     <div style="padding-top:2em;">
+        
+        <div class="flex justify-end"><a href="https://github.com/cartesjava/cartesjava.github.io/commit/4addf6fb571af68d5dc3541c0ed48c50d3e39d69" title='Dernière modification par Mathieu Bergeron | 2023-01-27' target="_blank" rel="noopener">
+                <span>2023-01-27</span>
+                <img src="/svg/calendar.svg" class="book-icon" alt="Calendar" />
+            </a>
+        </div>
         
 
         
         <div class="flex justify-end" style="padding-top:1em;">
             <a href="https://github.com/cartesjava/cartesjava.github.io/edit/main//pages/modelisation/objets/_index.md" target="_blank" rel="noopener">
-                <span>Suggérer une modification</span>
+                <span>Modifier cette page</span>
                 <img src="/svg/edit.svg" class="book-icon" alt="Edit" />
             </a>
         </div>

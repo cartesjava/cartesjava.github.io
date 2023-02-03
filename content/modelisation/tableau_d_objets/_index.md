@@ -6,36 +6,147 @@ bookHidden: false
 
 {{% pageTitle %}}
 
+Une fois les objets modélisés, la prochaine étape est de spécifier les
+relations entre ces objets, c'est-à-dire l'organisation de ces objets dans 
+la mémoire du programme.
+
+## Tableau de personnages 
+
+On peut améliorer la modélisation d'un film présentée au chapitre précédent en ajoutant
+la relation suivante:
+
+* Un film contient des personnages
+
+<img class="figure" src="FilmTableau.png"/>
+
+Voici des exemples de données se conformant à cette modélisation.
+
+<table>
+
+<tr>
+<td>
+
+<img class="figure" src="FilmTableau01.png"/>
+
+</td>
+
+<td>
+
+```json
+{{% embed src="FilmTableau01.json" %}}
+```
+
+</td>
+</tr>
+
+<tr>
+<td>
+
+<img class="figure" src="FilmTableau02.png"/>
+
+</td>
+
+<td>
+
+```json
+{{% embed src="FilmTableau02.json" %}}
+```
+
+</td>
+</tr>
+
+
+
+</table>
+
+## Tableau de films
+
+On peut améliorer la modélisation d'un personage présentée au chapitre précédent en ajoutant
+la relation suivante:
+
+* Un personnage apparaît un ou plusieurs films
+
+<img class="figure" src="PersonnageTableau.png"/>
+
+Voici des exemples de données se conformant à cette modélisation.
+
+<table>
+
+<tr>
+<td>
+
+<img class="figure" src="PersonnageTableau01.png"/>
+
+</td>
+
+<td>
+
+```json
+{{% embed src="PersonnageTableau01.json" %}}
+```
+
+</td>
+</tr>
+
+<tr>
+<td>
+
+<img class="figure" src="PersonnageTableau02.png"/>
+
+</td>
+
+<td>
+
+```json
+{{% embed src="PersonnageTableau02.json" %}}
+```
+
+</td>
+</tr>
+
+
+
+</table>
+
+
 ## Tableau de cartes
+
+Les exemples de tableau de cartes sont plus pertinents à notre approche.
+Considérer le digramme de classe suivant.
 
 <img class="figure" src="MonTableau.png"/>
 
+Voici des exemples de tableau de cartes.
 
-### Exemple 1
+<table>
 
+<tr>
+<td>
 <img class="figure" src="cartesA.png"/>
+</td>
+<td>
 <img class="figure" src="tableauA.png"/>
+</td>
+</tr>
 
-### Exemple 2
-
-
+<tr>
+<td>
 <img class="figure" src="cartesB.png"/>
+</td>
+<td>
 <img class="figure" src="tableauB.png"/>
+</td>
+</tr>
 
-
-## Tableau de films et de personnages
-
-<img class="figure" src="FilmTableau.png"/>
-<br>
-<img class="figure" src="PersonnageTableau.png"/>
+</table>
 
 
 ## Comprendre l'effet d'instructions typiques
 
+Pour comprendre comment les cartes sont animées dans l'outil de validation, 
+il est important de comprendre l'effet d'instructions typiques.
+
 ### Accéder à une valeur
-
-
-#### Example 1
 
 <table>
 <tr>
@@ -68,8 +179,6 @@ memoireA.getSorte();
 </tr>
 </table>
 
-#### Example 2
-
 <table>
 <tr>
 <th>Objets au départ</th>
@@ -100,8 +209,6 @@ cartes[2].getSorte();
 </td>
 </tr>
 </table>
-
-#### Example 3
 
 <table>
 <tr>
@@ -139,9 +246,6 @@ java.lang.NullPointerException
 ### Déplacer un objet (déplacer une carte)
 
 
-
-#### Exemple 1
-
 <table>
 <tr>
 <th>Objets au départ</th>
@@ -166,8 +270,6 @@ cartes[0] = null;
 </td>
 </tr>
 </table>
-
-#### Exemple 2
 
 <table>
 <tr>
@@ -197,8 +299,6 @@ cartes[0] = null;
 ### Copier la référence à un objet
 
 
-#### Exemple 1
-
 <table>
 <tr>
 <th>Objets au départ</th>
@@ -223,8 +323,6 @@ memoireA = cartes[0];
 </tr>
 
 </table>
-
-#### Exemple 2
 
 <table>
 <tr>
@@ -256,8 +354,6 @@ cartes[2] = cartes[0];
 ### Créer un nouvel objet (créer une nouvelle carte)
 
 
-#### Exemple 1
-
 <table>
 <tr>
 <th>Objets au départ</th>
@@ -284,7 +380,6 @@ memoireA = new Carte(2, "TREFLE");
 
 </table>
 
-#### Exemple 2
 
 <table>
 <tr>
@@ -314,7 +409,6 @@ memoireB = new Carte(5, "TREFLE");
 
 
 ## Références multiples
-
 
 Typiquement, on va copier une référence à un objet, plutôt que déplacer l'objet.
 
@@ -368,11 +462,10 @@ La visualisation est correcte, mais plus difficile à lire.
 <img class="figure" src="tableauA.png"/>
 
 
-Autant que possible, on va expliquer les procédures en déplaçant les cartes, 
-c'est-à-dire
-en évitant de créer des références multiples.
-Cependant, il faut garder en tête que le code typique contient très souvent des références multiples.
-
+Autant que possible, on va expliquer les procédures en déplaçant les cartes,
+c'est-à-dire en évitant de créer des références multiples.  Cependant, il faut
+garder en tête que le code typique contient très souvent des références
+multiples.
 
 
 

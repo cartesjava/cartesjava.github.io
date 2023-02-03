@@ -1,4 +1,4 @@
-digraph "PersonnageObjet02" {
+digraph "Personnage" {
 graph ["rankdir"="LR","compound"="true","ranksep"="1.0","nodesep"="1.0"]
-"/" ["label"="<_C>PersonnageObjet02|{nom|\"Docteur No\"}|{personnagePrincipal|false}","style"="filled","fillcolor"="white","shape"="record"]
+"/" ["label"="<_C>Personnage|{nom|\"Docteur No\"}|{personnagePrincipal|false}","style"="filled","fillcolor"="white","shape"="record"]
 }
