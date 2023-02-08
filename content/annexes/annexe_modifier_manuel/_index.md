@@ -119,3 +119,9 @@ Le dépôt source est ici: https://github.com/cartesjava/cartesjava.github.io
     ├── src              # sources pour les extensions à Hugo
     └── static           # images et fichiers statiques
     ```
+
+## Modifier la version publique de ce manuel
+
+1. Voir le *README* sur la page Web du dépôt Git:
+
+    * https://github.com/cartesjava/cartesjava.github.io
