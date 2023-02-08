@@ -136,7 +136,7 @@
 1. Ouvrir GitBash à la racine du dépôt Git et faire
 
     ```bash
-    $ hugo server
+    $ hugo
     $ sh scripts/publish
     ```
 
