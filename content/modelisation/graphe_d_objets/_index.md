@@ -64,7 +64,7 @@ Comme exemple, nous développons une modélisation de la séquence de Fibonacci.
 
     * (c-à-d avec autant de chiffres après le point que désiré)
 
-1. Pour calculer un approximation du nombre d'or on fait tout simplement:
+1. Pour calculer une approximation du nombre d'or on fait tout simplement:
 
     {{< katex display="block" class="text-center"  >}}
     \text{nombre d'or} \approx \dfrac{F_{n}}{F_{n-1}} \text{~~~pour~~~} n\geq 2
@@ -79,7 +79,7 @@ Comme exemple, nous développons une modélisation de la séquence de Fibonacci.
     * (plus on prend un nombre loin dans la suite, plus l'approximation est bonne)
 
 
-## Modéliser la suite de Fibonnaci
+## Modéliser la suite de Fibonacci
 
 1. Pour modéliser la suite en Java, on va créer une structure de données récursive
 
