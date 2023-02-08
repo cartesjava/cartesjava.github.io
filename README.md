@@ -32,10 +32,10 @@
 1. Ouvrir votre clé SSH publique 
 
     ```bash
-    $ notepad.exe ~/.ssh/id_rsa.pub
+    $ notepad ~/.ssh/id_rsa.pub
     ```
 
-    * alternativement: ouvrir Bloc Note et ouvrir le fichier suivant
+    * alternativement, démarrer un éditeur de texte et ouvrir le fichier suivant
         * `C:` => `Users` => *mon usager* => `.ssh` => ouvrir `id_rsa.pub`
 
 1. Copier-coller le texte de votre clé sur GitHub
@@ -46,25 +46,89 @@
 
 ### Cloner le dépôt Git via SSH
 
-```bash
-$ git clone https://cartesjava.github.io/annexes/annexe_modifier_manuel/
-```
+1. Faire la commande suivante pour cloner le dépôt Git
+
+    ```bash
+    $ git clone git@github.com:cartesjava/cartesjava.github.io.git 
+    ```
+
+1. La racine de ce dépôt Git est le répertoire contenant les fichiers suivants:
+
+    ```bash
+    ├── archetypes
+    ├── assets
+    ├── config.yaml
+    ├── content
+    ├── docs
+    ├── .git
+    ├── .gitignore
+    ├── i18n
+    ├── layouts
+    ├── nodes
+    ├── parametres01.png
+    ├── parametres02.png
+    ├── parametres03.png
+    ├── README.md
+    ├── resources
+    ├── scripts
+    ├── src
+    └── static
+    ```
+
+1. Pour ouvrir un GitBash à la racine du dépôt Git, faire
+    * Démarrer un explorateur de fichier Windows
+    * Naviguer jusqu'à la racine de dépôt Git
+    * *Clic-droit* => *GitBash here*
+
+        <img src="ouvrir_gitbash.png"/>
+
 
 #### Modifier les sources en local
 
-1. Voici les répertoires importants
+1. Voici les fichiers et répertoires importants
 
+    ```bash
+    ├── assets            # répertoire avec les .css
+    ├── config.yaml       # configuration du site
+    ├── content           # sources pour le contenu
+    │   ├── annexes         
+    │   ├── approche
+    │   ├── arbres
+    │   ├── bibliographie
+    │   ├── conclusion
+    │   ├── efficacite
+    │   ├── _index.md
+    │   ├── intro
+    │   ├── listes
+    │   ├── mappages
+    │   ├── modelisation
+    │   ├── preface
+    │   └── procedures
+    ├── docs             # fichiers .html pour publication
+    ├── src              # sources pour les extensions à Hugo
+    └── static           # images et fichiers statiques
+    ```
 
 #### Pousser des modifications sur GitHub
 
-1. Ouvrir GitBash à la racine du dépôt Git
+1. Ouvrir GitBash à la racine du dépôt Git et faire
 
     ```bash
     $ git add .
-    $ git commit -a -m"titre de la modification"
+    $ git commit -a -m"ma modification"
+    $ git push
     ```
 
-1. asdf
+    * remplacer `ma modification` par une description de la modification
 
+#### Mettre à jour le site `cartesjava.github.io`
 
+1. Ouvrir GitBash à la racine du dépôt Git et faire
 
+    ```bash
+    $ hugo server
+    $ sh scripts/publish
+    ```
+
+    * NOTE: ne fonctionne que si votre clé SSH est installé sur GitHub
+    

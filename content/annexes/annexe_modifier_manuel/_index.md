@@ -51,6 +51,44 @@ Le dépôt source est ici: https://github.com/cartesjava/cartesjava.github.io
 
 1. Installer <a href="https://gohugo.io/" target="_blank">Hugo</a> sur votre machine
 
+1. Faire la commande suivante pour cloner le dépôt Git
+
+    ```bash
+    $ git clone https://github.com/cartesjava/cartesjava.github.io.git
+    ```
+
+1. La racine de ce dépôt Git est le répertoire contenant les fichiers suivants:
+
+    ```bash
+    ├── archetypes
+    ├── assets
+    ├── config.yaml
+    ├── content
+    ├── docs
+    ├── .git
+    ├── .gitignore
+    ├── i18n
+    ├── layouts
+    ├── nodes
+    ├── parametres01.png
+    ├── parametres02.png
+    ├── parametres03.png
+    ├── README.md
+    ├── resources
+    ├── scripts
+    ├── src
+    └── static
+    ```
+
+1. Pour ouvrir un GitBash à la racine du dépôt Git, faire
+    * Démarrer un explorateur de fichier Windows
+    * Naviguer jusqu'à la racine de dépôt Git
+    * *Clic-droit* => *GitBash here*
+
+        <img src="ouvrir_gitbash.png"/>
+
+
+
 1. Démarrer Hugo à la racine du dépôt Git `cartesjava.github.io`
 
     ```bash
@@ -59,5 +97,26 @@ Le dépôt source est ici: https://github.com/cartesjava/cartesjava.github.io
 
 1. Naviguer vers <a href="http://localhost:1313" target="blank">localhost:1313</a>
 
+1. Voici les fichiers et répertoires importants
 
-    
+    ```bash
+    ├── assets            # répertoire avec les .css
+    ├── config.yaml       # configuration du site
+    ├── content           # sources pour le contenu
+    │   ├── annexes         
+    │   ├── approche
+    │   ├── arbres
+    │   ├── bibliographie
+    │   ├── conclusion
+    │   ├── efficacite
+    │   ├── _index.md
+    │   ├── intro
+    │   ├── listes
+    │   ├── mappages
+    │   ├── modelisation
+    │   ├── preface
+    │   └── procedures
+    ├── docs             # fichiers .html pour publication
+    ├── src              # sources pour les extensions à Hugo
+    └── static           # images et fichiers statiques
+    ```
