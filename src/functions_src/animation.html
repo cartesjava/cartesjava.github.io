@@ -47,7 +47,7 @@
 
 
     <div>
-        <video {{ printf "width='%s'" ($attrs.Get "width") | safeHTMLAttr }} crossOrigin="use-credentials" preload="none" autoplay muted loop disablepictureinpicture disableremoteplayback playsinline>
+        <video {{ printf "width='%s'" ($attrs.Get "width") | safeHTMLAttr }} crossOrigin="anonymous" preload="none" autoplay muted loop disablepictureinpicture disableremoteplayback playsinline>
             {{ if eq $video_base64 "" }}
 
                 <source src="{{$baseUrl}}{{$src}}" type="video/{{$ext}}"/>
