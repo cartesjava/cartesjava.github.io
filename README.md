@@ -4,7 +4,7 @@
 
 1. Voir https://cartesjava.github.io/annexes/annexe_modifier_manuel/
 
-## Pour les propriétaires du dépôt Git
+## Pour les propriétaires de ce dépôt Git
 
 ### Préalables
 
