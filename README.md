@@ -17,7 +17,11 @@
 
 1. Sur GitHub, ouvrir les paramètres du profil
 
-1. sddf
+    <img src="parametres01.png"/>
+
+1. Choisir *SSH and GPG keys*, puis *New SSH key*
+
+    <img src="parametres02.png"/>
 
 ## Cloner le dépôt Git via SSH
 
