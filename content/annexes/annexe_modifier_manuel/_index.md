@@ -88,7 +88,6 @@ Le dépôt source est ici: https://github.com/cartesjava/cartesjava.github.io
         <img src="ouvrir_gitbash.png"/>
 
 
-
 1. Démarrer Hugo à la racine du dépôt Git `cartesjava.github.io`
 
     ```bash

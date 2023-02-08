@@ -109,6 +109,14 @@
     └── static           # images et fichiers statiques
     ```
 
+1. Démarrer Hugo à la racine du dépôt Git
+
+    ```bash
+    $ hugo server
+    ```
+
+1. Naviguer vers <a href="http://localhost:1313" target="blank">localhost:1313</a>
+
 #### Pousser des modifications sur GitHub
 
 1. Ouvrir GitBash à la racine du dépôt Git et faire
@@ -130,5 +138,5 @@
     $ sh scripts/publish
     ```
 
-    * NOTE: ne fonctionne que si votre clé SSH est installé sur GitHub
+    * NOTE: ne fonctionne que si votre clé SSH est installée sur GitHub
     
