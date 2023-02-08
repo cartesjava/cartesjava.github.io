@@ -35,8 +35,9 @@
     $ notepad ~/.ssh/id_rsa.pub
     ```
 
-    * alternativement, démarrer un éditeur de texte et ouvrir le fichier suivant
-        * `C:` => `Users` => *mon usager* => `.ssh` => ouvrir `id_rsa.pub`
+    * alternativement, démarrer un éditeur de texte comme Bloc-notes et ouvrir le fichier suivant
+        * choisir: *tous les fichiers*
+        * naviguer: "Ce PC" => `C:` => `Users` => *mon usager* => `.ssh` => ouvrir `id_rsa.pub`
 
 1. Copier-coller le texte de votre clé sur GitHub
 
