@@ -61,7 +61,7 @@ Voici des exemples de données se conformant à cette modélisation.
 
 ## Tableau de films
 
-On peut améliorer la modélisation d'un personage présentée au chapitre précédent en ajoutant
+On peut améliorer la modélisation d'un personnage présentée au chapitre précédent en ajoutant
 la relation suivante:
 
 * Un personnage apparaît un ou plusieurs films

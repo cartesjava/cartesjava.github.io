@@ -8,7 +8,7 @@ bookCollapseSection: true
 
 > Ce chapitre présente des exemples de modélisations de données et discute de
 > leur visualisation avec des cartes à jouer, ainsi que l'utilisation de ces
-> visualisation en classe ou dans des exercices.  À travers le chapitre, nous
+> visualisations en classe ou dans des exercices.  À travers le chapitre, nous
 > discutons aussi des limitations d'une visualisation avec des cartes à jouer
 > sont aussi discutées à travers le chapitre.
 

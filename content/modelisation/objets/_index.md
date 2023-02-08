@@ -91,7 +91,7 @@ il est préférable de s'en tenir aux cartes suivantes:
 * 2-10 de trèfle
 * 2-10 de pique
 
-Idéallement, les exemples illustrés par des cartes devraient donc se limiter à 32 objets.
+Idéalement, les exemples illustrés par des cartes devraient donc se limiter à 32 objets.
 
 ## Modéliser un film et un personnage
 
