@@ -30,9 +30,6 @@ hugo
 # remove .mkv
 find "$publishDir" -name "*.mkv" | while read i; do rm -v "$i"; done
 
-# remove .mp4
-find "$publishDir" -name "*.mp4" | while read i; do rm -v "$i"; done
-
 
 git add .
 
