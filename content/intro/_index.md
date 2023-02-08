@@ -101,7 +101,7 @@ Opération à réaliser
 </center>
 
 On peut demander aux étudiant·es d'effectuer cette opération avec des vraies cartes, 
-permettant ainsi à l'enseignant·e de véfifier que l'énoncé a bien été compris (c-à-d l'interface, ou ce que le programme doit faire).
+permettant ainsi à l'enseignant·e de vérifier que l'énoncé a bien été compris (c-à-d l'interface, ou ce que le programme doit faire).
 
 On peut ensuite présenter une procédure afin de réaliser l'opération (c-à-d l'implantation, ou comment le
 programme doit le faire). Dans l'exemple ci-bas, on utilise une procédure qui visite la liste du début vers la fin (ce qui correspond au genre de boucle que les étudiant·es ont probablement déjà appris).
@@ -161,9 +161,9 @@ difficiles à comprendre, mais plus rapide à réaliser).  Par exemple, pour une
 liste de 10 cartes, ordonner les cartes avec une procédure naïve de tri nécessitera une centaine étapes, alors
 qu'une procédure efficace de tri arrivera au même résultat en une trentaine d'étapes.
 
-En effactuant diverses procédures sur la table, avec des vraies cartes à jouer, les étudiant·es 
+En effectuant diverses procédures sur la table, avec des vraies cartes à jouer, les étudiant·es 
 gagent une compréhension très intuitive de la notion d'efficacité informatique: 
-les procédures naïves deviennent rapidement longue et ennuyante à réaliser!
+les procédures naïves se révèlent rapidement comme longues et ennuyantes à réaliser!
 
 
 ## Expliquer les structures de données avec des cartes
@@ -171,7 +171,7 @@ les procédures naïves deviennent rapidement longue et ennuyante à réaliser!
 Finalement, on peut aussi se servir de cartes à jouer afin de visualiser
 l'organisation des données dans un programme
 informatique, ce qui est particulièrement intéressant afin d'expliquer 
-comment une structures de données (par exemple une liste) 
+comment une structure de données (par exemple une liste) 
 peut être implantée de différente façon dans un langage de programmation.
 
 En s'appuyant sur la notion l'efficacité, on peut aussi expliquer les 
@@ -200,9 +200,9 @@ sur la table!
 <td> 
 
 Nous présentons l'approche de façon plus détaillée, y compris en survolant
-les fonctionalités de l'outil de validation qui accompagne ce manuel.
+les fonctionnalités de l'outil de validation qui accompagne ce manuel.
 Nous discutons des langages et notations que nous utilisons (Java, JSON, diagrammes de classe et graphe d'objets).
-Nous donnons des exemples du type de visualisation avec des cartes à jouer que notre approche supportent.
+Nous donnons des exemples du type de visualisation avec des cartes à jouer que notre approche supporte.
 </td>
 </tr>
 
@@ -227,11 +227,11 @@ de la visualisation avec des cartes à jouer.
 </th>
 
 <td>
-Nous présentons la notions d'efficacité de façon intuitive, sans entrer
+Nous présentons la notion d'efficacité de façon intuitive, sans entrer
 dans les détails mathématiques (ce que nous réservons pour l'Annexe 1).
 Nous distinguons les notions de performance (une mesure de temps d'exécution) et d'efficacité (une mesure
 du nombre d'étapes qu'une procédure nécessite).
-Nous différencions aussi l'efficacité en terme de temps (nombre d'étapes) et d'espace mémoire
+Nous différencions aussi l'efficacité en termes de temps (nombre d'étapes) et d'espace mémoire
 et donnons quelques exemples du compromis bien connu entre temps et mémoire (on peut souvent réduire le
 nombre d'étapes à exécuter si on accepte d'utiliser plus d'espace mémoire).
 
@@ -273,7 +273,7 @@ Nous présentons notre deuxième structure de données: le mappage.
 Nous présentons l'interface d'un mappage,
 que trois implantations différentes: mappage naïf, mappage par hachage et mappage par arbre.
 Encore une fois, présenter d'abord une implantation naïve permet de bien expliquer l'interface et
-d'obtenir un point de comparaison pour réfléchir à l'efficacité des différentes types de mappage.
+d'obtenir un point de comparaison pour réfléchir à l'efficacité des différents types de mappage.
 </td>
 </tr>
 
@@ -283,7 +283,7 @@ d'obtenir un point de comparaison pour réfléchir à l'efficacité des différe
 </th>
 
 <td>
-En guise de conclusion, nous donnons nos impressions sur l'utilisation de notre approche en classe et discuttons
+En guise de conclusion, nous donnons nos impressions sur l'utilisation de notre approche en classe et discutons
 d'améliorations et extensions possibles à l'approche.
 </td>
 </tr>
@@ -362,7 +362,7 @@ Nous présentons quatre exemples d'atelier qui utilise l'approche développée d
 </th>
 
 <td>
-Cet annexe archive les bilans régigés lors du développement de ce manuel (avril 2022 à février 2023).
+Cet annexe archive les bilans rédigés lors du développement de ce manuel (avril 2022 à février 2023).
 </td>
 </tr>
 
