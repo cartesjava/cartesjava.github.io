@@ -11,7 +11,7 @@
 1. Installer <a href="https://git-scm.com/downloads">Git</a>
 1. Installer <a href="https://gohugo.io/installation">Hugo</a>
 
-### Créer et ajouter sa clé USB
+### Créer et ajouter sa clé SSH
 
 1. Ouvrir un GitBash et faire la commande suivante
 
