@@ -1,11 +1,17 @@
 # Pour modifier ce site
 
-## Préalables
+## Pour les nouveaux contributeurs
+
+1. Voir https://cartesjava.github.io/annexes/annexe_modifier_manuel/
+
+## Pour les propriétaires du dépôt Git
+
+### Préalables
 
 1. Installer <a href="https://git-scm.com/downloads">Git</a>
 1. Installer <a href="https://gohugo.io/installation">Hugo</a>
 
-## Créer et ajouter sa clé USB
+### Créer et ajouter sa clé USB
 
 1. Ouvrir un GitBash et faire la commande suivante
 
@@ -23,18 +29,30 @@
 
     <img src="parametres02.png"/>
 
-## Cloner le dépôt Git via SSH
+1. Ouvrir votre clé SSH publique 
+
+    ```bash
+    $ notepad.exe ~/.ssh/id_rsa.pub
+    ```
+
+1. Copier-coller le texte de votre clé sur GitHub
+
+    <img src="parametres03.png"/>
+
+1. Appuyer sur **
+
+### Cloner le dépôt Git via SSH
 
 ```bash
 $ git clone 
 ```
 
-### Modifier les sources en local
+#### Modifier les sources en local
 
 1. Voici les répertoires importants
 
 
-### Pousser des modifications sur GitHub
+#### Pousser des modifications sur GitHub
 
 1. Ouvrir GitBash à la racine du dépôt Git
 
