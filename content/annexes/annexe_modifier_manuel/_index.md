@@ -120,7 +120,9 @@ Le dépôt source est ici: https://github.com/cartesjava/cartesjava.github.io
     └── static           # images et fichiers statiques
     ```
 
-## Modifier la version publique de ce manuel
+## Modifier directement la version publique de ce manuel
+
+1. Vous devez avoir les droits d'accès sur le dépôt Git
 
 1. Voir le *README* sur la page Web du dépôt Git:
 
