@@ -29,7 +29,7 @@
 
         {{ if and .File .Site.Params.BookRepo .Site.Params.BookEditPath }}
         <div class="flex justify-end" style="padding-top:1em;">
-            <a href="{{ .Site.Params.BookRepo }}/{{ .Site.Params.BookEditPath }}/{{ default "pages" .Site.Params.contentDir }}/{{ replace .File.Path "\\" "/" }}" target="_blank" rel="noopener">
+            <a href="{{ .Site.Params.BookRepo }}/{{ .Site.Params.BookEditPath }}/{{ default "content" .Site.Params.contentDir }}/{{ replace .File.Path "\\" "/" }}" target="_blank" rel="noopener">
                 <span>{{ i18n "Edit this page" }}</span>
                 <img src="{{ "svg/edit.svg" | relURL }}" class="book-icon" alt="Edit" />
             </a>

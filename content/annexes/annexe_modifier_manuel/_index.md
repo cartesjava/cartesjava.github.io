@@ -14,9 +14,9 @@ Le dépôt source est ici: https://github.com/cartesjava/cartesjava.github.io
 
 ## Suggérer une modification
 
-1. Au bas de la page à modifier, cliquer sur *Suggérer une modification*
+1. Au bas de la page à modifier, cliquer sur *Modifier cette page*
 
-    <img class="figure" src="suggerer_modification.png" />
+    <img class="figure" src="modifier_cette_page.png" />
 
 1. Se connecter à GitHub
 
