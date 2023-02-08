@@ -38,7 +38,7 @@ De gauche à droite:
 * Les participants ont signé un formulaire de consentement concernant la reproduction des trois photos ci-haut.
 
 
-## Fonctionalités implantées
+## Fonctionnalités implantées
 
 ### Interface de base
 

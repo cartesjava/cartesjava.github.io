@@ -17,7 +17,7 @@ bookHidden: true
 
 ### Ce qui fonctionne bien
 
-1. C'est très aggréable d'utiliser les cartes surdimensionnées pour expliquer une procédure au tableau blanc:
+1. C'est très agréable d'utiliser les cartes surdimensionnées pour expliquer une procédure au tableau blanc:
 
     <img class="small-figure" src="/approche/trier/trier_par_sorte.jpg" />
     <img class="small-figure" src="/approche/trier/trier_par_numero01.jpg" />
@@ -26,12 +26,12 @@ bookHidden: true
 
     crédit photo: Mikael Tardif
 
-1. C'est aussi très aggréable de faire des séances de théorie 100% au tableau blanc, sans utiliser le projecteur
+1. C'est aussi très agréable de faire des séances de théorie 100% au tableau blanc, sans utiliser le projecteur
 
 1. Les étudiant.es semblent apprécier l'utilisation de cartes à jouer et adhérent bien à l'idée de faire des entrevues formatives
     * (durant l'entrevue formative, l'étudiant.e démontre sa compréhension de la théorie avec des cartes ou en dessinant un schéma sur papier)
 
-1. Les étudiant.es semblent beaucoup apprécier l'outil de validation, en particulier le fait que l'outil génère des visualisation à partir de leur code. P.ex.
+1. Les étudiant.es semblent beaucoup apprécier l'outil de validation, en particulier le fait que l'outil génère des visualisations à partir de leur code. P.ex.
 
     ```java
     cartes = new MaCarte[] {new MaCarte(1, Sorte.CARREAU),
@@ -55,7 +55,7 @@ bookHidden: true
     * plusieurs étudiant.es ont pris du temps à réaliser que l'outil de validation générait des visualisations à partir de leur code. Il faudra trouver des façons de présenter cet aspect plus directement (d'autant plus que c'est un aspect très apprécié une fois découvert!).
     * les étudiant.es ont trouvé facile de trier des cartes, mais plus difficile de traduire en code la procédure. Je pense que je devrai fournir plus d'exemples plus rapidement afin de pratiquer cette «traduction».
 
-1. Malheureusement, pour l'instant, créer un nouvel exemple de visualisation est difficle et long. Je dois écrire beaucoup de code pour créer les visualisations et ces dernières doivent quand même être capturées à la main avec un outil de capture d'écran. Certains graphes d'objets doivent aussi être retravailler à la main, p.ex. ci-bas pour y inclure la variable `nouvelleTete`
+1. Malheureusement, pour l'instant, créer un nouvel exemple de visualisation est difficile et long. Je dois écrire beaucoup de code pour créer les visualisations et ces dernières doivent quand même être capturées à la main avec un outil de capture d'écran. Certains graphes d'objets doivent aussi être retravailler à la main, p.ex. ci-bas pour y inclure la variable `nouvelleTete`
 
     <img class="figure" src="/preface/bilan_octobre_2022/dyn01.png"/>
 
