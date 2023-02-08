@@ -13,7 +13,7 @@ weight: 20
 
 ## Diagramme de classes et Java
 
-Nous utilions le langage de programmation Java pour les exemples de code de ce manuel. Au besoin, nous vous invitons à vous référer à <a href="/bibliographie#mayfield-allen-2020">Think Java (Mayfield et Allen; 2020)</a> pour une introduction à ce langage.
+Nous utilisons le langage de programmation Java pour les exemples de code de ce manuel. Au besoin, nous vous invitons à vous référer à <a href="/bibliographie#mayfield-allen-2020">Think Java (Mayfield et Allen; 2020)</a> pour une introduction à ce langage.
 
 Pour visualiser les types de données, nous utilisons des digrammes de classe.
 Voici par exemple un diagramme de classe représentant une liste chaînée simple.
@@ -26,7 +26,7 @@ première section à partir du haut est le nom de la classe, p.ex. *Liste*
 dénote les méthodes, p.ex. `int taille()`.  La dernière section dénote les
 attributs, p.ex. `int taille`. La flèche triangulaire dénote l'héritage (le
 triangle est collé sur la classe parent).  Par exemple, la classe
-`ListeChaineeSimple` hérite de la classe `Liste` (puisque `Liste` est abtraite,
+`ListeChaineeSimple` hérite de la classe `Liste` (puisque `Liste` est abstraite,
 on peut aussi dire que `ListeChaineeSimple` implante une `Liste`).  La flèche
 avec un losange dénote une référence (le losange est collé sur la classe qui
 maintient la référence, puis spécifiquement sur l'attribut qui maintient cette
@@ -46,7 +46,7 @@ récursifs.
 
 Le diagramme de classe représente le type de données qu'on modélise,
 mais ne peut pas représenter des données concrètes.
-Pour ce faire, nous utilions des graphes d'objets.
+Pour ce faire, nous utilisons des graphes d'objets.
 
 Voici un graphe d'objet pour une liste chaînée simple.
 
@@ -74,7 +74,7 @@ dans les données, puisqu'un programme doit les détecter afin de ne pas s'exéc
 ## JSON
 
 Nous utilisons aussi le format JSON pour représenter les données.
-JSON veut dire *Javascript Object Notation* et c'est le format prévilégié pour les applications Web
+JSON veut dire *Javascript Object Notation* et c'est le format privilégié pour les applications Web
 et les bases de données NoSQL.
 
 Voici les *valeurs* en JSON:
@@ -95,7 +95,7 @@ Voici les *structures* en JSON:
     * `{}`
     * `{"cle01":true, "cle02":-12}`
 
-Une liste est un tableau qui peut grandir et rapetisser. Une des particularité
+Une liste est un tableau qui peut grandir et rapetisser. Une des particularités
 des la liste JSON est de mélanger les types de valeurs:
 
 * `[1,true,"Bonjour!"]`
@@ -119,7 +119,7 @@ Voici la même liste chaîne simple que ci-haut, mais dans le format JSON.
 ```
 
 À noter que JSON ne permet pas de représenter le type de donnée (la classe).
-Par convention, nous représenterons la classe classe à l'attribut spécial `"_C":"NomDeLaClasse"`.
+Par convention, nous représenterons la classe à l'attribut spécial `"_C":"NomDeLaClasse"`.
 
 Finalement, voici la même liste chaînée double que ci-haut, mais exprimée en JSON.
 
@@ -128,7 +128,7 @@ Finalement, voici la même liste chaînée double que ci-haut, mais exprimée en
 ```
 
 À noter que JSON ne contient de pas de mécanisme officiel pour représenter les références.
-Par convention, nous représentons une référence grace à un objet spécial de la forme `{ "_R": "/chemin/vers/objet"}`
+Par convention, nous représentons une référence grâce à un objet spécial de la forme `{ "_R": "/chemin/vers/objet"}`
 où le chemin vers l'objet permet de l'identifier à partir de la racine du fichier JSON.
 
 
