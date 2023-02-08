@@ -8,7 +8,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Comment modifier ce manuel #  Obtenir les sources #  Le dépôt source est ici: https://github.com/cartesjava/cartesjava.github.io
-Suggérer une modification #    Au bas de la page à modifier, cliquer sur Suggérer une modification
+Suggérer une modification #    Au bas de la page à modifier, cliquer sur Modifier cette page
   Se connecter à GitHub
   La première fois uniquement
   «forker» le dépôt
@@ -32,7 +32,7 @@ Suggérer une modification #    Au bas de la page à modifier, cliquer sur Sugg�
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.6eff5a840770643758c6b07018dc6302b7461f1593281c294fae77c00766cf48.css" integrity="sha256-bv9ahAdwZDdYxrBwGNxjArdGHxWTKBwpT653wAdmz0g=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/fr.search.min.ffe1bee703d9f88485cf695f4772accc792854cfc9d67dd25d455b6cd838f77f.js" integrity="sha256-/&#43;G&#43;5wPZ&#43;ISFz2lfR3KszHkoVM/J1n3SXUVbbNg4938=" crossorigin="anonymous"></script>
+  <script defer src="/fr.search.min.a56b96bdbdfdf4e5f14e243a57ca68006f25ebe2aa600c20f94514a46da84afa.js" integrity="sha256-pWuWvb399OXxTiQ6V8poAG8l6&#43;KqYAwg&#43;UUUpG2oSvo=" crossorigin="anonymous"></script>
 
   <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" integrity="sha256-b2&#43;Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC&#43;NdcPIvZhzk=" crossorigin="anonymous"></script>
 
@@ -1080,8 +1080,8 @@ Suggérer une modification
 </h2>
 <ol>
 <li>
-<p>Au bas de la page à modifier, cliquer sur <em>Suggérer une modification</em></p>
- <img class="figure" src="suggerer_modification.png" />
+<p>Au bas de la page à modifier, cliquer sur <em>Modifier cette page</em></p>
+ <img class="figure" src="modifier_cette_page.png" />
 </li>
 <li>
 <p>Se connecter à GitHub</p>
@@ -1162,12 +1162,74 @@ Modifier le manuel en local
 <p>Installer <a href="https://gohugo.io/" target="_blank">Hugo</a> sur votre machine</p>
 </li>
 <li>
+<p>Faire la commande suivante pour cloner le dépôt Git</p>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ git clone https://github.com/cartesjava/cartesjava.github.io.git
+</span></span></code></pre></div></li>
+<li>
+<p>La racine de ce dépôt Git est le répertoire contenant les fichiers suivants:</p>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>├── archetypes
+</span></span><span style="display:flex;"><span>├── assets
+</span></span><span style="display:flex;"><span>├── config.yaml
+</span></span><span style="display:flex;"><span>├── content
+</span></span><span style="display:flex;"><span>├── docs
+</span></span><span style="display:flex;"><span>├── .git
+</span></span><span style="display:flex;"><span>├── .gitignore
+</span></span><span style="display:flex;"><span>├── i18n
+</span></span><span style="display:flex;"><span>├── layouts
+</span></span><span style="display:flex;"><span>├── nodes
+</span></span><span style="display:flex;"><span>├── parametres01.png
+</span></span><span style="display:flex;"><span>├── parametres02.png
+</span></span><span style="display:flex;"><span>├── parametres03.png
+</span></span><span style="display:flex;"><span>├── README.md
+</span></span><span style="display:flex;"><span>├── resources
+</span></span><span style="display:flex;"><span>├── scripts
+</span></span><span style="display:flex;"><span>├── src
+</span></span><span style="display:flex;"><span>└── static
+</span></span></code></pre></div></li>
+<li>
+<p>Pour ouvrir un GitBash à la racine du dépôt Git, faire</p>
+<ul>
+<li>
+<p>Démarrer un explorateur de fichier Windows</p>
+</li>
+<li>
+<p>Naviguer jusqu&rsquo;à la racine de dépôt Git</p>
+</li>
+<li>
+<p><em>Clic-droit</em> =&gt; <em>GitBash here</em></p>
+  <img src="ouvrir_gitbash.png"/>
+</li>
+</ul>
+</li>
+<li>
 <p>Démarrer Hugo à la racine du dépôt Git <code>cartesjava.github.io</code></p>
 <div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ hugo server
 </span></span></code></pre></div></li>
 <li>
 <p>Naviguer vers <a href="http://localhost:1313" target="blank">localhost:1313</a></p>
 </li>
+<li>
+<p>Voici les fichiers et répertoires importants</p>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>├── assets            <span style="color:#75715e"># répertoire avec les .css</span>
+</span></span><span style="display:flex;"><span>├── config.yaml       <span style="color:#75715e"># configuration du site</span>
+</span></span><span style="display:flex;"><span>├── content           <span style="color:#75715e"># sources pour le contenu</span>
+</span></span><span style="display:flex;"><span>│   ├── annexes         
+</span></span><span style="display:flex;"><span>│   ├── approche
+</span></span><span style="display:flex;"><span>│   ├── arbres
+</span></span><span style="display:flex;"><span>│   ├── bibliographie
+</span></span><span style="display:flex;"><span>│   ├── conclusion
+</span></span><span style="display:flex;"><span>│   ├── efficacite
+</span></span><span style="display:flex;"><span>│   ├── _index.md
+</span></span><span style="display:flex;"><span>│   ├── intro
+</span></span><span style="display:flex;"><span>│   ├── listes
+</span></span><span style="display:flex;"><span>│   ├── mappages
+</span></span><span style="display:flex;"><span>│   ├── modelisation
+</span></span><span style="display:flex;"><span>│   ├── preface
+</span></span><span style="display:flex;"><span>│   └── procedures
+</span></span><span style="display:flex;"><span>├── docs             <span style="color:#75715e"># fichiers .html pour publication</span>
+</span></span><span style="display:flex;"><span>├── src              <span style="color:#75715e"># sources pour les extensions à Hugo</span>
+</span></span><span style="display:flex;"><span>└── static           <span style="color:#75715e"># images et fichiers statiques</span>
+</span></span></code></pre></div></li>
 </ol>
 </article>
  
@@ -1198,8 +1260,8 @@ Modifier le manuel en local
 
     <div style="padding-top:2em;">
         
-        <div class="flex justify-end"><a href="https://github.com/cartesjava/cartesjava.github.io/commit/26fea6886f50a2831d9fd3589abadb9ad83ab8cf" title='Dernière modification par Mathieu Bergeron | 2023-02-03' target="_blank" rel="noopener">
-                <span>2023-02-03</span>
+        <div class="flex justify-end"><a href="https://github.com/cartesjava/cartesjava.github.io/commit/8c58914199daac5d269a923bc155d6050a956dea" title='Dernière modification par Mathieu Bergeron | 2023-02-08' target="_blank" rel="noopener">
+                <span>2023-02-08</span>
                 <img src="/svg/calendar.svg" class="book-icon" alt="Calendar" />
             </a>
         </div>
@@ -1207,7 +1269,7 @@ Modifier le manuel en local
 
         
         <div class="flex justify-end" style="padding-top:1em;">
-            <a href="https://github.com/cartesjava/cartesjava.github.io/edit/main//pages/annexes/annexe_modifier_manuel/_index.md" target="_blank" rel="noopener">
+            <a href="https://github.com/cartesjava/cartesjava.github.io/edit/main//content/annexes/annexe_modifier_manuel/_index.md" target="_blank" rel="noopener">
                 <span>Modifier cette page</span>
                 <img src="/svg/edit.svg" class="book-icon" alt="Edit" />
             </a>
