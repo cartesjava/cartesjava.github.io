@@ -26,7 +26,7 @@ Le dépôt source est ici: https://github.com/cartesjava/cartesjava.github.io
 
         <img class="figure" src="fork01.png"/>
 
-1. Modifier le source de la page directement dans votre naviguateur
+1. Modifier le source de la page directement dans votre navigateur
 
     <img class="figure" src="modifier01.png"/>
 
