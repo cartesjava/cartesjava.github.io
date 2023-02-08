@@ -35,16 +35,19 @@
     $ notepad.exe ~/.ssh/id_rsa.pub
     ```
 
+    * alternativement: ouvrir Bloc Note et ouvrir le fichier suivant
+        * `C:` => `Users` => *mon usager* => `.ssh` => ouvrir `id_rsa.pub`
+
 1. Copier-coller le texte de votre clé sur GitHub
 
     <img src="parametres03.png"/>
 
-1. Appuyer sur **
+1. Appuyer sur *Add SSH key*
 
 ### Cloner le dépôt Git via SSH
 
 ```bash
-$ git clone 
+$ git clone https://cartesjava.github.io/annexes/annexe_modifier_manuel/
 ```
 
 #### Modifier les sources en local
