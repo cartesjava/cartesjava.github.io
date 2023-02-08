@@ -41,13 +41,13 @@ Exécuter le projet Java va démarrer l'outil:
 À noter que bien que le manuel fait référence à un outil de validation (au
 singulier), il faut en réalité intégrer une version différente de l'outil de
 validation pour chaque procédure à valider. Chaque version définit aussi sa
-propre visualiation des données avec des cartes à jouer.  Voir <a
+propre visualisation des données avec des cartes à jouer.  Voir <a
 href="/annexe-ateliers">l'Annexe 2</a> pour plus de détails.
 
 
 ## Utiliser l'outil
 
-Voici les affichages principaux de l'outil de valiation.
+Voici les affichages principaux de l'outil de validation.
 
 <center>
 <img class="figure" src="outil02.png"/>
@@ -191,7 +191,7 @@ qu'on peut comparer l'animation produite pour la solution avec celle produite po
 
 L'exemple ci-bas illustre une erreur courante dans le code étudiant.
 On voit que la procédure correcte s'arrête dès que le marqueur bleu (l'indice `i` dans la boucle) dépasse 
-le marqeur rouge (l'indice `aDeplacer` identifiant la carte à déplacer).
+le marqueur rouge (l'indice `aDeplacer` identifiant la carte à déplacer).
 Dans le code étudiant, cette condition n'as pas été codée correctement et la procédure 
 s'exécute pour des étapes en trop, ce qui mène à un résultat erroné.
 
@@ -226,7 +226,7 @@ Procédure erronée
 
 ## Afficher le graphe d'objets
 
-Finalement, l'outil de validation génère génère un graphe d'objet pour les
+Finalement, l'outil de validation génère un graphe d'objet pour les
 données courantes et sauvegarde ce graphe dans le répertoire `_storage/graphs`.
 (voir la <a href="/approche/langages_et_notations/#graphe-dobjets">Section
 1.2.2</a> à propos des graphes d'objets).  Ces graphes permettent aux
