@@ -24,6 +24,15 @@ bookNumbering: false
 </tr>
 
 <tr>
+<th>Dépôt source</th>
+<td>
+
+https://github.com/cartesjava/cartesjava.github.io
+
+</td>
+</tr>
+
+<tr>
 <th>Auteur</th>
 <td>Mathieu Bergeron
 </td>
