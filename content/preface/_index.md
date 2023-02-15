@@ -93,58 +93,86 @@ Collège Montmorency. fabriqueREL. Licence CC BY-SA
 </tr>
 
 <tr>
-<th><img src="/by-sa.png"></th>
-<td>
 
-<table>
+<td colspan="2">
 
-<!--
-<tr>
-<th>
-Licence CC
-</th>
--->
+<table class="cc-license" style="border:1px solid black; padding: 12px !important;">
 
-<td colspan="2" style="text-align:center;">
-Sauf indications contraires, le contenu de ce manuel électronique est disponible en vertu des conditions de la Licence Creative Commons Attribution - <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.fr">Partage dans les mêmes conditions 4.0 International.</a>
+<tr style="border:none !important;">
+<td style="border:none !important;">
+<img src="/by-sa.png">
 </td>
-
-</tr> 
-
-<tr>
-<th>
-Partager
-</th>
-
-<td>
-Copier, distribuer et communiquer le matériel par tous moyens et sous tous formats.
+<td style="border:none !important;">
+Sauf indications contraires, le contenu de ce manuel électronique est disponible en vertu des conditions de la <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.fr">Licence Creative Commons Attribution - Partage dans les mêmes conditions 4.0 International.</a>
 </td>
-
 </tr>
 
-<tr>
-<th>
-Adapter
-</th>
+<tr class="cc-license">
+<td class="cc-license" colspan="2" style="padding-left:12px !important;">
 
-<td>
+**Vous êtes autorisé à:**<br>
+
+<table class="cc-license" style="margin-left:24px !important;">
+<tr class="cc-license">
+<td class="cc-license">
+
+**Partager**
+&nbsp;—&nbsp;
+Copier, distribuer et communiquer le matériel par tous moyens et sous tous formats.
+
+</td>
+</tr>
+
+<tr class="cc-license">
+<td class="cc-license">
+
+**Adapter**
+&nbsp;—&nbsp;
 Remixer, transformer et créer à partir du matériel pour toute utilisation, y compris commerciale.
 </td>
 </tr>
-
-<tr>
-<th>
-Paternité
-</th>
-
-<td>
-Mêmes conditions – Si vous remixez, transformez, ou créez à partir du matériel composant l'Oeuvre originale, vous devez diffuser l'Oeuvre modifiée avec la même licence.
-</td>
-</tr>
-
 </table>
 
 </td>
+
+<td class="cc-license">
+</td>
 </tr>
 
+<tr class="cc-license">
+<td class="cc-license" colspan="2" style="padding-left: 12px !important;">
+
+**Selon les conditions suivantes:**<br>
+
+<table  class="cc-license" style="margin-left:24px !important;">
+<tr class="cc-license" >
+<td class="cc-license" >
+
+**Paternité**
+&nbsp;—&nbsp;
+Vous devez citer le nom de l’auteur original.
+</td>
+</tr>
+
+<tr class="cc-license" >
+<td class="cc-license" >
+
+**Mêmes conditions**
+&nbsp;—&nbsp;
+Si vous remixez, transformez, ou créez à partir du matériel composant l'Oeuvre originale, vous devez diffuser l'Oeuvre modifiée avec la même licence.
+
+</td>
+</tr>
+</table>
+
+
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
 </table>
