@@ -223,7 +223,8 @@ de la visualisation avec des cartes à jouer.
 
 <tr>
 <th>
-{{% link "/efficacite" "Chapitre 3" %}}
+<span class="disabled">Chapitre 3</span>
+<!-- {{% link "/efficacite" "Chapitre 3" %}} -->
 </th>
 
 <td>
@@ -240,7 +241,8 @@ nombre d'étapes à exécuter si on accepte d'utiliser plus d'espace mémoire).
 
 <tr>
 <th>
-{{% link "/listes" "Chapitre 4" %}}
+<span class="disabled">Chapitre 4</span>
+<!--{{% link "/listes" "Chapitre 4" %}}-->
 </th>
 
 <td>
@@ -254,7 +256,8 @@ aussi d'obtenir un point de comparaison utile pour réfléchir à l'efficacité 
 
 <tr>
 <th>
-{{% link "/arbres" "Chapitre 5" %}}
+<span class="disabled">Chapitre 5</span>
+<!--{{% link "/arbres" "Chapitre 5" %}}-->
 </th>
 
 <td>
@@ -265,7 +268,8 @@ Nous implanterons un arbre générique, ainsi qu'un arbre binaire de recherche.
 
 <tr>
 <th>
-{{% link "/mappages" "Chapitre 6" %}}
+<span class="disabled">Chapitre 6</span>
+<!--{{% link "/mappages" "Chapitre 6" %}}-->
 </th>
 
 <td>
@@ -279,7 +283,8 @@ d'obtenir un point de comparaison pour réfléchir à l'efficacité des différe
 
 <tr>
 <th>
-{{% link "/conclusion" "Conclusion" %}}
+<span class="disabled">Conclusion</span>
+<!--{{% link "/conclusion" "Conclusion" %}}-->
 </th>
 
 <td>
