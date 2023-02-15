@@ -155,14 +155,14 @@ algorithmes), c'est-à-dire comment différentes procédures informatiques peuve
 accomplir la même opération (c-à-d arriver au même résultat), tout en nécessitant un
 nombre d'étapes significativement différent.
 
-On distingue ainsi entre les procédures naïves (souvent plus facile à
-comprendre, mais peu efficace) et les  procédures efficaces (souvent plus
-difficiles à comprendre, mais plus rapide à réaliser).  Par exemple, pour une
+On distingue ainsi entre les procédures naïves (souvent plus faciles à
+comprendre, mais peu efficaces) et les  procédures efficaces (souvent plus
+difficiles à comprendre, mais plus rapides à réaliser).  Par exemple, pour une
 liste de 10 cartes, ordonner les cartes avec une procédure naïve de tri nécessitera une centaine étapes, alors
 qu'une procédure efficace de tri arrivera au même résultat en une trentaine d'étapes.
 
 En effectuant diverses procédures sur la table, avec des vraies cartes à jouer, les étudiant·es 
-gagent une compréhension très intuitive de la notion d'efficacité informatique: 
+gagnent une compréhension très intuitive de la notion d'efficacité informatique: 
 les procédures naïves se révèlent rapidement comme longues et ennuyantes à réaliser!
 
 
@@ -172,9 +172,9 @@ Finalement, on peut aussi se servir de cartes à jouer afin de visualiser
 l'organisation des données dans un programme
 informatique, ce qui est particulièrement intéressant afin d'expliquer 
 comment une structure de données (par exemple une liste) 
-peut être implantée de différente façon dans un langage de programmation.
+peut être implantée de différentes façons dans un langage de programmation.
 
-En s'appuyant sur la notion l'efficacité, on peut aussi expliquer les 
+En s'appuyant sur la notion d'efficacité, on peut aussi expliquer les 
 avantages et inconvénients de ces différentes implantations.
 Par exemple, une liste implantée par
 références (liste chaînée) sera moins efficace qu'une liste implantée par
@@ -321,7 +321,7 @@ La notation grand O est présentée de façon plus mathématique.
 </th>
 
 <td>
-Nous expliquons comment accéder aux exemples utiliser dans ce manuel.
+Nous expliquons comment accéder aux exemples utilisés dans ce manuel.
 </td>
 </tr>
 
@@ -352,7 +352,7 @@ Nous expliquons comment adapter ce manuel, ou encore comment suggérer une modif
 </th>
 
 <td>
-Nous présentons quatre exemples d'atelier qui utilise l'approche développée dans ce manuel.
+Nous présentons quatre exemples d'atelier qui utilisent l'approche développée dans ce manuel.
 </td>
 </tr>
 
