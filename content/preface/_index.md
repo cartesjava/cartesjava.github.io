@@ -105,7 +105,7 @@ Collège Montmorency. fabriqueREL. Licence CC BY-SA
 
 <td colspan="2">
 
-<table class="cc-license" style="border:1px solid black; padding: 12px !important;">
+<table class="cc-license" style="border:1px solid black !important; padding: 12px !important;">
 
 <tr style="border:none !important;">
 <td style="border:none !important;">
