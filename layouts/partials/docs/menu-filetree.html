@@ -31,16 +31,24 @@
   {{ if .Page.Params.bookCollapseSection }}
     <input type="checkbox" id="section-{{ md5 .Page }}" class="toggle" {{ if or $current $ancestor }}checked{{ end }} />
     <label for="section-{{ md5 .Page }}" class="flex justify-between">
-      <a {{ if .Page.Content }}href="{{ .Page.RelPermalink }}"{{ else }}role="button"{{ end }} class="{{ if $current }}active{{ end }}">
-        {{- partial "numbering" (dict "Page" .Page "NumberOnly" true) -}}
-        {{- partial "docs/title" .Page -}}
-      </a>
+        {{ if not .Page.Params.bookEmptyChapter }}
+          <a {{ if .Page.Content }}href="{{ .Page.RelPermalink }}"{{ else }}role="button"{{ end }} class="{{ if $current }}active{{ end }}">
+        {{ end }}
+            {{- partial "numbering" (dict "Page" .Page "NumberOnly" true) -}}
+            {{- partial "docs/title" .Page -}}
+        {{ if not .Book.Params.bookEmptyChapter }}
+          </a>
+        {{ end }}
     </label>
   {{ else if .Page.Content }}
-    <a href="{{ .Page.RelPermalink }}" class="{{ if $current }} active{{ end }}">
+    {{ if not .Page.Params.bookEmptyChapter }}
+        <a href="{{ .Page.RelPermalink }}" class="{{ if $current }} active{{ end }}">
+    {{ end }}
       {{- partial "numbering" (dict "Page" .Page "NumberOnly" true) -}}
       {{- partial "docs/title" .Page -}}
-    </a>
+    {{ if not .Page.Params.bookEmptyChapter }}
+        </a>
+    {{ end }}
   {{ else }}
     <span>{{- partial "docs/title" .Page -}}</span>
   {{ end }}
