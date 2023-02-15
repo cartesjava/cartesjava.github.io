@@ -106,40 +106,45 @@ Licence CC
 -->
 
 <td colspan="2" style="text-align:center;">
-Ce manuel peut-être partagé et adapté librement (<a href="https://creativecommons.org/licenses/by-sa/4.0/deed.fr">licence CC BY-SA</a>)
+Sauf indications contraires, le contenu de ce manuel électronique est disponible en vertu des conditions de la Licence Creative Commons Attribution - <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.fr">Partage dans les mêmes conditions 4.0 International.</a>
 </td>
 
 </tr> 
 
 <tr>
 <th>
-Attribution
+Partager
 </th>
 
 <td>
-SVP citer ce manuel si vous utilisez/modifiez son contenu
+Copier, distribuer et communiquer le matériel par tous moyens et sous tous formats.
 </td>
 
 </tr>
 
 <tr>
 <th>
-Partage dans les mêmes conditions
+Adapter
 </th>
 
 <td>
-SVP utiliser la licence CC BY-SA si vous publiez du contenu adapté de ce manuel
+Remixer, transformer et créer à partir du matériel pour toute utilisation, y compris commerciale.
 </td>
+</tr>
 
+<tr>
+<th>
+Paternité
+</th>
+
+<td>
+Mêmes conditions – Si vous remixez, transformez, ou créez à partir du matériel composant l'Oeuvre originale, vous devez diffuser l'Oeuvre modifiée avec la même licence.
+</td>
 </tr>
 
 </table>
 
-
 </td>
 </tr>
-
-
-
 
 </table>
