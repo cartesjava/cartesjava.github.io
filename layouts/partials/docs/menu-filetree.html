@@ -33,21 +33,29 @@
     <label for="section-{{ md5 .Page }}" class="flex justify-between">
         {{ if not .Page.Params.bookEmptyChapter }}
           <a {{ if .Page.Content }}href="{{ .Page.RelPermalink }}"{{ else }}role="button"{{ end }} class="{{ if $current }}active{{ end }}">
+        {{ else }}
+        <span class="disabled">
         {{ end }}
             {{- partial "numbering" (dict "Page" .Page "NumberOnly" true) -}}
             {{- partial "docs/title" .Page -}}
         {{ if not .Book.Params.bookEmptyChapter }}
           </a>
+        {{ else }}
+        </span>
         {{ end }}
     </label>
   {{ else if .Page.Content }}
     {{ if not .Page.Params.bookEmptyChapter }}
         <a href="{{ .Page.RelPermalink }}" class="{{ if $current }} active{{ end }}">
+    {{ else }}
+    <span class="disabled">
     {{ end }}
       {{- partial "numbering" (dict "Page" .Page "NumberOnly" true) -}}
       {{- partial "docs/title" .Page -}}
     {{ if not .Page.Params.bookEmptyChapter }}
         </a>
+    {{ else }}
+    <span class="disabled">
     {{ end }}
   {{ else }}
     <span>{{- partial "docs/title" .Page -}}</span>

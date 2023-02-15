@@ -8,5 +8,4 @@ bookCollapseSection: true
 # bookComments: false
 # bookSearchExclude: false
 bookNumbering: false
-bookEmptyChapter: true
 ---

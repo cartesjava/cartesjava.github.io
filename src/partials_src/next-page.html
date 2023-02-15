@@ -80,7 +80,17 @@
         <div class="footer-next-page"/>
 
 
-        <a class="link-next-page" href="{{ $nextPage.Permalink }}">↪&nbsp;{{- partial "numbering" (dict "Page" $nextPage "NumberOnly" false) -}}&nbsp;{{ $nextPage.Title | truncate 50 "..." }}</a>
+        {{ if not $nextPage.Params.bookEmptyChapter }}
+        <a class="link-next-page" href="{{ $nextPage.Permalink }}">
+        {{ else }}
+        <span class="disabled" />
+        {{ end }}
+            ↪&nbsp;{{- partial "numbering" (dict "Page" $nextPage "NumberOnly" false) -}}&nbsp;{{ $nextPage.Title | truncate 50 "..." }}
+        {{ if not $nextPage.Params.bookEmptyChapter }}
+        </a>
+        {{ else }}
+        </span>
+        {{ end }}
 
         </div>
     {{ else }}
