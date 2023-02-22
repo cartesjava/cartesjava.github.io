@@ -22,7 +22,7 @@ Le dépôt source est ici&nbsp;: https://github.com/cartesjava/cartesjava.github
 
 1. La première fois uniquement
 
-    * «forker» le dépôt
+    * «&nbsp;forker&nbsp;» le dépôt
 
         <img class="figure" src="fork01.png"/>
 
@@ -34,7 +34,7 @@ Le dépôt source est ici&nbsp;: https://github.com/cartesjava/cartesjava.github
 
     <img class="figure" src="commit01.png"/>
 
-1. Créer un «pull request» pour communiquer votre suggestion au propriétaire du dépôt d'origine
+1. Créer un «&nbsp;pull request&nbsp;» pour communiquer votre suggestion au propriétaire du dépôt d'origine
 
     * Étape 1
 

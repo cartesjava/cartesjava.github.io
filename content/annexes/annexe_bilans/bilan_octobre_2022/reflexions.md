@@ -51,19 +51,19 @@ bookHidden: true
 
 ### Ce qui reste à peaufiner
 
-1. Tout! L'approche a besoin de «vivre un peu». P.ex. 
+1. Tout! L'approche a besoin de «&nbsp;vivre un peu&nbsp;». P.ex. 
     * plusieurs étudiant·e·s ont pris du temps à réaliser que l'outil de validation générait des visualisations à partir de leur code. Il faudra trouver des façons de présenter cet aspect plus directement (d'autant plus que c'est un aspect très apprécié une fois découvert!).
-    * les étudiant·e·s ont trouvé facile de trier des cartes, mais plus difficile de traduire en code la procédure. Je pense que je devrai fournir plus d'exemples plus rapidement afin de pratiquer cette «traduction».
+    * les étudiant·e·s ont trouvé facile de trier des cartes, mais plus difficile de traduire en code la procédure. Je pense que je devrai fournir plus d'exemples plus rapidement afin de pratiquer cette «&nbsp;traduction&nbsp;».
 
 1. Malheureusement, pour l'instant, créer un nouvel exemple de visualisation est difficile et long. Je dois écrire beaucoup de code pour créer les visualisations et ces dernières doivent quand même être capturées à la main avec un outil de capture d'écran. Certains graphes d'objets doivent aussi être retravailler à la main, p.ex. ci-bas pour y inclure la variable `nouvelleTete`
 
     <img class="figure" src="/annexes/annexe_bilans/bilan_octobre_2022/dyn01.png"/>
 
 
-### Trois «intuitions de programmeur» à mieux enseigner
+### Trois «&nbsp;intuitions de programmeur&nbsp;» à mieux enseigner
 
 1. Construire et imaginer un graphe d'objets
 
-1. Utiliser une variable de type «curseur» pour pointer sur différents objets d'un graphe d'objets durant l'exécution du programme
+1. Utiliser une variable de type «&nbsp;curseur&nbsp;» pour pointer sur différents objets d'un graphe d'objets durant l'exécution du programme
 
 1. Utiliser des appels récursifs pour construire un graphe d'objet

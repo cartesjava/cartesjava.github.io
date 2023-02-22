@@ -26,7 +26,7 @@ bookCollapseSection: true
 <td> Ce manuel adopte la vision orienté-objet des données&nbsp;: la composante de
 base d'une modélisation est un objet.  Chaque objet a un type et une collection
 d'attributs.  Chaque attribut a un nom et une valeur.  Par exemple, le cinq de
-coeur est un objet de type «carte à jouer» qui a deux attributs&nbsp;: sa sorte
+coeur est un objet de type «&nbsp;carte à jouer&nbsp;» qui a deux attributs&nbsp;: sa sorte
 (coeur) et son numéro (cinq).  </td>
 
 </tr>

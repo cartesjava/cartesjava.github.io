@@ -188,7 +188,7 @@ Autrement dit&nbsp;:
 
     * le `moinsDeux` de la `nouvelleTete` est le `moinsUn` de l'ancienne `tete`
 
-    * c.-à-d. on insère la `nouvelleTete` à gauche, et on «pousse» les objets existants vers la droite
+    * c.-à-d. on insère la `nouvelleTete` à gauche, et on «&nbsp;pousse&nbsp;» les objets existants vers la droite
     
 1. Pour le cas `n >= 2`, voici comment procéder
 
