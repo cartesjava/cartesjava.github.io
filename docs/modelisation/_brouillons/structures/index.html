@@ -7,11 +7,10 @@
 
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Structures en Java #   NOTE:
+<meta name="description" content="Structures en Java #   NOTE :
  on va voir les paramètres de types plus en détail à l&rsquo;étape 3     Le JDK Java contient plusieurs structures de données déjà codées
-  Dans ce cours, on va se concentrer sur les deux principales:
- List&lt;E&gt;: une liste Map&lt;K,V&gt;: un dictionnaire (mappage)    À partir de maintenant, vous devriez:
- presque toujours utiliser une List&lt;Integer&gt; et jamais un tableau int[] presque toujours utiliser les structures fournies dans le JDK Java    Exception: pour des raisons pédagogiques">
+  Dans ce cours, on va se concentrer sur les deux principales :
+ List&lt;E&gt; : une liste Map&lt;K,V&gt; : un dictionnaire (mappage)    À partir de maintenant, vous devriez :">
 <meta name="theme-color" content="#FFFFFF">
 <meta name="color-scheme" content="light dark"><meta property="og:title" content="Structures en Java" />
 <meta property="og:description" content="" />
@@ -30,7 +29,7 @@
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.d3f358f6c6980ca9bcf249614f1fbb1eee417b00620ae8269ec1f7d2172ec7bb.css" integrity="sha256-0/NY9saYDKm88klhTx&#43;7Hu5BewBiCugmnsH30hcux7s=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/fr.search.min.198993251ed3077fa6ea8686913afadc9ae5b48ee014d5bf2a82d88ce69e5bdf.js" integrity="sha256-GYmTJR7TB3&#43;m6oaGkTr63JrltI7gFNW/KoLYjOaeW98=" crossorigin="anonymous"></script>
+  <script defer src="/fr.search.min.26d5b866e2e9f3f87a235e2611334ae02e176cb986d879380469b95b535ef73d.js" integrity="sha256-JtW4ZuLp8/h6I14mETNK4C4XbLmG2Hk4BGm5W1Ne9z0=" crossorigin="anonymous"></script>
 
   <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" integrity="sha256-b2&#43;Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC&#43;NdcPIvZhzk=" crossorigin="anonymous"></script>
 
@@ -1070,7 +1069,7 @@ https://github.com/alex-shpak/hugo-book
     
 
     <ul>
-        <li><a href='#liste-liste-en-java'>%!s(<nil>).1 List&lt;E&gt;: liste en Java</a></li>
+        <li><a href='#listenbsp-liste-en-java'>%!s(<nil>).1 List&lt;E&gt; : liste en Java</a></li>
 
         
 
@@ -1116,7 +1115,7 @@ https://github.com/alex-shpak/hugo-book
     
 
     <ul>
-        <li><a href='#mapkv-mappage-en-java'>%!s(<nil>).3 Map&lt;K,V&gt;: mappage en Java</a></li>
+        <li><a href='#mapkvnbsp-mappage-en-java'>%!s(<nil>).3 Map&lt;K,V&gt; : mappage en Java</a></li>
 
         
 
@@ -1216,7 +1215,7 @@ Structures en Java
 <a class="anchor" href="#structures-en-java">#</a>
 
 </h1>
-<center>    <div class='excerpt note' style=''>    <div style="text-align:left">    <p>NOTE:</p>
+<center>    <div class='excerpt note' style=''>    <div style="text-align:left">    <p>NOTE :</p>
 <ul>
 <li>on va voir les paramètres de types plus en détail à l&rsquo;étape 3</li>
 </ul>
@@ -1228,33 +1227,33 @@ Structures en Java
 <p>Le JDK Java contient plusieurs structures de données déjà codées</p>
 </li>
 <li>
-<p>Dans ce cours, on va se concentrer sur les deux principales:</p>
+<p>Dans ce cours, on va se concentrer sur les deux principales :</p>
 <ul>
-<li><code>List&lt;E&gt;</code>: une liste</li>
-<li><code>Map&lt;K,V&gt;</code>: un dictionnaire (mappage)</li>
+<li><code>List&lt;E&gt;</code> : une liste</li>
+<li><code>Map&lt;K,V&gt;</code> : un dictionnaire (mappage)</li>
 </ul>
 </li>
 <li>
-<p>À partir de maintenant, vous devriez:</p>
+<p>À partir de maintenant, vous devriez :</p>
 <ul>
 <li>presque toujours utiliser une <code>List&lt;Integer&gt;</code> et jamais un tableau <code>int[]</code></li>
 <li>presque toujours utiliser les structures fournies dans le JDK Java</li>
 </ul>
 </li>
 <li>
-<p>Exception: pour des raisons pédagogiques</p>
+<p>Exception : pour des raisons pédagogiques</p>
 <ul>
 <li>p.ex. pour comprendre comment coder une liste</li>
 </ul>
 </li>
 <li>
-<p>Exception: dans des cas bien précis où on a besoin de notre propre structure de données</p>
+<p>Exception : dans des cas bien précis où on a besoin de notre propre structure de données</p>
 <ul>
 <li>p.ex. liste d&rsquo;objets 2d conçue pour détection de collision</li>
 </ul>
 </li>
 </ul>
-<h2 id="liste-liste-en-java">
+<h2 id="listenbsp-liste-en-java">
 
 
 
@@ -1291,13 +1290,13 @@ Structures en Java
 
 
 
-<code>List&lt;E&gt;</code>: liste en Java
+<code>List&lt;E&gt;</code> : liste en Java
 
-<a class="anchor" href="#liste-liste-en-java">#</a>
+<a class="anchor" href="#listenbsp-liste-en-java">#</a>
 
 </h2>
 <ul>
-<li>Exemple d&rsquo;utilisation:</li>
+<li>Exemple d&rsquo;utilisation :</li>
 </ul>
 <div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#75715e">// interface                        implantation
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>   <span style="color:#111">List</span><span style="color:#f92672">&lt;</span><span style="color:#111">String</span><span style="color:#f92672">&gt;</span> <span style="color:#111">listeChaines</span>  <span style="color:#f92672">=</span> <span style="color:#00a8c8">new</span> <span style="color:#111">ArrayList</span><span style="color:#f92672">&lt;&gt;();</span> 
@@ -1312,7 +1311,7 @@ Structures en Java
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
 </span></span><span style="display:flex;"><span><span style="color:#111">String</span> <span style="color:#111">chaine</span> <span style="color:#f92672">=</span> <span style="color:#111">listeChaines</span><span style="color:#f92672">.</span><span style="color:#75af00">get</span><span style="color:#f92672">(</span><span style="color:#111">2</span><span style="color:#f92672">);</span>
 </span></span></code></pre></div><ul>
-<li>Extrait de l&rsquo;interface:</li>
+<li>Extrait de l&rsquo;interface :</li>
 </ul>
 <div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#00a8c8">public</span> <span style="color:#00a8c8">interface</span> <span style="color:#75af00">List</span><span style="color:#f92672">&lt;</span><span style="color:#111">E</span> <span style="color:#00a8c8">extends</span> <span style="color:#111">Object</span><span style="color:#f92672">&gt;</span> <span style="color:#00a8c8">extends</span> <span style="color:#111">Collection</span><span style="color:#f92672">&lt;</span><span style="color:#111">E</span><span style="color:#f92672">&gt;{</span>
 </span></span><span style="display:flex;"><span>
@@ -1330,7 +1329,7 @@ Structures en Java
 </span></span><span style="display:flex;"><span>    <span style="color:#75715e">//...
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#f92672">}</span>
 </span></span></code></pre></div><ul>
-<li>Documentation complète:
+<li>Documentation complète :
 <ul>
 <li><a target="_blank" href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html">
   <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html">https://docs.oracle.com/javase/8/docs/api/java/util/List.html</a></a></li>
@@ -1384,7 +1383,7 @@ Implantations de <code>List&lt;E&gt;</code>
 <p><code>List&lt;E&gt;</code> est une interface</p>
 </li>
 <li>
-<p>Le JDK Java fournit différentes implantations, p.ex:</p>
+<p>Le JDK Java fournit différentes implantations, p.ex :</p>
 <ul>
 <li><code>ArrayList&lt;E&gt;</code></li>
 <li><code>LinkedList&lt;E&gt;</code></li>
@@ -1396,7 +1395,7 @@ Implantations de <code>List&lt;E&gt;</code>
 <li>
 <p>Quelle est la différence?</p>
 <ul>
-<li>à utiliser: aucune (c&rsquo;est la même interface)</li>
+<li>à utiliser : aucune (c&rsquo;est la même interface)</li>
 <li>en terme d&rsquo;efficacité? à coder?
 <ul>
 <li>on va en parler à l&rsquo;étape 4</li>
@@ -1405,7 +1404,7 @@ Implantations de <code>List&lt;E&gt;</code>
 </ul>
 </li>
 </ul>
-<h2 id="mapkv-mappage-en-java">
+<h2 id="mapkvnbsp-mappage-en-java">
 
 
 
@@ -1442,9 +1441,9 @@ Implantations de <code>List&lt;E&gt;</code>
 
 
 
-<code>Map&lt;K,V&gt;</code>: mappage en Java
+<code>Map&lt;K,V&gt;</code> : mappage en Java
 
-<a class="anchor" href="#mapkv-mappage-en-java">#</a>
+<a class="anchor" href="#mapkvnbsp-mappage-en-java">#</a>
 
 </h2>
 <ul>
@@ -1455,17 +1454,17 @@ Implantations de <code>List&lt;E&gt;</code>
 </ul>
 </li>
 <li>
-<p>Il y a deux paramètres de types:</p>
+<p>Il y a deux paramètres de types :</p>
 <ul>
-<li><code>K</code>: le type des clés</li>
-<li><code>V</code>: le type des valeurs</li>
+<li><code>K</code> : le type des clés</li>
+<li><code>V</code> : le type des valeurs</li>
 </ul>
 </li>
 <li>
-<p>IMPORTANT: une clé est associée à <strong>une seule valeur</strong></p>
+<p>IMPORTANT : une clé est associée à <strong>une seule valeur</strong></p>
 </li>
 <li>
-<p>Exemple d&rsquo;utilisation:</p>
+<p>Exemple d&rsquo;utilisation :</p>
 </li>
 </ul>
 <div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#75715e">// interface                          implantation
@@ -1492,10 +1491,10 @@ Implantations de <code>List&lt;E&gt;</code>
 </span></span><span style="display:flex;"><span><span style="color:#111">rendezVous</span><span style="color:#f92672">.</span><span style="color:#75af00">get</span><span style="color:#f92672">(</span><span style="color:#111">id</span><span style="color:#f92672">);</span>
 </span></span></code></pre></div><ul>
 <li>
-<p>NOTE: on utilise la notation <code>&lt;P1, P2&gt;</code> quand il y a plusieurs paramètres de type</p>
+<p>NOTE : on utilise la notation <code>&lt;P1, P2&gt;</code> quand il y a plusieurs paramètres de type</p>
 </li>
 <li>
-<p>Extrait de l&rsquo;interface:</p>
+<p>Extrait de l&rsquo;interface :</p>
 </li>
 </ul>
 <div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#00a8c8">public</span> <span style="color:#00a8c8">interface</span> <span style="color:#75af00">Map</span><span style="color:#f92672">&lt;</span><span style="color:#111">K</span> <span style="color:#00a8c8">extends</span> <span style="color:#111">Object</span><span style="color:#f92672">,</span> <span style="color:#111">V</span> <span style="color:#00a8c8">extends</span> <span style="color:#111">Object</span><span style="color:#f92672">&gt;</span> <span style="color:#f92672">{</span>
@@ -1511,7 +1510,7 @@ Implantations de <code>List&lt;E&gt;</code>
 </span></span><span style="display:flex;"><span>    <span style="color:#75715e">//...
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#f92672">}</span>
 </span></span></code></pre></div><ul>
-<li>Documentation complète:
+<li>Documentation complète :
 <ul>
 <li><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html" target="_blank">
   <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html">https://docs.oracle.com/javase/8/docs/api/java/util/Map.html</a></a></li>
@@ -1562,7 +1561,7 @@ Implantations de <code>Map&lt;K,V&gt;</code>
 </h2>
 <ul>
 <li>
-<p>Le JDK Java fournit différentes implantations, p.ex:</p>
+<p>Le JDK Java fournit différentes implantations, p.ex :</p>
 <ul>
 <li><code>HashMap&lt;K,V&gt;</code></li>
 <li><code>TreeMap&lt;K,V&gt;</code></li>
@@ -1572,7 +1571,7 @@ Implantations de <code>Map&lt;K,V&gt;</code>
 <li>
 <p>Quelle est la différence?</p>
 <ul>
-<li>à utiliser: presqu&rsquo;aucune (*)</li>
+<li>à utiliser : presqu&rsquo;aucune (*)</li>
 <li>à coder? en terme d&rsquo;efficacité?
 <ul>
 <li>on en parle à l&rsquo;étape 5</li>
@@ -1581,9 +1580,9 @@ Implantations de <code>Map&lt;K,V&gt;</code>
 </ul>
 </li>
 <li>
-<p>(*) <code>LinkedHashMap</code> est un cas spécial:</p>
+<p>(*) <code>LinkedHashMap</code> est un cas spécial :</p>
 <ul>
-<li>en plus d&rsquo;implanter l&rsquo;interface <code>Map&lt;K,V&gt;</code>, on ajoute la promesse suivante:
+<li>en plus d&rsquo;implanter l&rsquo;interface <code>Map&lt;K,V&gt;</code>, on ajoute la promesse suivante :
 <ul>
 <li>il est possible d&rsquo;accéder aux clés dans l&rsquo;ordre où elles ont été insérées</li>
 </ul>
@@ -1641,7 +1640,7 @@ Encoder des données JSON en Java
 <p>Un objet JSON est représenté en Java par <code>Map&lt;String, Object&gt;</code></p>
 </li>
 <li>
-<p>Par exemple:</p>
+<p>Par exemple :</p>
 </li>
 </ul>
 <div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#111">{</span>
@@ -1802,7 +1801,7 @@ Encoder des données JSON en Java
     
 
     <ul>
-        <li><a href='#liste-liste-en-java'>%!s(<nil>).1 List&lt;E&gt;: liste en Java</a></li>
+        <li><a href='#listenbsp-liste-en-java'>%!s(<nil>).1 List&lt;E&gt; : liste en Java</a></li>
 
         
 
@@ -1848,7 +1847,7 @@ Encoder des données JSON en Java
     
 
     <ul>
-        <li><a href='#mapkv-mappage-en-java'>%!s(<nil>).3 Map&lt;K,V&gt;: mappage en Java</a></li>
+        <li><a href='#mapkvnbsp-mappage-en-java'>%!s(<nil>).3 Map&lt;K,V&gt; : mappage en Java</a></li>
 
         
 

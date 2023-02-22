@@ -8,7 +8,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Notion de modèle #  %!s().1 Notion de modèle #    Un modèle est une classe qui représente des données importantes pour un programme
-  Prenons par exemple un petit tableau de cartes issu de l&rsquo;atelier 1.1:
+  Prenons par exemple un petit tableau de cartes issu de l&rsquo;atelier 1.1 :
   Le modèle est la classe MonTriLibre
   Il faut aussi les objets Carte pour bien représenter les données
   Les classes complémentaires comme Carte sont parfois appelées des valeurs (ou des sous-modèles)">
@@ -30,7 +30,7 @@
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.d3f358f6c6980ca9bcf249614f1fbb1eee417b00620ae8269ec1f7d2172ec7bb.css" integrity="sha256-0/NY9saYDKm88klhTx&#43;7Hu5BewBiCugmnsH30hcux7s=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/fr.search.min.198993251ed3077fa6ea8686913afadc9ae5b48ee014d5bf2a82d88ce69e5bdf.js" integrity="sha256-GYmTJR7TB3&#43;m6oaGkTr63JrltI7gFNW/KoLYjOaeW98=" crossorigin="anonymous"></script>
+  <script defer src="/fr.search.min.26d5b866e2e9f3f87a235e2611334ae02e176cb986d879380469b95b535ef73d.js" integrity="sha256-JtW4ZuLp8/h6I14mETNK4C4XbLmG2Hk4BGm5W1Ne9z0=" crossorigin="anonymous"></script>
 
   <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" integrity="sha256-b2&#43;Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC&#43;NdcPIvZhzk=" crossorigin="anonymous"></script>
 
@@ -1240,7 +1240,7 @@ Notion de modèle
 <p>Un modèle est une classe qui représente des données importantes pour un programme</p>
 </li>
 <li>
-<p>Prenons par exemple un petit tableau de cartes issu de l&rsquo;atelier 1.1:</p>
+<p>Prenons par exemple un petit tableau de cartes issu de l&rsquo;atelier 1.1 :</p>
  <img class="small-figure" src="MonTriLibre_cartes.png" />
  <img class="small-figure" src="MonTriLibre.png" />
 </li>
@@ -1301,25 +1301,25 @@ Un modèle a des comportements (méthodes)
 <p>Comme <code>MonTriLibre</code> est une classe, le modèle contient aussi des méthodes</p>
 </li>
 <li>
-<p>Par exemple:</p>
+<p>Par exemple :</p>
 <ul>
 <li><code>boolean isSorted</code> pour déterminer si les cartes sont triées</li>
 <li><code>int testCaseSize</code> qui retourne la taille de l&rsquo;exemple (le nombre de cartes)</li>
 </ul>
 </li>
 <li>
-<p>La valeur <code>Carte</code> contient aussi des méthodes, par exemple:</p>
+<p>La valeur <code>Carte</code> contient aussi des méthodes, par exemple :</p>
 <ul>
 <li><code>int compareTo</code> pour indiquer si la carte est plus petite qu&rsquo;une autre carte</li>
 <li><code>boolean isNullCard</code> pour indier s&rsquo;il s&rsquo;agit vraiment d&rsquo;une carte ou d&rsquo;une case vide</li>
 </ul>
 </li>
 <li>
-<p>On va voir à la session suivante qu&rsquo;une application graphique est souvent divisée en trois parties:</p>
+<p>On va voir à la session suivante qu&rsquo;une application graphique est souvent divisée en trois parties :</p>
 <ul>
-<li><strong>le modèle</strong>: contient les données et les méthodes pour manipuler les données</li>
-<li><strong>la vue</strong>: contient le code pour afficher les données</li>
-<li><strong>le contrôleur</strong>: contient le code pour créer les vues et les modèles et autres tâches</li>
+<li><strong>le modèle</strong> : contient les données et les méthodes pour manipuler les données</li>
+<li><strong>la vue</strong> : contient le code pour afficher les données</li>
+<li><strong>le contrôleur</strong> : contient le code pour créer les vues et les modèles et autres tâches</li>
 </ul>
 </li>
 </ol>
@@ -1428,7 +1428,7 @@ Modèle en JSON
 <p>Dans ce cours, on va utiliser la clé spéciale <code>_C</code> pour identifier la classe</p>
 </li>
 <li>
-<p>On a donc la représentation JSON suivante pour un 4♧:</p>
+<p>On a donc la représentation JSON suivante pour un 4♧ :</p>
 <div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#111">{</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;_C&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;Carte&#34;</span><span style="color:#111">,</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;numero&#34;</span><span style="color:#111">:</span> <span style="color:#ae81ff">4</span><span style="color:#111">,</span>

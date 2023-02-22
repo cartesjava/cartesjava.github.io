@@ -8,9 +8,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Annexe 3: programmer un nouvel exemple #  Préalables #   JDK 11 ou plus récent (testé jusqu&rsquo;à JDK18) Git Eclipse  Cloner les sources #  Dans un GitBash (ou à la console en Linux ou Mac)
-$ git clone https://github.com/cartesjava/ca.ntro.cards.git Créer un nouveau projet #  Pour créer une nouvelle visualisation avec les cartes:
-$ sh scripts/new_project.sh MonProjet mon_projet Pour créer un nouveau validateur:
-$ sh scripts/new_validator.sh MesModeles mes_modeles Créer et importer les projets Eclipse #  Générer les projets Eclipse avec">
+$ git clone https://github.com/cartesjava/ca.ntro.cards.git Créer un nouveau projet #  Pour créer une nouvelle visualisation avec les cartes :
+$ sh scripts/new_project.sh MonProjet mon_projet Pour créer un nouveau validateur :
+$ sh scripts/new_validator.">
 <meta name="theme-color" content="#FFFFFF">
 <meta name="color-scheme" content="light dark"><meta property="og:title" content="Annexe 3: programmer un nouvel exemple" />
 <meta property="og:description" content="" />
@@ -29,7 +29,7 @@ $ sh scripts/new_validator.sh MesModeles mes_modeles Créer et importer les proj
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.d3f358f6c6980ca9bcf249614f1fbb1eee417b00620ae8269ec1f7d2172ec7bb.css" integrity="sha256-0/NY9saYDKm88klhTx&#43;7Hu5BewBiCugmnsH30hcux7s=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/fr.search.min.198993251ed3077fa6ea8686913afadc9ae5b48ee014d5bf2a82d88ce69e5bdf.js" integrity="sha256-GYmTJR7TB3&#43;m6oaGkTr63JrltI7gFNW/KoLYjOaeW98=" crossorigin="anonymous"></script>
+  <script defer src="/fr.search.min.26d5b866e2e9f3f87a235e2611334ae02e176cb986d879380469b95b535ef73d.js" integrity="sha256-JtW4ZuLp8/h6I14mETNK4C4XbLmG2Hk4BGm5W1Ne9z0=" crossorigin="anonymous"></script>
 
   <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" integrity="sha256-b2&#43;Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC&#43;NdcPIvZhzk=" crossorigin="anonymous"></script>
 
@@ -1344,9 +1344,9 @@ Créer un nouveau projet
 <a class="anchor" href="#cr%c3%a9er-un-nouveau-projet">#</a>
 
 </h2>
-<p>Pour créer une nouvelle visualisation avec les cartes:</p>
+<p>Pour créer une nouvelle visualisation avec les cartes :</p>
 <div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ sh scripts/new_project.sh MonProjet mon_projet
-</span></span></code></pre></div><p>Pour créer un nouveau validateur:</p>
+</span></span></code></pre></div><p>Pour créer un nouveau validateur :</p>
 <div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ sh scripts/new_validator.sh MesModeles mes_modeles
 </span></span></code></pre></div><h2 id="créer-et-importer-les-projets-eclipse">
 
@@ -1428,16 +1428,16 @@ Modifier la visualisation avec les cartes
 <p>S&rsquo;inspirer des projets <code>shift_procedure</code> et <code>fibonacci_procedure</code></p>
 <p>Dans le projet <code>mon_projet_procedure</code>, modifier le paquet <code>models</code></p>
 <p>Renommer au besoin la classe <code>MonProjetCardsModel</code></p>
-<p>Implanter les méthodes marquées d&rsquo;un <code>TODO</code> et que l&rsquo;outil de validation utilise:</p>
+<p>Implanter les méthodes marquées d&rsquo;un <code>TODO</code> et que l&rsquo;outil de validation utilise :</p>
 <ul>
-<li><code>copyDataFrom</code>: copier les données d&rsquo;un autre modèle</li>
-<li><code>compareToSolution</code>: valider si le modèle courant est une solution</li>
-<li><code>updateViewDataImpl</code>: afficher les cartes correspondant au modèle courant</li>
-<li><code>initializeAsTestCase</code>: données de départ d&rsquo;un cas de test</li>
+<li><code>copyDataFrom</code> : copier les données d&rsquo;un autre modèle</li>
+<li><code>compareToSolution</code> : valider si le modèle courant est une solution</li>
+<li><code>updateViewDataImpl</code> : afficher les cartes correspondant au modèle courant</li>
+<li><code>initializeAsTestCase</code> : données de départ d&rsquo;un cas de test</li>
 </ul>
-<p>Finalement, modifier aussi  <code>test_cases.MonProjetTestCaseDatabase</code>, en particulier:</p>
+<p>Finalement, modifier aussi  <code>test_cases.MonProjetTestCaseDatabase</code>, en particulier :</p>
 <ul>
-<li><code>describeTestCasesToGenerate</code>: faire la liste des cas de tests à générer</li>
+<li><code>describeTestCasesToGenerate</code> : faire la liste des cas de tests à générer</li>
 </ul>
 <h2 id="ajouter-des-modèles-à-un-validateur">
 
