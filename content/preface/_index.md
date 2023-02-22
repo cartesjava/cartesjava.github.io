@@ -94,8 +94,8 @@ Enseignant·e·s en informatique au Collège Montmorency&nbsp;: &nbsp;Soumaya Me
 <th>Pour citer cet ouvrage</th>
 <td>
 
-Bergeron M (2023). *Code les cartes! Apprendre à programmer efficacement avec des cartes à jouer*.
-Collège Montmorency. fabriqueREL. Licence CC BY-SA
+Bergeron, M (2023). *Code les cartes! Apprendre à programmer efficacement avec des cartes à jouer*.
+Collège Montmorency. <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.fr">CC BY-SA</a>
 
 
 </td>
