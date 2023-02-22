@@ -8,12 +8,16 @@ Sources pour https://cartesjava.github.io/
 
 ## Pour les propriétaires de ce dépôt Git
 
-### Préalables
+### Directement via GitHub
+
+### Travailler en local
+
+#### Préalables
 
 1. Installer <a href="https://git-scm.com/downloads">Git</a>
 1. Installer <a href="https://gohugo.io/installation">Hugo</a>
 
-### Créer et ajouter sa clé SSH
+#### Créer et ajouter sa clé SSH
 
 1. Ouvrir un GitBash et faire la commande suivante
 
@@ -48,7 +52,7 @@ Sources pour https://cartesjava.github.io/
 
 1. Appuyer sur *Add SSH key*
 
-### Cloner le dépôt Git via SSH
+#### Cloner le dépôt Git via SSH
 
 1. Faire la commande suivante pour cloner le dépôt Git
 
