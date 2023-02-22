@@ -13,7 +13,7 @@ weight: 20
 
 ## Diagramme de classes et Java
 
-Nous utilisons le langage de programmation Java pour les exemples de code de ce manuel. Au besoin, nous vous invitons à vous référer à <a href="/bibliographie#mayfield-allen-2020">Think Java (Mayfield et Allen; 2020)</a> pour une introduction à ce langage.
+Nous utilisons le langage de programmation Java pour les exemples de code de ce manuel. Au besoin, nous vous invitons à vous référer à <a href="/bibliographie#mayfield-allen-2020">(Mayfield et Downey, 2020)</a> pour une introduction à ce langage.
 
 Pour visualiser les types de données, nous utilisons des digrammes de classe.
 Voici par exemple un diagramme de classe représentant une liste chaînée simple.
