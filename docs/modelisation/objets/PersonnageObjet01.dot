@@ -1,4 +1,0 @@
-digraph "Personnage" {
-graph ["rankdir"="LR","compound"="true","ranksep"="1.0","nodesep"="1.0"]
-"/" ["label"="<_C>Personnage|{personnagePrincipal|true}|{nom|\"James Bond\"}","style"="filled","fillcolor"="white","shape"="record"]
-}
