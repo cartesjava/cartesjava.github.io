@@ -94,7 +94,7 @@ weight: 80
 
 * Plus facile d'écrire des boucles infinies (condition d'arrêt implicite)
 
-* En pratique, la pile d'appel est assez petite (p.ex. 1000 appels)
+* En pratique, la pile d'appel est assez petite (p.&nbsp;ex. 1000 appels)
     * donc souvent impossible d'utiliser la récursivité sur des gros problèmes
     <!--* (à moins que le nombre d'appels soit `O(log(n) comme pour le tri fusion)`-->
 

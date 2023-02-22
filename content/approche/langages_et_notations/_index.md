@@ -21,10 +21,10 @@ Voici par exemple un diagramme de classe représentant une liste chaînée simpl
 <img class="figure" src="./liste_chainee_simple.png" />
 
 Chaque boîte dénote une classe. Une boîte a typiquement trois sections. La
-première section à partir du haut est le nom de la classe, p.ex. *Liste*
+première section à partir du haut est le nom de la classe, p.&nbsp;ex. *Liste*
 (lorsque la classe est abstraite, ce nom sera en italique). La deuxième section
-dénote les méthodes, p.ex. `int taille()`.  La dernière section dénote les
-attributs, p.ex. `int taille`. La flèche triangulaire dénote l'héritage (le
+dénote les méthodes, p.&nbsp;ex. `int taille()`.  La dernière section dénote les
+attributs, p.&nbsp;ex. `int taille`. La flèche triangulaire dénote l'héritage (le
 triangle est collé sur la classe parent).  Par exemple, la classe
 `ListeChaineeSimple` hérite de la classe `Liste` (puisque `Liste` est abstraite,
 on peut aussi dire que `ListeChaineeSimple` implante une `Liste`).  La flèche

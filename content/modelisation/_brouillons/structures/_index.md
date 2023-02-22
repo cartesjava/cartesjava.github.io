@@ -29,10 +29,10 @@ NOTE&nbsp;:
     * presque toujours utiliser les structures fournies dans le JDK Java
 
 * Exception&nbsp;: pour des raisons pédagogiques
-    * p.ex. pour comprendre comment coder une liste
+    * p.&nbsp;ex. pour comprendre comment coder une liste
 
 * Exception&nbsp;: dans des cas bien précis où on a besoin de notre propre structure de données
-    * p.ex. liste d'objets 2d conçue pour détection de collision
+    * p.&nbsp;ex. liste d'objets 2d conçue pour détection de collision
 
 ## `List<E>`&nbsp;: liste en Java
 
@@ -58,7 +58,7 @@ NOTE&nbsp;:
 
 * `List<E>` est une interface
 
-* Le JDK Java fournit différentes implantations, p.ex&nbsp;:
+* Le JDK Java fournit différentes implantations, p.&nbsp;ex&nbsp;:
     * `ArrayList<E>`
     * `LinkedList<E>`
 
@@ -102,7 +102,7 @@ NOTE&nbsp;:
 
 
 
-* Le JDK Java fournit différentes implantations, p.ex&nbsp;:
+* Le JDK Java fournit différentes implantations, p.&nbsp;ex.&nbsp;:
     * `HashMap<K,V>`
     * `TreeMap<K,V>`
     * `LinkedHashMap<K,V>`

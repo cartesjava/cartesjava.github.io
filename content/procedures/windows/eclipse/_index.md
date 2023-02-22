@@ -37,7 +37,7 @@ Rappel&nbsp;: ne pas effectuer cette étape sur un Windows du Collège
 -->
 
 1. Je démarre Eclipse
-	* Je choisi mon `WORKSPACE`, p.ex. 
+	* Je choisi mon `WORKSPACE`, p.&nbsp;ex. 
 		* `Z:\eclipse-workspace` (Windows du Collège)
 		* `C:\Users\PRENOM_NOM\eclipse-workspace` (Mon Windows)
 
@@ -56,7 +56,7 @@ Rappel&nbsp;: ne pas effectuer cette étape sur un Windows du Collège
 	* Si le *JDK 11* n'est pas là, je l'ajoute&nbsp;:
 		* *Add* =>
 		* *Standard VM* => *Next*
-		* Sélectionner le répertoire racine du *JDK*, p.ex&nbsp;: 
+		* Sélectionner le répertoire racine du *JDK*, p.&nbsp;ex&nbsp;: 
 			* `C:\Program Files\Java\jdk-11.XXX`
 		* *Finish*
 		* *Apply and Close*

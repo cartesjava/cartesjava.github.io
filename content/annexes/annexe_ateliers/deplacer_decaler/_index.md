@@ -138,7 +138,7 @@ bookNumbering: false
 **IMPORTANT** 
 
 * il faut utiliser ces attributs plutôt que des variables
-    * p.ex. utiliser l'attribut `i` dans la boucle `for` et non une variable `int i`
+    * p.&nbsp;ex. utiliser l'attribut `i` dans la boucle `for` et non une variable `int i`
 * sinon l'outil de validation ne pourra pas visualiser l'exécution de votre code
 
     {{</excerpt>}}
@@ -168,7 +168,7 @@ bookNumbering: false
 
 ## Utiliser l'outil de validation pour visualiser votre code
 
-1. Pour que l'outil puisse afficher chacune des étapes de la procédure, vous devez ajouter à la main des instructions `Execution.ajouterEtape()`, p.ex.
+1. Pour que l'outil puisse afficher chacune des étapes de la procédure, vous devez ajouter à la main des instructions `Execution.ajouterEtape()`, p.&nbsp;ex.
 
     ```java
     @Override

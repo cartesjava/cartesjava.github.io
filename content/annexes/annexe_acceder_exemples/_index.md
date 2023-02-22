@@ -86,7 +86,7 @@ Importer les projets en Eclipse afin de modifier le code
 
 En particulier&nbsp;:
 
-* Dans chaque projet `_solution`, modifier le modèle, p.ex. 
+* Dans chaque projet `_solution`, modifier le modèle, p.&nbsp;ex. 
     * pour `deplacer_decaler`&nbsp;: `MonTableau` 
     * pour `fibonacci`&nbsp;: `MonCalculateur`
     * pour `validator_cartesjava`&nbsp;: les classes du paquet `models`

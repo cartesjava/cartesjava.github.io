@@ -51,11 +51,11 @@ bookHidden: true
 
 ### Ce qui reste à peaufiner
 
-1. Tout! L'approche a besoin de «&nbsp;vivre un peu&nbsp;». P.ex. 
+1. Tout! L'approche a besoin de «&nbsp;vivre un peu&nbsp;». P.&nbsp;ex. 
     * plusieurs étudiant·e·s ont pris du temps à réaliser que l'outil de validation générait des visualisations à partir de leur code. Il faudra trouver des façons de présenter cet aspect plus directement (d'autant plus que c'est un aspect très apprécié une fois découvert!).
     * les étudiant·e·s ont trouvé facile de trier des cartes, mais plus difficile de traduire en code la procédure. Je pense que je devrai fournir plus d'exemples plus rapidement afin de pratiquer cette «&nbsp;traduction&nbsp;».
 
-1. Malheureusement, pour l'instant, créer un nouvel exemple de visualisation est difficile et long. Je dois écrire beaucoup de code pour créer les visualisations et ces dernières doivent quand même être capturées à la main avec un outil de capture d'écran. Certains graphes d'objets doivent aussi être retravailler à la main, p.ex. ci-bas pour y inclure la variable `nouvelleTete`
+1. Malheureusement, pour l'instant, créer un nouvel exemple de visualisation est difficile et long. Je dois écrire beaucoup de code pour créer les visualisations et ces dernières doivent quand même être capturées à la main avec un outil de capture d'écran. Certains graphes d'objets doivent aussi être retravailler à la main, p.&nbsp;ex. ci-bas pour y inclure la variable `nouvelleTete`
 
     <img class="figure" src="/annexes/annexe_bilans/bilan_octobre_2022/dyn01.png"/>
 
