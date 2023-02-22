@@ -5,7 +5,7 @@ bookNumbering: false
 weight: 300
 ---
 
-# Comment modifier ce manuel
+{{% pageTitle %}}
 
 
 ## Obtenir les sources
