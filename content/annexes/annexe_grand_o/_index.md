@@ -8,4 +8,4 @@ bookNumbering: false
 
 À venir. 
 
-Pour l'instant, voir <a href="/bibliographie#aho-ullman-al-2020">(«&nbsp;Data Structures&nbsp:{fundamental tools}&nbsp;», 2022)</a>, en particulier le <a href="https://en.wikibooks.org/wiki/Data_Structures/Asymptotic_Notation">chapitre 2</a>.
+Pour l'instant, voir <a href="/bibliographie#aho-ullman-al-2020">(«&nbsp;Data Structures&nbsp;:{fundamental tools}&nbsp;», 2022)</a>, en particulier le <a href="https://en.wikibooks.org/wiki/Data_Structures/Asymptotic_Notation">chapitre 2</a>.
