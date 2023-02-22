@@ -44,9 +44,9 @@ bookHidden: true
     aDeplacer = 2;
     ```
 
-    <img src="/preface/bilan_octobre_2022/cartes.png">
+    <img src="/annexes/annexe_bilans/bilan_octobre_2022/cartes.png">
 
-    <img src="/preface/bilan_octobre_2022/graphe.png">
+    <img src="/annexes/annexe_bilans/bilan_octobre_2022/graphe.png">
 
 
 ### Ce qui reste à peaufiner
@@ -57,7 +57,7 @@ bookHidden: true
 
 1. Malheureusement, pour l'instant, créer un nouvel exemple de visualisation est difficile et long. Je dois écrire beaucoup de code pour créer les visualisations et ces dernières doivent quand même être capturées à la main avec un outil de capture d'écran. Certains graphes d'objets doivent aussi être retravailler à la main, p.ex. ci-bas pour y inclure la variable `nouvelleTete`
 
-    <img class="figure" src="/preface/bilan_octobre_2022/dyn01.png"/>
+    <img class="figure" src="/annexes/annexe_bilans/bilan_octobre_2022/dyn01.png"/>
 
 
 ### Trois «intuitions de programmeur» à mieux enseigner

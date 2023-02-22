@@ -14,5 +14,5 @@ bookHidden: true
 
 ## Recommandations pour le suivi de projet
 
-<img src="/preface/bilan_octobre_2022/processus.svg"/>
+<img src="/annexes/annexe_bilans/bilan_octobre_2022/processus.svg"/>
 
