@@ -159,3 +159,5 @@ Sources pour https://cartesjava.github.io/
 
 1. Une tâche automatique sur GitHub va mettre le site Web à jour après chaque push
 
+    * (peut prendre quelques minutes)
+
