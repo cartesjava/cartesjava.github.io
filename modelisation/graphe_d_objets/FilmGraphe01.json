@@ -1,0 +1,47 @@
+{
+  "_C": "Film",
+  "titre": "Dr. No",
+  "annee": 0,
+  "personnages": [
+    {
+      "_C": "Personnage",
+      "nom": "James Bond",
+      "personnagePrincipal": true,
+      "films": [
+        {
+          "_R": "/"
+        },
+        {
+          "_C": "Film",
+          "titre": "Bons Baisers de Russie",
+          "annee": 0,
+          "personnages": [
+            {
+              "_R": "/personnages/0"
+            },
+            {
+              "_C": "Personnage",
+              "nom": "Rosa Klebb",
+              "personnagePrincipal": false,
+              "films": [
+                {
+                  "_R": "/personnages/0/films/1"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "_C": "Personnage",
+      "nom": "Docteur No",
+      "personnagePrincipal": false,
+      "films": [
+        {
+          "_R": "/"
+        }
+      ]
+    }
+  ]
+}

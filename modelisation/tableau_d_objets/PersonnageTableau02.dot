@@ -1,0 +1,8 @@
+digraph "Personnage" {
+graph ["rankdir"="LR","compound"="true","ranksep"="1.0","nodesep"="1.0"]
+"/" ["label"="<_C>Personnage|{nom|\"Docteur No\"}|{personnagePrincipal|false}|{films|<films_films>}","style"="filled","fillcolor"="white","shape"="record"]
+"/films" ["label"="<_C>List|{0|<0_0>}","style"="filled","fillcolor"="white","shape"="record"]
+"/films/0" ["label"="<_C>FilmObjet|{titre|\"Dr. No\"}|{annee|1962}","style"="filled","fillcolor"="white","shape"="record"]
+"/":"films_films":c -> "/films":"_C" ["tailclip"="false","arrowtail"="dot","dir"="both","label"=""]
+"/films":"0_0":c -> "/films/0":"_C" ["tailclip"="false","arrowtail"="dot","dir"="both","label"=""]
+}

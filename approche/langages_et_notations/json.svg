@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="44cm" height="15cm" viewBox="90 117 866 295" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <rect style="fill: #ffffff" x="434" y="118" width="145.05" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="434" y="118" width="145.05" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="506.525" y="137">ValeurJson&lt;V&gt;</text>
+    <rect style="fill: #ffffff" x="434" y="146" width="145.05" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="434" y="146" width="145.05" height="8"/>
+    <rect style="fill: #ffffff" x="434" y="154" width="145.05" height="20"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="434" y="154" width="145.05" height="20"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="437" y="168"> V valeurJava()</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="91.5" y="118.3" width="271.8" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="91.5" y="118.3" width="271.8" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="227.4" y="137.3">ListeJson</text>
+    <rect style="fill: #ffffff" x="91.5" y="146.3" width="271.8" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="91.5" y="146.3" width="271.8" height="8"/>
+    <rect style="fill: #ffffff" x="91.5" y="154.3" width="271.8" height="20"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="91.5" y="154.3" width="271.8" height="20"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="94.5" y="168.3"> ListeJava&lt;ValeurJson&gt; listeJava()</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="637.5" y="120.3" width="318" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="637.5" y="120.3" width="318" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="796.5" y="139.3">ObjetJson</text>
+    <rect style="fill: #ffffff" x="637.5" y="148.3" width="318" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="637.5" y="148.3" width="318" height="8"/>
+    <rect style="fill: #ffffff" x="637.5" y="156.3" width="318" height="20"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="637.5" y="156.3" width="318" height="20"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="640.5" y="170.3"> Dictionnaire&lt;ValeurJson&gt; dictionnaire()</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="308.5" y="291.3" width="83.65" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="308.5" y="291.3" width="83.65" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="350.325" y="310.3">NullJson</text>
+    <rect style="fill: #ffffff" x="308.5" y="319.3" width="83.65" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="308.5" y="319.3" width="83.65" height="8"/>
+    <rect style="fill: #ffffff" x="308.5" y="327.3" width="83.65" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="308.5" y="327.3" width="83.65" height="8"/>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="366.5" y="366.3" width="120.65" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="366.5" y="366.3" width="120.65" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="426.825" y="385.3">BooleenJson</text>
+    <rect style="fill: #ffffff" x="366.5" y="394.3" width="120.65" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="366.5" y="394.3" width="120.65" height="8"/>
+    <rect style="fill: #ffffff" x="366.5" y="402.3" width="120.65" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="366.5" y="402.3" width="120.65" height="8"/>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="531.5" y="365.3" width="119.1" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="531.5" y="365.3" width="119.1" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="591.05" y="384.3">NombreJson</text>
+    <rect style="fill: #ffffff" x="531.5" y="393.3" width="119.1" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="531.5" y="393.3" width="119.1" height="8"/>
+    <rect style="fill: #ffffff" x="531.5" y="401.3" width="119.1" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="531.5" y="401.3" width="119.1" height="8"/>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="637.5" y="292.3" width="109.55" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="637.5" y="292.3" width="109.55" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="692.275" y="311.3">ChaineJson</text>
+    <rect style="fill: #ffffff" x="637.5" y="320.3" width="109.55" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="637.5" y="320.3" width="109.55" height="8"/>
+    <rect style="fill: #ffffff" x="637.5" y="328.3" width="109.55" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="637.5" y="328.3" width="109.55" height="8"/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="506.525,192.236 506.525,240.647 692.275,240.647 692.275,291.294 "/>
+    <polygon style="fill: #ffffff" points="514.525,192.236 506.525,176.236 498.525,192.236 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="514.525,192.236 506.525,176.236 498.525,192.236 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="506.525,193.243 506.525,277.651 591.05,277.651 591.05,364.294 "/>
+    <polygon style="fill: #ffffff" points="514.525,193.243 506.525,177.243 498.525,193.243 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="514.525,193.243 506.525,177.243 498.525,193.243 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="506.525,193.243 506.525,278.151 426.825,278.151 426.825,365.294 "/>
+    <polygon style="fill: #ffffff" points="514.525,193.243 506.525,177.243 498.525,193.243 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="514.525,193.243 506.525,177.243 498.525,193.243 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="506.525,193.243 506.525,240.651 350.325,240.651 350.325,290.294 "/>
+    <polygon style="fill: #ffffff" points="514.525,193.243 506.525,177.243 498.525,193.243 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="514.525,193.243 506.525,177.243 498.525,193.243 "/>
+  </g>
+</svg>

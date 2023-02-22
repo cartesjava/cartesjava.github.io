@@ -1,0 +1,28 @@
+{
+  "_C": "ListeChaineeDouble01",
+  "taille": 3,
+  "tete": {
+    "_C": "MaillonDouble",
+    "valeur": "z",
+    "precedent": {
+      "_C": "MaillonDouble",
+      "valeur": "w",
+      "precedent": {
+        "_C": "MaillonDouble",
+        "valeur": "r",
+        "precedent": {
+          "_R": "/tete"
+        },
+        "suivant": {
+          "_R": "/tete/precedent"
+        }
+      },
+      "suivant": {
+        "_R": "/tete"
+      }
+    },
+    "suivant": {
+      "_R": "/tete/precedent/precedent"
+    }
+  }
+}
