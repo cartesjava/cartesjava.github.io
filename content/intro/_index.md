@@ -60,7 +60,7 @@ crédit photo: Mikael Tardif
 </center>
 
 
-Un autre avantage est qu'on peut vérifier la compréhension des étudiant.es dès
+Un autre avantage est qu'on peut vérifier la compréhension des étudiant·e·s dès
 la période de théorie, sans même utiliser d'ordinateurs. Dans l'exemple
 ci-bas, on spécifie visuellement une opération à effectuer sur une liste de
 cartes. Cette opération consiste à déplacer une carte (identifiée par un marqueur) au début de 

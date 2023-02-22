@@ -86,7 +86,7 @@ Du Collège Montmorency&nbsp;: &nbsp;Philippe Lavigueur (conseiller pédagogique
 <th>Comité de relecture</th>
 <td>
 
-Enseignant.es en informatique au Collège Montmorency&nbsp;: &nbsp;Soumaya Medini, Axel Seguin, Nicolas Leduc, Frédéric Édoukou, Simon Deschênes et Sylvain Labranche.
+Enseignant·e·s en informatique au Collège Montmorency&nbsp;: &nbsp;Soumaya Medini, Axel Seguin, Nicolas Leduc, Frédéric Édoukou, Simon Deschênes et Sylvain Labranche.
 </td>
 </tr>
 

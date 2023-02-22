@@ -173,7 +173,7 @@ Voici un exemple pour quatre étapes.
 ## Expérimenter avec les données 
 
 L'outil supporte la modification en temps réel du fichier de données correspondant aux cartes affichées.
-Cette fonctionnalité permet de créer des exercices où les étudiant.es doivent encoder des données de façon à produire la bonne visualisation.
+Cette fonctionnalité permet de créer des exercices où les étudiant·e·s doivent encoder des données de façon à produire la bonne visualisation.
 
 <center>
 <div style="max-width:75%;"/>
