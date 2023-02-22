@@ -121,7 +121,7 @@ Sources pour https://cartesjava.github.io/
 
 1. Naviguer vers <a href="http://localhost:1313" target="blank">localhost:1313</a>
 
-#### Pousser des modifications sur GitHub
+#### Pousser les modifications sur GitHub
 
 1. Ouvrir GitBash à la racine du dépôt Git et faire
 
@@ -135,11 +135,5 @@ Sources pour https://cartesjava.github.io/
 
 #### Mettre à jour le site `cartesjava.github.io`
 
-1. Ouvrir GitBash à la racine du dépôt Git et faire
+1. Une tâche automatique sur GitHub va mettre le site Web à jour après chaque push
 
-    ```bash
-    $ sh scripts/publish
-    ```
-
-    * NOTE: ne fonctionne que si votre clé SSH est installée sur GitHub
-    
