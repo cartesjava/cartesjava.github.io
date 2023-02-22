@@ -54,7 +54,7 @@ devant la classe, et ce, de façon très visuelle.
 <td style="text-align:right;">
 <img class="small-figure" src="/approche/trier/trier_par_numero02.jpg" />
 <br>
-crédit photo: Mikael Tardif
+Crédit photo: Mikael Tardif
 </td>
 </table>
 </center>
@@ -106,7 +106,7 @@ permettant ainsi à l'enseignant·e de vérifier que l'énoncé a bien été com
 On peut ensuite présenter une procédure afin de réaliser l'opération (c.-à-d. l'implantation, ou comment le
 programme doit le faire). Dans l'exemple ci-bas, on utilise une procédure qui visite la liste du début vers la fin (ce qui correspond au genre de boucle que les étudiant·e·s ont probablement déjà appris).
 Encore une fois, les étudiant·e·s pourront réaliser la procédure sur la table, avec de vraies cartes, et
-s'assurer de comprendre ce qu'il faut programmer avant même d'écrire les premières lignes de code.
+ainsi s'assurer de comprendre ce qu'il faut programmer avant même d'écrire les premières lignes de code.
 
 <center>
 <table>
