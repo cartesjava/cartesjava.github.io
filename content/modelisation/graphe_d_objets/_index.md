@@ -62,7 +62,7 @@ Comme exemple, nous développons une modélisation de la séquence de Fibonacci.
 
 1. Comme pour π, on peut le calculer le nombre d'or avec autant que précision que désiré
 
-    * (c-à-d avec autant de chiffres après le point que désiré)
+    * (c.-à-d. avec autant de chiffres après le point que désiré)
 
 1. Pour calculer une approximation du nombre d'or on fait tout simplement:
 
@@ -188,7 +188,7 @@ Comme exemple, nous développons une modélisation de la séquence de Fibonacci.
 
     * le `moinsDeux` de la `nouvelleTete` est le `moinsUn` de l'ancienne `tete`
 
-    * c-à-d on insère la `nouvelleTete` à gauche, et on «pousse» les objets existants vers la droite
+    * c.-à-d. on insère la `nouvelleTete` à gauche, et on «pousse» les objets existants vers la droite
     
 1. Pour le cas `n >= 2`, voici comment procéder
 

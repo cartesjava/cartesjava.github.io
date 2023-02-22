@@ -10,7 +10,7 @@ bookNumbering: false
 > Dans ce manuel, nous développons une approche pour enseigner la programmation
 > avec des cartes à jouer.  Les étudiant·e·s seront invité·es à réaliser une
 > procédure informatique avec des cartes, avant de programmer cette procédure
-> en Java et finalement de valider leur code à l'aide d'un logiciel créé
+> en Java et, finalement, de valider leur code à l'aide d'un logiciel créé
 > spécifiquement pour accompagner ce manuel.
 >
 > Nous utilisons ensuite cette approche pour expliquer les notions d'efficacité
@@ -43,7 +43,7 @@ d'une procédure informatique avant même de commencer à la programmer.
 Les cartes à jouer sont avantageuses parce qu'elles sont accessibles
 et peu dispendieuses.  Par exemple, on peut facilement se procurer des
 cartes surdimensionnées qui permettront d'expliquer des notions informatiques
-devant la classe, de façon très visuelle.
+devant la classe, et ce, de façon très visuelle.
 
 <center>
 <table>
@@ -101,9 +101,9 @@ Opération à réaliser
 </center>
 
 On peut demander aux étudiant·e·s d'effectuer cette opération avec des vraies cartes, 
-permettant ainsi à l'enseignant·e de vérifier que l'énoncé a bien été compris (c-à-d l'interface, ou ce que le programme doit faire).
+permettant ainsi à l'enseignant·e de vérifier que l'énoncé a bien été compris (c.-à-d. l'interface, ou ce que le programme doit faire).
 
-On peut ensuite présenter une procédure afin de réaliser l'opération (c-à-d l'implantation, ou comment le
+On peut ensuite présenter une procédure afin de réaliser l'opération (c.-à-d. l'implantation, ou comment le
 programme doit le faire). Dans l'exemple ci-bas, on utilise une procédure qui visite la liste du début vers la fin (ce qui correspond au genre de boucle que les étudiant·e·s ont probablement déjà appris).
 Encore une fois, les étudiant·e·s pourront réaliser la procédure sur la table, avec de vraies cartes, et
 s'assurer de comprendre ce qu'il faut programmer avant même d'écrire les premières lignes de code.
@@ -152,7 +152,7 @@ leur programme, en particulier:
 Une fois les étudiant·e·s habitué·es à réaliser des procédures avec les cartes à
 jouer, on peut passer à expliquer la notion d'efficacité (complexité des
 algorithmes), c'est-à-dire comment différentes procédures informatiques peuvent
-accomplir la même opération (c-à-d arriver au même résultat), tout en nécessitant un
+accomplir la même opération (c.-à-d. arriver au même résultat), tout en nécessitant un
 nombre d'étapes significativement différent.
 
 On distingue ainsi entre les procédures naïves (souvent plus faciles à
@@ -183,7 +183,7 @@ Par contre, la liste par référence utilisera moins d'espace en mémoire.
 
 On peut visualiser ce dernier point assez concrètement avec des cartes à jouer,
 surtout si on utilise des cartes blanches (ou le verso de cartes) pour
-visualiser l'espace mémoire vide (c-à-d l'espace occupé par le programme, mais
+visualiser l'espace mémoire vide (c.-à-d. l'espace occupé par le programme, mais
 dans lequel le programme n'a pas encore mémorisé de valeur).  Une procédure
 utilisant beaucoup d'espace mémoire va tout simplement nécessiter plus d'espace
 sur la table!
@@ -247,7 +247,7 @@ nombre d'étapes à exécuter si on accepte d'utiliser plus d'espace mémoire).
 
 <td>
 Nous présentons notre première structure de données: la liste. 
-Nous présentons l'interface d'une liste (c-à-d quelles opérations une liste doit accomplir), ainsi
+Nous présentons l'interface d'une liste (c.-à-d. quelles opérations une liste doit accomplir), ainsi
 que quatre implantations différentes: liste naïve, liste par tableau, liste chaînée simple et liste chaînée double.
 Présenter d'abord une implantation naïve nous permet à la fois de bien expliquer l'interface de la liste, mais
 aussi d'obtenir un point de comparaison utile pour réfléchir à l'efficacité des différents types de liste.
