@@ -10,6 +10,24 @@ Sources pour https://cartesjava.github.io/
 
 ### Directement via GitHub
 
+1. Se connecter à GitHub
+
+1. Au bas de la page à modifier, cliquer sur *Modifier cette page*
+
+    <img class="figure" src="modifier_cette_page.png" />
+
+1. Modifier le source de la page directement dans votre navigateur
+
+    <img class="figure" src="modifier01.png"/>
+
+1. Décrire votre modification (commentaire de commit)
+
+    <img class="figure" src="commit01.png"/>
+
+1. Une tâche automatique de GitHub va rafraîchir le site Web
+    * (peut prendre quelques minutes)
+
+
 ### Travailler en local
 
 #### Préalables
