@@ -5,6 +5,8 @@
 {{ $page := .Page.Page }}
 {{ $anchor := .Anchor }}
 {{ $text := .Text }}
+{{ $firstLetter := substr $text 0 1 }}
+{{ $restOfTitle := substr $text 1 }}
 
 {{ $thisTocNode := newScratch }}
 {{ $thisTocNode.Set "title" ($text | plainify) }}
@@ -43,7 +45,17 @@
 
 {{ .Page.Page.Scratch.Set (printf "currentPageTocNodeLevel%02d" .Level) $thisTocNode }}
 
-{{ .Text | safeHTML }}
+{{ if and (and (default true $page.Site.Params.BookNumbering) (default true $page.Params.BookNumbering)) (eq .Level 1) }}
+
+    {{ $firstLetter | lower | safeHTML }}{{ $restOfTitle | safeHTML }}
+
+{{ else }}
+
+    {{ $text | safeHTML }}
+
+{{ end }}
+
+
 
 <a class="anchor" href="#{{ .Anchor | safeURL }}">#</a>
 
