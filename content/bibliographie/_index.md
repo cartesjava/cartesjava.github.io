@@ -11,7 +11,7 @@ bookNumbering: false
 <tr>
 <td id="aho-ullman-al-2020">
 
-Data Structures&nbsp;: {fundamental tools}
+Data Structures&nbsp;: {fundamental tools}.
 (2022, 29 décembre).
 Dans *Wikibooks*.
 <a href="https://en.wikibooks.org/wiki/Data_Structures">
