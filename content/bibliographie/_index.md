@@ -10,28 +10,29 @@ bookNumbering: false
 
 <tr>
 <td id="aho-ullman-al-2020">
-Alfred V. Aho, Jeffrey D. Ullman et al.
-</td>
-<td>
 
+Data Structures&nbsp;: {fundamental tools}
+(2022, 29 décembre).
+Dans *Wikibooks*.
 <a href="https://en.wikibooks.org/wiki/Data_Structures">
-Data Structures : {fundamental tools} (revisé en 2020) [Wikibooks]
+https://en.wikibooks.org/wiki/Data_Structures
 </a>
+
 </td>
 </tr>
 
 <tr>
 <td id="mayfield-downey-2020">
-Chris Mayfield et Allen Downey
-</td>
-<td>
+
+Mayfield, C. et Downey, A. (2020).
+*Think Java : How to Think Like a Computer Scientist* (2e éd.).
+Open Textbook Library.
 <a href="https://open.umn.edu/opentextbooks/textbooks/think-java-how-to-think-like-a-computer-scientist">
-Think Java : How to Think Like a Computer Scientist (2e éd., 2020)
+https://open.umn.edu/opentextbooks/textbooks/285
 </a>
+
 </td>
 </tr>
-
-
 </table>
 
 

@@ -31,7 +31,7 @@ Est aisément visualiser par les cartes et les marqueurs suivants:
 
 <img class="figure" src="visualisation.png"/>
 
-À noter qu'une carte blanche représente une case vide (valeur `null`)
+À noter qu'une carte blanche représente une case vide (valeur `null`).
 
 ## Arbre
 

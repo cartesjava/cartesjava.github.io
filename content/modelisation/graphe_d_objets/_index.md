@@ -21,8 +21,8 @@ Voici un exemple de données se conformant à cette modélisation.
 
 <img src="FilmGraphe01.png"/>
 
-* Le `Personnage` James Bond apparaît dans deux films: Dr. No et Bon Baisers de Russie
-* Le `Film` Dr. No contient deux personnages: James Bond et Dr. no
+* Le `Personnage` James Bond apparaît dans deux films: *Dr. No* et *Bon Baisers de Russie*
+* Le `Film` Dr. No contient deux personnages: James Bond et Dr. No
 
 ## Exemple: Fibonacci
 
@@ -32,13 +32,13 @@ Comme exemple, nous développons une modélisation de la séquence de Fibonacci.
 
 ## Définition
 
-1. Voici le début de la suite de Fibonacci
+Voici le début de la suite de Fibonacci:
 
-    ```
-    0 1 1 2 3 5 8 13 21 34 55 89 144 ...
-    ```
+```
+0 1 1 2 3 5 8 13 21 34 55 89 144 ...
+```
 
-1. La définition mathématique est récursive
+La définition mathématique est récursive:
 
     {{< katex display="block" class="text-center"  >}}
     F_0 = 0\\~\\
@@ -48,11 +48,11 @@ Comme exemple, nous développons une modélisation de la séquence de Fibonacci.
     F_n = F_{n-1} + F_{n-2}\\~\\
     {{< /katex >}}
 
-1. Autrement dit:
+Autrement dit:
 
-    * `0` et `1` sont deux cas spéciaux
+* `0` et `1` sont deux cas spéciaux
 
-    * sinon le prochain nombre de la suite est toujours l'addition deux nombres précédents
+* sinon le prochain nombre de la suite est toujours l'addition deux nombres précédents
 
 ## Nombre d'or
 
