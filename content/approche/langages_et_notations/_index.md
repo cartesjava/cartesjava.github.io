@@ -77,26 +77,26 @@ Nous utilisons aussi le format JSON pour représenter les données.
 JSON veut dire *Javascript Object Notation* et c'est le format privilégié pour les applications Web
 et les bases de données NoSQL.
 
-Voici les *valeurs* en JSON:
+Voici les *valeurs* en JSON&nbsp;:
 
-* la valeur nulle: `null`
-* un booléen: `true`  ou `false`
-* un nombre comme: `1`, `4.5`, `-10.1` 
-* une chaîne comme: `"asdf"`, `""`, `"Bonjour!"`
+* la valeur nulle&nbsp;: `null`
+* un booléen&nbsp;: `true`  ou `false`
+* un nombre comme&nbsp;: `1`, `4.5`, `-10.1` 
+* une chaîne comme&nbsp;: `"asdf"`, `""`, `"Bonjour!"`
 
-Voici les *structures* en JSON:
+Voici les *structures* en JSON&nbsp;:
 
-* une liste comme: 
+* une liste comme&nbsp;: 
     * `[1, 3, -1]`
     * `[]`
     * `["asfd", "Bonjour!", ""]`
-* une objet comme: 
+* une objet comme&nbsp;: 
     * `{"cle01":true}`
     * `{}`
     * `{"cle01":true, "cle02":-12}`
 
 Une liste est un tableau qui peut grandir et rapetisser. Une des particularités
-des la liste JSON est de mélanger les types de valeurs:
+des la liste JSON est de mélanger les types de valeurs&nbsp;:
 
 * `[1,true,"Bonjour!"]`
 * `[null, "", 1, false]`

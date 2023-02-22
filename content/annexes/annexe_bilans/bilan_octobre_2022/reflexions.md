@@ -17,14 +17,14 @@ bookHidden: true
 
 ### Ce qui fonctionne bien
 
-1. C'est très agréable d'utiliser les cartes surdimensionnées pour expliquer une procédure au tableau blanc:
+1. C'est très agréable d'utiliser les cartes surdimensionnées pour expliquer une procédure au tableau blanc&nbsp;:
 
     <img class="small-figure" src="/approche/trier/trier_par_sorte.jpg" />
     <img class="small-figure" src="/approche/trier/trier_par_numero01.jpg" />
     <img class="small-figure" src="/approche/trier/trier_par_numero03.jpg" />
     <img class="small-figure" src="/approche/trier/trier_par_numero02.jpg" />
 
-    crédit photo: Mikael Tardif
+    Crédit photo&nbsp;: Mikael Tardif
 
 1. C'est aussi très agréable de faire des séances de théorie 100% au tableau blanc, sans utiliser le projecteur
 

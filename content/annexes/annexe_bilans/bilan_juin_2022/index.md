@@ -19,7 +19,7 @@ aliases: ["/preface/bilan_juin_2022"]
 <img width="75%" src="/bilan2022/equipe.jpg" />
 </center>
 
-De gauche à droite:
+De gauche à droite&nbsp;:
 
 * Zein-El-Abdin Hazimeh
 * Mathieu Bergeron
@@ -34,7 +34,7 @@ De gauche à droite:
 <img width="75%" src="/bilan2022/travail02.jpg" />
 </center>
 
-* Crédit photo: Marlond Augustin
+* Crédit photo&nbsp;: Marlond Augustin
 * Les participants ont signé un formulaire de consentement concernant la reproduction des trois photos ci-haut.
 
 
@@ -46,19 +46,19 @@ De gauche à droite:
 <img width="75%" src="/bilan2022/interface01.png" />
 </center>
 
-NOTES:
+NOTES&nbsp;:
 
 * Des améliorations à l'interface sont à venir (projet de Zein Hazimeh)
 
 ### Validation interactive du code
 
-Comparaison du code étudiant (erreur à l'étape 22):
+Comparaison du code étudiant (erreur à l'étape 22)&nbsp;:
 
 <center>
 <img width="75%" src="/bilan2022/naivesort_error_step22.png" />
 </center>
 
-Avec la solution (étape 22):
+Avec la solution (étape 22)&nbsp;:
 
 <center>
 <img width="75%" src="/bilan2022/naivesort_solution_step22.png" />
@@ -112,7 +112,7 @@ Avec la solution (étape 22):
        loop="true" />
 </center>
 
-## Prochaine étape: intégration des outils au cours 3C6
+## Prochaine étape&nbsp;: intégration des outils au cours 3C6
 
 1. Évaluations formatives avec les cartes
     * entrevue de 5min avec l'enseignant 

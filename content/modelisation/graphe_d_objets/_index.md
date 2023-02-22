@@ -21,10 +21,10 @@ Voici un exemple de données se conformant à cette modélisation.
 
 <img src="FilmGraphe01.png"/>
 
-* Le `Personnage` James Bond apparaît dans deux films: *Dr. No* et *Bon Baisers de Russie*
-* Le `Film` Dr. No contient deux personnages: James Bond et Dr. No
+* Le `Personnage` James Bond apparaît dans deux films&nbsp;: *Dr. No* et *Bon Baisers de Russie*
+* Le `Film` Dr. No contient deux personnages&nbsp;: James Bond et Dr. No
 
-## Exemple: Fibonacci
+## Exemple&nbsp;: Fibonacci
 
 Dans le cas général, il n'est pas facile de visualiser un graphe d'objet avec des cartes.
 Dans notre approche, il est donc nécessaire de s'en tenir à des cas particuliers.
@@ -32,13 +32,13 @@ Comme exemple, nous développons une modélisation de la séquence de Fibonacci.
 
 ## Définition
 
-Voici le début de la suite de Fibonacci:
+Voici le début de la suite de Fibonacci&nbsp;:
 
 ```
 0 1 1 2 3 5 8 13 21 34 55 89 144 ...
 ```
 
-La définition mathématique est récursive:
+La définition mathématique est récursive&nbsp;:
 
     {{< katex display="block" class="text-center"  >}}
     F_0 = 0\\~\\
@@ -48,7 +48,7 @@ La définition mathématique est récursive:
     F_n = F_{n-1} + F_{n-2}\\~\\
     {{< /katex >}}
 
-Autrement dit:
+Autrement dit&nbsp;:
 
 * `0` et `1` sont deux cas spéciaux
 
@@ -64,7 +64,7 @@ Autrement dit:
 
     * (c.-à-d. avec autant de chiffres après le point que désiré)
 
-1. Pour calculer une approximation du nombre d'or on fait tout simplement:
+1. Pour calculer une approximation du nombre d'or on fait tout simplement&nbsp;:
 
     {{< katex display="block" class="text-center"  >}}
     \text{nombre d'or} \approx \dfrac{F_{n}}{F_{n-1}} \text{~~~pour~~~} n\geq 2
@@ -72,7 +72,7 @@ Autrement dit:
 
 1. Plus on prend un `n` élevé, plus la précision est bonne
 
-1. Autrement dit, le nombre d'or est à peu près égal à:
+1. Autrement dit, le nombre d'or est à peu près égal à&nbsp;:
 
     * un nombre de la suite de Fibonacci, divisé par le nombre qui le précède
 
@@ -100,7 +100,7 @@ Autrement dit:
 
     <img src="Fib_2.png" />
 
-    * NOTE: la suite se lit de droite à gauche
+    * NOTE&nbsp;: la suite se lit de droite à gauche
 
 1. Pour `n = 3`, on a le graphe d'objets suivant
 
@@ -169,7 +169,7 @@ Autrement dit:
         ...
     ```
 
-    * RAPPEL: le code n'est pas bogué, mais limité par la mémoire attribuée à la pile d'appel
+    * RAPPEL&nbsp;: le code n'est pas bogué, mais limité par la mémoire attribuée à la pile d'appel
 
 ## Construire le graphe d'objets dynamiquement
 

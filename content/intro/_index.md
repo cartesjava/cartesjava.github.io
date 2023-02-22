@@ -21,7 +21,7 @@ bookNumbering: false
 
 L'approche développée dans ce manuel cible des étudiant·e·s ayant déjà suivi un
 cours d'introduction à la programmation, mais qui pourraient éprouver certaines
-difficultés à:
+difficultés à&nbsp;:
 
 * imaginer les étapes exactes d'une procédure informatique
 * imaginer comment les données du programme sont organisées en mémoire
@@ -54,7 +54,7 @@ devant la classe, et ce, de façon très visuelle.
 <td style="text-align:right;">
 <img class="small-figure" src="/approche/trier/trier_par_numero02.jpg" />
 <br>
-Crédit photo: Mikael Tardif
+Crédit photo&nbsp;: Mikael Tardif
 </td>
 </table>
 </center>
@@ -141,7 +141,7 @@ Procédure à suivre
 
 Finalement, à noter les animations ci-haut sont tirées de l'outil de validation qui 
 accompagne ce manuel. Grace à cet outil, les étudiant·e·s peuvent valider 
-leur programme, en particulier: 
+leur programme, en particulier&nbsp;: 
 
 * visualiser les étapes d'exécution de leur code
 * vérifier que leur code arrive au bon résultat
@@ -246,9 +246,9 @@ nombre d'étapes à exécuter si on accepte d'utiliser plus d'espace mémoire).
 </th>
 
 <td>
-Nous présentons notre première structure de données: la liste. 
+Nous présentons notre première structure de données&nbsp;: la liste. 
 Nous présentons l'interface d'une liste (c.-à-d. quelles opérations une liste doit accomplir), ainsi
-que quatre implantations différentes: liste naïve, liste par tableau, liste chaînée simple et liste chaînée double.
+que quatre implantations différentes&nbsp;: liste naïve, liste par tableau, liste chaînée simple et liste chaînée double.
 Présenter d'abord une implantation naïve nous permet à la fois de bien expliquer l'interface de la liste, mais
 aussi d'obtenir un point de comparaison utile pour réfléchir à l'efficacité des différents types de liste.
 </td>
@@ -273,9 +273,9 @@ Nous implanterons un arbre générique, ainsi qu'un arbre binaire de recherche.
 </th>
 
 <td>
-Nous présentons notre deuxième structure de données: le mappage.
+Nous présentons notre deuxième structure de données&nbsp;: le mappage.
 Nous présentons l'interface d'un mappage,
-que trois implantations différentes: mappage naïf, mappage par hachage et mappage par arbre.
+que trois implantations différentes&nbsp;: mappage naïf, mappage par hachage et mappage par arbre.
 Encore une fois, présenter d'abord une implantation naïve permet de bien expliquer l'interface et
 d'obtenir un point de comparaison pour réfléchir à l'efficacité des différents types de mappage.
 </td>
@@ -374,106 +374,3 @@ Cet annexe archive les bilans rédigés lors du développement de ce manuel (avr
 
 
 </table>
-
-
-<!--
-
-
-
-
-
-L'idée derrière cet ouvrage est d'utiliser des cartes à jouer afin d'enseigner la programmation.
-
-
-
-* Utiliser des cartes à jouer pour enseigner la programmation
-* Développer un outil de validation pour
-    * visualiser comment les données sont structurées dans un programme Java
-        * p.ex. le code suivant
-          ```java
-          Carte[] tableauUn   = new Carte[6];
-          Carte[] tableauDeux = new Carte[6];
-          int indiceCarteCourante = 1;
-          ```
-        * peut se visualiser de la façon suivante:
-
-          <center>
-          <img class="figure" src="/approche/deux_tableaux.png" />
-          </center>
-
-        * où:
-            * la première rangée de cartes est le `tableauUn`
-            * la deuxième rangée de cartes est le `tableauDeux`
-            * le point bleu indique la carte pointée par `indiceCarteCourante`
-
-        
-    * visualiser une procédure informatique (ou valider son implantation)
-      * p.ex. voici une procédure naïve pour trier un tableau de cartes
-
-          {{% animation "/approche/tri_naif.webm" %}}
-
-      * à noter:
-          * les variables utilisées dans le code sont affichées en bas à droite
-
-    * explorer un concept à l'écran (ou avec des vraies cartes à jouer)
-      * p.ex. l'outil permet de trier les cartes à l'écran
-
-        {{% animation "/approche/tri_libre.webm" %}}
-
-      * à noter:
-          * `Est-ce trié?` devient `true` uniquement lorsque les cartes sont triées
-
-## Exemple de tri
-
-* Voici comment trier des cartes dans ce cours
-
-* Il faut placer les cartes dans l'ordre ♡ ♢ ♧ ♤, puis de la plus petite à la plus grande pour chaque sorte
-  * non-trié:
-
-      <img class="figure" src="/approche/non_trie01.png"/>
-
-  * trié par sorte:
-
-      <img class="figure" src="/approche/trie_par_sorte01.png"/>
-
-  * trié par sorte et numéro:
-
-      <img class="figure" src="/approche/trie01.png"/>
-
-* Si on a uniquement des cartes de ♡, on peut trier selon le numéro 
-  * non-trié:
-
-      <img class="figure" src="/approche/non_trie02.png"/>
-
-  * trié par sorte et numéro:
-
-      <img class="figure" src="/approche/trie02.png"/>
-
-* Si on a des cartes de ♡ et de ♧, on va trier par sorte, puis numéro
-
-  * non-trié:
-
-      <img class="figure" src="/approche/non_trie03.png"/>
-
-  * trié par sorte:
-
-      <img class="figure" src="/approche/trie_par_sorte03.png"/>
-
-  * trié par sorte et numéro:
-
-      <img class="figure" src="/approche/trie03.png"/>
-
-* Et ainsi de suite, en respectant l'ordre ♡ ♢ ♧ ♤
-
-
-## En classe
-
-En classe, on peut expliquer les concepts de ce manuel avec des cartes géantes (et des aimants pour les maintenir au tableau).
-
-<img class="small-figure" src="/approche/trier/trier_par_sorte.jpg" />
-<img class="small-figure" src="/approche/trier/trier_par_numero01.jpg" />
-<img class="small-figure" src="/approche/trier/trier_par_numero03.jpg" />
-<img class="small-figure" src="/approche/trier/trier_par_numero02.jpg" />
-
-
--->

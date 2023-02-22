@@ -7,7 +7,7 @@ weight: 80
 {{% pageTitle %}}
 
 
-* C'est quand une `methode()` fait un appel à elle-même:
+* C'est quand une `methode()` fait un appel à elle-même&nbsp;:
 
 ```java
 {{% embed "Ex01.java" %}}
@@ -19,21 +19,21 @@ weight: 80
 * Plusieurs algorithmes sont plus faciles à coder de cette façon
     * c'est souvent plus proche de la définition papier (mathématique)
 
-* Par exemple:
-    * définition mathématique de la fonction factorielle:
+* Par exemple&nbsp;:
+    * définition mathématique de la fonction factorielle&nbsp;:
 
         <pre>
         fac(0) = 1
         fac(n) = n * fac(n-1)
         </pre>
 
-    * code Java récursif:
+    * code Java récursif&nbsp;:
 
 ```java
 {{% embed "Ex02.java" %}}
 ```
 
-* NOTE: le prof ignore volontairement le guide de style en faisant deux `return`
+* NOTE&nbsp;: le prof ignore volontairement le guide de style en faisant deux `return`
 
 * Il est toujours possible de transformer des appels récursifs en boucle normale
 
@@ -41,7 +41,7 @@ weight: 80
 {{% embed "Ex03.java" %}}
 ```
 
-* NOTE: on voit comment la code est plus loin de la définition mathématique
+* NOTE&nbsp;: on voit comment la code est plus loin de la définition mathématique
 
 ## Pile d'appel
 
@@ -53,13 +53,13 @@ weight: 80
     * quand la méthode termine, c'est retiré de la pile
     * la pile permet de revenir là où on était dans la méthode précédente
 
-* Par exemple:
+* Par exemple&nbsp;:
 
 ```java
 {{% embed "Pile.java" %}}
 ```
 
-* En cas de plantage, la pile d'appel est affichée (équivalent de la ligne 24):
+* En cas de plantage, la pile d'appel est affichée (équivalent de la ligne 24)&nbsp;:
 
         Exception in thread "main" java.lang.RuntimeException
 	        at Pile.C(Pile.java:15)
@@ -75,7 +75,7 @@ weight: 80
 * Code souvent plus simple et plus lisible
 
 * Les boucles infinies sont détectées par des erreurs de débordement de pile 
-    * en anglais: *stack overflow*
+    * en anglais&nbsp;: *stack overflow*
 
             Exception in thread "main" java.lang.StackOverflowError
                 at Pile.A(Pile.java:6)

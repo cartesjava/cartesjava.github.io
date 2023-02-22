@@ -12,11 +12,11 @@ visualiser ces données avec des cartes à jouer.
 
 ## Modéliser une carte
 
-Une carte est modélisée par la classe suivante:
+Une carte est modélisée par la classe suivante&nbsp;:
 
 <img class="figure" src="Carte.png">
 
-L'attribut de type `Sorte` correspond à une énumération:
+L'attribut de type `Sorte` correspond à une énumération&nbsp;:
 
 ```java
 {{% embed src="Sorte.java" %}}
@@ -84,7 +84,7 @@ Voici quelques exemples de cartes.
 
 À noter qu'on peut représenter des cartes qui n'existent pas dans un paquet de carte ordinaire (comme le 58 de pique ci-haut).
 Par contre, comme notre objectif est que chaque procédure visualisée avec des cartes puisse être aisément réalisée sur une table, avec de vraies cartes à jouer, 
-il est préférable de s'en tenir aux cartes suivantes:
+il est préférable de s'en tenir aux cartes suivantes&nbsp;:
 
 * 2-10 de coeur
 * 2-10 de carreau

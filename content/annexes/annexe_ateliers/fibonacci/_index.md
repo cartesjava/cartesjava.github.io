@@ -34,8 +34,8 @@ bookNumbering: false
 
 1. Ouvrir *Git Bash* **à la racine** de mon répertoire de travail
 
-    * *Windows 10* : Clic-droit => *Git Bash Here*
-    * *Windows 11* : Clic-droit => *Show more options* => *Git Bash Here*
+    * *Windows 10*&nbsp;: Clic-droit => *Git Bash Here*
+    * *Windows 11*&nbsp;: Clic-droit => *Show more options* => *Git Bash Here*
 
 1. En Git Bash, exécuter le script `ajouter_atelier.sh`
 
@@ -66,7 +66,7 @@ bookNumbering: false
 ## Créer la classe `MonFibonacci`
 
 1. Ajouter la classe suivante au projet `fibonacci`
-    * Nom de la classe: `MonFibonacci`
+    * Nom de la classe&nbsp;: `MonFibonacci`
     * **Ne pas** cocher `public static ...`
 
 1. Ouvrir la classe `MonFibonacci` et ajuster la signature
@@ -101,7 +101,7 @@ bookNumbering: false
 ## Créer la classe `MonCalculateur`
 
 1. Ajouter la classe suivante au projet `atelier2_3`
-    * Nom de la classe: `MonCalculateur`
+    * Nom de la classe&nbsp;: `MonCalculateur`
     * **Ne pas** cocher `public static ...`
 
 1. Ouvrir la classe `MonCalculateur` et ajuster la signature
@@ -135,7 +135,7 @@ bookNumbering: false
 ## Créer la classe `Procedure`
 
 1. Ajouter la classe suivante au projet `fibonacci`
-    * Nom de la classe: `Procedure`
+    * Nom de la classe&nbsp;: `Procedure`
     * **cocher** `public static ...`
 
 1. Ouvrir la classe `Procedure` et ajuster la signature
@@ -225,7 +225,7 @@ bookNumbering: false
 * Exécuter l'outil de validation pour tester mon code
 
 
-## Question bonus: modélisation plus simple
+## Question bonus&nbsp;: modélisation plus simple
 
 * Utiliser une modélisation plus simple pour calculer la suite de Fibonacci
 

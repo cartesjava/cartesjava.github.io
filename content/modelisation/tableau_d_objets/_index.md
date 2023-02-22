@@ -13,7 +13,7 @@ la mémoire du programme.
 ## Tableau de personnages 
 
 On peut améliorer la modélisation d'un film présentée au chapitre précédent en ajoutant
-la relation suivante:
+la relation suivante&nbsp;:
 
 * Un film contient des personnages
 
@@ -62,7 +62,7 @@ Voici des exemples de données se conformant à cette modélisation.
 ## Tableau de films
 
 On peut améliorer la modélisation d'un personnage présentée au chapitre précédent en ajoutant
-la relation suivante:
+la relation suivante&nbsp;:
 
 * Un personnage apparaît un ou plusieurs films
 

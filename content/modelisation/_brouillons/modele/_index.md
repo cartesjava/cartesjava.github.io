@@ -12,7 +12,7 @@ bookHidden: false
 
 1. Un modèle est une classe qui représente des données importantes pour un programme
 
-1. Prenons par exemple un petit tableau de cartes issu de l'atelier 1.1:
+1. Prenons par exemple un petit tableau de cartes issu de l'atelier 1.1&nbsp;:
 
     <img class="small-figure" src="MonTriLibre_cartes.png" />
 
@@ -29,21 +29,21 @@ bookHidden: false
 
 1. Comme `MonTriLibre` est une classe, le modèle contient aussi des méthodes
 
-1. Par exemple:
+1. Par exemple&nbsp;:
 
     * `boolean isSorted` pour déterminer si les cartes sont triées
     * `int testCaseSize` qui retourne la taille de l'exemple (le nombre de cartes)
 
-1. La valeur `Carte` contient aussi des méthodes, par exemple:
+1. La valeur `Carte` contient aussi des méthodes, par exemple&nbsp;:
 
     * `int compareTo` pour indiquer si la carte est plus petite qu'une autre carte
     * `boolean isNullCard` pour indier s'il s'agit vraiment d'une carte ou d'une case vide
 
-1. On va voir à la session suivante qu'une application graphique est souvent divisée en trois parties:
+1. On va voir à la session suivante qu'une application graphique est souvent divisée en trois parties&nbsp;:
 
-    * **le modèle**: contient les données et les méthodes pour manipuler les données
-    * **la vue**: contient le code pour afficher les données
-    * **le contrôleur**: contient le code pour créer les vues et les modèles et autres tâches
+    * **le modèle**&nbsp;: contient les données et les méthodes pour manipuler les données
+    * **la vue**&nbsp;: contient le code pour afficher les données
+    * **le contrôleur**&nbsp;: contient le code pour créer les vues et les modèles et autres tâches
 
 
 ## Une application a souvent plusieurs modèles
@@ -69,7 +69,7 @@ bookHidden: false
 
 1. Dans ce cours, on va utiliser la clé spéciale `_C` pour identifier la classe
 
-1. On a donc la représentation JSON suivante pour un 4♧:
+1. On a donc la représentation JSON suivante pour un 4♧&nbsp;:
 
     ```json
     {

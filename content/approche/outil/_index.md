@@ -16,7 +16,7 @@ weight: 10
 
 Pour utiliser l'outil de validation, il faut l'intégrer à un projet Java.  Pour
 l'exemple présenté en <a href="/intro">Introduction</a>, on débutera avec le
-code suivant:
+code suivant&nbsp;:
 
 ```java
 {{% embed src="MonTableau.java" %}}

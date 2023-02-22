@@ -32,11 +32,11 @@ $ sh gradlew shift_solution:procedure  # pour lancer l'outil de validation
 
 Utiliser l'outil de validation pour sélectionner le cas de test qui vous intéresse.
 
-Le modèle en JSON sera dans:
+Le modèle en JSON sera dans&nbsp;:
 
 * `solutions/shift_solution/_storage/models`
 
-Le graphe d'objets sera dans:
+Le graphe d'objets sera dans&nbsp;:
 
 * `solutions/shift_solution/_storage/graphs`
 
@@ -49,11 +49,11 @@ $ sh gradlew fibonacci_solution:procedure  # pour lancer l'outil de validation
 
 Utiliser l'outil de validation pour sélectionner le cas de test qui vous intéresse.
 
-Le modèle en JSON sera dans:
+Le modèle en JSON sera dans&nbsp;:
 
 * `solutions/fibonacci_solution/_storage/models`
 
-Le graphe d'objets sera dans:
+Le graphe d'objets sera dans&nbsp;:
 
 * `solutions/fibonacci_solution/_storage/graphs`
 
@@ -66,11 +66,11 @@ $ sh gradlew validator_cartesjava_solution:valider   # pour valider les modèles
 
 Utiliser l'outil de validation pour sélectionner le cas de test qui vous intéresse.
 
-Les modèles en JSON seront dans:
+Les modèles en JSON seront dans&nbsp;:
 
 * `solutions/validator_cartesjava_solution/_storage/models`
 
-Les graphes d'objets seront dans:
+Les graphes d'objets seront dans&nbsp;:
 
 * `solutions/validator_cartesjava_solution/_storage/graphs`
 
@@ -84,10 +84,10 @@ $ sh gradlew eclipse
 
 Importer les projets en Eclipse afin de modifier le code
 
-En particulier:
+En particulier&nbsp;:
 
 * Dans chaque projet `_solution`, modifier le modèle, p.ex. 
-    * pour `deplacer_decaler`: `MonTableau` 
-    * pour `fibonacci`: `MonCalculateur`
-    * pour `validator_cartesjava`: les classes du paquet `models`
+    * pour `deplacer_decaler`&nbsp;: `MonTableau` 
+    * pour `fibonacci`&nbsp;: `MonCalculateur`
+    * pour `validator_cartesjava`&nbsp;: les classes du paquet `models`
 

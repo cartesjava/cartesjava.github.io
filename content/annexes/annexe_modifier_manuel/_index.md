@@ -10,7 +10,7 @@ weight: 300
 
 ## Obtenir les sources
 
-Le dépôt source est ici: https://github.com/cartesjava/cartesjava.github.io
+Le dépôt source est ici&nbsp;: https://github.com/cartesjava/cartesjava.github.io
 
 ## Suggérer une modification
 
@@ -124,6 +124,6 @@ Le dépôt source est ici: https://github.com/cartesjava/cartesjava.github.io
 
 1. Vous devez avoir les droits en écriture pour le dépôt Git
 
-1. Voir le *README* sur la page Web du dépôt:
+1. Voir le *README* sur la page Web du dépôt&nbsp;:
 
     * https://github.com/cartesjava/cartesjava.github.io

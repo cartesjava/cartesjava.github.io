@@ -23,13 +23,13 @@ $ git clone https://github.com/cartesjava/ca.ntro.cards.git
 
 ## Créer un nouveau projet
 
-Pour créer une nouvelle visualisation avec les cartes:
+Pour créer une nouvelle visualisation avec les cartes&nbsp;:
 
 ```bash
 $ sh scripts/new_project.sh MonProjet mon_projet
 ```
 
-Pour créer un nouveau validateur:
+Pour créer un nouveau validateur&nbsp;:
 
 
 ```bash
@@ -54,16 +54,16 @@ Dans le projet `mon_projet_procedure`, modifier le paquet `models`
 
 Renommer au besoin la classe `MonProjetCardsModel`
 
-Implanter les méthodes marquées d'un `TODO` et que l'outil de validation utilise:
+Implanter les méthodes marquées d'un `TODO` et que l'outil de validation utilise&nbsp;:
 
-* `copyDataFrom`: copier les données d'un autre modèle
-* `compareToSolution`: valider si le modèle courant est une solution
-* `updateViewDataImpl`: afficher les cartes correspondant au modèle courant
-* `initializeAsTestCase`: données de départ d'un cas de test
+* `copyDataFrom`&nbsp;: copier les données d'un autre modèle
+* `compareToSolution`&nbsp;: valider si le modèle courant est une solution
+* `updateViewDataImpl`&nbsp;: afficher les cartes correspondant au modèle courant
+* `initializeAsTestCase`&nbsp;: données de départ d'un cas de test
 
-Finalement, modifier aussi  `test_cases.MonProjetTestCaseDatabase`, en particulier:
+Finalement, modifier aussi  `test_cases.MonProjetTestCaseDatabase`, en particulier&nbsp;:
 
-* `describeTestCasesToGenerate`: faire la liste des cas de tests à générer
+* `describeTestCasesToGenerate`&nbsp;: faire la liste des cas de tests à générer
 
 
 ## Ajouter des modèles à un validateur

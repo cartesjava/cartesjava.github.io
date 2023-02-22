@@ -34,8 +34,8 @@ bookNumbering: false
 
 1. Ouvrir *Git Bash* **à la racine** du répertoire de travail
 
-    * *Windows 10* : Clic-droit => *Git Bash Here*
-    * *Windows 11* : Clic-droit => *Show more options* => *Git Bash Here*
+    * *Windows 10*&nbsp;: Clic-droit => *Git Bash Here*
+    * *Windows 11*&nbsp;: Clic-droit => *Show more options* => *Git Bash Here*
 
 1. En Git Bash, exécuter le script `ajouter_atelier.sh`
 
@@ -67,7 +67,7 @@ bookNumbering: false
 1. Dans Eclipse, sélectionner le projet `shift`
 
 1. Ajouter la classe suivante au projet `shift`
-    * Nom de la classe: `MonTableau`
+    * Nom de la classe&nbsp;: `MonTableau`
     * **Ne pas** cocher `public static ...`
 
 1. Ouvrir la classe `MonTableau` et ajuster la signature
@@ -84,7 +84,7 @@ bookNumbering: false
 ## Créer la classe `Procedure`
 
 1. Ajouter la classe suivante au projet `shift`
-    * Nom de la classe: `Procedure`
+    * Nom de la classe&nbsp;: `Procedure`
     * **cocher** `public static ...`
 
 1. Ouvrir la classe `Procedure` et ajuster la signature
@@ -120,7 +120,7 @@ bookNumbering: false
 
 1. Ouvrir `MonTableau`
 
-1. Ajouter la méthode suivante:
+1. Ajouter la méthode suivante&nbsp;:
 
     ```java
     @Override

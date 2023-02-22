@@ -13,14 +13,14 @@ bookHidden: true
 
 <center>
 <div style="background-color:orange;width:80%;border:2px dashed black;padding:10px">
-Rappel: ne pas effectuer cette étape sur un Windows du Collège
+Rappel&nbsp;: ne pas effectuer cette étape sur un Windows du Collège
 </div>
 </center>
 
 <br>
 <br>
 
-1. **Recomandé**: désinstaller toute ancienne version d'Eclipse
+1. **Recomandé**&nbsp;: désinstaller toute ancienne version d'Eclipse
 
 1. Installer Eclipse (version *2022-06* ou plus récent)
 	* Visiter <a href="https://www.eclipse.org/downloads/">https://www.eclipse.org/downloads/</a>
@@ -53,10 +53,10 @@ Rappel: ne pas effectuer cette étape sur un Windows du Collège
 
 	* Si j'en ai pas besoin, je fait *Remove* sur tous les JDK **sauf 11**
 
-	* Si le *JDK 11* n'est pas là, je l'ajoute:
+	* Si le *JDK 11* n'est pas là, je l'ajoute&nbsp;:
 		* *Add* =>
 		* *Standard VM* => *Next*
-		* Sélectionner le répertoire racine du *JDK*, p.ex: 
+		* Sélectionner le répertoire racine du *JDK*, p.ex&nbsp;: 
 			* `C:\Program Files\Java\jdk-11.XXX`
 		* *Finish*
 		* *Apply and Close*

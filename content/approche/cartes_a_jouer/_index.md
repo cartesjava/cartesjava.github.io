@@ -15,7 +15,7 @@ Lorsque les données sont sous la forme d'une liste (ou d'un tableau à une dime
 par une séquence de cartes disposées, par exemple, de gauche à droite.
 On peut aussi utiliser des marqueurs (petits objets) pour représenter des positions (indices) dans cette liste.
 
-Par exemple, le code suivant:
+Par exemple, le code suivant&nbsp;:
 
 ```java
 Carte[] cartes;
@@ -27,7 +27,7 @@ Carte memoireA;
 Carte memoireB;
 ```
 
-Est aisément visualiser par les cartes et les marqueurs suivants:
+Est aisément visualiser par les cartes et les marqueurs suivants&nbsp;:
 
 <img class="figure" src="visualisation.png"/>
 
@@ -37,18 +37,18 @@ Est aisément visualiser par les cartes et les marqueurs suivants:
 
 Dans le cas où les données sont organisées sous forme d'arbre, on peut visualiser les données en disposant aussi les cartes en forme d'arbre.
 
-Par exemple, l'arbre suivant (racine en haut, comme le veut la convention):
+Par exemple, l'arbre suivant (racine en haut, comme le veut la convention)&nbsp;:
 
 <img src="arbre01.png"/>
 
-Serait visualisé par les cartes suivantes:
+Serait visualisé par les cartes suivantes&nbsp;:
 
 <img src="arbre01_cartes.png"/>
 
 À noter que la visualisation dépend d'une compréhension préalable de la notion d'arbre (de la forme d'un arbre).
 Cette compréhension préalable risque d'être moins acquise chez les étudiant·e·s que celle de séquence utilisée ci-haut.
 Néanmoins, utiliser des cartes peut s'avérer plus intuitifs pour les novices que le format textuel.
-Par exemple, voici le même arbre en JSON:
+Par exemple, voici le même arbre en JSON&nbsp;:
 
 ```json
 {{% embed src="arbre01.json" %}}
