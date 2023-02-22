@@ -42,7 +42,7 @@ https://github.com/cartesjava/cartesjava.github.io
 <th>Remerciements</th>
 <td>
 
-Un grand merci à la <a href="https://fabriquerel.org/qui-sommes-nous/">fabriqueREL</a> d'avoir supporté la création de ce manuel
+Un grand merci à la <a href="https://fabriquerel.org/qui-sommes-nous/">fabriqueREL</a> d'avoir supporté la création de ce manuel.
 
 </td>
 </tr>
@@ -51,7 +51,7 @@ Un grand merci à la <a href="https://fabriquerel.org/qui-sommes-nous/">fabrique
 <th>Participation étudiante</th>
 <td>
 
-Grace au financement de la fabriqueREL, trois étudiants ont contribué au développement du <a href="https://github.com/cartesjava/ca.ntro.cards">logiciel</a> qui accompagne ce manuel: 
+Grâce au financement de la fabriqueREL, trois étudiants ont contribué au développement du <a href="https://github.com/cartesjava/ca.ntro.cards">logiciel</a> qui accompagne ce manuel, soit&nbsp;: 
 Adrien Joséphine-Olivier,
 Marlond Augustin
 et
@@ -66,7 +66,7 @@ Zein-El-Abdin Hazimeh
 <th>Mise en page</th>
 <td>
 
-La mise en page repose sur le thème <a href="https://github.com/alex-shpak/hugo-book">hugo-book</a>, modifié par Mathieu Bergeron pour les besoins de ce manuel (p.ex. ajout de la numération des sections)
+La mise en page repose sur le thème <a href="https://github.com/alex-shpak/hugo-book">hugo-book</a>, modifié par Mathieu Bergeron pour les besoins de ce manuel (p.&nbsp;ex. ajout de la numération des sections)
  
 
 </td>
@@ -76,8 +76,8 @@ La mise en page repose sur le thème <a href="https://github.com/alex-shpak/hugo
 <th>Suivi de projet</th>
 <td>
 
-*De la fabriqueREL:* &nbsp;Claude Potvin (conseiller pédagogique) et Marianne Dubé (coordonatrice).
-*Du Collège Montmorency:* &nbsp;Philippe Lavigueur (conseiller pédagogique) et Valérie Jacques (spécialiste en moyens et techniques d'enseignement).
+De la fabriqueREL&nbsp;: &nbsp;Claude Potvin (conseiller pédagogique) et Marianne Dubé (coordonatrice).
+Du Collège Montmorency&nbsp;: &nbsp;Philippe Lavigueur (conseiller pédagogique) et Valérie Jacques (spécialiste en moyens et techniques d'enseignement).
 </td>
 </tr>
 
@@ -86,7 +86,7 @@ La mise en page repose sur le thème <a href="https://github.com/alex-shpak/hugo
 <th>Comité de relecture</th>
 <td>
 
-*Enseignant.es en informatique au Collège Montmorency:* &nbsp;Soumaya Medini, Axel Seguin, Nicolas Leduc, Frédéric Édoukou, Simon Deschênes et Sylvain Labranche.
+Enseignant.es en informatique au Collège Montmorency&nbsp;: &nbsp;Soumaya Medini, Axel Seguin, Nicolas Leduc, Frédéric Édoukou, Simon Deschênes et Sylvain Labranche.
 </td>
 </tr>
 
