@@ -8,7 +8,7 @@ Sources pour https://cartesjava.github.io/
 
 ## Pour les propriétaires de ce dépôt Git
 
-### Directement via GitHub
+### Méthode 1) directement via GitHub
 
 1. Se connecter à GitHub
 
@@ -28,7 +28,7 @@ Sources pour https://cartesjava.github.io/
     * (peut prendre quelques minutes)
 
 
-### Travailler en local
+### Méthode 2) travailler en local
 
 #### Préalables
 
