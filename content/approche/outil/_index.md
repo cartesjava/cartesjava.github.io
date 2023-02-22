@@ -14,9 +14,9 @@ weight: 10
 
 ## Démarrer l'outil
 
-Pour utiliser l'outil de validation, il faut l'intégrer à un projet Java. 
-Pour l'exemple présenté en <a href="/intro">introduction</a>, on 
-débutera avec le code suivant:
+Pour utiliser l'outil de validation, il faut l'intégrer à un projet Java.  Pour
+l'exemple présenté en <a href="/intro">Introduction</a>, on débutera avec le
+code suivant:
 
 ```java
 {{% embed src="MonTableau.java" %}}
@@ -227,7 +227,7 @@ Procédure erronée
 ## Afficher le graphe d'objets
 
 Finalement, l'outil de validation génère un graphe d'objet pour les
-données courantes et sauvegarde ce graphe dans le répertoire `_storage/graphs`.
+données courantes et sauvegarde ce graphe dans le répertoire `_storage/graphs`
 (voir la <a href="/approche/langages_et_notations/#graphe-dobjets">Section
 1.2.2</a> à propos des graphes d'objets).  Ces graphes permettent aux
 étudiant·e·s de se forger une image mentale de l'organisation des données en
