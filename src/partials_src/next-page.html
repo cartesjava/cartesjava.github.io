@@ -77,19 +77,22 @@
 {{ define "printNextPage" }}
     {{ $nextPage := .NextPage }}
     {{ if $nextPage }}
+        {{ $title := $nextPage.Title }}
+        {{ $firstLetter := substr $title 0 1 }}
+        {{ $restOfTitle := substr $title 1 }}
+        {{ $numbering := default true $nextPage.Params.bookNumbering }}
+
         <div class="footer-next-page"/>
 
-
         {{ if not $nextPage.Params.bookEmptyChapter }}
-        <a class="link-next-page" href="{{ $nextPage.Permalink }}">
+            <a class="link-next-page" href="{{ $nextPage.Permalink }}">
         {{ else }}
         <span class="disabled" />
         {{ end }}
-            ↪&nbsp;{{- partial "numbering" (dict "Page" $nextPage "NumberOnly" false) -}}&nbsp;{{ $nextPage.Title | truncate 50 "..." }}
-        {{ if not $nextPage.Params.bookEmptyChapter }}
-        </a>
+            ↪&nbsp;{{- partial "numbering" (dict "Page" $nextPage "NumberOnly" false) -}}&nbsp;{{ if $numbering }}{{ $firstLetter | lower }}{{ $restOfTitle | truncate 49 "..." }}{{ else }}{{ $nextPage.Title | truncate 50 "..." }}{{ end }}{{ if not $nextPage.Params.bookEmptyChapter }}
+            </a>
         {{ else }}
-        </span>
+            </span>
         {{ end }}
 
         </div>
