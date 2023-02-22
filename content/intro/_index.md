@@ -8,7 +8,7 @@ bookNumbering: false
 
 
 > Dans ce manuel, nous développons une approche pour enseigner la programmation
-> avec des cartes à jouer.  Les étudiant·es seront invité·es à réaliser une
+> avec des cartes à jouer.  Les étudiant·e·s seront invité·es à réaliser une
 > procédure informatique avec des cartes, avant de programmer cette procédure
 > en Java et finalement de valider leur code à l'aide d'un logiciel créé
 > spécifiquement pour accompagner ce manuel.
@@ -19,7 +19,7 @@ bookNumbering: false
 
 ## À qui s'adresse ce manuel?
 
-L'approche développée dans ce manuel cible des étudiant·es ayant déjà suivi un
+L'approche développée dans ce manuel cible des étudiant·e·s ayant déjà suivi un
 cours d'introduction à la programmation, mais qui pourraient éprouver certaines
 difficultés à:
 
@@ -37,7 +37,7 @@ Comme les exemples de code sont en Java, il est préférable d'avoir une certain
 
 L'idée est d'utiliser un médium physique pour expliquer des notions de
 programmation, afin de supporter d'autres styles d'apprentissage (visuel,
-kinesthésique) et d'encourager les étudiant·es à bien comprendre le déroulement
+kinesthésique) et d'encourager les étudiant·e·s à bien comprendre le déroulement
 d'une procédure informatique avant même de commencer à la programmer.
 
 Les cartes à jouer sont avantageuses parce qu'elles sont accessibles
@@ -100,12 +100,12 @@ Opération à réaliser
 </table>
 </center>
 
-On peut demander aux étudiant·es d'effectuer cette opération avec des vraies cartes, 
+On peut demander aux étudiant·e·s d'effectuer cette opération avec des vraies cartes, 
 permettant ainsi à l'enseignant·e de vérifier que l'énoncé a bien été compris (c-à-d l'interface, ou ce que le programme doit faire).
 
 On peut ensuite présenter une procédure afin de réaliser l'opération (c-à-d l'implantation, ou comment le
-programme doit le faire). Dans l'exemple ci-bas, on utilise une procédure qui visite la liste du début vers la fin (ce qui correspond au genre de boucle que les étudiant·es ont probablement déjà appris).
-Encore une fois, les étudiant·es pourront réaliser la procédure sur la table, avec de vraies cartes, et
+programme doit le faire). Dans l'exemple ci-bas, on utilise une procédure qui visite la liste du début vers la fin (ce qui correspond au genre de boucle que les étudiant·e·s ont probablement déjà appris).
+Encore une fois, les étudiant·e·s pourront réaliser la procédure sur la table, avec de vraies cartes, et
 s'assurer de comprendre ce qu'il faut programmer avant même d'écrire les premières lignes de code.
 
 <center>
@@ -140,7 +140,7 @@ Procédure à suivre
 </center>
 
 Finalement, à noter les animations ci-haut sont tirées de l'outil de validation qui 
-accompagne ce manuel. Grace à cet outil, les étudiant·es peuvent valider 
+accompagne ce manuel. Grace à cet outil, les étudiant·e·s peuvent valider 
 leur programme, en particulier: 
 
 * visualiser les étapes d'exécution de leur code
@@ -149,7 +149,7 @@ leur programme, en particulier:
 
 ## Expliquer l'efficacité des algorithmes avec des cartes
 
-Une fois les étudiant·es habitué·es à réaliser des procédures avec les cartes à
+Une fois les étudiant·e·s habitué·es à réaliser des procédures avec les cartes à
 jouer, on peut passer à expliquer la notion d'efficacité (complexité des
 algorithmes), c'est-à-dire comment différentes procédures informatiques peuvent
 accomplir la même opération (c-à-d arriver au même résultat), tout en nécessitant un
@@ -161,7 +161,7 @@ difficiles à comprendre, mais plus rapides à réaliser).  Par exemple, pour un
 liste de 10 cartes, ordonner les cartes avec une procédure naïve de tri nécessitera une centaine étapes, alors
 qu'une procédure efficace de tri arrivera au même résultat en une trentaine d'étapes.
 
-En effectuant diverses procédures sur la table, avec des vraies cartes à jouer, les étudiant·es 
+En effectuant diverses procédures sur la table, avec des vraies cartes à jouer, les étudiant·e·s 
 gagnent une compréhension très intuitive de la notion d'efficacité informatique: 
 les procédures naïves se révèlent rapidement comme longues et ennuyantes à réaliser!
 

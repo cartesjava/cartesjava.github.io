@@ -66,7 +66,7 @@ Voici un deuxième exemple de graphe d'objets, cette fois-ci pour une liste cha�
 À noter comment les références `suivant` et `precedent` forment des cycles dans le graphe 
 d'objet, ce qui est toujours possibles avec les types récursifs et, en général, dans 
 l'organisation en mémoire des données d'un programme.
-Il est important d'encourager les étudiant·es à garder en tête la possibilité de tels cycles
+Il est important d'encourager les étudiant·e·s à garder en tête la possibilité de tels cycles
 dans les données, puisqu'un programme doit les détecter afin de ne pas s'exécuter en boucle infinie.
 
 

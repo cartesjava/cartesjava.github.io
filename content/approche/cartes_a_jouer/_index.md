@@ -46,7 +46,7 @@ Serait visualisé par les cartes suivantes:
 <img src="arbre01_cartes.png"/>
 
 À noter que la visualisation dépend d'une compréhension préalable de la notion d'arbre (de la forme d'un arbre).
-Cette compréhension préalable risque d'être moins acquise chez les étudiant·es que celle de séquence utilisée ci-haut.
+Cette compréhension préalable risque d'être moins acquise chez les étudiant·e·s que celle de séquence utilisée ci-haut.
 Néanmoins, utiliser des cartes peut s'avérer plus intuitifs pour les novices que le format textuel.
 Par exemple, voici le même arbre en JSON:
 

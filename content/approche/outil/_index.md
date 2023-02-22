@@ -27,7 +27,7 @@ débutera avec le code suivant:
 ```
 
 À l'exception de la méthode `deplacerDelacer`, qui doit être complétée, les
-étudiant·es n'ont pas à comprendre ce code, qui ne sert qu'à intégrer
+étudiant·e·s n'ont pas à comprendre ce code, qui ne sert qu'à intégrer
 l'outil de validation à leur projet Java. Pour plus de détails, voir les exemples d'ateliers
 à <a href="/annexe-ateliers">l'Annexe 4</a>.
 
@@ -186,7 +186,7 @@ Cette fonctionnalité permet de créer des exercices où les étudiant·e·s doi
 
 ## Trouver des erreurs dans la procédure implantée
 
-Visualiser la procédure à l'aide d'une animation aide les étudiant·es à trouver certaines erreurs, sutout
+Visualiser la procédure à l'aide d'une animation aide les étudiant·e·s à trouver certaines erreurs, sutout
 qu'on peut comparer l'animation produite pour la solution avec celle produite pour le code étudiant.
 
 L'exemple ci-bas illustre une erreur courante dans le code étudiant.
@@ -230,8 +230,8 @@ Finalement, l'outil de validation génère un graphe d'objet pour les
 données courantes et sauvegarde ce graphe dans le répertoire `_storage/graphs`.
 (voir la <a href="/approche/langages_et_notations/#graphe-dobjets">Section
 1.2.2</a> à propos des graphes d'objets).  Ces graphes permettent aux
-étudiant·es de se forger une image mentale de l'organisation des données en
-mémoire.  En particulier, puisque les graphes sont générés, les étudiant·es
+étudiant·e·s de se forger une image mentale de l'organisation des données en
+mémoire.  En particulier, puisque les graphes sont générés, les étudiant·e·s
 peuvent consulter les graphes d'objets correspondant à différentes étapes d'une
 procédure.
 
