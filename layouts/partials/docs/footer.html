@@ -1,41 +1,37 @@
 <div class="flex flex-wrap justify-between">
 
-    <div>
+    <div style="padding-top:1em;">
         {{ if and .GitInfo .Site.Params.Logos }}
         <div>
             <a href="https://fabriquerel.org/">
-	            <img style="width:20em;height:100%" alt="FabriqueREL" src="/F-REL_logo-coul-horiz.png" />
-            </a>
-        </div>
-        <div style="position:relative;left:1.25em;">
-            <a href="https://www.cmontmorency.qc.ca/">
-	            <img style="width:20em;height:100%" alt="Collège Montmorency" src="/LogomoHC.png" />
+	            <img style="width:16em;height:100%" alt="FabriqueREL" src="/F-REL_logo-coul-horiz.png" />
             </a>
         </div>
         {{ end }}
     </div>
 
-    <div style="padding-top:2em;">
-        {{ if and .GitInfo .Site.Params.BookRepo }}
-        <div class="flex justify-end">
-            {{- $date := partial "docs/date" (dict "Date" .GitInfo.AuthorDate.Local "Format" .Site.Params.BookDateFormat) -}}
-            {{- $commitPath := default "commit" .Site.Params.BookCommitPath -}}
-            <a href="{{ .Site.Params.BookRepo }}/{{ $commitPath }}/{{ .GitInfo.Hash }}" title='{{ i18n "Last modified by" }} {{ .GitInfo.AuthorName }} | {{ $date }}' target="_blank" rel="noopener">
-                <span>{{ $date }}</span>
-                <img src="{{ "svg/calendar.svg" | relURL }}" class="book-icon" alt="Calendar" />
-            </a>
-        </div>
-        {{ end }}
-
+    <div style="padding-top:2em;margin-bottom:2em;">
+        <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.fr">
+	        <img style="width:9rem;height:auto;" alt="Creative Commons License" src="/by-sa.png" />
+        </a>
         {{ if and .File .Site.Params.BookRepo .Site.Params.BookEditPath }}
-        <div class="flex justify-end" style="padding-top:1em;">
-            <a href="{{ .Site.Params.BookRepo }}/{{ .Site.Params.BookEditPath }}/{{ default "content" .Site.Params.contentDir }}/{{ replace .File.Path "\\" "/" }}" target="_blank" rel="noopener">
+        <div style="padding-top:1em;">
+            <a style="" href="{{ .Site.Params.BookRepo }}/{{ .Site.Params.BookEditPath }}/{{ default "content" .Site.Params.contentDir }}/{{ replace .File.Path "\\" "/" }}" target="_blank" rel="noopener">
                 <span>{{ i18n "Edit this page" }}</span>
                 <img src="{{ "svg/edit.svg" | relURL }}" class="book-icon" alt="Edit" />
             </a>
         </div>
         {{ end }}
-
+    </div>
+    <div style="padding-top:2em;">
+        {{ if and .GitInfo .Site.Params.Logos }}
+        <div style="position:relative;left:1.25em;">
+            <a href="https://www.cmontmorency.qc.ca/">
+	            <img style="width:16em;height:100%" alt="Collège Montmorency" src="/LogomoHC.png" />
+            </a>
+        </div>
+        {{ end }}
+        <!--
         <div class="flex justify-end" style="padding-top:2em;">
             <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.fr" style="font-size:2em;">
 	            <img alt="Creative Commons License" style="border-width:0" src="/cc.svg" />
@@ -49,6 +45,7 @@
                 <img alt="Creative Commons ShareAlike" style="border-width:0" src="/sa.svg" />
             </a>
         </div>
+        -->
     </div>
 </div>
 
