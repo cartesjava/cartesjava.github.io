@@ -10,7 +10,7 @@ bookCollapseSection: true
 bookNumbering: false
 ---
 
-<h1>Code les cartes!!<br>
+<h1>Code les cartes!<br>
 <span style="font-size:1.4rem;">
 Apprendre à programmer efficacement avec des cartes à jouer 
 </span>
