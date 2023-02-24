@@ -26,7 +26,7 @@ code suivant&nbsp;:
 {{% embed src="Procedure.java" %}}
 ```
 
-À l'exception de la méthode `deplacerDelacer`, qui doit être complétée, les
+À l'exception de la méthode `deplacerDecaler`, qui doit être complétée, les
 étudiant·e·s n'ont pas à comprendre ce code, qui ne sert qu'à intégrer
 l'outil de validation à leur projet Java. Pour plus de détails, voir les exemples d'ateliers
 à <a href="/annexe-ateliers">l'Annexe 4</a>.
@@ -54,7 +54,7 @@ Voici les affichages principaux de l'outil de validation.
 </center>
 
 * Le panneau principal (1) affiche des cartes à jouer
-* Le panneau des cas de tests (2) permet de 
+* Le panneau des cas de tests (2) permet de&nbsp;:
     * sélectionner un nouveau cas de test 
     * visualiser les résultats de la validation
 * Le panneau de navigation (3) permet d'avancer et/ou reculer dans la séquence d'exécution
@@ -133,7 +133,7 @@ de procédure implantée par l'étudiant·e.
 </center>
 
 
-À noter que l'outil de validation exécute la procédure dès le démarrage
+À noter que l'outil de validation exécute la procédure dès le démarrage.
 Les étapes d'exécution sont ainsi mémorisées à l'avance.
 Contrairement à un véritable débogueur, on peut donc reculer dans les étapes d'exécution.
 
@@ -186,7 +186,7 @@ Cette fonctionnalité permet de créer des exercices où les étudiant·e·s doi
 
 ## Trouver des erreurs dans la procédure implantée
 
-Visualiser la procédure à l'aide d'une animation aide les étudiant·e·s à trouver certaines erreurs, sutout
+Visualiser la procédure à l'aide d'une animation aide les étudiant·e·s à trouver certaines erreurs, surtout
 qu'on peut comparer l'animation produite pour la solution avec celle produite pour le code étudiant.
 
 L'exemple ci-bas illustre une erreur courante dans le code étudiant.

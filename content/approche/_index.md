@@ -26,8 +26,8 @@ informatique à l'aide de schémas où figurent des cartes à jouer.  On peut
 exécuter la procédure étape par étape, ce qui permet de créer une animation où
 les cartes à jouer bougent à l'écran et illustrent la procédure.  À noter que ces
 schémas et ces animations sont créés à partir du code fourni par l'utilisateur.
-Les étudiant·e·s peuvent dont utiliser l'outil de validation pour comprendre
-analyser certaines de leurs erreurs.  
+Les étudiant·e·s peuvent donc utiliser l'outil de validation pour comprendre
+et analyser certaines de leurs erreurs.  
 
 </td>
 
@@ -52,7 +52,7 @@ Finalement, nous utilisons le format JSON pour représenter des données sous fo
 </th>
 
 <td>
-Dans l'approche présentée, il n'y pas de façon unique de visualiser des données avec des cartes à jouer.
+Dans l'approche présentée, il n'y a pas de façon unique de visualiser des données avec des cartes à jouer.
 Pour chaque procédure qu'on veut présenter en classe, il faut créer une visualisation et l'ajouter à l'outil de validation.
 Cette section donne deux exemples de telles visualisations, alors que <a href="/annexe_programmer_exemple">l'Annexe 3</a> explique comment ajouter une nouvelle visualisation à l'outil.
 </td>

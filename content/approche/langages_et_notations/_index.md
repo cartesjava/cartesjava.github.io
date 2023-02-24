@@ -15,7 +15,7 @@ weight: 20
 
 Nous utilisons le langage de programmation Java pour les exemples de code de ce manuel. Au besoin, nous vous invitons à vous référer à <a href="/bibliographie#mayfield-allen-2020">(Mayfield et Downey, 2020)</a> pour une introduction à ce langage.
 
-Pour visualiser les types de données, nous utilisons des digrammes de classe.
+Pour visualiser les types de données, nous utilisons des diagrammes de classe.
 Voici par exemple un diagramme de classe représentant une liste chaînée simple.
 
 <img class="figure" src="./liste_chainee_simple.png" />
@@ -96,14 +96,14 @@ Voici les *structures* en JSON&nbsp;:
     * `{"cle01":true, "cle02":-12}`
 
 Une liste est un tableau qui peut grandir et rapetisser. Une des particularités
-des la liste JSON est de mélanger les types de valeurs&nbsp;:
+de la liste JSON est de mélanger les types de valeurs&nbsp;:
 
 * `[1,true,"Bonjour!"]`
 * `[null, "", 1, false]`
 
 Un objet JSON permet d'accéder à des valeurs avec des clés (comme un mappage).
 En JSON, une clé est toujours une chaîne.
-La valeur peut être n'importe quelle valeur JSON
+La valeur peut être n'importe quelle valeur JSON.
 
 À noter aussi que JSON est un format récursif.
 
@@ -119,7 +119,7 @@ Voici la même liste chaîne simple que ci-haut, mais dans le format JSON.
 ```
 
 À noter que JSON ne permet pas de représenter le type de donnée (la classe).
-Par convention, nous représenterons la classe à l'attribut spécial `"_C":"NomDeLaClasse"`.
+Par convention, nous représentons la classe à l'attribut spécial `"_C":"NomDeLaClasse"`.
 
 Finalement, voici la même liste chaînée double que ci-haut, mais exprimée en JSON.
 
