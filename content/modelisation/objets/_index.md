@@ -6,7 +6,7 @@ bookHidden: false
 
 {{% pageTitle %}}
 
-L'unité de base d'un modélisation orientée-objet est l'objet.  Nous donnons ici
+L'unité de base d'une modélisation orientée-objet est l'objet.  Nous donnons ici
 quelques exemples de modélisations, tout en discutant de la possibilité de
 visualiser ces données avec des cartes à jouer.
 

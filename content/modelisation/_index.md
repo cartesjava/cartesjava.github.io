@@ -9,8 +9,8 @@ bookCollapseSection: true
 > Ce chapitre présente des exemples de modélisations de données et discute de
 > leur visualisation avec des cartes à jouer, ainsi que l'utilisation de ces
 > visualisations en classe ou dans des exercices.  À travers le chapitre, nous
-> discutons aussi des limitations d'une visualisation avec des cartes à jouer
-> sont aussi discutées à travers le chapitre.
+> les limitations d'une visualisation avec des cartes à jouer
+> sont aussi explorées.
 
 
 <h2>Aperçu du chapitre</h2>
@@ -45,7 +45,7 @@ placer les cartes une à la suite de l'autre, par exemple de gauche à droite.
 
 <tr>
 <th>
-{{% link "/modelisation/graphe_d_objets" "Section 2.3" %}}
+{{% link "/modelisation/graphes_d_objets" "Section 2.3" %}}
 </th>
 
 <td> 
