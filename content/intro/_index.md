@@ -7,17 +7,17 @@ bookNumbering: false
 {{% pageTitle %}}
 
 
-> Dans ce manuel, nous développons une approche pour enseigner la programmation
+> Dans ce manuel, nous proposons une approche pour enseigner la programmation
 > avec des cartes à jouer.  Les étudiant·e·s seront invité·es à réaliser une
 > procédure informatique avec des cartes, avant de programmer cette procédure
-> en Java et, finalement, de valider leur code à l'aide d'un logiciel créé
+> en Java et, puis de valider leur code à l'aide d'un logiciel créé
 > spécifiquement pour accompagner ce manuel.
 >
 > Nous utilisons ensuite cette approche pour expliquer les notions d'efficacité
 > (complexité des algorithmes) et de structure de données (en particulier les
 > listes, les arbres et les mappages).
 
-## À qui s'adresse ce manuel?
+## À qui s'adresse ce manuel&nbsp;?
 
 L'approche développée dans ce manuel cible des étudiant·e·s ayant déjà suivi un
 cours d'introduction à la programmation, mais qui pourraient éprouver certaines
@@ -33,17 +33,17 @@ Comme les exemples de code sont en Java, il est préférable d'avoir une certain
 
 
 
-## Pourquoi utiliser des cartes à jouer?
+## Pourquoi utiliser des cartes à jouer&nbsp;?
 
 L'idée est d'utiliser un médium physique pour expliquer des notions de
-programmation, afin de supporter d'autres styles d'apprentissage (visuel,
+programmation, afin de répondre à différents styles d'apprentissage (visuel,
 kinesthésique) et d'encourager les étudiant·e·s à bien comprendre le déroulement
 d'une procédure informatique avant même de commencer à la programmer.
 
 Les cartes à jouer sont avantageuses parce qu'elles sont accessibles
-et peu dispendieuses.  Par exemple, on peut facilement se procurer des
-cartes surdimensionnées qui permettront d'expliquer des notions informatiques
-devant la classe, et ce, de façon très visuelle.
+et peu coûteuses.  Par exemple, il est facile de se procurer des
+cartes surdimensionnées pour expliquer des notions informatiques
+devant la classe de façon très visuelle.
 
 <center>
 <table>
@@ -61,8 +61,8 @@ Crédit photo&nbsp;: Mikael Tardif
 
 
 Un autre avantage est qu'on peut vérifier la compréhension des étudiant·e·s dès
-la période de théorie, sans même utiliser d'ordinateurs. Dans l'exemple
-ci-bas, on spécifie visuellement une opération à effectuer sur une liste de
+la période de théorie, sans même avoir besoin d'ordinateurs. Dans l'exemple
+ci-dessous, on spécifie visuellement une opération à effectuer sur une liste de
 cartes. Cette opération consiste à déplacer une carte (identifiée par un marqueur) au début de 
 liste, ce qui nécessite en retour de décaler certaines cartes vers la droite.
 
@@ -104,7 +104,7 @@ On peut demander aux étudiant·e·s d'effectuer cette opération avec des vraie
 permettant ainsi à l'enseignant·e de vérifier que l'énoncé a bien été compris (c.-à-d. l'interface, ou ce que le programme doit faire).
 
 On peut ensuite présenter une procédure afin de réaliser l'opération (c.-à-d. l'implantation, ou comment le
-programme doit le faire). Dans l'exemple ci-bas, on utilise une procédure qui visite la liste du début vers la fin (ce qui correspond au genre de boucle que les étudiant·e·s ont probablement déjà appris).
+programme doit le faire). Dans l'exemple ci-dessous, on utilise une procédure qui parcourt la liste du début vers la fin (ce qui correspond au genre de boucle que les étudiant·e·s ont probablement déjà appris).
 Encore une fois, les étudiant·e·s pourront réaliser la procédure sur la table, avec de vraies cartes, et
 ainsi s'assurer de comprendre ce qu'il faut programmer avant même d'écrire les premières lignes de code.
 
@@ -140,7 +140,7 @@ Procédure à suivre
 </center>
 
 Finalement, à noter les animations ci-haut sont tirées de l'outil de validation qui 
-accompagne ce manuel. Grace à cet outil, les étudiant·e·s peuvent valider 
+accompagne ce manuel. Grâce à cet outil, les étudiant·e·s peuvent valider 
 leur programme, en particulier&nbsp;: 
 
 * visualiser les étapes d'exécution de leur code
@@ -151,8 +151,8 @@ leur programme, en particulier&nbsp;:
 
 Une fois les étudiant·e·s habitué·es à réaliser des procédures avec les cartes à
 jouer, on peut passer à expliquer la notion d'efficacité (complexité des
-algorithmes), c'est-à-dire comment différentes procédures informatiques peuvent
-accomplir la même opération (c.-à-d. arriver au même résultat), tout en nécessitant un
+algorithmes), c.-à-d. comment différentes procédures informatiques peuvent
+accomplir la même opération (arriver au même résultat), tout en nécessitant un
 nombre d'étapes significativement différent.
 
 On distingue ainsi entre les procédures naïves (souvent plus faciles à
@@ -170,8 +170,8 @@ les procédures naïves se révèlent rapidement comme longues et ennuyantes à 
 
 Finalement, on peut aussi se servir de cartes à jouer afin de visualiser
 l'organisation des données dans un programme
-informatique, ce qui est particulièrement intéressant afin d'expliquer 
-comment une structure de données (par exemple une liste) 
+informatique, ce qui est particulièrement intéressant utile pour expliquer 
+comment une structure de données, comme une liste,
 peut être implantée de différentes façons dans un langage de programmation.
 
 En s'appuyant sur la notion d'efficacité, on peut aussi expliquer les 
@@ -186,7 +186,7 @@ surtout si on utilise des cartes blanches (ou le verso de cartes) pour
 visualiser l'espace mémoire vide (c.-à-d. l'espace occupé par le programme, mais
 dans lequel le programme n'a pas encore mémorisé de valeur).  Une procédure
 utilisant beaucoup d'espace mémoire va tout simplement nécessiter plus d'espace
-sur la table!
+sur la table&nbsp;!
 
 ## Plan du manuel
 
@@ -261,7 +261,7 @@ aussi d'obtenir un point de comparaison utile pour réfléchir à l'efficacité 
 </th>
 
 <td>
-Nous présentons la notion d'arbre, une structure de donnée omniprésente en informatique.
+Nous présentons la notion d'arbre, une structure de données omniprésente en informatique.
 Nous implanterons un arbre générique, ainsi qu'un arbre binaire de recherche.
 </td>
 </tr>

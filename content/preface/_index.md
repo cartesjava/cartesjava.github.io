@@ -55,7 +55,7 @@ Grâce au financement de la fabriqueREL, trois étudiants ont contribué au dév
 Adrien Joséphine-Olivier,
 Marlond Augustin
 et
-Zein-El-Abdin Hazimeh
+Zein-El-Abdin Hazimeh.
 
 
 
@@ -66,7 +66,7 @@ Zein-El-Abdin Hazimeh
 <th>Mise en page</th>
 <td>
 
-La mise en page repose sur le thème <a href="https://github.com/alex-shpak/hugo-book">hugo-book</a>, modifié par Mathieu Bergeron pour les besoins de ce manuel (p.&nbsp;ex. ajout de la numération des sections)
+La mise en page repose sur le thème <a href="https://github.com/alex-shpak/hugo-book">hugo-book</a>, modifié par Mathieu Bergeron pour les besoins de ce manuel (p.&nbsp;ex. ajout de la numération des sections).
  
 
 </td>
@@ -91,7 +91,7 @@ Enseignant·e·s en informatique au Collège Montmorency&nbsp;: &nbsp;Soumaya Me
 </tr>
 
 <tr>
-<th>Pour citer cet ouvrage</th>
+<th>Pour&nbsp;citer cet&nbsp;ouvrage</th>
 <td>
 
 Bergeron, M. (2023). *Code les cartes! Apprendre à programmer efficacement avec des cartes à jouer*.

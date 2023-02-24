@@ -34,7 +34,7 @@ Sur la table<br>
 <br>
 <center>
 <div id="code-intro" style="max-width:23.5rem;background:#f0f0f0;text-align:left;">
-<span style="position:relative;left:0.95rem;font-size:1.25rem">Et dans le code!</span><br>
+<span style="position:relative;left:0.95rem;font-size:1.25rem">Et dans le code&nbsp;!</span><br>
 <div>
 {{< highlight java>}}
 Carte maCarte = new Carte(5, COEUR);
