@@ -7,7 +7,7 @@ bookHidden: false
 {{% pageTitle %}}
 
 Une fois les objets modélisés, la prochaine étape est de spécifier les
-relations entre ces objets, c'est-à-dire l'organisation de ces objets dans 
+relations entre ces objets, c.-à-d. l'organisation de ces objets dans 
 la mémoire du programme.
 
 ## Tableau de personnages 
@@ -462,7 +462,7 @@ La visualisation est correcte, mais plus difficile à lire.
 
 
 Autant que possible, on va expliquer les procédures en déplaçant les cartes,
-c'est-à-dire en évitant de créer des références multiples.  Cependant, il faut
+c.-à-d. en évitant de créer des références multiples.  Cependant, il faut
 garder en tête que le code typique contient très souvent des références
 multiples.
 
