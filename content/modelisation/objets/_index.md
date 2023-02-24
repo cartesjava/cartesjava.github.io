@@ -96,7 +96,7 @@ Idéalement, les exemples illustrés par des cartes devraient donc se limiter à
 ## Modéliser un film et un personnage
 
 On peut évidemment modéliser autre chose que des cartes.
-Voici par exemple une classe représentant un film.
+Voici p.&nbsp;ex. une classe représentant un film.
 
 <img class="figure" src="FilmObjet.png">
 

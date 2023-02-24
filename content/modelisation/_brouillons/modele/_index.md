@@ -12,7 +12,7 @@ bookHidden: false
 
 1. Un modèle est une classe qui représente des données importantes pour un programme
 
-1. Prenons par exemple un petit tableau de cartes issu de l'atelier 1.1&nbsp;:
+1. Prenons p.&nbsp;ex. un petit tableau de cartes issu de l'atelier 1.1&nbsp;:
 
     <img class="small-figure" src="MonTriLibre_cartes.png" />
 
@@ -29,12 +29,12 @@ bookHidden: false
 
 1. Comme `MonTriLibre` est une classe, le modèle contient aussi des méthodes
 
-1. Par exemple&nbsp;:
+1. P.&nbsp;ex.&nbsp;:
 
     * `boolean isSorted` pour déterminer si les cartes sont triées
     * `int testCaseSize` qui retourne la taille de l'exemple (le nombre de cartes)
 
-1. La valeur `Carte` contient aussi des méthodes, par exemple&nbsp;:
+1. La valeur `Carte` contient aussi des méthodes, p.&nbsp;ex.&nbsp
 
     * `int compareTo` pour indiquer si la carte est plus petite qu'une autre carte
     * `boolean isNullCard` pour indier s'il s'agit vraiment d'une carte ou d'une case vide
@@ -49,7 +49,7 @@ bookHidden: false
 ## Une application a souvent plusieurs modèles
 
 
-1. Par exemple, l'outil de validation a un modèle a trois modèles
+1. P.&nbsp;ex. l'outil de validation a un modèle a trois modèles
 
 
     * un modèle pour les cartes et un pour les cas de tests

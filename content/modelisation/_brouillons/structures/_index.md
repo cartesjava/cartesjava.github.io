@@ -124,7 +124,7 @@ NOTE&nbsp;:
 
 * Un objet JSON est représenté en Java par `Map<String, Object>`
 
-* Par exemple&nbsp;:
+* P.&nbsp;ex.&nbsp;:
 
 ```json
 {{% embed "MesDonneesJson03.json" %}}

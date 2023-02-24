@@ -41,7 +41,7 @@ kinesthésique) et d'encourager les étudiant·e·s à bien comprendre le dérou
 d'une procédure informatique avant même de commencer à la programmer.
 
 Les cartes à jouer sont avantageuses parce qu'elles sont accessibles
-et peu coûteuses.  Par exemple, il est facile de se procurer des
+et peu coûteuses.  P.&nbsp;ex. il est facile de se procurer des
 cartes surdimensionnées pour expliquer des notions informatiques
 devant la classe de façon très visuelle.
 
@@ -157,7 +157,7 @@ nombre d'étapes significativement différent.
 
 On distingue ainsi entre les procédures naïves (souvent plus faciles à
 comprendre, mais peu efficaces) et les  procédures efficaces (souvent plus
-difficiles à comprendre, mais plus rapides à réaliser).  Par exemple, pour une
+difficiles à comprendre, mais plus rapides à réaliser).  P.&nbsp;ex. pour une
 liste de 10 cartes, ordonner les cartes avec une procédure naïve de tri nécessitera une centaine étapes, alors
 qu'une procédure efficace de tri arrivera au même résultat en une trentaine d'étapes.
 
@@ -176,7 +176,7 @@ peut être implantée de différentes façons dans un langage de programmation.
 
 En s'appuyant sur la notion d'efficacité, on peut aussi expliquer les 
 avantages et inconvénients de ces différentes implantations.
-Par exemple, une liste implantée par
+P.&nbsp;ex. une liste implantée par
 références (liste chaînée) sera moins efficace qu'une liste implantée par
 tableau au moment de visiter une valeur mémorisée au milieu de la liste.
 Par contre, la liste par référence utilisera moins d'espace en mémoire. 

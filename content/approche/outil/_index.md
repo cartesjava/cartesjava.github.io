@@ -70,8 +70,7 @@ Des cartes à jouer animées permettent de visualiser l'exécution d'une procéd
 </div>
 </center>
 
-L'exécution de la procédure se déroule en un certain nombre d'étapes. La transition d'une étape à l'autre est illustrée par une animation où, 
-par exemple, une carte peut changer de position.
+L'exécution de la procédure se déroule en un certain nombre d'étapes. La transition d'une étape à l'autre est illustrée par une animation où p.&nbsp;ex. une carte peut changer de position.
 
 À noter que la visualisation est différente pour chaque procédure, tel qu'expliqué à la <a href="/approche/cartes_a_jouer/">Section 1.3</a>.
 À noter aussi qu'utiliser des cartes à jouer s'accompagne de certaines limitations, telles que discutées au <a href="/modelisation">Chapitre 2</a>.

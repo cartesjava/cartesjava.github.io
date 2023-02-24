@@ -19,7 +19,7 @@ weight: 80
 * Plusieurs algorithmes sont plus faciles à coder de cette façon
     * c'est souvent plus proche de la définition papier (mathématique)
 
-* Par exemple&nbsp;:
+* P.&nbsp;ex.&nbsp;:
     * définition mathématique de la fonction factorielle&nbsp;:
 
         <pre>
@@ -53,7 +53,7 @@ weight: 80
     * quand la méthode termine, c'est retiré de la pile
     * la pile permet de revenir là où on était dans la méthode précédente
 
-* Par exemple&nbsp;:
+* P.&nbsp;ex.&nbsp;:
 
 ```java
 {{% embed "Pile.java" %}}

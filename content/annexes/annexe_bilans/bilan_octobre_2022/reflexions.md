@@ -58,7 +58,7 @@ bookHidden: true
 
     * les étudiant·e·s ont trouvé facile de trier des cartes, mais plus difficile de traduire en code la procédure. Je pense que je devrais fournir plus d'exemples plus rapidement afin de pratiquer cette traduction.
 
-1. Malheureusement, pour l'instant, créer un nouvel exemple de visualisation est difficile et long. Je dois écrire beaucoup de code pour créer les visualisations et ces dernières doivent quand même être capturées à la main avec un outil de capture d'écran. Certains graphes d'objets doivent aussi être retravaillés à la main. P.&nbsp;ex., le graphe ci-dessous a été retravaillé pour y inclure la variable `nouvelleTete`&nbsp;:
+1. Malheureusement, pour l'instant, créer un nouvel exemple de visualisation est difficile et long. Je dois écrire beaucoup de code pour créer les visualisations et ces dernières doivent quand même être capturées à la main avec un outil de capture d'écran. Certains graphes d'objets doivent aussi être retravaillés à la main. P.&nbsp;ex. le graphe ci-dessous a été retravaillé pour y inclure la variable `nouvelleTete`&nbsp;:
 
     <img class="figure" src="/annexes/annexe_bilans/bilan_octobre_2022/dyn01.png"/>
 

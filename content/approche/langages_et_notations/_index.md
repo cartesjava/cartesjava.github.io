@@ -16,7 +16,7 @@ weight: 20
 Nous utilisons le langage de programmation Java pour les exemples de code de ce manuel. Au besoin, nous vous invitons à vous référer à <a href="/bibliographie#mayfield-allen-2020">(Mayfield et Downey, 2020)</a> pour une introduction à ce langage.
 
 Pour visualiser les types de données, nous utilisons des diagrammes de classe.
-Voici par exemple un diagramme de classe représentant une liste chaînée simple.
+Voici p.&nbsp;ex. un diagramme de classe représentant une liste chaînée simple.
 
 <img class="figure" src="./liste_chainee_simple.png" />
 
@@ -25,12 +25,12 @@ première section à partir du haut est le nom de la classe, p.&nbsp;ex. *Liste*
 (lorsque la classe est abstraite, ce nom sera en italique). La deuxième section
 dénote les méthodes, p.&nbsp;ex. `int taille()`.  La dernière section dénote les
 attributs, p.&nbsp;ex. `int taille`. La flèche triangulaire dénote l'héritage (le
-triangle est collé sur la classe parent).  Par exemple, la classe
+triangle est collé sur la classe parent).  P.&nbsp;ex. la classe
 `ListeChaineeSimple` hérite de la classe `Liste` (puisque `Liste` est abstraite,
 on peut aussi dire que `ListeChaineeSimple` implante une `Liste`).  La flèche
 avec un losange dénote une référence (le losange est collé sur la classe qui
 maintient la référence, puis spécifiquement sur l'attribut qui maintient cette
-référence).  Par exemple, une `ListeChaineeSimple` maintient une référence à un
+référence).  P.&nbsp;ex. une `ListeChaineeSimple` maintient une référence à un
 `MaillonSimple`. Plus spécifiquement, c'est l'attribut `tete` qui maintient cette référence.
 
 Voici un autre exemple de diagramme de classes, cette fois-ci d'une liste chaînée double.
@@ -55,7 +55,7 @@ Voici un graphe d'objet pour une liste chaînée simple.
 Chaque boîte dénote un objet. Une boîte a une ou plusieurs sections.
 La première section à partir du haut dénote la classe de l'objet 
 et les sections suivantes dénotent la valeur des différents attributs de cet objet.
-Par exemple, le graphe ci-haut contient une seule boîte où la classe est `ListeChaineeSimple`.
+P.&nbsp;ex. le graphe ci-haut contient une seule boîte où la classe est `ListeChaineeSimple`.
 On dit qu'il s'agit d'un objet de type `ListeChaineeSimple`.
 Les attributs sont `taille` (valeur `3`) et `tete` (référence à un objet de type `MaillonSimple`).
 
