@@ -14,7 +14,7 @@ bookHidden: true
 
 ## Ressources trouvées par Valérie Jacques
 
-Les ressources ci-bas pourront servir d'inspiration pour le manuel&nbsp;:
+Les ressources ci-dessous pourront servir d'inspiration pour le manuel&nbsp;:
 
 
 <ul style="margin-bottom:0;">
