@@ -7,3 +7,4 @@
 
 # pas besoin de /docs finalement puisqu'on utilise le déploiement automatique de GitHub
 /docs
+/resources
