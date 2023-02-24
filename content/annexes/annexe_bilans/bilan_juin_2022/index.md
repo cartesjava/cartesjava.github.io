@@ -46,7 +46,7 @@ De gauche à droite&nbsp;:
 <img width="75%" src="/bilan2022/interface01.png" />
 </center>
 
-NOTES&nbsp;:
+NOTE&nbsp;:
 
 * Des améliorations à l'interface sont à venir (projet de Zein Hazimeh)
 
@@ -90,7 +90,7 @@ Avec la solution (étape 22)&nbsp;:
 </center>
 
 
-#### Animation de l'opération de retrait dans une liste tableau
+### Animation de l'opération de retrait dans une liste tableau
 
 <center>
 <video width="50%" 
@@ -114,11 +114,13 @@ Avec la solution (étape 22)&nbsp;:
 
 ## Prochaine étape&nbsp;: intégration des outils au cours 3C6
 
-1. Évaluations formatives avec les cartes
-    * entrevue de 5min avec l'enseignant 
-    * l'étudiant.e doit démontrer sa compréhension de la procédure vue en théorie
+1. Évaluations formatives avec les cartes&nbsp;:
 
-1. Ateliers à réaliser avec l'outil de validation codelescartes.ca
+    * entrevue de 5 min. avec l'enseignant 
+
+    * l'étudiant·e doit démontrer sa compréhension de la procédure vue en théorie
+
+1. Ateliers à réaliser avec l'outil de validation `codelescartes.ca`&nbsp;:
     * introduction 
     * liste par tableau (projet de Marlond Augustin)
     * tri fusion (projet d'Adrien Joséphine-Olivier)
