@@ -15,7 +15,7 @@ weight: 200
 
 ## Cloner les sources
 
-Dans un GitBash (ou à la console en Linux ou Mac)
+Dans un GitBash (ou à la console en Linux ou Mac)&nbsp;:
 
 ```bash
 $ git clone https://github.com/cartesjava/ca.ntro.cards.git
@@ -38,21 +38,21 @@ $ sh scripts/new_validator.sh MesModeles mes_modeles
 
 ## Créer et importer les projets Eclipse
 
-Générer les projets Eclipse avec
+Générer les projets Eclipse avec&nbsp;:
 
 ```bash
 $ sh gradlew eclipse
 ```
 
-Importer les projets en Eclipse 
+Importer les projets en Eclipse. 
 
 ## Modifier la visualisation avec les cartes
 
-S'inspirer des projets `shift_procedure` et `fibonacci_procedure`
+S'inspirer des projets `shift_procedure` et `fibonacci_procedure`.
 
-Dans le projet `mon_projet_procedure`, modifier le paquet `models`
+Dans le projet `mon_projet_procedure`, modifier le paquet `models`.
 
-Renommer au besoin la classe `MonProjetCardsModel`
+Renommer au besoin la classe `MonProjetCardsModel`.
 
 Implanter les méthodes marquées d'un `TODO` et que l'outil de validation utilise&nbsp;:
 
@@ -68,9 +68,9 @@ Finalement, modifier aussi  `test_cases.MonProjetTestCaseDatabase`, en particuli
 
 ## Ajouter des modèles à un validateur
 
-Dans le projet `validator_mes_modeles`, modifier le paquet `models`
+Dans le projet `validator_mes_modeles`, modifier le paquet `models`.
 
-S'inspirer de `Model01` et `Model01SuperClass` pour voir comment créer un nouveau modèle
+S'inspirer de `Model01` et `Model01SuperClass` pour voir comment créer un nouveau modèle.
 
-Ne pas oublier d'implanter la méthode `copyDataFrom` qui est utilisé par l'outil copier un modèle.
+Ne pas oublier d'implanter la méthode `copyDataFrom` qui est utilisée par l'outil copier un modèle.
 

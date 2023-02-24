@@ -15,7 +15,7 @@ weight: 150
 
 ## Cloner les sources
 
-Dans un GitBash (ou à la console en Linux ou Mac)
+Dans un GitBash (ou à la console en Linux ou Mac)&nbsp;:
 
 ```bash
 $ git clone https://github.com/cartesjava/ca.ntro.cards.git
@@ -23,7 +23,7 @@ $ git clone https://github.com/cartesjava/ca.ntro.cards.git
 
 ## Exécuter `deplacer_decaler`
 
-Dans un GitBash à la racine du dépôt git `ca.ntro.cards`
+Dans un GitBash à la racine du dépôt Git `ca.ntro.cards`&nbsp;:
 
 ```bash
 $ sh gradlew shift_solution:generer    # pour générer les cas de tests
@@ -76,13 +76,13 @@ Les graphes d'objets seront dans&nbsp;:
 
 ## Modifier une solution
 
-Générer les projets Eclipse avec
+Générer les projets Eclipse avec&nbsp;:
 
 ```bash
 $ sh gradlew eclipse
 ```
 
-Importer les projets en Eclipse afin de modifier le code
+Par la suite, importer les projets en Eclipse afin de modifier le code.
 
 En particulier&nbsp;:
 

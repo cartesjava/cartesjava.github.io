@@ -20,7 +20,7 @@ Le dépôt source est ici&nbsp;: https://github.com/cartesjava/cartesjava.github
 
 1. Se connecter à GitHub
 
-1. La première fois uniquement
+1. La première fois uniquement&nbsp;:
 
     * «&nbsp;forker&nbsp;» le dépôt
 
@@ -34,7 +34,7 @@ Le dépôt source est ici&nbsp;: https://github.com/cartesjava/cartesjava.github
 
     <img class="figure" src="commit01.png"/>
 
-1. Créer un «&nbsp;pull request&nbsp;» pour communiquer votre suggestion au propriétaire du dépôt d'origine
+1. Créer un «&nbsp;pull request&nbsp;» pour communiquer votre suggestion au propriétaire du dépôt d'origine&nbsp;:
 
     * Étape 1
 
@@ -51,13 +51,13 @@ Le dépôt source est ici&nbsp;: https://github.com/cartesjava/cartesjava.github
 
 1. Installer <a href="https://gohugo.io/" target="_blank">Hugo</a> sur votre machine
 
-1. Faire la commande suivante pour cloner le dépôt Git
+1. Faire la commande suivante pour cloner le dépôt Git&nbsp;:
 
     ```bash
     $ git clone https://github.com/cartesjava/cartesjava.github.io.git
     ```
 
-1. La racine de ce dépôt Git est le répertoire contenant les fichiers suivants:
+1. La racine de ce dépôt Git est le répertoire contenant les fichiers suivants&nbsp;:
 
     ```bash
     ├── archetypes
@@ -80,10 +80,10 @@ Le dépôt source est ici&nbsp;: https://github.com/cartesjava/cartesjava.github
     └── static
     ```
 
-1. Pour ouvrir un GitBash à la racine du dépôt Git, faire
-    * Démarrer un explorateur de fichier Windows
-    * Naviguer jusqu'à la racine de dépôt Git
-    * *Clic-droit* => *GitBash here*
+1. Pour ouvrir un GitBash à la racine du dépôt Git, faire&nbsp;:
+    1. Démarrer un explorateur de fichier Windows
+    1. Naviguer jusqu'à la racine de dépôt Git
+    1. *Clic-droit* => *Git Bash Here*
 
         <img src="ouvrir_gitbash.png"/>
 
@@ -96,7 +96,7 @@ Le dépôt source est ici&nbsp;: https://github.com/cartesjava/cartesjava.github
 
 1. Naviguer vers <a href="http://localhost:1313" target="blank">localhost:1313</a>
 
-1. Voici les fichiers et répertoires importants
+1. Voici les fichiers et répertoires importants&nbsp;:
 
     ```bash
     ├── assets            # répertoire avec les .css
