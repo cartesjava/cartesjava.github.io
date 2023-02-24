@@ -7,9 +7,9 @@ bookNumbering: false
 
 {{% pageTitle %}}
 
-## Préalable
+## Préalables
 
-* JDK 11 ou plus récent (testé jusqu'à JDK18)
+* JDK 11 ou plus récent (testé jusqu'à JDK 18)
 * Git
 * Eclipse
 
@@ -19,72 +19,72 @@ bookNumbering: false
 
 1. Copier le fichier `shift.zip` **à la racine** d'un répertoire de travail vide
 
-1. Extraire les fichiers **directement** à la racine de ce répertoire de travail
+1. Extraire les fichiers **directement** à la racine de ce répertoire de travail&nbsp;:
 
-    * Clic-droit sur le fichier => *Extraire tout*
+    1. Clic-droit sur le fichier => *Extraire tout*
 
-    * **Effacer `shift` du chemin proposé**
+    1. **Effacer `shift` du chemin proposé**
 
-    * Cliquer sur *Extraire*
+    1. Cliquer sur *Extraire*
 
-    * Choisir *Remplacer les fichiers dans la destination*
+    1. Choisir *Remplacer les fichiers dans la destination*
 
-    * Vérifier que les fichiers sont **à la racine** du répertoire de travail
+    1. Vérifier que les fichiers sont **à la racine** du répertoire de travail
 
 
-1. Ouvrir *Git Bash* **à la racine** du répertoire de travail
+1. Ouvrir Git Bash **à la racine** du répertoire de travail&nbsp;:
 
     * *Windows 10*&nbsp;: Clic-droit => *Git Bash Here*
     * *Windows 11*&nbsp;: Clic-droit => *Show more options* => *Git Bash Here*
 
-1. En Git Bash, exécuter le script `ajouter_atelier.sh`
+1. En Git Bash, exécuter le script `ajouter_atelier.sh`&nbsp;:
 
     ```bash
     $ sh scripts/ajouter_atelier.sh
     ```
 
-    * au besoin fermer Eclipse avant d'exécuter le script
+    * au besoin, fermer Eclipse avant d'exécuter le script
 
-    * appuyer sur {{% key "Entrée" %}} dans fenêtre *Git Bash* pour vraiment lancer le script
+    * appuyer sur {{% key "Entrée" %}} dans la fenêtre Git Bash pour vraiment lancer le script
 
 1. Attendre que le script termine
 
 1. Ouvrir Eclipse et importer le projet `shift`
 
-    * *File* => *Import* => *Existing Projects into Workspace*
+    1. *File* => *Import* => *Existing Projects into Workspace*
 
-    * Cliquer sur *Browse* et naviguer jusqu'à la racine du répertoire de travail
+    1. Cliquer sur *Browse* et naviguer jusqu'à la racine du répertoire de travail
 
-    * Cliquer sur *Sélectionner un dossier*
+    1. Cliquer sur *Sélectionner un dossier*
 
-    * Vérifier que le projet apparaît dans la case *Projects*
+    1. Vérifier que le projet apparaît dans la case *Projects*
 
-    * Cliquer sur *Finish*
+    1. Cliquer sur *Finish*
 
 
 ## Créer la classe `MonTableau`
 
 1. Dans Eclipse, sélectionner le projet `shift`
 
-1. Ajouter la classe suivante au projet `shift`
-    * Nom de la classe&nbsp;: `MonTableau`
-    * **Ne pas** cocher `public static ...`
+1. Ajouter la classe suivante au projet `shift`&nbsp;:
+    * nom de la classe&nbsp;: `MonTableau`
+    * **ne pas** cocher `public static ...`
 
-1. Ouvrir la classe `MonTableau` et ajuster la signature
+1. Ouvrir la classe `MonTableau` et ajuster la signature&nbsp;:
 
     ```java
     public class MonTableau extends Tableau {
     ```
 
-1. En utilisant le raccourci {{% key "Ctrl+1" %}}, effectuer les tâches suivantes
-    * importer la classe `Tableau`
+1. En utilisant le raccourci {{% key "Ctrl+1" %}}, effectuer les tâches suivantes&nbsp;:
+    1. importer la classe `Tableau`
 
-    * ajouter l'annotation `@SuppressWarnings("serial")`
+    1. ajouter l'annotation `@SuppressWarnings("serial")`
 
 ## Créer la classe `Procedure`
 
 1. Ajouter la classe suivante au projet `shift`
-    * Nom de la classe&nbsp;: `Procedure`
+    * nom de la classe&nbsp;: `Procedure`
     * **cocher** `public static ...`
 
 1. Ouvrir la classe `Procedure` et ajuster la signature
@@ -93,12 +93,12 @@ bookNumbering: false
     public class Procedure extends ProcedureDecaler<MonTableau> {
     ```
 
-1. En utilisant le raccourci {{% key "Ctrl+1" %}}, effectuer les tâches suivantes
-    * importer la classe `ProcedureDecaler`
+1. En utilisant le raccourci {{% key "Ctrl+1" %}}, effectuer les tâches suivantes&nbsp;:
+    1. importer la classe `ProcedureDecaler`
 
-    * ajouter la méthode obligatoire `classeMonTableau`
+    1. ajouter la méthode obligatoire `classeMonTableau`
 
-1. Ajouter le code suivant à la méthode `main`
+1. Ajouter le code suivant à la méthode `main`&nbsp;:
 
     ```java
     public static void main(String[] args) {
@@ -108,7 +108,7 @@ bookNumbering: false
 
     * utiliser {{% key "Ctrl+1" %}} pour corriger les erreurs de compilation
 
-1. Ajouter le code suivant à la méthode `classeMonTableau`
+1. Ajouter le code suivant à la méthode `classeMonTableau`&nbsp;:
 
     ```java
     protected Class<MonTableau> classeMonTableau() {
@@ -139,21 +139,21 @@ bookNumbering: false
 
 * il faut utiliser ces attributs plutôt que des variables
     * p.&nbsp;ex. utiliser l'attribut `i` dans la boucle `for` et non une variable `int i`
-* sinon l'outil de validation ne pourra pas visualiser l'exécution de votre code
+* sinon, l'outil de validation ne pourra pas visualiser l'exécution de votre code
 
     {{</excerpt>}}
 
 
 1. Coder les deux procédures directement dans la méthode `deplacerDecaler`
-    * la méthode `deplacerDecaler` appelée par l'outil de validation pour exécuter une de vos procédures
-    * selon la valeur de l'attribut `insrerAuDebut`, votre code devra exécuter la procédure pour déplacer au début, ou sinon la procédure pour déplacer à la fin
+    * la méthode `deplacerDecaler` sera appelée par l'outil de validation pour exécuter une de vos procédures
+    * selon la valeur de l'attribut `insererAuDebut`, votre code devra exécuter la procédure pour déplacer au début, ou sinon la procédure pour déplacer à la fin
     * **TRUC** ajouter des méthodes privées à votre classe `MonTableau` et les appeler selon la valeur de `insererAuDebut`
 
 ## Exécuter l'outil de validation
 
-1. Clic-droit sur `Procedure.java` => *Run As* => *Java Application*
+* Faire un clic-droit sur `Procedure.java` => *Run As* => *Java Application*
 
-1. L'outil va vous indiquer si votre code est une solution (✔) ou s'il contient une ou des erreurs (✗)
+* L'outil va vous indiquer si votre code est une solution (✔) ou s'il contient une ou des erreurs (✗)
 
     <img class="small-figure" src="solution_ou_erreur.png"/>
 
@@ -168,7 +168,7 @@ bookNumbering: false
 
 ## Utiliser l'outil de validation pour visualiser votre code
 
-1. Pour que l'outil puisse afficher chacune des étapes de la procédure, vous devez ajouter à la main des instructions `Execution.ajouterEtape()`, p.&nbsp;ex.
+* Pour que l'outil puisse afficher chacune des étapes de la procédure, vous devez ajouter à la main des instructions `Execution.ajouterEtape()`, p.&nbsp;ex.
 
     ```java
     @Override
@@ -189,11 +189,11 @@ bookNumbering: false
 
 ## Question bonus 
 
-1. Coder une autre procédure qui implante l'opération *déplacer au début*
+* Coder une autre procédure qui implante l'opération *déplacer au début*
 
-1. Avec l'outil de validation, comparer le nombre d'étapes entre la procédure vue en théorie et la votre
+* Avec l'outil de validation, comparer le nombre d'étapes entre la procédure vue en théorie et la vôtre
 
-1. Quelle est la différence d'efficacité? Est-ce une grosse différence selon vous?
+* Quelle est la différence d'efficacité&nbsp;? Est-ce une grosse différence selon vous&nbsp;?
 
 
 
