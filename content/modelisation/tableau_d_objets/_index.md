@@ -15,11 +15,11 @@ la mémoire du programme.
 On peut améliorer la modélisation d'un film présentée au chapitre précédent en ajoutant
 la relation suivante&nbsp;:
 
-* Un film contient des personnages :
+* Un film contient des personnages&nbsp;:
 
 <img class="figure" src="FilmTableau.png"/>
 
-Voici des exemples de données se conformant à cette modélisation :
+Voici des exemples de données se conformant à cette modélisation&nbsp;:
 
 <table>
 
@@ -64,11 +64,11 @@ Voici des exemples de données se conformant à cette modélisation :
 On peut améliorer la modélisation d'un personnage présentée au chapitre précédent en ajoutant
 la relation suivante&nbsp;:
 
-* Un personnage apparaît dans un ou plusieurs films :
+* Un personnage apparaît dans un ou plusieurs films&nbsp;:
 
 <img class="figure" src="PersonnageTableau.png"/>
 
-Voici des exemples de données se conformant à cette modélisation :
+Voici des exemples de données se conformant à cette modélisation&nbsp;:
 
 <table>
 
@@ -112,11 +112,11 @@ Voici des exemples de données se conformant à cette modélisation :
 ## Tableau de cartes
 
 Les exemples de tableau de cartes sont plus pertinents à notre approche.
-Considérer le diagramme de classe suivant :
+Considérer le diagramme de classe suivant&nbsp;:
 
 <img class="figure" src="MonTableau.png"/>
 
-Voici des exemples de tableau de cartes :
+Voici des exemples de tableau de cartes&nbsp;:
 
 <table>
 

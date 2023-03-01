@@ -31,7 +31,7 @@ code suivant&nbsp;:
 l'outil de validation à leur projet Java. Pour plus de détails, voir les exemples d'ateliers
 à <a href="/annexe-ateliers">l'Annexe 4</a>.
 
-Exécuter le projet Java va démarrer l'outil :
+Exécuter le projet Java va démarrer l'outil&nbsp;:
 
 <center>
 <img class="figure" src="outil01.png"/>
