@@ -14,15 +14,15 @@ On peut compléter ainsi la modélisation des films et celle des personnages pr�
 
 <img class="figure no-border" src="FilmGraphe.png"/>
 
-* Un `Personnage` apparaît dans plusieurs `Film`
-* Un `Film` contient plusieurs `Personnage`
+* Un `Personnage` apparaît dans plusieurs `Film`.
+* Un `Film` contient plusieurs `Personnage`.
 
 Voici un exemple de données se conformant à cette modélisation.
 
 <img src="FilmGraphe01.png"/>
 
-* Le `Personnage` James Bond apparaît dans deux films&nbsp;: *Dr. No* et *Bon Baisers de Russie*
-* Le `Film` Dr. No contient deux personnages&nbsp;: James Bond et Dr. No
+* Le `Personnage` James Bond apparaît dans deux films&nbsp;: *Dr. No* et *Bon Baisers de Russie*.
+* Le `Film` Dr. No contient deux personnages&nbsp;: James Bond et Dr. No.
 
 ## Exemple&nbsp;: Fibonacci
 
@@ -50,17 +50,17 @@ La définition mathématique est récursive&nbsp;:
 
 Autrement dit&nbsp;:
 
-* `0` et `1` sont deux cas spéciaux
+* `0` et `1` sont deux cas spéciaux.
 
-* sinon le prochain nombre de la suite est toujours l'addition deux nombres précédents
+* Sinon le prochain nombre de la suite est toujours l'addition deux nombres précédents
 
 ## Nombre d'or
 
 1. La suite de Fibonacci est utilisée pour calculer le <a target="_blank" href="https://fr.wikipedia.org/wiki/Nombre_d'or">nombre d'or</a>, soit environ `1.618`
 
-    * le nombre d'or est reconnu, entre autres choses, comme une proportion hauteur/largeur agréable à l'oeil
+    * Le nombre d'or est reconnu, entre autres choses, comme une proportion hauteur/largeur agréable à l'oeil.
 
-1. Comme pour π, on peut calculer le nombre d'or avec autant de précision que désirée, c.-à-d. avec autant de chiffres après le point que désiré
+1. Comme pour π, on peut calculer le nombre d'or avec autant de précision que désirée, c.-à-d. avec autant de chiffres après le point que désiré.
 
 1. Pour calculer une approximation du nombre d'or, on fait tout simplement&nbsp;:
 
@@ -68,11 +68,11 @@ Autrement dit&nbsp;:
     \text{nombre d'or} \approx \dfrac{F_{n}}{F_{n-1}} \text{~~~pour~~~} n\geq 2
     {{< /katex >}}
 
-1. Plus on prend un `n` élevé, plus la précision est bonne
+1. Plus on prend un `n` élevé, plus la précision est bonne.
 
-1. Autrement dit, le nombre d'or est à peu près égal à un nombre de la suite de Fibonacci, divisé par le nombre qui le précède
+1. Autrement dit, le nombre d'or est à peu près égal à un nombre de la suite de Fibonacci, divisé par le nombre qui le précède.
 
-    * plus on prend un nombre loin dans la suite, plus l'approximation est bonne
+    * Plus on prend un nombre loin dans la suite, plus l'approximation est bonne
 
 
 ## Modéliser la suite de Fibonacci
@@ -96,7 +96,7 @@ Autrement dit&nbsp;:
 
     <img src="Fib_2.png" />
 
-    * NOTE&nbsp;: la suite se lit de droite à gauche
+    * NOTE&nbsp;: la suite se lit de droite à gauche.
 
 1. Pour `n = 3`, on a le graphe d'objets suivant&nbsp;:
 
@@ -118,8 +118,7 @@ Autrement dit&nbsp;:
     nombreOr = Double.valueOf(reponse) / Double.valueOf(moinsUn.getReponse());
     ```
 
-1. Le défi est qu'il faut d'abord construire le graphe d'objet
-
+1. Le défi est qu'il faut d'abord construire le graphe d'objet.
 
 
 ## Construire le graphe d'objets récursivement
@@ -128,23 +127,23 @@ Autrement dit&nbsp;:
 
     {{% animation src="/modelisation/graphes_d_objets/calcul_recursif.webm" width="100%" %}}
 
-    * on crée d'abord l'objet `n`, puis `n-1`, et ainsi de suite jusqu'à l'objet `0`
+    * On crée d'abord l'objet `n`, puis `n-1`, et ainsi de suite jusqu'à l'objet `0`
 
 1. Pour le cas `n >= 2`, voici comment procéder&nbsp;:
 
-    1. créer un nouvel objet `MonFibonacci` et le mémoriser dans `moinsUn`
+    1. Créer un nouvel objet `MonFibonacci` et le mémoriser dans `moinsUn`
 
-    1. enregistrer que le `n` de ce `moinsUn` est `n-1` (le `n` courant moins `1`)
+    1. Enregistrer que le `n` de ce `moinsUn` est `n-1` (le `n` courant moins `1`).
 
-    1. créer le reste du graphe récursivement en appelant `moinsUn.construireGrapheRecursivement()`
+    1. Créer le reste du graphe récursivement en appelant `moinsUn.construireGrapheRecursivement()`
 
-    1. enregister que le `moinsDeux` courant est `moinsUn.getMoinsUn()` (le `moinsUn` du `moinsUn` courant)
+    1. Enregister que le `moinsDeux` courant est `moinsUn.getMoinsUn()` (le `moinsUn` du `moinsUn` courant).
 
-    1. calculer la réponse courante à partir des réponses de `moinsUn` et `moinsDeux`
+    1. Calculer la réponse courante à partir des réponses de `moinsUn` et `moinsDeux`
 
 1. L'appel récursif est plus proche de la définition mathématique&nbsp;:
 
-    * pour calculer la réponse en `n`, il faut d'abord calculer la réponse en `n-1`
+    * Pour calculer la réponse en `n`, il faut d'abord calculer la réponse en `n-1`
 
 1. L'inconvénient est qu'on peut déborder la pile d'appel&nbsp;:
 
@@ -165,42 +164,41 @@ Autrement dit&nbsp;:
         ...
     ```
 
-    * RAPPEL&nbsp;: le code n'est pas bogué, mais limité par la mémoire attribuée à la pile d'appel
+    * RAPPEL&nbsp;: le code n'est pas bogué, mais limité par la mémoire attribuée à la pile d'appel.
 
 ## Construire le graphe d'objets dynamiquement
-
 
 1. En programmation dynamique, on calcule en même temps qu'on construit&nbsp;:
 
     {{% animation src="/modelisation/graphes_d_objets/calcul_dynamique.webm" width="100%" %}}
 
-    * on crée d'abord l'objet `0`, puis `1`, et ainsi de suite jusqu'à l'objet `n`
+    * On crée d'abord l'objet `0`, puis `1`, et ainsi de suite jusqu'à l'objet `n`
 
-1. L'idée est qu'on fait une boucle pour créer le graphe d'objets
+1. L'idée est qu'on fait une boucle pour créer le graphe d'objets.
 
-    * on crée une `nouvelleTete` 
+    * On crée une `nouvelleTete` 
 
-    * le `moinsUn` de la `nouvelleTete` est l'ancienne `tete`
+    * Le `moinsUn` de la `nouvelleTete` est l'ancienne `tete`
 
-    * le `moinsDeux` de la `nouvelleTete` est le `moinsUn` de l'ancienne `tete`
+    * Le `moinsDeux` de la `nouvelleTete` est le `moinsUn` de l'ancienne `tete`
 
-        * c.-à-d. on insère la `nouvelleTete` à gauche, et on «&nbsp;pousse&nbsp;» les objets existants vers la droite
+        * c.-à-d. on insère la `nouvelleTete` à gauche, et on «&nbsp;pousse&nbsp;» les objets existants vers la droite.
     
 1. Pour le cas `n >= 2`, voici comment procéder&nbsp;:
 
-    * pour chaque `i` allant de `2` à `n` (inclusivement)&nbsp;:
+    * Pour chaque `i` allant de `2` à `n` (inclusivement)&nbsp;:
 
-        1. créer un nouvel objet `MonFibonacci` pour représenter la `nouvelleTete`
+        1. Créer un nouvel objet `MonFibonacci` pour représenter la `nouvelleTete`
 
-        1. enregistrer que le `n` de la `nouvelleTete` est `i`
+        1. Enregistrer que le `n` de la `nouvelleTete` est `i`
 
-        1. enregistrer que le `moinsUn` de la `nouvelleTete` est la `tete` courante
+        1. Enregistrer que le `moinsUn` de la `nouvelleTete` est la `tete` courante.
 
-        1. enregistrer que le `moinsDeux` de la `nouvelleTete` est le `moinsUn` de la `tete` courante
+        1. Enregistrer que le `moinsDeux` de la `nouvelleTete` est le `moinsUn` de la `tete` courante.
 
-        1. enregistrer que `tete` pointe maintenant vers la `nouvelleTete`
+        1. Enregistrer que `tete` pointe maintenant vers la `nouvelleTete`
 
-        1. calculer la réponse pour `tete`
+        1. Calculer la réponse pour `tete`
 
-1. Le calcul dynamique est moins intuitif (et moins proche de la définition mathématique), mais on a éliminé l'appel récursif, alors on ne peut plus déborder la pile d'appel
+1. Le calcul dynamique est moins intuitif (et moins proche de la définition mathématique), mais on a éliminé l'appel récursif, alors on ne peut plus déborder la pile d'appel.
 

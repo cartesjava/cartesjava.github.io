@@ -31,7 +31,7 @@ code suivant&nbsp;:
 l'outil de validation à leur projet Java. Pour plus de détails, voir les exemples d'ateliers
 à <a href="/annexe-ateliers">l'Annexe 4</a>.
 
-Exécuter le projet Java va démarrer l'outil:
+Exécuter le projet Java va démarrer l'outil :
 
 <center>
 <img class="figure" src="outil01.png"/>
@@ -53,12 +53,12 @@ Voici les affichages principaux de l'outil de validation.
 <img class="figure" src="outil02.png"/>
 </center>
 
-* Le panneau principal (1) affiche des cartes à jouer
+* Le panneau principal (1) affiche des cartes à jouer.
 * Le panneau des cas de tests (2) permet de&nbsp;:
-    * sélectionner un nouveau cas de test 
-    * visualiser les résultats de la validation
-* Le panneau de navigation (3) permet d'avancer et/ou reculer dans la séquence d'exécution
-* Le panneau des variables (4) visualise les diverses valeurs pour l'état courant de l'exécution
+    * Sélectionner un nouveau cas de test.
+    * Visualiser les résultats de la validation.
+* Le panneau de navigation (3) permet d'avancer et/ou reculer dans la séquence d'exécution.
+* Le panneau des variables (4) visualise les diverses valeurs pour l'état courant de l'exécution.
 
 ### Visualisation avec des cartes à jouer
 

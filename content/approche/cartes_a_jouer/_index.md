@@ -27,7 +27,7 @@ Carte memoireA;
 Carte memoireB;
 ```
 
-Est aisément visualiser par les cartes et les marqueurs suivants&nbsp;:
+est aisément visualiser par les cartes et les marqueurs suivants&nbsp;:
 
 <img class="figure" src="visualisation.png"/>
 

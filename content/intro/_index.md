@@ -23,10 +23,10 @@ L'approche développée dans ce manuel cible des étudiant·e·s ayant déjà su
 cours d'introduction à la programmation, mais qui pourraient éprouver certaines
 difficultés à&nbsp;:
 
-* imaginer les étapes exactes d'une procédure informatique
-* imaginer comment les données du programme sont organisées en mémoire
-* réfléchir à l’efficacité du programme
-* distinguer les notions d'interface (ce que le programme doit faire) et d'implantation (comment le programme le fait)
+* Imaginer les étapes exactes d'une procédure informatique.
+* Imaginer comment les données du programme sont organisées en mémoire.
+* Réfléchir à l’efficacité du programme.
+* Distinguer les notions d'interface (ce que le programme doit faire) et d'implantation (comment le programme le fait).
 
 Comme les exemples de code sont en Java, il est préférable d'avoir une certaine familiarité avec ce langage (ou avec un langage similaire comme C#).
 
@@ -143,8 +143,8 @@ Finalement, à noter les animations ci-haut sont tirées de l'outil de validatio
 accompagne ce manuel. Grâce à cet outil, les étudiant·e·s peuvent valider 
 leur programme, en particulier&nbsp;: 
 
-* visualiser les étapes d'exécution de leur code
-* vérifier que leur code arrive au bon résultat
+* Visualiser les étapes d'exécution de leur code.
+* Vérifier que leur code arrive au bon résultat.
 
 
 ## Expliquer l'efficacité des algorithmes avec des cartes

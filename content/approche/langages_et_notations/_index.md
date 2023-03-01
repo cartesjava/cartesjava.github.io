@@ -79,18 +79,18 @@ et les bases de données NoSQL.
 
 Voici les *valeurs* en JSON&nbsp;:
 
-* la valeur nulle&nbsp;: `null`
-* un booléen&nbsp;: `true`  ou `false`
-* un nombre comme&nbsp;: `1`, `4.5`, `-10.1` 
-* une chaîne comme&nbsp;: `"asdf"`, `""`, `"Bonjour!"`
+* La valeur nulle&nbsp;: `null`
+* Un booléen&nbsp;: `true`  ou `false`
+* Un nombre comme&nbsp;: `1`, `4.5`, `-10.1` 
+* Une chaîne comme&nbsp;: `"asdf"`, `""`, `"Bonjour!"`
 
 Voici les *structures* en JSON&nbsp;:
 
-* une liste comme&nbsp;: 
+* Une liste comme&nbsp;: 
     * `[1, 3, -1]`
     * `[]`
     * `["asfd", "Bonjour!", ""]`
-* une objet comme&nbsp;: 
+* Un objet comme&nbsp;: 
     * `{"cle01":true}`
     * `{}`
     * `{"cle01":true, "cle02":-12}`
@@ -107,10 +107,10 @@ La valeur peut être n'importe quelle valeur JSON.
 
 À noter aussi que JSON est un format récursif.
 
-* on peut avoir `[1,2,[2,4]]` (une liste à l'intérieur d'une liste)
-* on peut avoir `[1,2,[2,[5,423]]]` 
-* on peut avoir `[1,2,[2,[[44,2],423]]]` 
-* etc.
+* On peut avoir `[1,2,[2,4]]` (une liste à l'intérieur d'une liste).
+* On peut avoir `[1,2,[2,[5,423]]]` 
+* On peut avoir `[1,2,[2,[[44,2],423]]]` 
+* Etc.
 
 Voici la même liste chaîne simple que ci-haut, mais dans le format JSON.
 
