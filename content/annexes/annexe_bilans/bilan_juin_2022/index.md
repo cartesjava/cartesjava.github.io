@@ -48,7 +48,7 @@ De gauche à droite&nbsp;:
 
 NOTE&nbsp;:
 
-* Des améliorations à l'interface sont à venir (projet de Zein Hazimeh)
+* Des améliorations à l'interface sont à venir (projet de Zein Hazimeh).
 
 ### Validation interactive du code
 
@@ -116,16 +116,15 @@ Avec la solution (étape 22)&nbsp;:
 
 1. Évaluations formatives avec les cartes&nbsp;:
 
-    * entrevue de 5 min. avec l'enseignant 
-
-    * l'étudiant·e doit démontrer sa compréhension de la procédure vue en théorie
+    * Entrevue de 5 min. avec l'enseignant .
+    * L'étudiant·e doit démontrer sa compréhension de la procédure vue en théorie.
 
 1. Ateliers à réaliser avec l'outil de validation `codelescartes.ca`&nbsp;:
-    * introduction 
-    * liste par tableau (projet de Marlond Augustin)
-    * tri fusion (projet d'Adrien Joséphine-Olivier)
-    * tri naïf
-    * liste chaînée simple et double
-    * mappage par arbre binaire
+    * Introduction 
+    * Liste par tableau (projet de Marlond Augustin).
+    * Tri fusion (projet d'Adrien Joséphine-Olivier).
+    * Tri naïf.
+    * Liste chaînée simple et double.
+    * Mappage par arbre binaire.
 
 Voir <a href="https://ntro.ca/3c6">la page du cours 3C6</a>

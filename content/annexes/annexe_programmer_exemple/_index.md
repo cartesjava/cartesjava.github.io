@@ -56,14 +56,14 @@ Renommer au besoin la classe `MonProjetCardsModel`.
 
 Implanter les méthodes marquées d'un `TODO` et que l'outil de validation utilise&nbsp;:
 
-* `copyDataFrom`&nbsp;: copier les données d'un autre modèle
-* `compareToSolution`&nbsp;: valider si le modèle courant est une solution
-* `updateViewDataImpl`&nbsp;: afficher les cartes correspondant au modèle courant
-* `initializeAsTestCase`&nbsp;: données de départ d'un cas de test
+* `copyDataFrom`&nbsp;: copier les données d'un autre modèle.
+* `compareToSolution`&nbsp;: valider si le modèle courant est une solution.
+* `updateViewDataImpl`&nbsp;: afficher les cartes correspondant au modèle courant.
+* `initializeAsTestCase`&nbsp;: données de départ d'un cas de test.
 
 Finalement, modifier aussi  `test_cases.MonProjetTestCaseDatabase`, en particulier&nbsp;:
 
-* `describeTestCasesToGenerate`&nbsp;: faire la liste des cas de tests à générer
+* `describeTestCasesToGenerate`&nbsp;: faire la liste des cas de tests à générer.
 
 
 ## Ajouter des modèles à un validateur

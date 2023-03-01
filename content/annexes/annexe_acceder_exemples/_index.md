@@ -87,7 +87,7 @@ Par la suite, importer les projets en Eclipse afin de modifier le code.
 En particulier&nbsp;:
 
 * Dans chaque projet `_solution`, modifier le modèle, p.&nbsp;ex. 
-    * pour `deplacer_decaler`&nbsp;: `MonTableau` 
-    * pour `fibonacci`&nbsp;: `MonCalculateur`
-    * pour `validator_cartesjava`&nbsp;: les classes du paquet `models`
+    * Pour `deplacer_decaler`&nbsp;: `MonTableau` 
+    * Pour `fibonacci`&nbsp;: `MonCalculateur`
+    * Pour `validator_cartesjava`&nbsp;: les classes du paquet `models`
 

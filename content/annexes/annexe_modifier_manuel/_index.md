@@ -14,42 +14,42 @@ Le dépôt source est ici&nbsp;: https://github.com/cartesjava/cartesjava.github
 
 ## Suggérer une modification
 
-1. Au bas de la page à modifier, cliquer sur *Modifier cette page*
+1. Au bas de la page à modifier, cliquer sur *Modifier cette page*.
 
     <img class="figure" src="modifier_cette_page.png" />
 
-1. Se connecter à GitHub
+1. Se connecter à GitHub.
 
 1. La première fois uniquement&nbsp;:
 
-    * «&nbsp;forker&nbsp;» le dépôt
+    * «&nbsp;Forker&nbsp;» le dépôt.
 
         <img class="figure" src="fork01.png"/>
 
-1. Modifier le source de la page directement dans votre navigateur
+1. Modifier le source de la page directement dans votre navigateur.
 
     <img class="figure" src="modifier01.png"/>
 
-1. Décrire votre modification (commentaire de commit)
+1. Décrire votre modification (commentaire de commit).
 
     <img class="figure" src="commit01.png"/>
 
 1. Créer un «&nbsp;pull request&nbsp;» pour communiquer votre suggestion au propriétaire du dépôt d'origine&nbsp;:
 
-    * Étape 1
+    * Étape 1.
 
         <img class="figure" src="pull_request01.png"/>
 
-    * Étape 2
+    * Étape 2.
 
         <img class="figure" src="pull_request02.png"/>
 
-1. Attendre que le propriétaire du dépôt d'origine évalue votre suggestion
+1. Attendre que le propriétaire du dépôt d'origine évalue votre suggestion.
 
 
 ## Modifier le manuel en local
 
-1. Installer <a href="https://gohugo.io/" target="_blank">Hugo</a> sur votre machine
+1. Installer <a href="https://gohugo.io/" target="_blank">Hugo</a> sur votre machine.
 
 1. Faire la commande suivante pour cloner le dépôt Git&nbsp;:
 
@@ -81,8 +81,8 @@ Le dépôt source est ici&nbsp;: https://github.com/cartesjava/cartesjava.github
     ```
 
 1. Pour ouvrir un GitBash à la racine du dépôt Git, faire&nbsp;:
-    1. Démarrer un explorateur de fichier Windows
-    1. Naviguer jusqu'à la racine de dépôt Git
+    1. Démarrer un explorateur de fichier Windows.
+    1. Naviguer jusqu'à la racine de dépôt Git.
     1. *Clic-droit* => *Git Bash Here*
 
         <img src="ouvrir_gitbash.png"/>
@@ -122,7 +122,7 @@ Le dépôt source est ici&nbsp;: https://github.com/cartesjava/cartesjava.github
 
 ## Modifier directement la version publique de ce manuel
 
-1. Vous devez avoir les droits en écriture pour le dépôt Git
+1. Vous devez avoir les droits en écriture pour le dépôt Git.
 
 1. Voir le *README* sur la page Web du dépôt&nbsp;:
 
