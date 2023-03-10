@@ -10,7 +10,6 @@ weight: 300
 
 ## Obtenir les sources
 
-
 Le dépôt source est ici&nbsp;: https://github.com/cartesjava/cartesjava.github.io
 
 ## Suggérer une modification
