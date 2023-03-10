@@ -76,7 +76,7 @@ La mise en page repose sur le thème <a href="https://github.com/alex-shpak/hugo
 <th>Suivi de projet</th>
 <td>
 
-De la fabriqueREL&nbsp;: &nbsp;Claude Potvin (conseiller pédagogique) et Marianne Dubé (coordonatrice).
+De la fabriqueREL&nbsp;: &nbsp;Claude Potvin (conseiller pédagogique) et Marianne Dubé (coordonnatrice).
 Du Collège Montmorency&nbsp;: &nbsp;Philippe Lavigueur (conseiller pédagogique) et Valérie Jacques (spécialiste en moyens et techniques d'enseignement).
 </td>
 </tr>
